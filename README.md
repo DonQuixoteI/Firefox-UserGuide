@@ -1,2 +1,1 @@
-# Firefox-UserGuide
-Firefox User Guide
+# Firefox User Guide

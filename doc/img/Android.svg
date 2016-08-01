@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="-147 -70 11.922931 14"
+   id="svg4136"
+   version="1.1"
+   width="11.922931"
+   height="14">
+  <metadata
+     id="metadata4167">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4165" />
+  <g
+     id="g4169"
+     transform="matrix(0.04066484,0,0,0.04066484,-141.03853,-67.166565)">
+    <g
+       id="g4138"
+       style="fill:#79c257">
+      <use
+         id="use4140"
+         xlink:href="#b"
+         style="stroke:#ffffff;stroke-width:14.39999962"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use4142"
+         transform="scale(-1,1)"
+         xlink:href="#a"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <g
+         id="a"
+         style="stroke:#ffffff;stroke-width:7.19999981">
+        <rect
+           id="rect4145"
+           x="14"
+           y="-86"
+           width="13"
+           height="86"
+           transform="matrix(0.87461971,0.48480962,-0.48480962,0.87461971,0,0)"
+           rx="6.5" />
+        <rect
+           x="-143"
+           y="41"
+           width="48"
+           height="133"
+           rx="24"
+           id="c" />
+        <use
+           id="use4148"
+           xlink:href="#c"
+           x="85"
+           y="97"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         id="b">
+        <ellipse
+           id="ellipse4151"
+           ry="84"
+           rx="91"
+           cy="41"
+           cx="0" />
+        <rect
+           id="rect4153"
+           x="-91"
+           y="20"
+           width="182"
+           height="182"
+           rx="22" />
+      </g>
+    </g>
+    <g
+       id="g4155"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:7.19999981">
+      <path
+         id="path4157"
+         d="m -95,44.5 190,0" />
+      <circle
+         id="circle4159"
+         r="4"
+         cx="-42"
+         cy="0" />
+      <circle
+         id="circle4161"
+         r="4"
+         cx="42"
+         cy="0" />
+    </g>
+  </g>
+</svg>

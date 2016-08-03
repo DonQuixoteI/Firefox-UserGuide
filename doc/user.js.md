@@ -9,11 +9,11 @@
 ![Debian][Debian Logo] - Firefox for Debian Stable,
 ![Windows][Windows Logo] - Firefox ESR for MS Windows
 
-[Android Logo]: img/Android.svg
+[Android Logo]: img/Android.png
 
-[Debian Logo]: img/Debian.svg
+[Debian Logo]: img/Debian.png
 
-[Windows Logo]: img/Windows.svg
+[Windows Logo]: img/Windows.png
 
 ## Browser Cache
 

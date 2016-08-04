@@ -1,2 +1,15 @@
+user_pref("breakpad.reportURL", "");
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
+user_pref("datareporting.healthreport.about.reportUrl", "");
+user_pref("datareporting.healthreport.about.reportUrlUnified", "");
+user_pref("datareporting.healthreport.documentServerURI", "");
+user_pref("datareporting.healthreport.logging.consoleEnabled", false);
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("experiments.enabled", false);
+user_pref("experiments.manifest.uri", "");
+user_pref("experiments.supported", false);
+user_pref("toolkit.telemetry.server", "");
+user_pref("toolkit.telemetry.unified", false);
 user_pref("xpinstall.signatures.required", false);

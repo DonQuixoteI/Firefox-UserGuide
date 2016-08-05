@@ -1,5 +1,8 @@
 user_pref("breakpad.reportURL", "");
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.enabled", false);
+user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
 user_pref("datareporting.healthreport.documentServerURI", "");

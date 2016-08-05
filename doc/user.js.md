@@ -8,6 +8,7 @@
   - [Health Report](#health-report)
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
+- [Safe Browsing](#safe-browsing)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
 
@@ -26,11 +27,10 @@
 ```js
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
 ```
-Default: n/a
+Default: n/a.
+[[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
 
 To use RAM disk for caching is good for systems with big enough RAM.
-
-[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)
 
 ## Reports to Mozilla
 
@@ -65,7 +65,7 @@ Set of libraries called `Breakpad` handles client-side crash reporting [[mozilla
 
 ### Health Report
 
-[[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#health-report)]: Firefox Health Report (FHR) is designed to provide you with insights about your browser's stability and performance and with support tips should you experience issues, such as high crash rates or slow startup times. Mozilla collects and aggregates your data with that of other Firefox users and sends it back to your browser so you can see how your Firefox performance changes over time. This data includes, for example: device hardware, operating system, Firefox version, add-ons (count and type), timing of browser events, rendering, session restores, length of session, how old a profile is, count of crashes, and count of pages.
+[[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#health-report)]: Firefox Health Report is designed to provide you with insights about your browser's stability and performance and with support tips should you experience issues, such as high crash rates or slow startup times. Mozilla collects and aggregates your data with that of other Firefox users and sends it back to your browser so you can see how your Firefox performance changes over time. This data includes, for example: device hardware, operating system, Firefox version, add-ons (count and type), timing of browser events, rendering, session restores, length of session, how old a profile is, count of crashes, and count of pages.
 
 [[What is Firefox Health Report?](https://blog.mozilla.org/metrics/fhr-faq/)] [[What data are collected?](https://blog.mozilla.org/metrics/2012/09/21/firefox-health-report/)]
 
@@ -114,9 +114,9 @@ user_pref("toolkit.telemetry.unified", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
-If `true`: Telemetry is always enabled and recording base data; Telemetry will send additional `main` pings [[Mozilla Source Tree Docs][telemetry-preferencess]].
+If `true`: Telemetry is always enabled and recording base data; Telemetry will send additional `main` pings [[Mozilla Source Tree Docs][telemetry-preferences]].
 
-[telemetry-preferencess]: https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#id1
+[telemetry-preferences]: https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#id1
 
 ```js
 user_pref("toolkit.telemetry.enabled", false);
@@ -124,7 +124,7 @@ user_pref("toolkit.telemetry.enabled", false);
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-If `unified` is off, this controls whether the Telemetry module is enabled; if `unified` is on, this controls whether to record extended data [[Mozilla Source Tree Docs][telemetry-preferencess]].
+If `unified` is off, this controls whether the Telemetry module is enabled; if `unified` is on, this controls whether to record extended data [[Mozilla Source Tree Docs][telemetry-preferences]].
 
 ```js
 user_pref("toolkit.telemetry.server", "");
@@ -132,7 +132,7 @@ user_pref("toolkit.telemetry.server", "");
 
 Default: "https://incoming.telemetry.mozilla.org" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-The server Telemetry pings are sent to [[Mozilla Source Tree Docs][telemetry-preferencess]].
+The server Telemetry pings are sent to [[Mozilla Source Tree Docs][telemetry-preferences]].
 
 #### Experiments
 
@@ -162,7 +162,52 @@ user_pref("experiments.activeExperiment", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
-[[MozillaWiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
+[[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
+
+## Safe Browsing
+
+The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Phishing_Protection)].
+
+```js
+user_pref("browser.safebrowsing.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)]
+
+```js
+user_pref("browser.safebrowsing.malware.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+
+`false`: do not download malware blacklists and do not check user downloads [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work "How does built-in Phishing and Malware Protection")]
+
+```js
+user_pref("browser.safebrowsing.downloads.enabled", false);
+```
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
+`true` does only the local checks against a blacklist and a whitelist, as long as `browser.safebrowsing.downloads.remote.enabled` is disabled [[pyllyukko](https://github.com/pyllyukko/user.js/pull/65)].
+
+```js
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+`false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
+
+[[GOV.UK](https://www.gov.uk/government/publications/browser-security-guidance-mozilla-firefox/browser-security-guidance-mozilla-firefox#enterprise-considerations "Browser Security Guidance: Mozilla Firefox - GOV.UK")]: Firefox uses Google's Safe Browsing service that aims to protect against phishing websites and malicious downloads. It works by sending hashes of some visited website addresses to Google. If Google reports that the page is unsafe, the page or file will not be downloaded or displayed to protect the user against malware and data theft. Google states that it cannot derive the full website addresses from the information submitted as it only sends a partial URL fingerprint. Full website addresses are only sent if an organisation chooses to configure Chrome to send usage statistics to Google. Safe Browsing can be disabled entirely if the trade-off between privacy and security is not acceptable.
+
+```js
+user_pref("privacy.trackingprotection.enabled", false);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo] [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
+
+
 
 ## Extension Signing
 
@@ -171,7 +216,7 @@ user_pref("xpinstall.signatures.required", false);
 ```
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-[MozillaWiki](https://wiki.mozilla.org/Addons/Extension_Signing)
+[[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
 
 ## Firefox Chat
 
@@ -182,5 +227,4 @@ user_pref("loop.enabled", false);
 Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Android][Android Logo]
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
-
 [[mozilla wiki](https://wiki.mozilla.org/Loop)]

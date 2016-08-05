@@ -9,6 +9,7 @@
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
 - [Extension Signing](#extension-signing)
+- [Firefox Chat](#firefox-chat)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -162,6 +163,18 @@ user_pref("experiments.activeExperiment", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 [[MozillaWiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
+
+## Firefox Chat
+
+```js
+user_pref("loop.enabled", false);
+```
+
+Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Android][Android Logo]
+
+Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
+
+[[mozilla wiki](https://wiki.mozilla.org/Loop)]
 
 ## Extension Signing
 

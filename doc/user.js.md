@@ -9,6 +9,7 @@
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
 - [Safe Browsing](#safe-browsing)
+- [Updating](#updating)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
 
@@ -207,7 +208,51 @@ user_pref("privacy.trackingprotection.enabled", false);
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo] [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
 
+## Updating
 
+```js
+user_pref("app.update.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Android][Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
+
+```js
+user_pref("browser.search.update", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+`false`: do not automatically check for updates to search plugins [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+```js
+user_pref("extensions.update.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
+
+```js
+user_pref("extensions.update.autoUpdateDefault", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/questions/952162 "Difference between extensions.update.autoUpdateDefault and extensions.update.enabled")]
+
+```js
+user_pref("extensions.autoupdate.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[Blog](http://starkravingfinkle.org/blog/2010/05/updating-add-ons-in-firefox-mobile-1-1/ "Updating Add-ons in Firefox Mobile 1.1")]
+
+```js
+user_pref("app.update.autodownload", "disabled");
+```
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], "wifi" ![Android][Android Logo]
+
+```js
+user_pref("lightweightThemes.update.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
 
 ## Extension Signing
 

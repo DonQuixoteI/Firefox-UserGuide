@@ -1,7 +1,10 @@
+user_pref("app.update.autodownload", "disabled");
 user_pref("breakpad.reportURL", "");
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("extensions.autoupdate.enabled", false);
+user_pref("extensions.update.enabled", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("xpinstall.signatures.required", false);

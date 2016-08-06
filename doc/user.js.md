@@ -10,6 +10,7 @@
     - [Experiments](#experiments)
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
+- [WebRTC](#webrtc)
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
@@ -254,6 +255,23 @@ user_pref("lightweightThemes.update.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
+
+## WebRTC
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC)]: WebRTC (Web Real Time Communications) is a technology that enables audio/video streaming and data sharing between browser clients (peers). WebRTC provides the ability to share application data and perform teleconferencing peer to peer, without the need to install plug-ins or third-party software.
+
+```js
+user_pref("media.navigator.enabled", false);
+user_pref("media.peerconnection.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
+
+WebRTC Leak Tests:
+
+- [privacytools.io](https://www.privacytools.io/webrtc.html)
+- [diafygi.github.io](https://diafygi.github.io/webrtc-ips/)
+- [browserleaks.com](https://www.browserleaks.com/webrtc)
 
 ## Auto-Play Videos
 

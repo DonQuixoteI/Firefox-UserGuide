@@ -16,6 +16,7 @@ user_pref("experiments.supported", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
+user_pref("media.autoplay.enabled", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.unified", false);
 user_pref("xpinstall.signatures.required", false);

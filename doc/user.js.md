@@ -10,6 +10,7 @@
     - [Experiments](#experiments)
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
+- [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
 
@@ -253,6 +254,14 @@ user_pref("lightweightThemes.update.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
+
+## Auto-Play Videos
+
+```js
+user_pref("media.autoplay.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
 
 ## Extension Signing
 

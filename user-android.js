@@ -6,5 +6,6 @@ user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.update.enabled", false);
+user_pref("media.autoplay.enabled", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("xpinstall.signatures.required", false);

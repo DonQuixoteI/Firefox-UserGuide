@@ -18,6 +18,7 @@ user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
+user_pref("image.animation_mode", "none");
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.autoplay.enabled", false);
 user_pref("media.navigator.enabled", false);

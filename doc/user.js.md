@@ -11,6 +11,7 @@
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
 - [WebRTC](#webrtc)
+- [Auto-Play Animated Image](#auto-play-animated-image)
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
@@ -272,6 +273,16 @@ WebRTC Leak Tests:
 - [privacytools.io](https://www.privacytools.io/webrtc.html)
 - [diafygi.github.io](https://diafygi.github.io/webrtc-ips/)
 - [browserleaks.com](https://www.browserleaks.com/webrtc)
+
+## Auto-Play Animated Image
+
+```js
+user_pref("image.animation_mode", "none");
+```
+
+Default: "normal" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`none`: animated images will never play [[mozillaZine](http://kb.mozillazine.org/Firefox_:_Tips_:_Animated_Images)].
 
 ## Auto-Play Videos
 

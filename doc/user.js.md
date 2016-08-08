@@ -2,6 +2,7 @@
 
 ## Index
 
+- [Beacon](#beacon)
 - [Browser Cache](#browser-cache)
 - [Reports to Mozilla](#reports-to-mozilla)
   - [Crash Report](#crash-report)
@@ -25,6 +26,20 @@
 [Debian Logo]: img/Debian.png
 
 [Windows Logo]: img/Windows.png
+
+## Beacon
+
+[[Wikipedia](https://en.wikipedia.org/wiki/Web_beacon)]: A web beacon is an object embedded in a web page or email, which unobtrusively (usually invisibly) allows checking that a user has accessed the content. Common uses are email tracking and page tagging for web analytics.
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)]: Example use cases of the Beacon API are logging activity and sending analytics data to the server.
+
+```js
+user_pref("beacon.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+[Test (Beacon) Performance API](http://mdn.github.io/web-performance/perf-api-support.html)
 
 ## Browser Cache
 

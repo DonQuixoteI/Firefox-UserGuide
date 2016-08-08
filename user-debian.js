@@ -1,3 +1,4 @@
+user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);

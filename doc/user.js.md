@@ -16,6 +16,8 @@
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
+- [Home Page](#home-page)
+  - [Messages on Home Page](#messages-on-home-page)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -326,3 +328,64 @@ Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Android]
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
 [[mozilla wiki](https://wiki.mozilla.org/Loop)]
+
+## Home Page
+
+```js
+user_pref("browser.startup.homepage", "about:blank");
+```
+
+Default: "about:home" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+[[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]:
+`about:home` fetches content from the production snippets service once every 24 hours. If content is available, it gets is stashed in local storage for the page and displayed from there until the next fetch. If no content is available, the browser has a built-in default set of snippets for display.
+
+```js
+user_pref("browser.startup.homepage_override.mstone", "ignore");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+This preference is examined during browser start up. If its value differs from the browser's current milestone, then Firefox connects and fetches content from Mozilla snippets server. `ignore`: the browser's homepage will not be overridden after updates [[mozillaZine](http://kb.mozillazine.org/Browser.startup.homepage_override.mstone)]. _Note_: Firefox for Android overrides this user preference and set it to actual Firefox version?!
+
+```js
+user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
+```
+
+Default: "https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
+![Windows][Windows Logo] ![Debian][Debian Logo],
+n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
+
+### Messages on Home Page
+
+[How to stop Firefox messages on home screen?](https://support.mozilla.org/en-US/questions/1035229)
+
+```js
+user_pref("browser.snippets.enabled", false);
+user_pref("browser.snippets.firstrunHomepage.enabled", false);
+user_pref("browser.snippets.syncPromo.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
+`true` ![Android][Android Logo]
+
+```js
+user_pref("browser.snippets.updateUrl", "https://127.0.0.1");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
+"https://snippets.cdn.mozilla.net/json/%SNIPPETS_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/" ![Android][Android Logo]
+
+```js
+user_pref("browser.snippets.statsUrl", "https://127.0.0.1");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
+"https://snippets-stats.mozilla.org/mobile" ![Android][Android Logo]
+
+```js
+user_pref("browser.snippets.geoUrl", "https://127.0.0.1");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
+"https://location.services.mozilla.com/v1/country?key=..." ![Android][Android Logo]

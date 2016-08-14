@@ -1,9 +1,12 @@
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
+user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.update", false);
+user_pref("browser.startup.homepage", "about:blank");
+user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
 user_pref("datareporting.healthreport.documentServerURI", "");

@@ -57,13 +57,24 @@ To use RAM disk for caching is good for systems with big enough RAM.
 
 ## Network
 
+### Cookie
+
+```js
+user_pref("network.cookie.cookieBehavior", 1);
+```
+
+Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+0 - allow all cookies,
+1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+
 ### Send Referer
 
 ```js
 user_pref("network.http.sendRefererHeader", 0);
 ```
 
-Default: 2 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+Default: 2 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 0 - never send the referring URL,
 1 - send only on clicked links,

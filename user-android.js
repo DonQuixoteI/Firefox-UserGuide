@@ -19,5 +19,6 @@ user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("network.allow-experiments", false);
 user_pref("network.http.sendRefererHeader", 0);
+user_pref("network.http.sendSecureXSiteReferrer", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("xpinstall.signatures.required", false);

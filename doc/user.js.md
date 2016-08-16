@@ -6,6 +6,7 @@
 - [Browser Cache](#browser-cache)
 - [Network](#network)
   - [Cookie](#cookie)
+  - [Prefetching](#prefetching)
   - [Proxy](#proxy)
   - [Send Referer](#send-referer)
 - [Reports to Mozilla](#reports-to-mozilla)
@@ -71,6 +72,36 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+
+### Prefetching
+
+```js
+user_pref("network.prefetch-next", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
+
+```js
+user_pref("network.dns.disablePrefetch", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)] [[mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)]
+
+```js
+user_pref("network.predictor.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+The network predictor (formerly called '[seer](https://wiki.mozilla.org/Privacy/Reviews/Necko)') makes preemptive connections to resources in a page based on cached information. It can also do the same when the user hovers over a link. [[Tor](https://trac.torproject.org/projects/tor/ticket/16625)]
+
+```js
+user_pref("network.http.speculative-parallel-limit", 0);
+```
+
+Default: 6 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 
 ### Proxy
 

@@ -5,6 +5,7 @@
 - [Beacon](#beacon)
 - [Browser Cache](#browser-cache)
 - [Network](#network)
+  - [Cookie](#cookie)
   - [Send Referer](#send-referer)
 - [Reports to Mozilla](#reports-to-mozilla)
   - [Crash Report](#crash-report)

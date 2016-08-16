@@ -6,6 +6,7 @@
 - [Browser Cache](#browser-cache)
 - [Network](#network)
   - [Cookie](#cookie)
+  - [Proxy](#proxy)
   - [Send Referer](#send-referer)
 - [Reports to Mozilla](#reports-to-mozilla)
   - [Crash Report](#crash-report)
@@ -58,6 +59,8 @@ To use RAM disk for caching is good for systems with big enough RAM.
 
 ## Network
 
+[Mozilla networking preferences - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Mozilla_networking_preferences)
+
 ### Cookie
 
 ```js
@@ -68,6 +71,14 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+
+### Proxy
+
+```js
+user_pref("network.proxy.type", 0);
+```
+
+Default: 5 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Network.proxy.type)]
 
 ### Send Referer
 

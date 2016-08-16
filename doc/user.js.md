@@ -4,6 +4,8 @@
 
 - [Beacon](#beacon)
 - [Browser Cache](#browser-cache)
+- [Network](#network)
+  - [Send Referer](#send-referer)
 - [Reports to Mozilla](#reports-to-mozilla)
   - [Crash Report](#crash-report)
   - [Health Report](#health-report)
@@ -52,6 +54,26 @@ Default: n/a.
 [[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
 
 To use RAM disk for caching is good for systems with big enough RAM.
+
+## Network
+
+### Send Referer
+
+```js
+user_pref("network.http.sendRefererHeader", 0);
+```
+
+Default: 2 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+
+0 - never send the referring URL,
+1 - send only on clicked links,
+2 - send for links and images [[mozillaZine](http://kb.mozillazine.org/Network.http.sendRefererHeader)].
+
+```js
+user_pref("network.http.sendSecureXSiteReferrer", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
 
 ## Reports to Mozilla
 

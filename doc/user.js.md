@@ -21,6 +21,7 @@
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
+- [Geolocation](#geolocation)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 
@@ -412,6 +413,36 @@ Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Android]
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
 [[mozilla wiki](https://wiki.mozilla.org/Loop)]
+
+## Geolocation
+
+```js
+user_pref("geo.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
+
+```js
+user_pref("geo.wifi.uri", "https://127.0.0.1");
+```
+
+Default: "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
+
+[Geolocation Test](http://html5demos.com/geo)
+
+```js
+user_pref("browser.search.geoip.url", "");
+```
+
+Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
+
+```js
+user_pref("browser.search.geoSpecificDefaults", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
 
 ## Home Page
 

@@ -20,6 +20,7 @@
 - [Auto-Play Animated Image](#auto-play-animated-image)
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
+- [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
 - [Geolocation](#geolocation)
@@ -403,6 +404,57 @@ user_pref("xpinstall.signatures.required", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
+
+## Firefox Account
+
+[Firefox Accounts - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Firefox_Accounts)
+
+```js
+user_pref("identity.fxaccounts.auth.uri", "");
+```
+
+Default: "https://api.accounts.firefox.com/v1" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("identity.fxaccounts.remote.force_auth.uri", "");
+```
+
+Default: "https://accounts.firefox.com/force_auth?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("identity.fxaccounts.remote.signin.uri", "");
+```
+
+Default: "https://accounts.firefox.com/signin?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("identity.fxaccounts.remote.signup.uri", "");
+```
+
+Default: "https://accounts.firefox.com/signup?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("identity.fxaccounts.settings.uri", "");
+```
+
+Default: "https://accounts.firefox.com/settings" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("services.sync.engine.addons", false);
+user_pref("services.sync.engine.bookmarks", false);
+user_pref("services.sync.engine.history", false);
+user_pref("services.sync.engine.passwords", false);
+user_pref("services.sync.engine.prefs", false);
+user_pref("services.sync.engine.tabs", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("services.sync.serverURL", "");
+```
+
+Default: "https://auth.services.mozilla.com/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 ## Firefox Chat
 

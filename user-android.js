@@ -16,6 +16,7 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);
+user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("image.animation_mode", "none");
 user_pref("media.autoplay.enabled", false);
 user_pref("media.navigator.enabled", false);

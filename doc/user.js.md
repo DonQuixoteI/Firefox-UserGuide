@@ -21,6 +21,7 @@
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
 - [Firefox Chat](#firefox-chat)
+- [Mozilla Social](#mozilla-social)
 - [Geolocation](#geolocation)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
@@ -413,6 +414,46 @@ Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Android]
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
 [[mozilla wiki](https://wiki.mozilla.org/Loop)]
+
+## Mozilla Social
+
+[Social API](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Social_API)
+
+```js
+user_pref("social.directories", "");
+```
+
+Default: "https://activations.cdn.mozilla.net" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("social.remote-install.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("social.shareDirectory", "");
+```
+
+Default: "https://activations.cdn.mozilla.net/sharePanel.html" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("social.share.activationPanelEnabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("social.toast-notifications.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("social.whitelist", "");
+```
+
+Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Geolocation
 

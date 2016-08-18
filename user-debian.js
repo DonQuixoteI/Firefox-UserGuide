@@ -1,6 +1,10 @@
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
+user_pref("browser.newtabpage.directory.ping", "");
+user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
+user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);

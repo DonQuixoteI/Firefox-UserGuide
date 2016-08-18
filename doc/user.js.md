@@ -26,6 +26,7 @@
 - [Geolocation](#geolocation)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
+- [New Tab](#new-tab)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -597,3 +598,32 @@ user_pref("browser.snippets.geoUrl", "https://127.0.0.1");
 
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
 "https://location.services.mozilla.com/v1/country?key=..." ![Android][Android Logo]
+
+## New Tab
+
+```js
+user_pref("browser.newtabpage.introShown", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enhanced", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+Setting `enabled` and `enhanced` to `false` disables top and suggested sites (equivalent to blank page).
+
+```js
+user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
+```
+
+Default: "https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-source)]
+
+```js
+user_pref("browser.newtabpage.directory.ping", "");
+```
+
+Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]

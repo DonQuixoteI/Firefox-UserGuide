@@ -5,6 +5,7 @@ user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);

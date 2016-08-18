@@ -27,6 +27,7 @@
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
+- [Page Thumbnails](#page-thumbnails)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -627,3 +628,13 @@ user_pref("browser.newtabpage.directory.ping", "");
 ```
 
 Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
+
+## Page Thumbnails
+
+```js
+user_pref("browser.pagethumbnails.capturing_disabled", true);
+```
+
+Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.

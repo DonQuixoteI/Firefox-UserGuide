@@ -17,6 +17,7 @@
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
 - [WebRTC](#webrtc)
+- [Encrypted Media Extension](#encrypted-media-extension)
 - [Auto-Play Animated Image](#auto-play-animated-image)
 - [Auto-Play Videos](#auto-play-videos)
 - [Extension Signing](#extension-signing)
@@ -379,6 +380,31 @@ WebRTC Leak Tests:
 - [privacytools.io](https://www.privacytools.io/webrtc.html)
 - [diafygi.github.io](https://diafygi.github.io/webrtc-ips/)
 - [browserleaks.com](https://www.browserleaks.com/webrtc)
+
+## Encrypted Media Extension
+
+[[What is EME?](https://hsivonen.fi/eme/)]
+[[Mozilla Hacks](https://hacks.mozilla.org/2014/05/reconciling-mozillas-mission-and-w3c-eme/)]
+[[W3C](https://w3c.github.io/encrypted-media/)]
+
+```js
+user_pref("media.eme.enabled", false);
+user_pref("media.eme.apiVisible", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("browser.eme.ui.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
+user_pref("media.gmp-eme-adobe.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Auto-Play Animated Image
 

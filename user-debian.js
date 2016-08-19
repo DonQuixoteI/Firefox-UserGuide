@@ -35,6 +35,8 @@ user_pref("identity.fxaccounts.settings.uri", "");
 user_pref("image.animation_mode", "none");
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.autoplay.enabled", false);
+user_pref("media.eme.apiVisible", false);
+user_pref("media.eme.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("network.allow-experiments", false);

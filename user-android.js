@@ -15,6 +15,7 @@ user_pref("browser.snippets.updateUrl", "https://127.0.0.1");
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("extensions.autoupdate.enabled", false);
+user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);

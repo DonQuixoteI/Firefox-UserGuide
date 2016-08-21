@@ -25,7 +25,9 @@
 - [Encrypted Media Extension](#encrypted-media-extension)
 - [Auto-Play Animated Image](#auto-play-animated-image)
 - [Auto-Play Videos](#auto-play-videos)
-- [Extension Signing](#extension-signing)
+- [Extensions](#extensions)
+  - [Extension Blocklist](#extension-blocklist)
+  - [Extension Signing](#extension-signing)
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
@@ -514,14 +516,24 @@ user_pref("media.autoplay.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
 
-## Extension Signing
+## Extensions
+
+### Extension Blocklist
+
+```js
+user_pref("extensions.blocklist.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+Firefox periodically retrieves a blocklist from the Mozilla server. `false`: Do not retrieve a blocklist and do not restrict extension installation [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
+
+### Extension Signing
 
 ```js
 user_pref("xpinstall.signatures.required", false);
 ```
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-[[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
 
 ## Firefox Account
 

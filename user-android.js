@@ -2,6 +2,7 @@ user_pref("app.update.autodownload", "disabled");
 user_pref("app.update.url.android", "");
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
+user_pref("browser.casting.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.geoip.url", "");

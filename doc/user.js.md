@@ -15,6 +15,7 @@
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
   - [User Rating Feedback](#user-rating-feedback)
+- [Screen Casting](#screen-casting)
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
   - [Extensions](#extensions-update)
@@ -335,6 +336,16 @@ user_pref("privacy.trackingprotection.enabled", false);
 ```
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo] [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
+
+## Screen Casting
+
+Firefox contains a "Send Video To Device" feature to send HTML5 video content to a Roku, Chromecast or similar device in the same network. In order to discover and pair with such a device, Firefox will send SSDP packages to the local network (multicast address 239.255.255.250:1900) [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_send-video-to-device)].
+
+```js
+user_pref("browser.casting.enabled", false);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
 
 ## Updating
 

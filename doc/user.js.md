@@ -14,6 +14,7 @@
   - [Health Report](#health-report)
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
+  - [User Rating Feedback](#user-rating-feedback)
 - [Safe Browsing](#safe-browsing)
 - [Updating](#updating)
   - [Extensions](#extensions-update)

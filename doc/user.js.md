@@ -325,7 +325,37 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andr
 
 ## Updating
 
+[[Disable Updater - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Enterprise_deployment#Example_configuration_file)]
+
+```js
+user_pref("app.update.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Android][Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
+
+```js
+user_pref("app.update.auto", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/App.update.auto)]
+
+```js
+user_pref("app.update.service.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Android][Android Logo].
+[[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
+
 ### Extensions Update
+
+[[Mozilla Add-ons Blog](https://blog.mozilla.org/addons/how-to-opt-out-of-add-on-metadata-updates/)]: Firefox asks the [Mozilla Add-ons gallery](https://addons.mozilla.org/) for information about the add-ons you have installed once a day. This involves sending the identifiers of each add-on you have installed to Mozilla, as well as information on how long it last took Firefox to start up. Opting out of this daily ping will stop Firefox from sending the add-ons you have installed and most recent start-up time to Mozilla, and will also stop displaying updated metadata for your add-ons and discontinue personalized recommendations if they were displayed in the Get Add-ons pane of the Add-ons Manager. To opt out, set `extensions.getAddons.cache.enabled` to `false`.
+
+```js
+user_pref("extensions.getAddons.cache.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ```js
 user_pref("extensions.update.enabled", false);
@@ -365,17 +395,19 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Andro
 
 ### Web Apps Update
 
-```js
-user_pref("app.update.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Android][Android Logo].
-[[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
+[[Web Application - Wikipedia](https://en.wikipedia.org/wiki/Web_application)]
+[[MDN](https://developer.mozilla.org/en-US/Apps)]
 
 ```js
 user_pref("app.update.autodownload", "disabled");
 ```
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], "wifi" ![Android][Android Logo]
+
+```js
+user_pref("app.update.url.android", "");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], "https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml") ![Android][Android Logo]
 
 ## WebRTC
 

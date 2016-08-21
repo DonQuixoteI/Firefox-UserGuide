@@ -282,6 +282,16 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 `true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
 
+### User Rating Feedback
+
+[Firefox Heartbeat](https://wiki.mozilla.org/Advocacy/heartbeat)
+
+```js
+user_pref("browser.selfsupport.url", "");
+```
+
+Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
 ## Safe Browsing
 
 The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Phishing_Protection)].

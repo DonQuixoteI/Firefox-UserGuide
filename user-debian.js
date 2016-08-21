@@ -12,6 +12,7 @@ user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.update", false);
+user_pref("browser.selfsupport.url", "");
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("datareporting.healthreport.about.reportUrl", "");

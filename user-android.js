@@ -6,6 +6,7 @@ user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoSpecificDefaults", false);
+user_pref("browser.selfsupport.url", "");
 user_pref("browser.snippets.enabled", false);
 user_pref("browser.snippets.firstrunHomepage.enabled", false);
 user_pref("browser.snippets.geoUrl", "https://127.0.0.1");

@@ -50,6 +50,11 @@
   - [Timing](#timing)
   - [Video Stats](#video-stats)
 - [Thumbnails](#thumbnails)
+- [DOM](#dom)
+  - [Clipboard](#clipboard)
+  - [Context Menu](#context-menu)
+  - [Popup Windows](#popup-windows)
+  - [Window](#window)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -930,3 +935,103 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+
+## DOM
+
+### Clipboard
+
+```js
+user_pref("dom.event.clipboardevents.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled)].
+
+### Context Menu
+
+[][DOM Entries - mozillaZine]
+
+[DOM entries - mozillaZine]: http://kb.mozillazine.org/About:config_entries#DOM.
+
+```js
+user_pref("dom.event.contextmenu.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Webpages will not be able to affect the context menu event [[DOM Entries - mozillaZine]].
+
+### Popup Windows
+
+```js
+user_pref("dom.popup_maximum", 3);
+```
+
+Default: 20 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)]
+
+### Window
+
+```js
+user_pref("dom.disable_window_move_resize", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
+
+`true`: Windows may not be moved or resized [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.close", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent close button from being disabled [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.location", true);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+`true`: Prevent popups from hiding the Location Bar [[mozillaZine](http://kb.mozillazine.org/Dom.disable_window_open_feature.location)].
+
+```js
+user_pref("dom.disable_window_open_feature.menubar", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent menubar from being hidden [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.minimizable", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent popup window minimization from being disabled [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.personalbar", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent bookmarks toolbar from being hidden [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.scrollbars", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent scrollbars from being disabled [[DOM Entries - mozillaZine]].
+
+```js
+user_pref("dom.disable_window_open_feature.toolbar", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Prevent navigation toolbar from being hidden [[DOM Entries - mozillaZine]].

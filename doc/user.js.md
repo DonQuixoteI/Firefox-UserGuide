@@ -33,11 +33,23 @@
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
+- [Hardware](#hardware)
+  - [Battery API](#battery-api)
+  - [Camera](#camera)
+  - [Device Name](#device-name)
+  - [Gamepad API](#gamepad-api)
+  - [Keyboard API](#keyboard-api)
+  - [Network Information API](#network-information-api)
+  - [Sensor API](#sensor-api)
+  - [Vibration API](#vibration-api)
 - [Geolocation](#geolocation)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
-- [Page Thumbnails](#page-thumbnails)
+- [Statistics](#statistics)
+  - [Timing](#timing)
+  - [Video Stats](#video-stats)
+- [Thumbnails](#thumbnails)
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -659,6 +671,93 @@ user_pref("social.whitelist", "");
 
 Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
+## Hardware
+
+### Battery API
+
+[[BatteryManager - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BatteryManager)]
+
+```js
+user_pref("dom.battery.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+[[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
+
+### Camera
+
+```js
+user_pref("device.camera.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
+
+```js
+user_pref("camera.control.face_detection.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Device Name
+
+```js
+user_pref("dom.presentation.device.name", "dummy-device");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+_Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
+
+### Gamepad API
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)] [[W3C](https://www.w3.org/TR/gamepad/)]
+
+```js
+user_pref("dom.gamepad.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Keyboard API
+
+[[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)]
+
+```js
+user_pref("dom.keyboardevent.code.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)]
+
+### Network Information API
+
+[[Network Information API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)]
+
+```js
+user_pref("dom.netinfo.enabled", false);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
+
+### Sensor API
+
+[[Sensor API - mozilla wiki](https://wiki.mozilla.org/Sensor_API)]
+
+```js
+user_pref("device.sensors.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Vibration API
+
+[[Vibration API - W3C](https://w3c.github.io/vibration/)]
+
+```js
+user_pref("dom.vibrator.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
 ## Geolocation
 
 ```js
@@ -779,7 +878,50 @@ user_pref("browser.newtabpage.directory.ping", "");
 
 Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
 
-## Page Thumbnails
+## Statistics
+
+### Timing
+
+[[NavigationTimingAPI - mozilla wiki](https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI)]
+[[Navigation Timing - W3C](http://www.w3.org/TR/2011/CR-navigation-timing-20110315/#nt-navigation-timing-interface)]
+
+```js
+user_pref("dom.enable_performance", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not send start and end time of web page loading. [[forum.mozilla-russia.org](http://forum.mozilla-russia.org/viewtopic.php?pid=653380#p653380) (in Russian)]
+
+```js
+user_pref("dom.enable_resource_timing", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("dom.enable_user_timing", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[W3C](https://www.w3.org/TR/2013/REC-user-timing-20131212/)]
+
+```js
+user_pref("dom.idle-observers-api.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Video Stats
+
+Provides web applications with information about video playback statistics such as the framerate [[ghacks.net](http://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)]
+
+```js
+user_pref("media.video_stats.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+## Thumbnails
 
 ```js
 user_pref("browser.pagethumbnails.capturing_disabled", true);

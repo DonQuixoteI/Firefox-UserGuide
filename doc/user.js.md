@@ -58,6 +58,7 @@
 - [Forms](#forms)
 - [Location Bar](#location-bar)
 - [Search Suggestions](#search-suggestions)
+- [Session Store](#session-store)
 - [Passwords](#passwords)
 - [Thumbnails](#thumbnails)
 
@@ -1061,6 +1062,18 @@ user_pref("browser.search.suggest.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
+
+## Session Store
+
+```js
+user_pref("browser.sessionstore.privacy_level", 2);
+```
+
+Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`0`: store extra session data for any site,
+`1`: store extra session data for unencrypted (non-HTTPS) sites only,
+`2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
 
 ## Passwords
 

@@ -22,6 +22,7 @@ user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
 user_pref("browser.selfsupport.url", "");
+user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("camera.control.face_detection.enabled", false);

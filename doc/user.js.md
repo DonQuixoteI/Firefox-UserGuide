@@ -55,6 +55,7 @@
   - [Context Menu](#context-menu)
   - [Popup Windows](#popup-windows)
   - [Window](#window)
+- [Forms](#forms)
 - [Passwords](#passwords)
 - [Thumbnails](#thumbnails)
 
@@ -1022,6 +1023,22 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Prevent navigation toolbar from being hidden [[DOM Entries - mozillaZine]].
+
+## Forms
+
+```js
+user_pref("browser.formfill.enable", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not save information entered in web page forms and the Search Bar [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+```js
+user_pref("browser.formfill.expire_days", 0);
+```
+
+Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Passwords
 

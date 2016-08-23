@@ -6,6 +6,8 @@ user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
 user_pref("browser.eme.ui.enabled", false);
+user_pref("browser.formfill.enable", false);
+user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.newtabpage.enabled", false);

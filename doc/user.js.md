@@ -3,7 +3,6 @@
 ## Index
 
 - [Beacon](#beacon)
-- [Browser Cache](#browser-cache)
 - [Network](#network)
   - [Cookie](#cookie)
   - [Prefetching](#prefetching)
@@ -25,8 +24,6 @@
 - [WebRTC](#webrtc)
   - [Gecko Media Plugins](#gecko-media-plugins)
 - [Encrypted Media Extension](#encrypted-media-extension)
-- [Auto-Play Animated Image](#auto-play-animated-image)
-- [Auto-Play Videos](#auto-play-videos)
 - [Extensions](#extensions)
   - [Extension Blocklist](#extension-blocklist)
   - [Extension Signing](#extension-signing)
@@ -46,16 +43,21 @@
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
-- [Passwords](#passwords)
 - [Statistics](#statistics)
   - [Timing](#timing)
   - [Video Stats](#video-stats)
-- [Thumbnails](#thumbnails)
+- [Auto Play](#auto-play)
+  - [Animated Image](#animated-image)
+  - [Videos](#videos)
+- [Cache](#cache)
 - [DOM](#dom)
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
   - [Popup Windows](#popup-windows)
   - [Window](#window)
+- [Passwords](#passwords)
+- [Thumbnails](#thumbnails)
+
 
 ![Android][Android Logo] - Firefox for Android,
 ![Debian][Debian Logo] - Firefox for Debian Stable,
@@ -80,16 +82,6 @@ user_pref("beacon.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 [Test (Beacon) Performance API](http://mdn.github.io/web-performance/perf-api-support.html)
-
-## Browser Cache
-
-```js
-user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
-```
-Default: n/a.
-[[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
-
-To use RAM disk for caching is good for systems with big enough RAM.
 
 ## Network
 
@@ -538,24 +530,6 @@ user_pref("media.gmp-eme-adobe.enabled", false);
 
 Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Android][Android Logo]
 
-## Auto-Play Animated Image
-
-```js
-user_pref("image.animation_mode", "none");
-```
-
-Default: "normal" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`none`: animated images will never play [[mozillaZine](http://kb.mozillazine.org/Firefox_:_Tips_:_Animated_Images)].
-
-## Auto-Play Videos
-
-```js
-user_pref("media.autoplay.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
-
 ## Extensions
 
 ### Extension Blocklist
@@ -884,35 +858,6 @@ user_pref("browser.newtabpage.directory.ping", "");
 
 Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
 
-## Passwords
-
-[[Password Manager - mozillaZine](http://kb.mozillazine.org/Password_Manager)]
-[[Master Password - mozilla support](https://support.mozilla.org/en-US/kb/use-master-password-protect-stored-logins)]
-
-```js
-user_pref("signon.rememberSignons", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`false`: Disable the Password Manager [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Signon.)].
-
-```js
-user_pref("signon.autofillForms", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`false`: Do not automatically fill sign-in forms with known usernames and passwords [[mozillaZine](http://kb.mozillazine.org/Signon.autofillForms)].
-
-```js
-user_pref("signon.storeWhenAutocompleteOff", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
-
 ## Statistics
 
 ### Timing
@@ -956,15 +901,35 @@ user_pref("media.video_stats.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-## Thumbnails
+## Auto Play
+
+### Animated Image
 
 ```js
-user_pref("browser.pagethumbnails.capturing_disabled", true);
+user_pref("image.animation_mode", "none");
 ```
 
-Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: "normal" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-`true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+`none`: animated images will never play [[mozillaZine](http://kb.mozillazine.org/Firefox_:_Tips_:_Animated_Images)].
+
+### Videos
+
+```js
+user_pref("media.autoplay.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
+
+## Cache
+
+```js
+user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
+```
+Default: n/a.
+[[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
+
+To use RAM disk for caching is good for systems with big enough RAM.
 
 ## DOM
 
@@ -1057,3 +1022,42 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Prevent navigation toolbar from being hidden [[DOM Entries - mozillaZine]].
+
+## Passwords
+
+[[Password Manager - mozillaZine](http://kb.mozillazine.org/Password_Manager)]
+[[Master Password - mozilla support](https://support.mozilla.org/en-US/kb/use-master-password-protect-stored-logins)]
+
+```js
+user_pref("signon.rememberSignons", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Disable the Password Manager [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Signon.)].
+
+```js
+user_pref("signon.autofillForms", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not automatically fill sign-in forms with known usernames and passwords [[mozillaZine](http://kb.mozillazine.org/Signon.autofillForms)].
+
+```js
+user_pref("signon.storeWhenAutocompleteOff", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
+
+## Thumbnails
+
+```js
+user_pref("browser.pagethumbnails.capturing_disabled", true);
+```
+
+Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.

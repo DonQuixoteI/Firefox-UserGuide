@@ -64,6 +64,7 @@ user_pref("identity.fxaccounts.remote.signin.uri", "");
 user_pref("identity.fxaccounts.remote.signup.uri", "");
 user_pref("identity.fxaccounts.settings.uri", "");
 user_pref("image.animation_mode", "none");
+user_pref("keyword.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.autoplay.enabled", false);
 user_pref("media.eme.apiVisible", false);

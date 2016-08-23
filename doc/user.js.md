@@ -56,6 +56,7 @@
   - [Popup Windows](#popup-windows)
   - [Window](#window)
 - [Forms](#forms)
+- [Location Bar](#location-bar)
 - [Passwords](#passwords)
 - [Thumbnails](#thumbnails)
 
@@ -1039,6 +1040,16 @@ user_pref("browser.formfill.expire_days", 0);
 ```
 
 Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Location Bar
+
+```js
+user_pref("keyword.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Display an error message indicating the entered information is not a valid URL. `true`:  If Firefox cannot determine a URL from information entered in the Location Bar, append the information to the URL in [keyword.URL](http://kb.mozillazine.org/Keyword.URL) and redirect the user there. [[mozillaZine](http://kb.mozillazine.org/Keyword.enabled)]
 
 ## Passwords
 

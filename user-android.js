@@ -41,6 +41,7 @@ user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("image.animation_mode", "none");
+user_pref("keyword.enabled", false);
 user_pref("media.autoplay.enabled", false);
 user_pref("media.gmp-gmpopenh264.autoupdate", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);

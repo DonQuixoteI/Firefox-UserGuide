@@ -57,6 +57,7 @@
   - [Window](#window)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
+- [Search Suggestions](#search-suggestions)
 - [Passwords](#passwords)
 - [Thumbnails](#thumbnails)
 
@@ -1041,7 +1042,7 @@ user_pref("browser.formfill.expire_days", 0);
 
 Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-### Location Bar
+## Location Bar
 
 ```js
 user_pref("keyword.enabled", false);
@@ -1050,6 +1051,16 @@ user_pref("keyword.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `false`: Display an error message indicating the entered information is not a valid URL. `true`:  If Firefox cannot determine a URL from information entered in the Location Bar, append the information to the URL in [keyword.URL](http://kb.mozillazine.org/Keyword.URL) and redirect the user there. [[mozillaZine](http://kb.mozillazine.org/Keyword.enabled)]
+
+## Search Suggestions
+
+```js
+user_pref("browser.search.suggest.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+`false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
 
 ## Passwords
 

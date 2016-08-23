@@ -1051,14 +1051,6 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andr
 `true`: Prevent bookmarks toolbar from being hidden [[DOM Entries - mozillaZine]].
 
 ```js
-user_pref("dom.disable_window_open_feature.scrollbars", true);
-```
-
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`true`: Prevent scrollbars from being disabled [[DOM Entries - mozillaZine]].
-
-```js
 user_pref("dom.disable_window_open_feature.toolbar", true);
 ```
 

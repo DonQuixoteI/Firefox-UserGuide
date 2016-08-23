@@ -29,7 +29,6 @@ user_pref("dom.disable_window_open_feature.close", true);
 user_pref("dom.disable_window_open_feature.menubar", true);
 user_pref("dom.disable_window_open_feature.minimizable", true);
 user_pref("dom.disable_window_open_feature.personalbar", true);
-user_pref("dom.disable_window_open_feature.scrollbars", true);
 user_pref("dom.disable_window_open_feature.toolbar", true);
 user_pref("dom.enable_performance", false);
 user_pref("dom.enable_resource_timing", false);

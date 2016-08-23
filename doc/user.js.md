@@ -57,9 +57,10 @@
   - [Window](#window)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
+- [Passwords](#passwords)
+- [PDF Viewer](#pdf-viewer)
 - [Search Suggestions](#search-suggestions)
 - [Session Store](#session-store)
-- [Passwords](#passwords)
 - [Thumbnails](#thumbnails)
 
 
@@ -1053,28 +1054,6 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 `false`: Display an error message indicating the entered information is not a valid URL. `true`:  If Firefox cannot determine a URL from information entered in the Location Bar, append the information to the URL in [keyword.URL](http://kb.mozillazine.org/Keyword.URL) and redirect the user there. [[mozillaZine](http://kb.mozillazine.org/Keyword.enabled)]
 
-## Search Suggestions
-
-```js
-user_pref("browser.search.suggest.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
-
-`false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
-
-## Session Store
-
-```js
-user_pref("browser.sessionstore.privacy_level", 2);
-```
-
-Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-`0`: store extra session data for any site,
-`1`: store extra session data for unencrypted (non-HTTPS) sites only,
-`2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
-
 ## Passwords
 
 [[Password Manager - mozillaZine](http://kb.mozillazine.org/Password_Manager)]
@@ -1103,6 +1082,38 @@ user_pref("signon.storeWhenAutocompleteOff", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
+
+## PDF Viewer
+
+```js
+user_pref("pdfjs.disabled", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)]
+[[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
+
+## Search Suggestions
+
+```js
+user_pref("browser.search.suggest.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+`false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
+
+## Session Store
+
+```js
+user_pref("browser.sessionstore.privacy_level", 2);
+```
+
+Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`0`: store extra session data for any site,
+`1`: store extra session data for unencrypted (non-HTTPS) sites only,
+`2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
 
 ## Thumbnails
 

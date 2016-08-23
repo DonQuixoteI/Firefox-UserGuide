@@ -83,6 +83,7 @@ user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
+user_pref("pdfjs.disabled", true);
 user_pref("signon.autofillForms", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("signon.rememberSignons", false);

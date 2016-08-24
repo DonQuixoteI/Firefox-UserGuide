@@ -43,6 +43,7 @@
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
+- [Pocket](#pocket)
 - [Statistics](#statistics)
   - [Timing](#timing)
   - [Video Stats](#video-stats)
@@ -866,6 +867,37 @@ user_pref("browser.newtabpage.directory.ping", "");
 ```
 
 Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
+
+## Pocket
+
+[[mozilla support](https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox)] [[ghacks.net](http://www.ghacks.net/2015/05/14/how-to-disable-pocket-in-firefox/)]
+
+```js
+user_pref("browser.pocket.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+
+```js
+user_pref("browser.pocket.api", "");
+```
+
+Default: "api.getpocket.com" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+
+```js
+user_pref("browser.pocket.site", "");
+```
+
+Default: "getpocket.com" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+
+```js
+user_pref("browser.pocket.oAuthConsumerKey", "");
+```
+
+Default: "_your-consumer-key_" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 ## Statistics
 

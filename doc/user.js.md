@@ -55,6 +55,7 @@
   - [Context Menu](#context-menu)
   - [Popup Windows](#popup-windows)
   - [Window](#window)
+- [Download Manager](#download-manager)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
 - [Passwords](#passwords)
@@ -1027,6 +1028,33 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Prevent navigation toolbar from being hidden [[DOM Entries - mozillaZine]].
+
+## Download Manager
+
+```js
+user_pref("browser.helperApps.deleteTempFileOnExit", true);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
+
+```js
+user_pref("browser.download.folderList", 2);
+```
+
+Default: `1` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`1`: system default folder,
+`2`: custom (user defined) folder.
+[[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
+
+```js
+user_pref("browser.download.useDownloadDir", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+
+`false`: Always ask where to download. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
 
 ## Forms
 

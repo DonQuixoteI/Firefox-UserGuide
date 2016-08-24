@@ -5,6 +5,8 @@ user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
+user_pref("browser.download.folderList", 2);
+user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.eme.ui.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);

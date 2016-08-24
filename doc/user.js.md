@@ -60,6 +60,7 @@
 - [Location Bar](#location-bar)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
+- [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Session Store](#session-store)
 - [Thumbnails](#thumbnails)
@@ -1120,6 +1121,14 @@ user_pref("pdfjs.disabled", true);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
 [[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)]
 [[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
+
+## Reader Mode
+
+```js
+user_pref("reader.parse-on-load.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2015/02/07/mozilla-starts-to-push-reader-mode-to-desktop-firefox/)]
 
 ## Search Suggestions
 

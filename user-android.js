@@ -43,6 +43,7 @@ user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);
+user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("image.animation_mode", "none");
 user_pref("keyword.enabled", false);

@@ -64,6 +64,7 @@
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Session Store](#session-store)
+- [SVG Fonts](#svg-fonts)
 - [Thumbnails](#thumbnails)
 
 
@@ -1162,6 +1163,16 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 `0`: store extra session data for any site,
 `1`: store extra session data for unencrypted (non-HTTPS) sites only,
 `2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
+
+## SVG Fonts
+
+[SVG OpenType Fonts](https://wiki.mozilla.org/SVGOpenTypeFonts)
+
+```js
+user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Thumbnails
 

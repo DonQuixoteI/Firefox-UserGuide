@@ -55,6 +55,7 @@ user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "https://127.0.0.1");
+user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("identity.fxaccounts.remote.force_auth.uri", "");
 user_pref("identity.fxaccounts.remote.signin.uri", "");

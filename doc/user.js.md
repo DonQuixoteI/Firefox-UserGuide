@@ -67,6 +67,7 @@
 - [Session Store](#session-store)
 - [SVG Fonts](#svg-fonts)
 - [Thumbnails](#thumbnails)
+- [WebGL](#webgl)
 
 
 ![Android][Android Logo] - Firefox for Android,
@@ -1215,3 +1216,14 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+
+## WebGL
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)]
+[[Security.StackExchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)]
+
+```js
+user_pref("webgl.disabled", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]

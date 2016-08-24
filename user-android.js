@@ -76,4 +76,5 @@ user_pref("social.remote-install.enabled", false);
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.whitelist", "");
 user_pref("toolkit.telemetry.server", "");
+user_pref("webgl.disabled", true);
 user_pref("xpinstall.signatures.required", false);

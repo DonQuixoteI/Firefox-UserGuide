@@ -50,6 +50,7 @@
   - [Animated Image](#animated-image)
   - [Videos](#videos)
 - [Cache](#cache)
+- [Check Default Browser](#check-default-browser)
 - [DOM](#dom)
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
@@ -937,6 +938,16 @@ Default: n/a.
 [[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
 
 To use RAM disk for caching is good for systems with big enough RAM.
+
+## Check Default Browser
+
+```js
+user_pref("browser.shell.checkDefaultBrowser", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+`false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
 ## DOM
 

@@ -32,6 +32,8 @@ user_pref("dom.enable_resource_timing", false);
 user_pref("dom.enable_user_timing", false);
 user_pref("dom.event.clipboardevents.enabled", false);
 user_pref("dom.gamepad.enabled", false);
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("dom.idle-observers-api.enabled", false);
 user_pref("dom.keyboardevent.code.enabled", false);
 user_pref("dom.netinfo.enabled", false);

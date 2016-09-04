@@ -202,6 +202,24 @@ Default: "https://crash-stats.mozilla.com/report/index/" ![Windows][Windows Logo
 
 Set of libraries called `Breakpad` handles client-side crash reporting [[mozillaZine](http://kb.mozillazine.org/Breakpad.reportURL)].
 
+```js
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
+
+[[MDN](https://developer.mozilla.org/en-US/Firefox/Releases/43#Plugins)]: In preparation for future releases to switch over to multi-process content, NPAPI plugins can no longer be run in the same process as the page content. The preferences starting with `dom.ipc.plugins` are no longer used.
+
+```js
+user_pref("dom.ipc.plugins.reportCrashURL", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Do not send the URL of the website where a plugin crashed [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
+
 ### Health Report
 
 [[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#health-report)]: Firefox Health Report is designed to provide you with insights about your browser's stability and performance and with support tips should you experience issues, such as high crash rates or slow startup times. Mozilla collects and aggregates your data with that of other Firefox users and sends it back to your browser so you can see how your Firefox performance changes over time. This data includes, for example: device hardware, operating system, Firefox version, add-ons (count and type), timing of browser events, rendering, session restores, length of session, how old a profile is, count of crashes, and count of pages.

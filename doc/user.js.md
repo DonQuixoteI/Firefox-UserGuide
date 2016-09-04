@@ -11,6 +11,7 @@
 - [Reports to Mozilla](#reports-to-mozilla)
   - [Crash Report](#crash-report)
   - [Health Report](#health-report)
+  - [SSL Error Report](#ssl-error-report)
   - [Telemetry](#telemetry)
     - [Experiments](#experiments)
   - [User Rating Feedback](#user-rating-feedback)
@@ -261,6 +262,22 @@ user_pref("datareporting.healthreport.logging.consoleEnabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+### SSL Error Report
+
+[SSL Error Reporting - Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/browser/base/sslerrorreport/preferences.html)
+
+```js
+user_pref("security.ssl.errorReporting.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("security.ssl.errorReporting.url", "");
+```
+
+Default: "https://data.mozilla.com/submit/sslreports" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ### Telemetry
 

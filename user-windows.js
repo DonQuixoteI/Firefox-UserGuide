@@ -70,6 +70,7 @@ user_pref("experiments.supported", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
+user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "https://127.0.0.1");
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);

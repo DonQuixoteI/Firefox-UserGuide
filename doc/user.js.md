@@ -27,6 +27,7 @@
 - [Extensions](#extensions)
   - [Extension Blocklist](#extension-blocklist)
   - [Extension Signing](#extension-signing)
+  - [Get Add-ons Discovery Pane](#get-add-ons-discovery-pane)
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
@@ -583,6 +584,14 @@ Firefox periodically retrieves a blocklist from the Mozilla server. `false`: Do 
 user_pref("xpinstall.signatures.required", false);
 ```
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
+
+### Get Add-ons Discovery Pane
+
+```js
+user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
+```
+
+Default: "https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)]
 
 ## Firefox Account
 

@@ -33,6 +33,7 @@ user_pref("datareporting.healthreport.logging.consoleEnabled", false);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
+user_pref("devtools.webide.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("dom.disable_window_move_resize", true);
 user_pref("dom.disable_window_open_feature.close", true);

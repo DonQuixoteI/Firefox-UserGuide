@@ -52,6 +52,8 @@
   - [Videos](#videos)
 - [Cache](#cache)
 - [Check Default Browser](#check-default-browser)
+- [Developer Tools](#developer-tools)
+  - [WebIDE](#webide)
 - [DOM](#dom)
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
@@ -985,6 +987,27 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+## Developer Tools
+
+### WebIDE
+
+[WebIDE - MDN](https://developer.mozilla.org/en-US/docs/Tools/WebIDE)
+
+```js
+user_pref("devtools.webide.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[Tor Track](https://trac.torproject.org/projects/tor/ticket/16222)]
+
+```js
+user_pref("devtools.webide.autoinstallADBHelper", false);
+user_pref("devtools.webide.autoinstallFxdtAdapters", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo].
+[[Tor Track](https://trac.torproject.org/projects/tor/ticket/16222)]
 
 ## DOM
 

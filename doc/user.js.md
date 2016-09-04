@@ -72,6 +72,7 @@
 - [Session Store](#session-store)
 - [SVG Fonts](#svg-fonts)
 - [Thumbnails](#thumbnails)
+- [Video Buffering](#video-buffering)
 - [WebGL](#webgl)
 
 
@@ -1263,6 +1264,16 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+
+## Video Buffering
+
+[How to enforce full video buffering on YouTube - ghacks.net](http://www.ghacks.net/2016/08/31/how-to-enforce-full-video-buffering-on-youtube/)
+
+```js
+user_pref("media.mediasource.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## WebGL
 

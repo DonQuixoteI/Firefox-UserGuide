@@ -55,6 +55,7 @@ user_pref("media.gmp-manager.cert.requireBuiltIn", false);
 user_pref("media.gmp-manager.url", "http://localhost/media-dummy/gmpmanager");
 user_pref("media.gmp-manager.url.override", "http://localhost/dummy-gmp-manager.xml");
 user_pref("media.gmp-provider.enabled", false);
+user_pref("media.mediasource.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.video_stats.enabled", false);

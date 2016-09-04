@@ -101,6 +101,7 @@ user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
 user_pref("pdfjs.disabled", true);
 user_pref("reader.parse-on-load.enabled", false);
+user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("services.sync.engine.addons", false);
 user_pref("services.sync.engine.bookmarks", false);
 user_pref("services.sync.engine.history", false);

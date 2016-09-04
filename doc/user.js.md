@@ -64,6 +64,8 @@
 - [PDF Viewer](#pdf-viewer)
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
+- [Security](#security)
+  - [XPConnect](#xpconnect)
 - [Session Store](#session-store)
 - [SVG Fonts](#svg-fonts)
 - [Thumbnails](#thumbnails)
@@ -1184,6 +1186,19 @@ user_pref("browser.search.suggest.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
+
+## Security
+
+### XPConnect
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect)]:
+XPConnect is a bridge between [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [XPCOM](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM). With XPConnect, you can use XPCOM components from JavaScript code, and interact with JavaScript objects from within XPCOM components. XPConnect is part of Firefox and is actively used in [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL) applications.
+
+```js
+user_pref("security.xpconnect.plugin.unrestricted", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Session Store
 

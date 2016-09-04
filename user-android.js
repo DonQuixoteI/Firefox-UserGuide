@@ -68,6 +68,7 @@ user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
 user_pref("reader.parse-on-load.enabled", false);
+user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("signon.autofillForms", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("signon.rememberSignons", false);

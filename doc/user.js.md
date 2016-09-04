@@ -999,7 +999,7 @@ user_pref("devtools.webide.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo].
-[[Tor Track](https://trac.torproject.org/projects/tor/ticket/16222)]
+[[Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)]
 
 ```js
 user_pref("devtools.webide.autoinstallADBHelper", false);
@@ -1007,7 +1007,7 @@ user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 ```
 
 Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo].
-[[Tor Track](https://trac.torproject.org/projects/tor/ticket/16222)]
+[[Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)]
 
 ## DOM
 

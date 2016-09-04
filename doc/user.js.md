@@ -65,6 +65,7 @@
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
+  - [SSL](#ssl)
   - [XPConnect](#xpconnect)
 - [Session Store](#session-store)
 - [SVG Fonts](#svg-fonts)
@@ -1188,6 +1189,14 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Andro
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
 
 ## Security
+
+### SSL
+
+```js
+user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
 
 ### XPConnect
 

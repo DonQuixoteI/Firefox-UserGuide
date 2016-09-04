@@ -95,6 +95,7 @@ user_pref("reader.parse-on-load.enabled", false);
 user_pref("signon.autofillForms", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("signon.rememberSignons", false);
+user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("services.sync.engine.addons", false);
 user_pref("services.sync.engine.bookmarks", false);

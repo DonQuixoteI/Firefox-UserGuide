@@ -1279,6 +1279,16 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 ## Session Store
 
+[Firefox is eating your SSD - here is how to fix it](https://www.servethehome.com/firefox-is-eating-your-ssd-here-is-how-to-fix-it/)
+
+```js
+user_pref("browser.sessionstore.interval", 1800000);
+```
+
+Default: 15000 ![Windows][Windows Logo] ![Debian][Debian Logo], 10000 ![Android][Android Logo]
+
+The preference controls how often information about the current session is saved to the profile.
+
 ```js
 user_pref("browser.sessionstore.privacy_level", 2);
 ```

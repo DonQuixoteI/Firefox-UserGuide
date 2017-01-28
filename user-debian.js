@@ -26,6 +26,7 @@ user_pref("browser.sessionstore.interval", 1800000);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
+user_pref("browser.tabs.animate", false);
 user_pref("camera.control.face_detection.enabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");

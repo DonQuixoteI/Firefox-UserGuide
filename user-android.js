@@ -40,6 +40,7 @@ user_pref("dom.keyboardevent.code.enabled", false);
 user_pref("dom.netinfo.enabled", false);
 user_pref("dom.popup_maximum", 3);
 user_pref("dom.presentation.device.name", "dummy-device");
+user_pref("dom.storage.enabled", false);
 user_pref("dom.vibrator.enabled", false);
 user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.blocklist.enabled", false);

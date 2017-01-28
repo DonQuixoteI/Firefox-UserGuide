@@ -65,6 +65,7 @@ user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("dom.keyboardevent.code.enabled", false);
 user_pref("dom.popup_maximum", 3);
+user_pref("dom.storage.enabled", false);
 user_pref("dom.vibrator.enabled", false);
 user_pref("experiments.activeExperiment", false);
 user_pref("experiments.enabled", false);

@@ -60,6 +60,7 @@
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
   - [Popup Windows](#popup-windows)
+  - [Storage](#storage)
   - [Window](#window)
 - [Download Manager](#download-manager)
 - [Forms](#forms)
@@ -137,7 +138,7 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andr
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
 
@@ -1109,6 +1110,14 @@ user_pref("dom.popup_maximum", 3);
 ```
 
 Default: 20 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)]
+
+### Storage
+
+```js
+user_pref("dom.storage.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Wikipedia](https://en.wikipedia.org/wiki/Web_storage)]
 
 ### Window
 

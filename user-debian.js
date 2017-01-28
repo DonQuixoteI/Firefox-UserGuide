@@ -92,6 +92,7 @@ user_pref("media.video_stats.enabled", false);
 user_pref("network.allow-experiments", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.http.sendRefererHeader", 0);
 user_pref("network.http.sendSecureXSiteReferrer", false);
 user_pref("network.http.speculative-parallel-limit", 0);

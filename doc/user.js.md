@@ -134,6 +134,14 @@ user_pref("network.dns.disablePrefetch", true);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)] [[mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)]
 
 ```js
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+
+By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
+
+```js
 user_pref("network.predictor.enabled", false);
 ```
 

@@ -925,6 +925,14 @@ user_pref("browser.tabs.animate", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Tab_animation)]
 
+```js
+user_pref("browser.tabs.loadInBackground", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+`false`:  Open link in a new tab and automatically switch into that tab. [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
+
 ## Pocket
 
 [[mozilla support](https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox)] [[ghacks.net](http://www.ghacks.net/2015/05/14/how-to-disable-pocket-in-firefox/)]

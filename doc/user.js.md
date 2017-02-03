@@ -79,9 +79,9 @@
 - [WebGL](#webgl)
 
 
-![Android][Android Logo] - Firefox for Android,
-![Debian][Debian Logo] - Firefox for Debian Stable,
-![Windows][Windows Logo] - Firefox ESR for MS Windows
+![Windows][Windows Logo] - Firefox ESR (MS Windows),
+![Debian][Debian Logo] - Firefox (Debian Stable),
+![Android][Android Logo] - IceCat (Android)
 
 [Android Logo]: img/Android.png
 
@@ -113,7 +113,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 user_pref("network.cookie.cookieBehavior", 1);
 ```
 
-Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo], 1 ![Android][Android Logo]
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
@@ -124,7 +124,7 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 user_pref("network.prefetch-next", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
 
@@ -132,7 +132,7 @@ Link prefetching is a browser mechanism, which utilizes browser idle time to dow
 user_pref("network.dns.disablePrefetch", true);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)] [[mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)]
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)] [[mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)]
 
 ```js
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
@@ -154,7 +154,7 @@ The network predictor (formerly called '[seer](https://wiki.mozilla.org/Privacy/
 user_pref("network.http.speculative-parallel-limit", 0);
 ```
 
-Default: 6 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
+Default: 6 ![Windows][Windows Logo] ![Debian][Debian Logo], 0 ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 
 ### Proxy
 
@@ -188,7 +188,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -217,7 +217,7 @@ Set of libraries called `Breakpad` handles client-side crash reporting [[mozilla
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 `false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
@@ -258,7 +258,7 @@ Default: "https://fhr.data.mozilla.com/" ![Windows][Windows Logo] ![Debian][Debi
 user_pref("datareporting.healthreport.about.reportUrl", "");
 ```
 
-Default: "https://fhr.cdn.mozilla.net/%LOCALE%/v4/" ![Windows][Windows Logo] ![Debian][Debian Logo], "https://fhr.cdn.mozilla.net/%LOCALE%/mobile/" ![Android][Android Logo]
+Default: "https://fhr.cdn.mozilla.net/%LOCALE%/v4/" ![Windows][Windows Logo] ![Debian][Debian Logo], "127.0.0.1" ![Android][Android Logo]
 
 ```js
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
@@ -364,7 +364,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 user_pref("browser.selfsupport.url", "");
 ```
 
-Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], " " ![Android][Android Logo]
 
 ## Safe Browsing
 
@@ -374,14 +374,14 @@ The Safe Browsing feature in Firefox has been renamed to Phishing Protection, bu
 user_pref("browser.safebrowsing.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)]
 
 ```js
 user_pref("browser.safebrowsing.malware.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
 
 `false`: do not download malware blacklists and do not check user downloads [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work "How does built-in Phishing and Malware Protection")]
 
@@ -417,7 +417,7 @@ Firefox contains a "Send Video To Device" feature to send HTML5 video content to
 user_pref("browser.casting.enabled", false);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Updating
 
@@ -511,10 +511,15 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], "https://aus5.mozi
 
 ```js
 user_pref("media.navigator.enabled", false);
-user_pref("media.peerconnection.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
+
+```js
+user_pref("media.peerconnection.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
 WebRTC Leak Tests:
 
@@ -530,7 +535,7 @@ Gecko Media Plugins (GMPs) is a special purpose extension point for authorised 3
 user_pref("media.gmp-provider.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 `false` removes OpenH264 codec from the Plugins list.
 
@@ -549,16 +554,16 @@ Default: n/a (hidden pref) ![Windows][Windows Logo] ![Debian][Debian Logo] ![And
 The installed codec is stored in `<Profile>/gmp-gmpopenh264/` and can be deleted.
 
 ```js
-user_pref("media.gmp-manager.url", "http://localhost/media-dummy/gmpmanager");
+user_pref("media.gmp-manager.url", "http://127.0.0.1/");
 ```
 
-Default: "https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: "https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml" ![Windows][Windows Logo] ![Debian][Debian Logo], "http://127.0.0.1/" ![Android][Android Logo]
 
 ```js
-user_pref("media.gmp-manager.url.override", "http://localhost/dummy-gmp-manager.xml");
+user_pref("media.gmp-manager.url.override", "data:text/plain,");
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Android][Android Logo], "data:text/plain," ![Debian][Debian Logo]
+Default: n/a ![Windows][Windows Logo], "data:text/plain," ![Debian][Debian Logo] ![Android][Android Logo]
 
 ```js
 user_pref("media.gmp-manager.cert.checkAttributes", false);
@@ -600,7 +605,7 @@ Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Android][
 user_pref("extensions.blocklist.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 Firefox periodically retrieves a blocklist from the Mozilla server. `false`: Do not retrieve a blocklist and do not restrict extension installation [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
 
@@ -609,7 +614,7 @@ Firefox periodically retrieves a blocklist from the Mozilla server. `false`: Do 
 ```js
 user_pref("xpinstall.signatures.required", false);
 ```
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
 
 ### Get Add-ons Discovery Pane
 
@@ -689,13 +694,13 @@ Firefox Hello (code name Loop) is video and voice chat feature built into the br
 user_pref("social.directories", "");
 ```
 
-Default: "https://activations.cdn.mozilla.net" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: "https://activations.cdn.mozilla.net" ![Windows][Windows Logo] ![Debian][Debian Logo], " " ![Android][Android Logo]
 
 ```js
 user_pref("social.remote-install.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 ```js
 user_pref("social.shareDirectory", "");
@@ -713,7 +718,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][
 user_pref("social.toast-notifications.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 ```js
 user_pref("social.whitelist", "");
@@ -731,7 +736,7 @@ Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian
 user_pref("dom.battery.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo].
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
 [[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
 
 ### Camera
@@ -746,7 +751,7 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][
 user_pref("camera.control.face_detection.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 ### Device Name
 
@@ -796,7 +801,7 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Andro
 user_pref("device.sensors.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 ### Vibration API
 
@@ -814,7 +819,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 user_pref("geo.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 
 ```js
 user_pref("geo.wifi.uri", "https://127.0.0.1");
@@ -871,33 +876,39 @@ n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/P
 
 ```js
 user_pref("browser.snippets.enabled", false);
-user_pref("browser.snippets.firstrunHomepage.enabled", false);
 user_pref("browser.snippets.syncPromo.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
+`false` ![Android][Android Logo]
+
+```js
+user_pref("browser.snippets.firstrunHomepage.enabled", false);
 ```
 
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
 `true` ![Android][Android Logo]
 
 ```js
-user_pref("browser.snippets.updateUrl", "https://127.0.0.1");
+user_pref("browser.snippets.updateUrl", "http://127.0.0.1");
 ```
 
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
-"https://snippets.cdn.mozilla.net/json/%SNIPPETS_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/" ![Android][Android Logo]
+"http://127.0.0.1" ![Android][Android Logo]
 
 ```js
-user_pref("browser.snippets.statsUrl", "https://127.0.0.1");
+user_pref("browser.snippets.statsUrl", "http://127.0.0.1");
 ```
 
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
-"https://snippets-stats.mozilla.org/mobile" ![Android][Android Logo]
+"http://127.0.0.1" ![Android][Android Logo]
 
 ```js
-user_pref("browser.snippets.geoUrl", "https://127.0.0.1");
+user_pref("browser.snippets.geoUrl", "http://127.0.0.1");
 ```
 
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo],
-"https://location.services.mozilla.com/v1/country?key=..." ![Android][Android Logo]
+"http://127.0.0.1" ![Android][Android Logo]
 
 ## New Tab
 
@@ -1085,7 +1096,7 @@ Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![
 user_pref("dom.event.clipboardevents.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 `false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled)].
 
@@ -1295,7 +1306,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Andro
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
 
 ### XPConnect
 

@@ -98,6 +98,7 @@ user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.http.sendRefererHeader", 0);
 user_pref("network.http.sendSecureXSiteReferrer", false);
 user_pref("network.http.speculative-parallel-limit", 0);
+user_pref("network.manage-offline-status", false);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);

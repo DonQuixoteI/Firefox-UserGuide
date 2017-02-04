@@ -5,6 +5,7 @@
 - [Beacon](#beacon)
 - [Network](#network)
   - [Cookie](#cookie)
+  - [Offline Status](#offline-status)
   - [Prefetching](#prefetching)
   - [Proxy](#proxy)
   - [Send Referer](#send-referer)
@@ -117,6 +118,16 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo], 1 ![Android][Android
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+
+### Offline Status
+
+[Online and offline events | MDN](https://developer.mozilla.org/en-US/docs/Online_and_offline_events)
+
+```js
+user_pref("network.manage-offline-status", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor](https://trac.torproject.org/projects/tor/ticket/18945)]
 
 ### Prefetching
 

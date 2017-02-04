@@ -34,6 +34,7 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.tabs.animate", false);
+user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.tabs.loadInBackground", false);
 user_pref("camera.control.face_detection.enabled", false);
 user_pref("datareporting.healthreport.about.reportUrl", "");

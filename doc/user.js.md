@@ -9,7 +9,7 @@
   - [Prefetching](#prefetching)
   - [Proxy](#proxy)
   - [Send Referer](#send-referer)
-- [Reports to Mozilla](#reports-to-mozilla)
+- [Reports to Mozilla and Data Collecting Company](#reports-to-mozilla-and-data-collecting-company)
   - [Crash Report](#crash-report)
   - [Health Report](#health-report)
   - [SSL Error Report](#ssl-error-report)
@@ -193,7 +193,15 @@ user_pref("network.http.sendSecureXSiteReferrer", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
 
-## Reports to Mozilla
+## Reports to Mozilla and Data Collecting Company
+
+Firefox for Android, Firefox for iOS, Firefox Focus and Firefox Klar collect and send data to the German company adjust GmbH [[mozilla support](https://support.mozilla.org/t5/Protect-your-privacy/Send-anonymous-usage-data-from-Firefox-on-mobile-devices/ta-p/37739)].
+
+[Mozilla Klar saugt Daten ab - deutschlandfunk.de](http://www.deutschlandfunk.de/anti-tracking-software-mozilla-klar-saugt-daten-ab.684.de.html?dram:article_id=378712) (in German)
+
+[Firefox Focus: The ‘Privacy Browser’ with build in user tracking  | Born's Tech and Windows World](http://borncity.com/win/2017/02/12/firefox-focus-the-privacy-browser-with-build-in-user-tracking/)
+
+[Firefox Focus privacy scandal - gHacks Tech News](http://www.ghacks.net/2017/02/12/firefox-focus-privacy-scandal/)
 
 ```js
 user_pref("datareporting.policy.dataSubmissionEnabled", false);

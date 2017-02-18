@@ -1242,6 +1242,8 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 `false`: Always ask where to download. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
 
+## Fonts
+
 ### Document Fonts
 
 ```js

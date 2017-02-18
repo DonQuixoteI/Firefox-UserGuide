@@ -1408,13 +1408,15 @@ Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo]
 
 ## Video Buffering
 
-[How to enforce full video buffering on YouTube - ghacks.net](http://www.ghacks.net/2016/08/31/how-to-enforce-full-video-buffering-on-youtube/)
-
 ```js
-user_pref("media.mediasource.enabled", false);
+user_pref("media.mediasource.enabled", true);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+WARNING: Setting to `false` results in lost support of "Media Source Extensions" and "MSE & H.264" in [YouTube HTML5 Video Player](https://www.youtube.com/html5) and some YouTube videos can not be played anymore.
+
+[How to enforce full video buffering on YouTube - ghacks.net](http://www.ghacks.net/2016/08/31/how-to-enforce-full-video-buffering-on-youtube/)
 
 ## WebGL
 

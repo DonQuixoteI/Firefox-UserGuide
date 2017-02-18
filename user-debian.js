@@ -88,7 +88,7 @@ user_pref("media.gmp-manager.cert.requireBuiltIn", false);
 user_pref("media.gmp-manager.url", "http://127.0.0.1/");
 user_pref("media.gmp-manager.url.override", "data:text/plain,");
 user_pref("media.gmp-provider.enabled", false);
-user_pref("media.mediasource.enabled", false);
+user_pref("media.mediasource.enabled", true);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.video_stats.enabled", false);

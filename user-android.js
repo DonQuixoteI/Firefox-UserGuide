@@ -3,6 +3,7 @@ user_pref("app.update.url.android", "");
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.casting.enabled", false);
+user_pref("browser.display.use_document_fonts", 0);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.formfill.enable", false);

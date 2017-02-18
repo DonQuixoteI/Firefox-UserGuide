@@ -64,6 +64,9 @@
   - [Storage](#storage)
   - [Window](#window)
 - [Download Manager](#download-manager)
+- [Fonts](#fonts)
+  - [Document Fonts](#document-fonts)
+  - [SVG Fonts](#svg-fonts)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
 - [Passwords](#passwords)
@@ -74,7 +77,6 @@
   - [SSL](#ssl)
   - [XPConnect](#xpconnect)
 - [Session Store](#session-store)
-- [SVG Fonts](#svg-fonts)
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
 - [WebGL](#webgl)
@@ -1240,6 +1242,32 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 `false`: Always ask where to download. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
 
+### Document Fonts
+
+```js
+user_pref("browser.display.use_document_fonts", 0);
+```
+
+Default: `1` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+[[ghacks](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)]: Disallowing document fonts drastically reduces font enumeration which is a high entropy fingerprinting vector. WARNING: Disabling fonts can uglify the web a fair bit.
+
+[Font Fingerprinting - Fonts Detection - BrowserLeaks.com](https://browserleaks.com/fonts)
+
+[Font fingerprinting · Issue #120 · pyllyukko/user.js · GitHub](https://github.com/pyllyukko/user.js/issues/120)
+
+### SVG Fonts
+
+[SVG OpenType Fonts](https://wiki.mozilla.org/SVGOpenTypeFonts)
+
+```js
+user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
 ## Forms
 
 ```js
@@ -1365,16 +1393,6 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 `0`: store extra session data for any site,
 `1`: store extra session data for unencrypted (non-HTTPS) sites only,
 `2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
-
-## SVG Fonts
-
-[SVG OpenType Fonts](https://wiki.mozilla.org/SVGOpenTypeFonts)
-
-```js
-user_pref("gfx.font_rendering.opentype_svg.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Thumbnails
 

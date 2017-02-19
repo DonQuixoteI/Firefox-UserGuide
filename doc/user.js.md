@@ -54,6 +54,7 @@
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
+- [Bookmarks](#bookmarks)
 - [Cache](#cache)
 - [Check Default Browser](#check-default-browser)
 - [Developer Tools](#developer-tools)
@@ -1087,6 +1088,14 @@ user_pref("media.autoplay.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
+
+## Bookmarks
+
+```js
+user_pref("browser.bookmarks.max_backups", 2);
+```
+
+Default: `15` ![Windows][Windows Logo] ![Debian][Debian Logo], `5` ![Android][Android Logo]. [[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
 
 ## Cache
 

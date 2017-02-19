@@ -5,6 +5,7 @@
 - [Beacon](#beacon)
 - [Network](#network)
   - [Cookie](#cookie)
+  - [HTTP Alternative Services](#http-alternative-services)
   - [Offline Status](#offline-status)
   - [Prefetching](#prefetching)
   - [Proxy](#proxy)
@@ -120,6 +121,19 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo], 1 ![Android][Android
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+
+### HTTP Alternative Services
+
+[RFC 7838 - HTTP Alternative Services](https://tools.ietf.org/html/rfc7838)
+
+```js
+user_pref("network.http.altsvc.enabled", false);
+user_pref("network.http.altsvc.oe", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+[#16673: Isolate/Disable HTTP Alternative-Services – Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
 
 ### Offline Status
 

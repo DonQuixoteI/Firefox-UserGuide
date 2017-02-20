@@ -27,6 +27,8 @@ user_pref("browser.search.update", false);
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.sessionstore.interval", 1800000);
 user_pref("browser.sessionstore.privacy_level", 2);
+user_pref("browser.slowStartup.maxSamples", 0);
+user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.tabs.animate", false);

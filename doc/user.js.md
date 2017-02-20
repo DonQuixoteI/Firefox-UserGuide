@@ -82,6 +82,7 @@
 - [Session Store](#session-store)
 - [Startup](#startup)
   - [Check Default Browser](#check-default-browser)
+  - [Slow Startup](#slow-startup)
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
 - [WebGL](#webgl)
@@ -1440,6 +1441,24 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+### Slow Startup
+
+```js
+user_pref("browser.slowStartup.notificationDisabled", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo].
+
+`false` disables "Slow startup" warnings [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
+
+```js
+user_pref("browser.slowStartup.maxSamples", 0);
+```
+
+Default: `5` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+Firefox determines whether or not the browser is slow to start up by storing information about browser startup times to disk. `0` prevents this information from being stored [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
 
 ## Thumbnails
 

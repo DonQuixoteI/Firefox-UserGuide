@@ -71,6 +71,7 @@
   - [SVG Fonts](#svg-fonts)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
+  - [Keyword Service](#keyword-service)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
 - [Reader Mode](#reader-mode)
@@ -1311,13 +1312,17 @@ Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 ## Location Bar
 
+### Keyword Service
+
+[[mozillaZine](http://kb.mozillazine.org/Keyword.enabled)]: When entering information in the Location Bar, Mozilla attempts to convert the information into a usable URI. For example, "mozilla.org" is automatically converted to "http://mozilla.org/". When Mozilla is unable to discern what URL the user wanted, the information that was entered may be submitted to an Internet Keywords service. This preference determines whether or not to use Internet Keywords.
+
 ```js
 user_pref("keyword.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-`false`: Display an error message indicating the entered information is not a valid URL. `true`:  If Firefox cannot determine a URL from information entered in the Location Bar, append the information to the URL in [keyword.URL](http://kb.mozillazine.org/Keyword.URL) and redirect the user there. [[mozillaZine](http://kb.mozillazine.org/Keyword.enabled)]
+`false`: Do not use Internet Keywords and display an error message indicating the entered information is not a valid URL.
 
 ## Passwords
 

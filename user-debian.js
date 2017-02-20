@@ -10,6 +10,7 @@ user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.fullscreen.animate", false);
+user_pref("browser.newtab.preload", false);
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.newtabpage.enabled", false);

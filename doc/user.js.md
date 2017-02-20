@@ -987,6 +987,12 @@ user_pref("browser.newtabpage.directory.ping", "");
 Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
 
 ```js
+user_pref("browser.newtab.preload", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+```js
 user_pref("browser.tabs.animate", false);
 ```
 

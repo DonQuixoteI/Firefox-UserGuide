@@ -10,6 +10,7 @@ user_pref("browser.display.use_document_fonts", 0);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.eme.ui.enabled", false);
+user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.newtabpage.directory.ping", "");

@@ -71,6 +71,7 @@
   - [SVG Fonts](#svg-fonts)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
+  - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
@@ -1311,6 +1312,19 @@ user_pref("browser.formfill.expire_days", 0);
 Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Location Bar
+
+### Domain Guessing
+
+Domain Guessing intercepts the DNS "hostname not found" error, and resends the
+request to a guessed hostname that might use the correct domain [[Domain Guessing - Mozilla Archive](http://www-archive.mozilla.org/docs/end-user/domain-guessing.html)].
+
+```js
+user_pref("browser.fixup.alternate.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+`false`: Disable location bar domain guessing.
 
 ### Keyword Service
 

@@ -69,6 +69,7 @@
   - [Document Fonts](#document-fonts)
   - [SVG Fonts](#svg-fonts)
 - [Forms](#forms)
+- [Fullscreen Animation](#fullscreen-animation)
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
@@ -1302,6 +1303,14 @@ user_pref("browser.formfill.expire_days", 0);
 ```
 
 Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+## Fullscreen Animation
+
+```js
+user_pref("browser.fullscreen.animate", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 ## Location Bar
 

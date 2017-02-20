@@ -56,7 +56,6 @@
   - [Videos](#videos)
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
-- [Check Default Browser](#check-default-browser)
 - [Developer Tools](#developer-tools)
   - [WebIDE](#webide)
 - [DOM](#dom)
@@ -81,6 +80,8 @@
   - [SSL](#ssl)
   - [XPConnect](#xpconnect)
 - [Session Store](#session-store)
+- [Startup](#startup)
+  - [Check Default Browser](#check-default-browser)
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
 - [WebGL](#webgl)
@@ -1109,16 +1110,6 @@ Default: n/a.
 
 To use RAM disk for caching is good for systems with big enough RAM.
 
-## Check Default Browser
-
-```js
-user_pref("browser.shell.checkDefaultBrowser", false);
-```
-
-Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
-
-`false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
-
 ## Developer Tools
 
 ### WebIDE
@@ -1437,6 +1428,18 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Lo
 `0`: store extra session data for any site,
 `1`: store extra session data for unencrypted (non-HTTPS) sites only,
 `2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
+
+## Startup
+
+### Check Default Browser
+
+```js
+user_pref("browser.shell.checkDefaultBrowser", false);
+```
+
+Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+`false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
 ## Thumbnails
 

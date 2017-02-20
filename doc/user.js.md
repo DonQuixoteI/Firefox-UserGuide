@@ -83,6 +83,7 @@
 - [Session Store](#session-store)
 - [Startup](#startup)
   - [Check Default Browser](#check-default-browser)
+  - [Rights](#rights)
   - [Slow Startup](#slow-startup)
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
@@ -1456,6 +1457,16 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
+### Rights
+
+[Bug 462254 - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=462254)
+
+```js
+user_pref("browser.rights.3.shown", true);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
 
 ### Slow Startup
 

@@ -20,6 +20,7 @@ user_pref("browser.pocket.api", "");
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.pocket.oAuthConsumerKey", "");
 user_pref("browser.pocket.site", "");
+user_pref("browser.rights.3.shown", true);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);

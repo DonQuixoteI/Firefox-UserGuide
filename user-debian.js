@@ -27,6 +27,7 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
+user_pref("browser.selfsupport.enabled", false);
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.sessionstore.interval", 1800000);
 user_pref("browser.sessionstore.privacy_level", 2);

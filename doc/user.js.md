@@ -406,13 +406,17 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 
 ### User Rating Feedback
 
-[Firefox Heartbeat](https://wiki.mozilla.org/Advocacy/heartbeat)
+```js
+user_pref("browser.selfsupport.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #18738](https://trac.torproject.org/projects/tor/ticket/18738)]
 
 ```js
 user_pref("browser.selfsupport.url", "");
 ```
 
-Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], " " ![Android][Android Logo]
+Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], " " ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
 
 ## Safe Browsing
 

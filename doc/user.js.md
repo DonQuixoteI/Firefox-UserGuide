@@ -44,6 +44,7 @@
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
 - [Geolocation](#geolocation)
+  - [Geolocation-Based Search](#geolocation-based-search)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
@@ -882,6 +883,24 @@ Default: "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KE
 The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
 
 [Geolocation Test](http://html5demos.com/geo)
+
+### Geolocation-Based Search
+
+[[mozilla-central](https://dxr.mozilla.org/mozilla-central/source/layout/tools/reftest/reftest-preferences.js#58)]: Tell the search service we are running in the US:
+
+```js
+user_pref("browser.search.countryCode", "US");
+user_pref("browser.search.isUS", true);
+user_pref("browser.search.region", "US");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
+
+```js
+user_pref("browser.search.geoSpecificDefaults.url", "");
+```
+
+Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ```js
 user_pref("browser.search.geoip.url", "");

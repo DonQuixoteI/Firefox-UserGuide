@@ -897,6 +897,12 @@ user_pref("browser.search.region", "US");
 Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
 
 ```js
+user_pref("browser.search.geoSpecificDefaults", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
+
+```js
 user_pref("browser.search.geoSpecificDefaults.url", "");
 ```
 
@@ -907,12 +913,6 @@ user_pref("browser.search.geoip.url", "");
 ```
 
 Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
-
-```js
-user_pref("browser.search.geoSpecificDefaults", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
 
 ## Home Page
 

@@ -16,6 +16,7 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
+user_pref("browser.search.geoip.timeout", 1);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.isUS", true);
 user_pref("browser.search.region", "US");

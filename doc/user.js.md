@@ -909,6 +909,12 @@ user_pref("browser.search.geoSpecificDefaults.url", "");
 Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ```js
+user_pref("browser.search.geoip.timeout", 1);
+```
+
+Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [Raven Wiki](https://wiki.kairaven.de/open/app/firefox)
+
+```js
 user_pref("browser.search.geoip.url", "");
 ```
 

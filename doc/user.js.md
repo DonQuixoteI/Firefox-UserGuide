@@ -912,7 +912,7 @@ Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCAL
 user_pref("browser.search.geoip.timeout", 1);
 ```
 
-Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [Raven Wiki](https://wiki.kairaven.de/open/app/firefox)
+Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
 
 ```js
 user_pref("browser.search.geoip.url", "");

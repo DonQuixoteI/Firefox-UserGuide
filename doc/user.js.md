@@ -1185,6 +1185,12 @@ Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo], n/a ![
 ### Clipboard
 
 ```js
+user_pref("dom.allow_cut_copy", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[reddit](https://www.reddit.com/r/firefox/comments/5upj7a/disable_js_access_to_clipboard/)] [[Bug 1170911](https://bugzilla.mozilla.org/show_bug.cgi?id=1170911)]
+
+```js
 user_pref("dom.event.clipboardevents.enabled", false);
 ```
 

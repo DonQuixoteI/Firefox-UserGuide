@@ -35,6 +35,7 @@ user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.camera.enabled", false);
 user_pref("device.sensors.enabled", false);
+user_pref("device.storage.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("dom.disable_window_open_feature.location", true);
 user_pref("dom.enable_performance", false);

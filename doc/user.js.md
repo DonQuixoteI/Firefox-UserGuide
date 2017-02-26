@@ -36,7 +36,6 @@
 - [Hardware](#hardware)
   - [Camera](#camera)
   - [Device Name](#device-name)
-  - [Gamepad API](#gamepad-api)
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
@@ -54,6 +53,7 @@
   - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
   - [Device Storage API](#device-storage-api)
+  - [Gamepad API](#gamepad-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -793,16 +793,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Gamepad API
-
-[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)] [[W3C](https://www.w3.org/TR/gamepad/)]
-
-```js
-user_pref("dom.gamepad.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
 ### Keyboard API
 
 [[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)]
@@ -1125,6 +1115,16 @@ user_pref("device.storage.enabled", false);
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
 
 [Device Storage API - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Device_Storage_API)
+
+### Gamepad API
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)] [[W3C](https://www.w3.org/TR/gamepad/)]
+
+```js
+user_pref("dom.gamepad.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Auto Play
 

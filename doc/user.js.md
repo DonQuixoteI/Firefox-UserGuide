@@ -36,7 +36,6 @@
 - [Hardware](#hardware)
   - [Camera](#camera)
   - [Device Name](#device-name)
-  - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
 - [Geolocation](#geolocation)
   - [Geolocation-Based Search](#geolocation-based-search)
@@ -54,6 +53,7 @@
   - [Gamepad API](#gamepad-api)
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
+  - [Sensor API](#sensor-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -793,16 +793,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Sensor API
-
-[[Sensor API - mozilla wiki](https://wiki.mozilla.org/Sensor_API)]
-
-```js
-user_pref("device.sensors.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
-
 ### Vibration API
 
 [[Vibration API - W3C](https://w3c.github.io/vibration/)]
@@ -1126,6 +1116,17 @@ user_pref("dom.netinfo.enabled", false);
 ```
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
+
+### Sensor API
+
+[[Sensor API - mozilla wiki](https://wiki.mozilla.org/Sensor_API)]
+
+```js
+user_pref("device.sensors.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
+[[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
 
 ## Auto Play
 

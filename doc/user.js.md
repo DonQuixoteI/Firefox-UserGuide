@@ -33,8 +33,6 @@
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
-- [Hardware](#hardware)
-  - [Device Name](#device-name)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
@@ -64,6 +62,7 @@
 - [DOM](#dom)
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
+  - [Device Name](#device-name)
   - [Popup Windows](#popup-windows)
   - [Storage](#storage)
   - [Window](#window)
@@ -767,18 +766,6 @@ user_pref("social.whitelist", "");
 
 Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
-## Hardware
-
-### Device Name
-
-```js
-user_pref("dom.presentation.device.name", "dummy-device");
-```
-
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-_Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
-
 ## Home Page
 
 ```js
@@ -1223,6 +1210,16 @@ user_pref("dom.event.contextmenu.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 `false`: Webpages will not be able to affect the context menu event [[DOM Entries - mozillaZine]].
+
+### Device Name
+
+```js
+user_pref("dom.presentation.device.name", "dummy-device");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+_Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
 ### Popup Windows
 

@@ -2,7 +2,6 @@
 
 ## Index
 
-- [Beacon](#beacon)
 - [Network](#network)
   - [Cookie](#cookie)
   - [HTTP Alternative Services](#http-alternative-services)
@@ -53,6 +52,8 @@
 - [Statistics](#statistics)
   - [Timing](#timing)
   - [Video Stats](#video-stats)
+- [WebAPI](#webapi)
+  - [Beacon API](#beacon-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -101,20 +102,6 @@
 [Debian Logo]: img/Debian.png
 
 [Windows Logo]: img/Windows.png
-
-## Beacon
-
-[[Wikipedia](https://en.wikipedia.org/wiki/Web_beacon)]: A web beacon is an object embedded in a web page or email, which unobtrusively (usually invisibly) allows checking that a user has accessed the content. Common uses are email tracking and page tagging for web analytics.
-
-[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)]: Example use cases of the Beacon API are logging activity and sending analytics data to the server.
-
-```js
-user_pref("beacon.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-[Test (Beacon) Performance API](http://mdn.github.io/web-performance/perf-api-support.html)
 
 ## Network
 
@@ -1120,6 +1107,24 @@ user_pref("media.video_stats.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+## Web API
+
+WebAPI allows Web apps and content to access device hardware (such as battery status or the device vibration hardware), as well as access to data stored on the device (such as the calendar or contacts list) [[MDN](https://developer.mozilla.org/en-US/docs/WebAPI)].
+
+### Beacon API
+
+[[Wikipedia](https://en.wikipedia.org/wiki/Web_beacon)]: A web beacon is an object embedded in a web page or email, which unobtrusively (usually invisibly) allows checking that a user has accessed the content. Common uses are email tracking and page tagging for web analytics.
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)]: Example use cases of the Beacon API are logging activity and sending analytics data to the server.
+
+```js
+user_pref("beacon.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+[Test (Beacon) Performance API](http://mdn.github.io/web-performance/perf-api-support.html)
 
 ## Auto Play
 

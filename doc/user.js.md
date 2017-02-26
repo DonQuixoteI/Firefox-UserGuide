@@ -1060,6 +1060,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 ## Web API
 
 WebAPI allows Web apps and content to access device hardware (such as battery status or the device vibration hardware), as well as access to data stored on the device (such as the calendar or contacts list) [[MDN](https://developer.mozilla.org/en-US/docs/WebAPI)].
+[[WebAPI - MozillaWiki](https://wiki.mozilla.org/WebAPI)]
 
 ### Battery API
 

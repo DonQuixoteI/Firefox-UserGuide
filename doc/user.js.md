@@ -36,7 +36,6 @@
 - [Hardware](#hardware)
   - [Camera](#camera)
   - [Device Name](#device-name)
-  - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
@@ -54,6 +53,7 @@
   - [Beacon API](#beacon-api)
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
+  - [Keyboard API](#keyboard-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -793,16 +793,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Keyboard API
-
-[[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)]
-
-```js
-user_pref("dom.keyboardevent.code.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)]
-
 ### Network Information API
 
 [[Network Information API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)]
@@ -1125,6 +1115,16 @@ user_pref("dom.gamepad.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Keyboard API
+
+[[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)]
+
+```js
+user_pref("dom.keyboardevent.code.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)]
 
 ## Auto Play
 

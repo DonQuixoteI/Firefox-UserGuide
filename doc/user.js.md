@@ -35,8 +35,6 @@
 - [Mozilla Social](#mozilla-social)
 - [Hardware](#hardware)
   - [Device Name](#device-name)
-- [Geolocation](#geolocation)
-  - [Geolocation-Based Search](#geolocation-based-search)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
@@ -50,6 +48,8 @@
   - [Camera API](#camera-api)
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
+  - [Geolocation API](#geolocation-api)
+    - [Geolocation-Based Search](#geolocation-based-search)
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
@@ -779,60 +779,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-## Geolocation
-
-```js
-user_pref("geo.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
-
-```js
-user_pref("geo.wifi.uri", "https://127.0.0.1");
-```
-
-Default: "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
-
-The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
-
-[Geolocation Test](http://html5demos.com/geo)
-
-### Geolocation-Based Search
-
-[[mozilla-central](https://dxr.mozilla.org/mozilla-central/source/layout/tools/reftest/reftest-preferences.js#58)]: Tell the search service we are running in the US:
-
-```js
-user_pref("browser.search.countryCode", "US");
-user_pref("browser.search.isUS", true);
-user_pref("browser.search.region", "US");
-```
-
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
-
-```js
-user_pref("browser.search.geoSpecificDefaults", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
-
-```js
-user_pref("browser.search.geoSpecificDefaults.url", "");
-```
-
-Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
-```js
-user_pref("browser.search.geoip.timeout", 1);
-```
-
-Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
-
-```js
-user_pref("browser.search.geoip.url", "");
-```
-
-Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
-
 ## Home Page
 
 ```js
@@ -1088,6 +1034,62 @@ user_pref("dom.gamepad.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+### Geolocation API
+
+[Geolocation - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation)
+
+```js
+user_pref("geo.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
+
+```js
+user_pref("geo.wifi.uri", "https://127.0.0.1");
+```
+
+Default: "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo], n/a ![Android][Android Logo]
+
+The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
+
+[Geolocation Test](http://html5demos.com/geo)
+
+#### Geolocation-Based Search
+
+[[mozilla-central](https://dxr.mozilla.org/mozilla-central/source/layout/tools/reftest/reftest-preferences.js#58)]: Tell the search service we are running in the US:
+
+```js
+user_pref("browser.search.countryCode", "US");
+user_pref("browser.search.isUS", true);
+user_pref("browser.search.region", "US");
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
+
+```js
+user_pref("browser.search.geoSpecificDefaults", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
+
+```js
+user_pref("browser.search.geoSpecificDefaults.url", "");
+```
+
+Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("browser.search.geoip.timeout", 1);
+```
+
+Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
+
+```js
+user_pref("browser.search.geoip.url", "");
+```
+
+Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
 
 ### Keyboard API
 

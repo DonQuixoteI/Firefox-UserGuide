@@ -34,7 +34,6 @@
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
 - [Hardware](#hardware)
-  - [Battery API](#battery-api)
   - [Camera](#camera)
   - [Device Name](#device-name)
   - [Gamepad API](#gamepad-api)
@@ -52,6 +51,7 @@
   - [Timing](#timing)
   - [Video Stats](#video-stats)
 - [WebAPI](#webapi)
+  - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
   - [Device Storage API](#device-storage-api)
 - [Auto Play](#auto-play)
@@ -769,17 +769,6 @@ Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian
 
 ## Hardware
 
-### Battery API
-
-[[BatteryManager - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BatteryManager)]
-
-```js
-user_pref("dom.battery.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
-[[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
-
 ### Camera
 
 ```js
@@ -1101,6 +1090,17 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Andro
 ## Web API
 
 WebAPI allows Web apps and content to access device hardware (such as battery status or the device vibration hardware), as well as access to data stored on the device (such as the calendar or contacts list) [[MDN](https://developer.mozilla.org/en-US/docs/WebAPI)].
+
+### Battery API
+
+[[BatteryManager - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BatteryManager)]
+
+```js
+user_pref("dom.battery.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
+[[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
 
 ### Beacon API
 

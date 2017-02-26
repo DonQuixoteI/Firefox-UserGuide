@@ -34,7 +34,6 @@
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
 - [Hardware](#hardware)
-  - [Camera](#camera)
   - [Device Name](#device-name)
 - [Geolocation](#geolocation)
   - [Geolocation-Based Search](#geolocation-based-search)
@@ -48,6 +47,7 @@
 - [WebAPI](#webapi)
   - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
+  - [Camera API](#camera-api)
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
   - [Keyboard API](#keyboard-api)
@@ -769,20 +769,6 @@ Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian
 
 ## Hardware
 
-### Camera
-
-```js
-user_pref("device.camera.enabled", false);
-```
-
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
-
-```js
-user_pref("camera.control.face_detection.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
-
 ### Device Name
 
 ```js
@@ -1066,6 +1052,22 @@ user_pref("beacon.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 [Test (Beacon) Performance API](http://mdn.github.io/web-performance/perf-api-support.html)
+
+### Camera API
+
+[Camera API - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Camera_API)
+
+```js
+user_pref("device.camera.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]
+
+```js
+user_pref("camera.control.face_detection.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 ### Device Storage API
 

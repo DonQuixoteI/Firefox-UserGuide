@@ -36,7 +36,6 @@
 - [Hardware](#hardware)
   - [Camera](#camera)
   - [Device Name](#device-name)
-  - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
 - [Geolocation](#geolocation)
@@ -54,6 +53,7 @@
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
   - [Keyboard API](#keyboard-api)
+  - [Network Information API](#network-information-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -793,16 +793,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Network Information API
-
-[[Network Information API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)]
-
-```js
-user_pref("dom.netinfo.enabled", false);
-```
-
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
-
 ### Sensor API
 
 [[Sensor API - mozilla wiki](https://wiki.mozilla.org/Sensor_API)]
@@ -1125,6 +1115,16 @@ user_pref("dom.keyboardevent.code.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)]
+
+### Network Information API
+
+[[Network Information API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)]
+
+```js
+user_pref("dom.netinfo.enabled", false);
+```
+
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
 
 ## Auto Play
 

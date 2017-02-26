@@ -36,7 +36,6 @@
 - [Hardware](#hardware)
   - [Camera](#camera)
   - [Device Name](#device-name)
-  - [Vibration API](#vibration-api)
 - [Geolocation](#geolocation)
   - [Geolocation-Based Search](#geolocation-based-search)
 - [Home Page](#home-page)
@@ -54,6 +53,7 @@
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
+  - [Vibration API](#vibration-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -793,16 +793,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Vibration API
-
-[[Vibration API - W3C](https://w3c.github.io/vibration/)]
-
-```js
-user_pref("dom.vibrator.enabled", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
-
 ## Geolocation
 
 ```js
@@ -1127,6 +1117,17 @@ user_pref("device.sensors.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
 [[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
+
+### Vibration API
+
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)]
+[[W3C](https://w3c.github.io/vibration/)]
+
+```js
+user_pref("dom.vibrator.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ## Auto Play
 

@@ -51,6 +51,7 @@
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Sensor API](#sensor-api)
+  - [Notification API](#notification-api)
   - [Vibration API](#vibration-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
@@ -1097,6 +1098,17 @@ user_pref("dom.netinfo.enabled", false);
 ```
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
+
+### Notification API
+
+[[Notifications API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)]
+[[Notification - MDN](https://developer.mozilla.org/en-US/docs/Web/API/notification)]
+
+```js
+user_pref("dom.webnotifications.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Pull Request #111 · pyllyukko/user.js](https://github.com/pyllyukko/user.js/pull/111)]
 
 ### Sensor API
 

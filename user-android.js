@@ -56,6 +56,7 @@ user_pref("dom.vibrator.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.blocklist.enabled", false);
+user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/blocklist/3/%APP_ID%/%APP_VERSION%/");
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.update.enabled", false);
 user_pref("geo.enabled", false);

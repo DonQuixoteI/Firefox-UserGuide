@@ -642,6 +642,8 @@ Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Android][
 
 ### Extension Blocklist
 
+Blocklisting is the ability to disable errant add-ons, plugins, and other third-party software [[MozillaWiki](https://wiki.mozilla.org/Blocklisting)].
+
 ```js
 user_pref("extensions.blocklist.enabled", false);
 ```
@@ -649,6 +651,11 @@ user_pref("extensions.blocklist.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
 
 Firefox periodically retrieves a blocklist from the Mozilla server. `false`: Do not retrieve a blocklist and do not restrict extension installation [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
+
+```js
+user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/blocklist/3/%APP_ID%/%APP_VERSION%/");
+```
+Default: "https://blocklist.addons.mozilla.org/blocklist/3/%APP_ID%/%APP_VERSION%/%PRODUCT%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%PING_COUNT%/%TOTAL_PING_COUNT%/%DAYS_SINCE_LAST_PING%/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]. [[Tor Bug #16931](https://trac.torproject.org/projects/tor/ticket/16931)]
 
 ### Extension Signing
 

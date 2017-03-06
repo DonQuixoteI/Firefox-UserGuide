@@ -1041,6 +1041,18 @@ user_pref("geo.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 
 ```js
+user_pref("geo.wifi.logging.enabled", false);
+```
+
+Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
+user_pref("geo.wifi.xhr.timeout", 1);
+```
+
+Default: `60000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
+
+```js
 user_pref("geo.wifi.uri", "https://127.0.0.1");
 ```
 

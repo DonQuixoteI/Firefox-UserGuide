@@ -44,6 +44,7 @@
   - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
   - [Camera API](#camera-api)
+  - [CSS Font Loading API](#css-font-loading-api)
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
   - [Geolocation API](#geolocation-api)
@@ -1009,6 +1010,16 @@ user_pref("camera.control.face_detection.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo]
+
+### CSS Font Loading API
+
+[CSS Font Loading API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSFontLoading_API)
+
+```js
+user_pref("layout.css.font-loading-api.enabled", false);
+```
+
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Android][Android Logo]
 
 ### Device Storage API
 

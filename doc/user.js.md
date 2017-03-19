@@ -1138,7 +1138,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 user_pref("dom.netinfo.enabled", false);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
+Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
 
 ### Notification API
 
@@ -1354,7 +1354,7 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Android][Android Logo].
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Android][Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
 
 ```js

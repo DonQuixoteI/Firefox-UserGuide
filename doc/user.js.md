@@ -97,13 +97,16 @@
 ![Windows][Windows Logo] - Firefox 45.x (MS Windows),
 ![Debian][Debian Logo] - Firefox 45.x (Debian Stable),
 ![Android][Android Logo] - IceCat 45.x (Android),
-![Tor Browser][Tor Browser Logo] - Tor Browser 45.x
+![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
+![Basilisk][Basilisk Logo] - Basilisk (Firefox 55.x)
 
 [Android Logo]: img/Android.png
 
 [Debian Logo]: img/Debian.png
 
 [Tor Browser Logo]: img/TorBrowser.png
+
+[Basilisk Logo]: img/Basilisk.png
 
 [Windows Logo]: img/Windows.png
 

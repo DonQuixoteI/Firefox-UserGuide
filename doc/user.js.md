@@ -1285,10 +1285,16 @@ Default: 20 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor B
 ### Storage
 
 ```js
-user_pref("dom.storage.enabled", false);
+user_pref("dom.storage.enabled", true);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]. [[Wikipedia](https://en.wikipedia.org/wiki/Web_storage)]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo].
+
+`false` can break the sites that are using the Web Storage.
+
+[Web Storage - Wikipedia](https://en.wikipedia.org/wiki/Web_storage)
+
+[Web Storage API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
 ### Window
 

@@ -82,7 +82,7 @@
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
-  - [Punycode Phishing](punycode-phishing)
+  - [Punycode Phishing](#punycode-phishing)
   - [SSL](#ssl)
   - [XPConnect](#xpconnect)
 - [Session Store](#session-store)

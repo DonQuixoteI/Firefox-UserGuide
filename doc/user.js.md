@@ -1416,6 +1416,12 @@ user_pref("browser.formfill.expire_days", 0);
 
 Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
+```js
+user_pref("browser.formfill.saveHttpsForms", false);
+```
+
+Default: `true` ![Basilisk][Basilisk Logo]. [[Bug 1361220 - Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1361220)]
+
 ## Fullscreen Animation
 
 ```js

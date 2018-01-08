@@ -1514,6 +1514,8 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 user_pref("network.IDN_show_punycode", true);
 ```
 
+Default: `false` ![Basilisk][Basilisk Logo]
+
 [IDN homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
 
 [IDN Display Algorithm - mozilla wiki](https://wiki.mozilla.org/IDN_Display_Algorithm)

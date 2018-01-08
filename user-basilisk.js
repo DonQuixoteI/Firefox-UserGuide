@@ -67,6 +67,8 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
+user_pref("full-screen-api.warning.delay", 0);
+user_pref("full-screen-api.warning.timeout", 0);
 user_pref("geo.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");

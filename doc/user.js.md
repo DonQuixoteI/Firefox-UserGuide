@@ -1430,6 +1430,13 @@ user_pref("browser.fullscreen.animate", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
 
+```js
+user_pref("full-screen-api.warning.delay", 0);
+user_pref("full-screen-api.warning.timeout", 0);
+```
+
+Default: `1` ![Basilisk][Basilisk Logo]. [Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
+
 ## Location Bar
 
 ### Domain Guessing

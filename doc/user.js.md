@@ -1508,6 +1508,18 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 
 ## Security
 
+### Internationalized Domain Name (IDN) and Punycode Phishing
+
+```js
+user_pref("network.IDN_show_punycode", true);
+```
+
+[IDN homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
+
+[IDN Display Algorithm - mozilla wiki](https://wiki.mozilla.org/IDN_Display_Algorithm)
+
+[Punycode Phishing Attacks - thehackernews.com](https://thehackernews.com/2017/04/unicode-Punycode-phishing-attack.html)
+
 ### SSL
 
 ```js

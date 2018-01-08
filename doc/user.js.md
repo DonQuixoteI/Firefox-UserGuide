@@ -82,6 +82,7 @@
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
+  - [Punycode Phishing](punycode-phishing)
   - [SSL](#ssl)
   - [XPConnect](#xpconnect)
 - [Session Store](#session-store)
@@ -1508,7 +1509,7 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 
 ## Security
 
-### Internationalized Domain Name (IDN) and Punycode Phishing
+### Punycode Phishing
 
 ```js
 user_pref("network.IDN_show_punycode", true);
@@ -1516,7 +1517,7 @@ user_pref("network.IDN_show_punycode", true);
 
 Default: `false` ![Basilisk][Basilisk Logo]
 
-[IDN homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
+[Internationalized Domain Name (IDN) homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
 
 [IDN Display Algorithm - mozilla wiki](https://wiki.mozilla.org/IDN_Display_Algorithm)
 

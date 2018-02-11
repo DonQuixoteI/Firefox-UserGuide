@@ -984,7 +984,7 @@ Default:
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-([FF38+](https://bugzilla.mozilla.org/show_bug.cgi?id=782751))
+([FF38](https://bugzilla.mozilla.org/show_bug.cgi?id=782751)-[FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1344669))
 
 
 ```js
@@ -998,7 +998,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
-
+([-FF59](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 ### Video Stats
 

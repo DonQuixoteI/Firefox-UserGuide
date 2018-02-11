@@ -40,7 +40,7 @@
 - [Statistics](#statistics)
   - [Timing](#timing)
   - [Video Stats](#video-stats)
-- [WebAPI](#webapi)
+- [WebAPI](#web-api)
   - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
   - [Camera API](#camera-api)
@@ -1161,13 +1161,22 @@ Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%
 
 ### Keyboard API
 
-[[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)]
+[KeyboardEvent.code - MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code)
 
 ```js
 user_pref("dom.keyboardevent.code.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
+
+[Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)
 
 ### Network Information API
 

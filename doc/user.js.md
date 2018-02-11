@@ -1264,18 +1264,53 @@ To use RAM disk for caching is good for systems with big enough RAM.
 
 [WebIDE - MDN](https://developer.mozilla.org/en-US/docs/Tools/WebIDE)
 
+[16222: Review networking code for Firefox 38 | Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)
+
 ```js
 user_pref("devtools.webide.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]. [[Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+
 
 ```js
 user_pref("devtools.webide.autoinstallADBHelper", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Basilisk][Basilisk Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+
+
+```js
 user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Basilisk][Basilisk Logo], `false` ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]. [[Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Basilisk][Basilisk Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
+
 
 ## DOM
 

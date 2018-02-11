@@ -931,33 +931,74 @@ Default: "_your-consumer-key_" ![Windows][Windows Logo] ![Debian][Debian Logo] !
 
 ### Timing
 
-[[NavigationTimingAPI - mozilla wiki](https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI)] [[Navigation Timing - W3C](http://www.w3.org/TR/2011/CR-navigation-timing-20110315/#nt-navigation-timing-interface)]
+[NavigationTimingAPI - mozilla wiki](https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI)
+
+[Navigation Timing - W3C](http://www.w3.org/TR/2011/CR-navigation-timing-20110315/#nt-navigation-timing-interface)
+
+[Performance API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API)
 
 ```js
 user_pref("dom.enable_performance", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+([FF23+](https://bugzilla.mozilla.org/show_bug.cgi?id=870667))
 
 `false`: Do not send start and end time of web page loading. [[forum.mozilla-russia.org](http://forum.mozilla-russia.org/viewtopic.php?pid=653380#p653380) (in Russian)]
+
+[Resource Timing API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API)
 
 ```js
 user_pref("dom.enable_resource_timing", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+([FF35+](https://bugzilla.mozilla.org/show_bug.cgi?id=1002855))
+
+
+[User Timing - W3C](https://www.w3.org/TR/2013/REC-user-timing-20131212/)
 
 ```js
 user_pref("dom.enable_user_timing", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[W3C](https://www.w3.org/TR/2013/REC-user-timing-20131212/)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+([FF38+](https://bugzilla.mozilla.org/show_bug.cgi?id=782751))
+
 
 ```js
 user_pref("dom.idle-observers-api.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+
 
 ### Video Stats
 

@@ -967,7 +967,9 @@ Provides web applications with information about video playback statistics such 
 user_pref("media.video_stats.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo] (FF25+)
+
+[Bug 654550: Preference to disable video statistics | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=654550)
 
 ## Web API
 

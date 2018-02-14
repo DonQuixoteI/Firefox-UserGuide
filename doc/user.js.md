@@ -889,7 +889,19 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 user_pref("browser.tabs.animate", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Tab_animation)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a
+  ![Android][Android Logo].
+([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
+
+It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
+
+[Tab animation | mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Tab_animation)
 
 ```js
 user_pref("browser.tabs.loadInBackground", false);
@@ -1515,7 +1527,17 @@ Default: `true` ![Basilisk][Basilisk Logo]. [[Bug 1361220 - Mozilla Bugzilla](ht
 user_pref("browser.fullscreen.animate", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a
+  ![Android][Android Logo]
+([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
+
+It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
 
 ```js
 user_pref("full-screen-api.warning.delay", 0);

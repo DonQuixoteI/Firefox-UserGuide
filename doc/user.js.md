@@ -129,7 +129,14 @@
 user_pref("network.cookie.cookieBehavior", 1);
 ```
 
-Default: `0` ![Windows][Windows Logo] ![Debian][Debian Logo], `1` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`0`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`1`
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 
 0 - allow all cookies,
 1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].

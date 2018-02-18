@@ -913,7 +913,7 @@ Default:
   ![Basilisk][Basilisk Logo],
 n/a
   ![Android][Android Logo].
-([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
 
@@ -1026,7 +1026,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
-([-FF59](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
+([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 ### Video Stats
 
@@ -1202,7 +1202,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
-([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
 
 [Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)
 
@@ -1337,7 +1337,7 @@ Default:
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
-([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
+([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
 
 
 ## DOM
@@ -1572,7 +1572,7 @@ Default:
   ![Basilisk][Basilisk Logo],
 n/a
   ![Android][Android Logo]
-([-FF55](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
 

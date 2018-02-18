@@ -100,6 +100,8 @@
 ![Android][Android Logo] - IceCat 45.x (Android),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
 ![Basilisk][Basilisk Logo] - Basilisk (Firefox 55.x)
+![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows)
+![NightlyAndroid][Nightly Firefox Android Logo] - Firefox Nightly (Firefox 60.x, Android)
 
 [Android Logo]: img/Android.png
 
@@ -110,6 +112,10 @@
 [Basilisk Logo]: img/Basilisk.png
 
 [Windows Logo]: img/Windows.png
+
+[Nightly Firefox Windows Logo]: img/FF-Nightly-Win.png
+
+[Nightly Firefox Android Logo]: img/FF-Nightly-Android.png
 
 ## Network
 

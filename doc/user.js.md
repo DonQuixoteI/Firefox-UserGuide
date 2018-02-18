@@ -150,7 +150,14 @@ user_pref("network.http.altsvc.enabled", false);
 user_pref("network.http.altsvc.oe", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 [#16673: Isolate/Disable HTTP Alternative-Services – Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
 

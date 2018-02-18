@@ -472,7 +472,15 @@ Firefox contains a "Send Video To Device" feature to send HTML5 video content to
 user_pref("browser.casting.enabled", false);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
+
 
 ## Updating
 

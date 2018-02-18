@@ -69,6 +69,7 @@
   - [Storage](#storage)
   - [Window](#window)
 - [Download Manager](#download-manager)
+- [Fingerprinting](#fingerprinting)
 - [Fonts](#fonts)
   - [Document Fonts](#document-fonts)
   - [SVG Fonts](#svg-fonts)
@@ -1477,6 +1478,27 @@ user_pref("browser.download.useDownloadDir", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo].
 
 `false`: Always ask where to download. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
+
+
+## Fingerprinting
+
+```js
+user_pref("privacy.resistFingerprinting", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Security/Fingerprinting | mozilla wiki](https://wiki.mozilla.org/Security/Fingerprinting)
+
+[Bug 418986: window.screen and CSS media queries provide a large amount of identifiable information (Tor 2875) | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=418986)
+
+
+[Bug 1333933: Disable/spoof fingerprintable features when privacy.resistFingerprinting = true | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1333933)
+
+[meta: tor uplift: privacy.resistFingerprinting #7 | ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/7)
 
 ## Fonts
 

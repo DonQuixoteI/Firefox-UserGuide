@@ -92,6 +92,7 @@
   - [Slow Startup](#slow-startup)
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
+- [View Source](#view-source)
 - [WebGL](#webgl)
 
 
@@ -1765,6 +1766,22 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 WARNING: Setting to `false` results in lost support of "Media Source Extensions" and "MSE & H.264" in [YouTube HTML5 Video Player](https://www.youtube.com/html5) and some YouTube videos can not be played anymore.
 
 [How to enforce full video buffering on YouTube - ghacks.net](http://www.ghacks.net/2016/08/31/how-to-enforce-full-video-buffering-on-youtube/)
+
+
+## View Source
+
+```js
+user_pref("view_source.tab", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`false`: open page source in a new window.
+
 
 ## WebGL
 

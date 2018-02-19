@@ -259,7 +259,7 @@ Firefox for Android, Firefox for iOS, Firefox Focus and Firefox Klar collect and
 
 [Mozilla Klar saugt Daten ab - deutschlandfunk.de](http://www.deutschlandfunk.de/anti-tracking-software-mozilla-klar-saugt-daten-ab.684.de.html?dram:article_id=378712) (in German)
 
-[Firefox Focus: The ‘Privacy Browser’ with build in user tracking  | Born's Tech and Windows World](http://borncity.com/win/2017/02/12/firefox-focus-the-privacy-browser-with-build-in-user-tracking/)
+[Firefox Focus: The 'Privacy Browser' with build in user tracking  | Born's Tech and Windows World](http://borncity.com/win/2017/02/12/firefox-focus-the-privacy-browser-with-build-in-user-tracking/)
 
 [Firefox Focus privacy scandal - gHacks Tech News](http://www.ghacks.net/2017/02/12/firefox-focus-privacy-scandal/)
 
@@ -267,7 +267,15 @@ Firefox for Android, Firefox for iOS, Firefox Focus and Firefox Klar collect and
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -475,10 +483,18 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor B
 ```js
 user_pref("browser.safebrowsing.downloads.enabled", false);
 ```
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+`false`
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 
 It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
 `true` does only the local checks against a blacklist and a whitelist, as long as `browser.safebrowsing.downloads.remote.enabled` is disabled [[pyllyukko](https://github.com/pyllyukko/user.js/pull/65)].
+
 
 ```js
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
@@ -1256,7 +1272,16 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][
 user_pref("dom.webnotifications.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Pull Request #111 · pyllyukko/user.js](https://github.com/pyllyukko/user.js/pull/111)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+
+[Pull #111: Disable WebPush? - pyllyukko/user.js](https://github.com/pyllyukko/user.js/pull/111)
+
 
 ### Sensor API
 
@@ -1548,7 +1573,13 @@ Default:
 user_pref("browser.display.use_document_fonts", 0);
 ```
 
-Default: `1` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`1`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 
 `0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
@@ -1556,7 +1587,7 @@ Default: `1` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor 
 
 [Font Fingerprinting - Fonts Detection - BrowserLeaks.com](https://browserleaks.com/fonts)
 
-[Font fingerprinting · Issue #120 · pyllyukko/user.js · GitHub](https://github.com/pyllyukko/user.js/issues/120)
+[Issue #120: Font fingerprinting - pyllyukko/user.js](https://github.com/pyllyukko/user.js/issues/120)
 
 ### SVG Fonts
 

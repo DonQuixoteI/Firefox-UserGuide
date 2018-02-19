@@ -169,7 +169,17 @@ Default:
 user_pref("network.manage-offline-status", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[Tor](https://trac.torproject.org/projects/tor/ticket/18945)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+
+[#18945: Disable monitoring the connected state of Tor Browser users | Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/18945)
+
 
 ### Prefetching
 

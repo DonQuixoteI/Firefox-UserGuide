@@ -221,9 +221,16 @@ Default:
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+n/a
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
+
 
 ```js
 user_pref("network.predictor.enabled", false);

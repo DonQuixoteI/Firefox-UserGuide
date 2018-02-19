@@ -203,7 +203,19 @@ Link prefetching is a browser mechanism, which utilizes browser idle time to dow
 user_pref("network.dns.disablePrefetch", true);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `true` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]. [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching)] [[mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+[X-DNS-Prefetch-Control | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)
+
+[Network.dns.disablePrefetch - mozillaZine](http://kb.mozillazine.org/Network.dns.disablePrefetch)
+
 
 ```js
 user_pref("network.dns.disablePrefetchFromHTTPS", true);

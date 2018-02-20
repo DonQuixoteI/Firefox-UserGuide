@@ -83,6 +83,7 @@
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
+  - [First-Party Isolation](#first-party-isolation)
   - [Punycode Phishing](#punycode-phishing)
   - [SSL](#ssl)
   - [XPConnect](#xpconnect)
@@ -1762,6 +1763,27 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
 
 ## Security
+
+### First-Party Isolation
+
+```js
+user_pref("privacy.firstparty.isolate", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+([FF51+](https://bugzilla.mozilla.org/show_bug.cgi?id=1260931))
+
+`true` may  break cross-domain logins and site functionality.
+
+[Bug 1299996: META: Support Tor first-party isolation - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1299996)
+
+[Security/FirstPartyIsolation - mozilla wiki](https://wiki.mozilla.org/Security/FirstPartyIsolation#First_Party_Isolation_-_FIXED)
+
+[meta: tor uplift: privacy.firstparty.isolate #8 - ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/8)
+
 
 ### Punycode Phishing
 

@@ -14,6 +14,7 @@
   - [Health Report](#health-report)
   - [SSL Error Report](#ssl-error-report)
   - [Telemetry](#telemetry)
+    - [Shield Studies](#shield-studies)
     - [Experiments](#experiments)
   - [User Rating Feedback](#user-rating-feedback)
 - [Screen Casting](#screen-casting)
@@ -403,7 +404,11 @@ Default: "https://data.mozilla.com/submit/sslreports" ![Windows][Windows Logo] !
 
 ### Telemetry
 
-[[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#telemetry)]: Telemetry is a feature in Firefox that sends Mozilla usage, performance, and responsiveness statistics about user interface features, memory, and hardware configuration. Your IP address is also collected as a part of a standard web log.
+> [[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#telemetry)]:
+> Telemetry is a feature in Firefox that sends Mozilla usage, performance, and responsiveness statistics about user interface features, memory, and hardware configuration. Your IP address is also collected as a part of a standard web log.
+
+[Docs/Telemetry/Internals/Preferences - Mozilla Source Tree Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/internals/preferences.html)
+
 
 ```js
 user_pref("toolkit.telemetry.unified", false);
@@ -430,6 +435,51 @@ user_pref("toolkit.telemetry.server", "");
 Default: "https://incoming.telemetry.mozilla.org" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
 The server Telemetry pings are sent to [[Mozilla Source Tree Docs][telemetry-preferences]].
+
+
+#### Shield Studies
+
+[About SHIELD Studies - Firefox Help](https://support.mozilla.org/en-US/kb/shield)
+
+[Firefox/Shield - MozillaWiki](https://wiki.mozilla.org/Firefox/Shield)
+
+[Bug 1370801: Add Shield Opt-out Preference - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1370801)
+
+[Mozilla creates Shield study rules to avoid another Mr.Robot disaster - ghacks.net](https://www.ghacks.net/2018/01/31/mozilla-creates-shield-study-rules-to-avoid-another-mr-robot-disaster/)
+
+```js
+user_pref("app.shield.optoutstudies.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
+[Issue #319: Block Firefox Shield Recipe Client - pyllyukko/user.js](https://github.com/pyllyukko/user.js/issues/319)
+
+```js
+user_pref("extensions.shield-recipe-client.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+```js
+user_pref("extensions.shield-recipe-client.api_url", "");
+```
+
+Default:
+`"https://normandy.cdn.mozilla.net/api/v1"`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 #### Experiments
 
@@ -1798,6 +1848,7 @@ Default: `false` ![Basilisk][Basilisk Logo]
 [IDN Display Algorithm - mozilla wiki](https://wiki.mozilla.org/IDN_Display_Algorithm)
 
 [Punycode Phishing Attacks - thehackernews.com](https://thehackernews.com/2017/04/unicode-Punycode-phishing-attack.html)
+
 
 ### SSL
 

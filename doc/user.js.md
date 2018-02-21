@@ -14,6 +14,7 @@
   - [Health Report](#health-report)
   - [SSL Error Report](#ssl-error-report)
   - [Telemetry](#telemetry)
+    - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
     - [Experiments](#experiments)
   - [User Rating Feedback](#user-rating-feedback)
@@ -462,6 +463,49 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The server Telemetry pings are sent to [[Telemetry Preferences][telemetry-preferences]].
+
+
+#### Ping Centre
+
+Ping Centre collects and sends your events and metrics to a staging server (metrics aggregator).
+
+> [ping-centre](https://github.com/mozilla/ping-centre):
+> The user does not need to specify the telemetry destination, i.e. the endpoint of the [Onyx](https://github.com/mozilla/onyx). Instead, the user just specifies the topic of the payload. In fact, Onyx merely exposes a single endpoint and multiplexes all the topics onto that endpoint. The [Infernyx](https://github.com/mozilla/infernyx) will demultiplex the inputs and process each topic separately.
+
+[Bug 1403695: Send a generic health telemetry ping through Ping Centre for Activity Stream - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1403695)
+
+```js
+user_pref("browser.ping-centre.telemetry", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+([FF57+](https://bugzilla.mozilla.org/show_bug.cgi?id=1390249))
+
+```js
+user_pref("browser.ping-centre.production.endpoint", "");
+```
+
+Default:
+`https://tiles.services.mozilla.com/v3/links/ping-centre`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+```js
+user_pref("browser.ping-centre.production.endpoint", "");
+```
+
+Default:
+`https://onyx_tiles.stage.mozaws.net/v3/links/ping-centre`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Firefox Tuning zur Absicherung und Anonymisierung - Quantum Edition - kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)
 
 
 #### Shield Studies

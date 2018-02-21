@@ -465,6 +465,19 @@ Default:
 The server Telemetry pings are sent to [[Telemetry Preferences][telemetry-preferences]].
 
 
+```js
+user_pref("toolkit.telemetry.archive.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Telemetry Archiving](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/concepts/archiving.html)
+
+
 #### Ping Centre
 
 Ping Centre collects and sends your events and metrics to a staging server (metrics aggregator).

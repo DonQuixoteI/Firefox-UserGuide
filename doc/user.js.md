@@ -496,7 +496,7 @@ n/a
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 ```js
-user_pref("browser.ping-centre.production.endpoint", "");
+user_pref("browser.ping-centre.staging.endpoint", "");
 ```
 
 Default:

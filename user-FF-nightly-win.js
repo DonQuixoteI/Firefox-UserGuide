@@ -35,6 +35,8 @@ user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.onboarding.enabled", false);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
+user_pref("browser.ping-centre.production.endpoint", "");
+user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.rights.3.shown", true);
 user_pref("browser.safebrowsing.downloads.enabled", false);

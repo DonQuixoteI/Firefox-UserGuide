@@ -410,7 +410,7 @@ Default: "https://data.mozilla.com/submit/sslreports" ![Windows][Windows Logo] !
 > [[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#telemetry)]:
 > Telemetry is a feature in Firefox that sends Mozilla usage, performance, and responsiveness statistics about user interface features, memory, and hardware configuration. Your IP address is also collected as a part of a standard web log.
 
-[Docs/Telemetry/Internals/Preferences - Mozilla Source Tree Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/internals/preferences.html)
+[Telemetry - Mozilla Source Tree Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/index.html)
 
 
 ```js
@@ -478,6 +478,34 @@ n/a
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 [Telemetry Archiving](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/concepts/archiving.html)
+
+
+```js
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
+```js
+user_pref("toolkit.telemetry.infoURL", "");
+```
+
+Default:
+`https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 #### Ping Centre

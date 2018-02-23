@@ -1621,7 +1621,7 @@ Default:
 
 [Is WebGL a security concern? - Security Stack Exchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)
 
-<hr align="left" width="30%"/>
+<hr align="left" size="1" width="30%"/>
 
 [WEBGL debug renderer info - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_debug_renderer_info)
 

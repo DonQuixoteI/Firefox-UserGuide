@@ -135,14 +135,25 @@ user_pref("network.cookie.cookieBehavior", 1);
 Default:
 `0`
   ![Windows][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `1`
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 
-0 - allow all cookies,
-1 - allow cookie only from the originating server [[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)].
+`0` - allow all cookies,
+`1` - allow only from the originating server,
+`2` - disallow all,
+`3` - allow 3rd party if it already set a cookie.
+[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)
+
+This also controls access to 3rd party Web Storage, IndexedDB, Cache API and Service Worker Cache
+[[fxsitecompat.com](https://www.fxsitecompat.com/en-CA/docs/2015/web-storage-indexeddb-cache-api-now-obey-third-party-cookies-preference/)].
+
+WARNING: Blocking 3rd-party cookies breaks a number of payment gateways.
+
 
 ### HTTP Alternative Services
 
@@ -158,11 +169,13 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo],
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
-[#16673: Isolate/Disable HTTP Alternative-Services – Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
+[#16673: Isolate/Disable HTTP Alternative-Services - Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
 
 ### Offline Status
 
@@ -177,7 +190,9 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo],
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 

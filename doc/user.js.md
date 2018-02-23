@@ -32,6 +32,7 @@
   - [Extension Blocklist](#extension-blocklist)
   - [Extension Signing](#extension-signing)
   - [Get Add-ons Discovery Pane](#get-add-ons-discovery-pane)
+  - [Legacy Extensions](#legacy-extensions)
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
@@ -958,6 +959,16 @@ user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
 ```
 
 Default: "https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)]
+
+
+### Legacy Extensions
+
+```js
+user_pref("extensions.legacy.exceptions", "(long list)");
+```
+
+The preference just controls how things are presented in the UI, it doesn't actually change what is allowed to load/run [[1360777](https://bugzilla.mozilla.org/show_bug.cgi?id=1360777)].
+
 
 ## Firefox Account
 

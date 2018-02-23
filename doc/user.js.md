@@ -492,13 +492,12 @@ Default:
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
-[Telemetry Archiving](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/concepts/archiving.html)
+[Telemetry Archiving - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/concepts/archiving.html)
 
 
 ```js
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
-user_pref("toolkit.telemetry.hybridContent.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
@@ -510,6 +509,20 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
+```js
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+([FF59+](https://bugzilla.mozilla.org/show_bug.cgi?id=1417473))
+
+[Hybrid Content Telemetry - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/collection/hybrid-content.html)
 
 
 ```js

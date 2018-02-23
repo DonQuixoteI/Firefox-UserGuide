@@ -1102,6 +1102,17 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 
 Default: "https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
 
+```js
+user_pref("startup.homepage_welcome_url", "about:blank");
+```
+
+Default:
+`https://www.mozilla.org/projects/firefox/%VERSION%/firstrun/`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
 ### Messages on Home Page
 
 [How to stop Firefox messages on home screen?](https://support.mozilla.org/en-US/questions/1035229)

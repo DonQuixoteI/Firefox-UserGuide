@@ -57,6 +57,7 @@
   - [Notification API](#notification-api)
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
+  - [WebGL API](#webgl-api)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -98,7 +99,6 @@
 - [Thumbnails](#thumbnails)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
-- [WebGL](#webgl)
 
 
 ![Windows][Windows Logo] - Firefox 45.x (MS Windows),
@@ -1600,6 +1600,43 @@ user_pref("dom.vibrator.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
+
+## WebGL API
+
+[The WebGL API: 2D and 3D graphics for the web - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+
+```js
+user_pref("webgl.disabled", true);
+```
+
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Is WebGL a security concern? - Security Stack Exchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)
+
+<hr align="left" width="30%"/>
+
+[WEBGL debug renderer info - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_debug_renderer_info)
+
+```js
+user_pref("webgl.enable-debug-renderer-info", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Bug 1171228: Expose WEBGL_debug_renderer_info extension to Web content - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1171228)
+
+
 ## Auto Play
 
 ### Animated Image
@@ -2193,13 +2230,3 @@ n/a
 
 `false`: open page source in a new window.
 
-
-## WebGL
-
-[[MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)] [[Security.StackExchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)]
-
-```js
-user_pref("webgl.disabled", true);
-```
-
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]

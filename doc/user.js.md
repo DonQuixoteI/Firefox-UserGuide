@@ -1198,6 +1198,40 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 
 `false`:  Open link in a new tab and automatically switch into that tab. [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
 
+
+```js
+user_pref("browser.library.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+user_pref("browser.newtabpage.activity-stream.section.topstories.showDisclaimer", false);
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
+user_pref("browser.newtabpage.activity-stream.showTopSites", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
+
+[Activity Stream 1.0 - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream_1.0)
+
+```js
+user_pref("browser.newtabpage.activity-stream.migrationExpired", true);
+user_pref("browser.newtabpage.activity-stream.section.topstories.collapsed", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
 ## Pocket
 
 [[mozilla support](https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox)] [[ghacks.net](http://www.ghacks.net/2015/05/14/how-to-disable-pocket-in-firefox/)]

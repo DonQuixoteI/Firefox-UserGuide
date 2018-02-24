@@ -58,6 +58,7 @@
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
   - [WebGL API](#webgl-api)
+- [Web Channel](#web-channel)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -1621,7 +1622,7 @@ Default:
 
 [Is WebGL a security concern? - Security Stack Exchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)
 
-<hr align="left" size="1" width="30%"/>
+<hr align="left" width="30%"/>
 
 [WEBGL debug renderer info - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_debug_renderer_info)
 
@@ -1635,6 +1636,22 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 [Bug 1171228: Expose WEBGL_debug_renderer_info extension to Web content - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1171228)
+
+
+## Web Channel
+
+[WebChannel.jsm - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/WebChannel.jsm)
+
+```js
+user_pref("webchannel.allowObject.urlWhitelist", "");
+```
+
+Default:
+"https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org"
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+Space separated list of URLS that are allowed to send objects (instead of only strings) through webchannels [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
 
 ## Auto Play

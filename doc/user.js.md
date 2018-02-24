@@ -86,6 +86,7 @@
   - [Keyword Service](#keyword-service)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
+- [Plugins](#plugins)
 - [Reader Mode](#reader-mode)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
@@ -2090,6 +2091,35 @@ user_pref("pdfjs.disabled", true);
 ```
 
 Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)] [[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
+
+
+## Plugins
+
+```js
+user_pref("plugin.default.state", 0);
+```
+
+Default:
+`1`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`2`
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`0` - never activate, `1` - ask to activate, `2` - active.
+
+```js
+user_pref("plugin.defaultXpi.state", 0);
+```
+
+Default:
+`2`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`2` - Plugins bundled in XPIs are enabled by default
+[[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
 
 ## Reader Mode
 

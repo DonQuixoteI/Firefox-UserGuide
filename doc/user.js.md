@@ -64,6 +64,7 @@
   - [Videos](#videos)
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
+- [Clear History](#clear-history)
 - [Developer Tools](#developer-tools)
   - [WebIDE](#webide)
 - [DOM](#dom)
@@ -1692,6 +1693,22 @@ user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
 Default: n/a. [[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
 
 To use RAM disk for caching is good for systems with big enough RAM.
+
+
+## Clear History
+
+```js
+user_pref("privacy.sanitize.timeSpan", 0);
+```
+
+Default:
+`1`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
 
 ## Developer Tools
 

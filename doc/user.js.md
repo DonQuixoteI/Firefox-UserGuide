@@ -110,7 +110,7 @@
 ![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows)
 ![NightlyAndroid][Nightly Firefox Android Logo] - Firefox Nightly (Firefox 60.x, Android)
 
-[Android Logo]: img/Android.png
+[Android Logo]: img/Android.svg
 
 [Debian Logo]: img/Debian.png
 

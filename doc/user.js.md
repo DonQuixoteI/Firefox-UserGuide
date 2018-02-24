@@ -112,17 +112,17 @@
 
 [Android Logo]: img/Android.svg
 
-[Debian Logo]: img/Debian.png
+[Debian Logo]: img/Debian.svg
 
 [Tor Browser Logo]: img/TorBrowser.png
 
-[Basilisk Logo]: img/Basilisk.png
+[Basilisk Logo]: img/Basilisk.svg
 
-[Windows Logo]: img/Windows.png
+[Windows Logo]: img/Windows.svg
 
-[Nightly Firefox Windows Logo]: img/FF-Nightly-Win.png
+[Nightly Firefox Windows Logo]: img/FF-Nightly.svg
 
-[Nightly Firefox Android Logo]: img/FF-Nightly-Android.png
+[Nightly Firefox Android Logo]: img/FF-Nightly-Android.svg
 
 ## Network
 

@@ -59,6 +59,7 @@
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
   - [WebGL API](#webgl-api)
+  - [Web Speech API](#web-speech-api)
 - [Web Channel](#web-channel)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
@@ -1658,6 +1659,19 @@ Default:
 
 [Bug 1171228: Expose WEBGL_debug_renderer_info extension to Web content - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1171228)
 
+
+### [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+
+```js
+user_pref("media.webspeech.synth.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+([FF45+](https://bugzilla.mozilla.org/show_bug.cgi?id=1003439))
 
 ## Web Channel
 

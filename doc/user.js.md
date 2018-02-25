@@ -84,6 +84,7 @@
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
+- [Offline Data](#offline-data)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
 - [Plugins](#plugins)
@@ -2041,6 +2042,22 @@ user_pref("keyword.enabled", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
 `false`: Do not use Internet Keywords and display an error message indicating the entered information is not a valid URL.
+
+
+## Offline Data
+
+```js
+user_pref("offline-apps.allow_by_default", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Firefox not honoring "Offline Web Content And User Data" settings - Mozilla Support Forum](https://support.mozilla.org/questions/1098540)
+
 
 ## Passwords
 

@@ -148,6 +148,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("image.animation_mode", "none");
 user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);
+user_pref("layout.css.devPixelsPerPx", 1.4);
 user_pref("layout.css.font-loading-api.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.autoplay.enabled", false);

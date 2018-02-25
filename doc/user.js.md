@@ -88,6 +88,7 @@
 - [PDF Viewer](#pdf-viewer)
 - [Plugins](#plugins)
 - [Reader Mode](#reader-mode)
+- [Screen Resolution](#screen-resolution)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
   - [First-Party Isolation](#first-party-isolation)
@@ -2128,6 +2129,24 @@ user_pref("reader.parse-on-load.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[ghacks.net](http://www.ghacks.net/2015/02/07/mozilla-starts-to-push-reader-mode-to-desktop-firefox/)]
+
+
+## Screen Resolution
+
+```js
+user_pref("layout.css.devPixelsPerPx", 1.5);
+```
+
+Default:
+`-1`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+Firefox uses 96 dpi by default. The fonts are too small to read in the case of high-resolution displays.
+`1.5` sets dpi to 144.
+
+[Configure the DPI value - ArchWiki](https://wiki.archlinux.org/index.php/Firefox/Tweaks#Configure_the_DPI_value)
+
 
 ## Search Suggestions
 

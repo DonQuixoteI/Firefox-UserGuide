@@ -58,6 +58,7 @@
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Notification API](#notification-api)
+  - [Push API](#push-api)
   - [Sensor API](#sensor-api)
   - [Vibration API](#vibration-api)
   - [WebGL API](#webgl-api)
@@ -1756,6 +1757,35 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
+
+
+## Push API
+
+The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground [[MDN](https://developer.mozilla.org/docs/Web/API/Push_API)].
+
+[Mozilla Wiki](https://wiki.mozilla.org/Firefox/Push_Notifications),
+[Mozilla Hacks](https://hacks.mozilla.org/2016/01/web-push-arrives-in-firefox-44/)
+
+
+```js
+user_pref("dom.push.enabled", false);
+user_pref("dom.push.connection.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+```js
+user_pref("dom.push.serverURL", "");
+```
+
+Default:
+"wss://push.services.mozilla.com/"
+  ![NightlyWin][Nightly Firefox Windows Logo],
+"https://updates.push.services.mozilla.com/v1/gcm/..."
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ### Sensor API

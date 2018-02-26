@@ -82,6 +82,7 @@
 - [Fonts](#fonts)
   - [Document Fonts](#document-fonts)
   - [SVG Fonts](#svg-fonts)
+  - [Fonts with Incorrect Underline Offsets](#fonts-with-incorrect-underline-offsets)
 - [Forms](#forms)
 - [Fullscreen Animation](#fullscreen-animation)
 - [Location Bar](#location-bar)
@@ -2140,6 +2141,22 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+
+
+### Fonts with Incorrect Underline Offsets
+
+```js
+user_pref("font.blacklist.underline_offset", "");
+```
+
+Default:
+"(_list of fonts_)"
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/Font.blacklist.underline_offset)]
+
+Any of these fonts on your system can be enumerated for fingerprinting [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+
 
 ## Forms
 

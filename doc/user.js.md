@@ -885,19 +885,51 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor 
 user_pref("media.navigator.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo].
+[[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
 ```js
 user_pref("media.peerconnection.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+[[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
+
+```js
+user_pref("media.peerconnection.ice.default_address_only", true);
+user_pref("media.peerconnection.ice.no_host", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 WebRTC Leak Tests:
 
 - [privacytools.io](https://www.privacytools.io/webrtc.html)
 - [diafygi.github.io](https://diafygi.github.io/webrtc-ips/)
 - [browserleaks.com](https://www.browserleaks.com/webrtc)
+
 
 ### Gecko Media Plugins
 

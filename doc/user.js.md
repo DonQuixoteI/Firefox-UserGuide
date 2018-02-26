@@ -79,6 +79,7 @@
   - [Window](#window)
 - [Download Manager](#download-manager)
 - [Fingerprinting](#fingerprinting)
+  - [OS Locale](#os-locale)
 - [Fonts](#fonts)
   - [Document Fonts](#document-fonts)
   - [SVG Fonts](#svg-fonts)
@@ -2107,6 +2108,21 @@ Default:
 [Bug 1333933: Disable/spoof fingerprintable features when privacy.resistFingerprinting = true | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1333933)
 
 [meta: tor uplift: privacy.resistFingerprinting #7 | ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/7)
+
+
+### OS Locale
+
+```js
+user_pref("javascript.use_us_english_locale", true);
+```
+
+Default:
+n/a (hidden)
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+An anti-fingerprinting patch from Tor Browser was added to Firefox 46 to force using en-US date format regardless of the OS locale [[Bug 867501](https://bugzilla.mozilla.org/show_bug.cgi?id=867501)].
+
 
 ## Fonts
 

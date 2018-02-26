@@ -1747,17 +1747,15 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][
 
 ```js
 user_pref("dom.webnotifications.enabled", false);
+user_pref("dom.webnotifications.serviceworker.enabled", false);
 ```
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo]
-
-[Pull #111: Disable WebPush? - pyllyukko/user.js](https://github.com/pyllyukko/user.js/pull/111)
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
 
 
 ### Sensor API

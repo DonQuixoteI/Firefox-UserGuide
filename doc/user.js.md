@@ -2195,15 +2195,34 @@ Any of these fonts on your system can be enumerated for fingerprinting [[ghacks-
 user_pref("browser.formfill.enable", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: Do not save information entered in web page forms and the Search Bar [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
 
 ```js
 user_pref("browser.formfill.expire_days", 0);
 ```
 
-Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`180`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("browser.formfill.saveHttpsForms", false);
@@ -2213,6 +2232,32 @@ Default:
 `true`
   ![Basilisk][Basilisk Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361220))
+
+
+```js
+user_pref("extensions.formautofill.available", "off");
+```
+
+Default:
+`on`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+```js
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.available", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("extensions.formautofill.heuristics.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Form Autofill - mozilla wiki](https://wiki.mozilla.org/Firefox/Features/Form_Autofill)
 
 
 ## Fullscreen Animation

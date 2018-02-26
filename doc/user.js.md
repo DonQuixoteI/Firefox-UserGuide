@@ -1397,15 +1397,24 @@ Default:
 
 ### Video Stats
 
-Provides web applications with information about video playback statistics such as the framerate [[ghacks.net](http://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)]
-
 ```js
 user_pref("media.video_stats.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo] (FF25+)
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+([FF25+](https://bugzilla.mozilla.org/show_bug.cgi?id=654550))
 
-[Bug 654550: Preference to disable video statistics | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=654550)
+`true` provides web applications with information about video playback statistics such as the framerate [[ghacks.net](http://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)].
+
 
 ## Web API
 

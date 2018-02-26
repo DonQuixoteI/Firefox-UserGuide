@@ -897,6 +897,18 @@ Default:
   ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
+
+```js
+user_pref("media.navigator.video.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+([FF28+](https://bugzilla.mozilla.org/show_bug.cgi?id=947429))
+
+
 ```js
 user_pref("media.peerconnection.enabled", false);
 ```
@@ -913,6 +925,7 @@ Default:
   ![Android][Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
+
 ```js
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.ice.no_host", true);
@@ -923,6 +936,62 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
+
+
+```js
+user_pref("media.peerconnection.use_document_iceservers", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
+
+
+```js
+user_pref("media.peerconnection.turn.disable", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[privacytools.io](https://www.privacytools.io/#webrtc)]
+
+
+```js
+user_pref("media.peerconnection.video.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[privacytools.io](https://www.privacytools.io/#webrtc)]
+
+
+```js
+user_pref("media.peerconnection.identity.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)]
+
+
+```js
+user_pref("media.peerconnection.identity.timeout", 1);
+```
+
+Default:
+`10000`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[privacytools.io](https://www.privacytools.io/#webrtc)]
+
 
 WebRTC Leak Tests:
 

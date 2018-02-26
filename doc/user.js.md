@@ -2209,7 +2209,11 @@ Default: 180 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor 
 user_pref("browser.formfill.saveHttpsForms", false);
 ```
 
-Default: `true` ![Basilisk][Basilisk Logo]. [[Bug 1361220 - Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1361220)]
+Default:
+`true`
+  ![Basilisk][Basilisk Logo]
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361220))
+
 
 ## Fullscreen Animation
 

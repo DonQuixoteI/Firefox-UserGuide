@@ -28,6 +28,7 @@
   - [Web Apps](#web-apps-update)
 - [WebRTC](#webrtc)
   - [Gecko Media Plugins](#gecko-media-plugins)
+  - [Get User Media](#get-user-media)
 - [Encrypted Media Extension](#encrypted-media-extension)
 - [Extensions](#extensions)
   - [Extension Blocklist](#extension-blocklist)
@@ -1044,6 +1045,36 @@ user_pref("media.gmp-manager.cert.requireBuiltIn", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+
+
+### Get User Media
+
+```js
+user_pref("media.getusermedia.screensharing.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
+```js
+user_pref("media.getusermedia.audiocapture.enabled", false);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Capture local camera and microphone streams with getUserMedia - now enabled in Firefox - Mozilla Blog](https://blog.mozilla.org/futurereleases/2013/01/12/capture-local-camera-and-microphone-streams-with-getusermedia-now-enabled-in-firefox/)
+
+[Media/getUserMedia - mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)
+
+[MediaDevices.getUserMedia() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+
 
 ## Encrypted Media Extension
 

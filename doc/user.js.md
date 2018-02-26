@@ -35,6 +35,7 @@
   - [Extension Signing](#extension-signing)
   - [Get Add-ons Discovery Pane](#get-add-ons-discovery-pane)
   - [Legacy Extensions](#legacy-extensions)
+  - [Web Compatibility Reporter](#web-compatibility-reporter)
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
@@ -1153,6 +1154,20 @@ user_pref("extensions.legacy.exceptions", "(long list)");
 ```
 
 The preference just controls how things are presented in the UI, it doesn't actually change what is allowed to load/run [[1360777](https://bugzilla.mozilla.org/show_bug.cgi?id=1360777)].
+
+
+### Web Compatibility Reporter
+
+```js
+user_pref("extensions.webcompat-reporter.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+Browser extension that allows users to click on a button in the browser to report a site compatibility issue [[webcompat](https://github.com/webcompat/webcompat-reporter-extensions)].
 
 
 ## Firefox Account

@@ -64,6 +64,7 @@
   - [WebGL API](#webgl-api)
   - [Web Speech API](#web-speech-api)
 - [Web Channel](#web-channel)
+- [Accessibility Service](#accessibility-service)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
   - [Videos](#videos)
@@ -1873,6 +1874,21 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 Space separated list of URLS that are allowed to send objects (instead of only strings) through webchannels [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
+
+## Accessibility Service
+
+Firefox Accessibility Service is a technology built into Firefox that provides 3rd party applications running on the same device the ability to inspect, monitor, visualize, and alter web page content hosted within Firefox [[Mozilla Support](https://support.mozilla.org/en-US/kb/accessibility-services)].
+
+```js
+user_pref("accessibility.force_disabled", 1);
+```
+
+Default:
+`0`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF57+)
 
 
 ## Auto Play

@@ -2361,6 +2361,20 @@ Default:
 ---
 
 ```js
+user_pref("browser.urlbar.speculativeConnect.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF57+)
+
+[Bug 1348275: speculatively connect to web server(s) on autocomplete when typing in awesomebar - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1348275)
+
+
+```js
 user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 ```
 

@@ -2373,6 +2373,20 @@ Default:
 [Bug 1211726: Pre-seed awesomebar (location bar) with a list of top web sites for better autocompletion on empty profiles - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1211726)
 
 
+```js
+user_pref("browser.urlbar.trimURLs", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF7+)
+
+`false` - all parts of the url are shown
+[[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.urlbar.trimURLs)].
+
+
 ## Offline Data
 
 ```js

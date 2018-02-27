@@ -2651,20 +2651,51 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Tor B
 ### Slow Startup
 
 ```js
-user_pref("browser.slowStartup.notificationDisabled", true);
+user_pref("browser.slowStartup.samples", 0);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo].
+Default:
+n/a (hidden)
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
-`false` disables "Slow startup" warnings [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
+Firefox determines whether or not the browser is slow to start up by storing information about browser startup times to disk. `0` prevents this information from being stored [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
 
 ```js
 user_pref("browser.slowStartup.maxSamples", 0);
 ```
 
-Default: `5` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `0` ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]
+Default:
+`5`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`0`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
 
-Firefox determines whether or not the browser is slow to start up by storing information about browser startup times to disk. `0` prevents this information from being stored [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
+```js
+user_pref("browser.slowStartup.notificationDisabled", true);
+```
+
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
+
 
 ## Thumbnails
 

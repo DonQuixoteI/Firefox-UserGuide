@@ -3,6 +3,7 @@
 ## Index
 
 - [Network](#network)
+  - [Captive Portal Detection](#captive-portal-detection)
   - [Cookie](#cookie)
   - [HTTP Alternative Services](#http-alternative-services)
   - [Offline Status](#offline-status)
@@ -140,6 +141,31 @@
 ## Network
 
 [Mozilla networking preferences - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Mozilla_networking_preferences)
+
+### Captive Portal Detection
+
+[Handling Captive Portals in Firefox](https://github.com/vtsatskin/FX-Captive-Portals-Design)
+
+```js
+user_pref("network.captive-portal-service.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF52+). [[Tor Bug #21790](https://trac.torproject.org/projects/tor/ticket/21790)]
+
+```js
+user_pref("captivedetect.canonicalURL", "");
+```
+
+Default:
+"http://detectportal.firefox.com/success.txt"
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### Cookie
 

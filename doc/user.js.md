@@ -110,6 +110,7 @@
   - [Rights](#rights)
   - [Slow Startup](#slow-startup)
 - [Thumbnails](#thumbnails)
+- [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
 
@@ -2706,6 +2707,34 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 Default: n/a (hidden preference) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+
+
+## UI Tour
+
+The UITour API provides ways for pages on trusted domains to safely interact with the browser UI and request it to perform actions such as opening menus and showing highlights over the browser chrome - for the purposes of interactive tours [[Mozilla Source Tree Docs](https://firefox-source-docs.mozilla.org/browser/browser/UITelemetry.html)].
+
+```js
+user_pref("browser.uitour.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Mozilla.UITour - Mozilla Documentation](https://bedrock.readthedocs.io/en/latest/uitour.html)
+
+```js
+user_pref("browser.uitour.url", "");
+```
+
+Default:
+"https://www.mozilla.org/%LOCALE%/firefox/%VERSION%/tour/"
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ## Video Buffering
 

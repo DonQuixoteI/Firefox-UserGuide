@@ -63,7 +63,6 @@ user_pref("browser.search.isUS", true);
 user_pref("browser.search.region", "US");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
-user_pref("browser.send_pings.require_same_host", true);
 user_pref("browser.sessionstore.interval", 1800000);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.shell.checkDefaultBrowser", false);

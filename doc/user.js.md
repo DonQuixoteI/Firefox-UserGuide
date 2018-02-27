@@ -2324,9 +2324,19 @@ request to a guessed hostname that might use the correct domain [[Domain Guessin
 user_pref("browser.fixup.alternate.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: Disable location bar domain guessing.
+
 
 ### Keyword Service
 
@@ -2336,9 +2346,31 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 user_pref("keyword.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`: Do not use Internet Keywords and display an error message indicating the entered information is not a valid URL.
+
+---
+
+```js
+user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF54+)
+
+[Bug 1211726: Pre-seed awesomebar (location bar) with a list of top web sites for better autocompletion on empty profiles - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1211726)
 
 
 ## Offline Data

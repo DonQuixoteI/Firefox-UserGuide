@@ -78,7 +78,6 @@
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
   - [Device Name](#device-name)
-  - [Popup Windows](#popup-windows)
   - [Storage](#storage)
   - [Window](#window)
 - [Download Manager](#download-manager)
@@ -97,6 +96,7 @@
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
 - [Plugins](#plugins)
+- [Popup Windows](#popup-windows)
 - [Reader Mode](#reader-mode)
 - [Screen Resolution](#screen-resolution)
 - [Search Suggestions](#search-suggestions)
@@ -2069,14 +2069,6 @@ Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor 
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
-### Popup Windows
-
-```js
-user_pref("dom.popup_maximum", 3);
-```
-
-Default: 20 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)]
-
 ### Storage
 
 ```js
@@ -2537,6 +2529,35 @@ n/a
 
 `2` - Plugins bundled in XPIs are enabled by default
 [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
+
+## Popup Windows
+
+```js
+user_pref("browser.link.open_newwindow.restriction", 0);
+```
+
+Default:
+`2`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`0`
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`0`: Force all new windows opened by JavaScript into tabs [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.), [Tor Bug #9881](https://trac.torproject.org/projects/tor/ticket/9881)]. [Test](https://people.torproject.org/~gk/misc/entire_desktop.html)
+
+
+```js
+user_pref("dom.popup_maximum", 3);
+```
+
+Default:
+`20`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo].
+[mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)
 
 
 ## Reader Mode

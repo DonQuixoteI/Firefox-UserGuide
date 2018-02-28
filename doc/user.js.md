@@ -1215,58 +1215,6 @@ n/a
 (FF60+). [ghacks.net](https://www.ghacks.net/2018/02/28/firefox-60-disable-firefox-sync-integration/)
 
 
-```js
-user_pref("identity.fxaccounts.auth.uri", "");
-```
-
-Default: "https://api.accounts.firefox.com/v1" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
-
-```js
-user_pref("identity.fxaccounts.remote.force_auth.uri", "");
-```
-
-Default: "https://accounts.firefox.com/force_auth?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("identity.fxaccounts.remote.signin.uri", "");
-```
-
-Default: "https://accounts.firefox.com/signin?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("identity.fxaccounts.remote.signup.uri", "");
-```
-
-Default: "https://accounts.firefox.com/signup?service=sync&context=fx_desktop_v2" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("identity.fxaccounts.settings.uri", "");
-```
-
-Default: "https://accounts.firefox.com/settings" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("services.sync.engine.addons", false);
-user_pref("services.sync.engine.prefs", false);
-user_pref("services.sync.engine.tabs", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("services.sync.engine.bookmarks", false);
-user_pref("services.sync.engine.history", false);
-user_pref("services.sync.engine.passwords", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
-```js
-user_pref("services.sync.serverURL", "");
-```
-
-Default: "https://auth.services.mozilla.com/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
-
 ## Firefox Chat
 
 ```js

@@ -1204,6 +1204,18 @@ Browser extension that allows users to click on a button in the browser to repor
 [Firefox Accounts - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Firefox_Accounts)
 
 ```js
+user_pref("identity.fxaccounts.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF60+). [ghacks.net](https://www.ghacks.net/2018/02/28/firefox-60-disable-firefox-sync-integration/)
+
+
+```js
 user_pref("identity.fxaccounts.auth.uri", "");
 ```
 

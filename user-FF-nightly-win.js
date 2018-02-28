@@ -145,6 +145,7 @@ user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.wifi.uri", "https://127.0.0.1");
 user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+user_pref("identity.fxaccounts.enabled", false);
 user_pref("image.animation_mode", "none");
 user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);

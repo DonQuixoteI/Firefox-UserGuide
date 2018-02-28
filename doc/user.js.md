@@ -2676,6 +2676,19 @@ Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk 
 
 ## Startup
 
+```js
+user_pref("browser.laterrun.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`false` disables module [LaterRun](https://dxr.mozilla.org/mozilla-central/source/browser/modules/LaterRun.jsm) that shows some information to "new" user after Xth run or XX hours after installation.
+
+
 ### Check Default Browser
 
 ```js

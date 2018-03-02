@@ -1317,6 +1317,20 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 
 Default: "https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
 
+
+```js
+user_pref("startup.homepage_override_url", "");
+```
+
+Default:
+"https://www.mozilla.org/projects/firefox/%VERSION%/whatsnew/?oldversion=%OLD_VERSION%"
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+"(_empty string_)" disables What is New Page after updates.
+
+
 ```js
 user_pref("startup.homepage_welcome_url", "about:blank");
 ```

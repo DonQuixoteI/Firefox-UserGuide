@@ -458,7 +458,16 @@ Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Tor B
 user_pref("datareporting.healthreport.service.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
+
 
 ```js
 user_pref("datareporting.healthreport.documentServerURI", "");

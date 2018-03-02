@@ -1414,11 +1414,22 @@ user_pref("social.directories", "");
 
 Default: "https://activations.cdn.mozilla.net" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], " " ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
 
+
 ```js
 user_pref("social.remote-install.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+`false`
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
+
 
 ```js
 user_pref("social.shareDirectory", "");
@@ -1443,7 +1454,9 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1456,7 +1469,9 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 

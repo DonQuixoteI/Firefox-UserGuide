@@ -1170,10 +1170,34 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 ### Get Add-ons Discovery Pane
 
 ```js
+user_pref("extensions.getAddons.showPane", false);
+```
+
+Default:
+n/a (hidden)
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
+[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+
+
+```js
 user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
 ```
 
-Default: "https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)]
+Default:
+"https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)
 
 
 ### Legacy Extensions

@@ -29,7 +29,7 @@ user_pref("browser.newtabpage.activity-stream.section.topstories.collapsed", tru
 user_pref("browser.newtabpage.activity-stream.section.topstories.showDisclaimer", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showTopSites", false);
-user_pref("browser.newtabpage.directory.source", "data:application/json,{}");
+user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);

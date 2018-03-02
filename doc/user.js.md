@@ -1586,11 +1586,23 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 
 Setting `enabled` and `enhanced` to `false` disables top and suggested sites (equivalent to blank page).
 
+
 ```js
-user_pref("browser.newtabpage.directory.source", "data:application/json,{}");
+user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 ```
 
-Default: "https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], "data:text/plain," ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-source)]
+Default:
+"https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+"data:text/plain,"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
 
 
 ```js

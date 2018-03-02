@@ -1438,11 +1438,19 @@ user_pref("social.toast-notifications.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
 
+
 ```js
 user_pref("social.whitelist", "");
 ```
 
-Default: "https://mozsocial.cliqz.com" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+"https://mozsocial.cliqz.com"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
+
 
 ## Home Page
 

@@ -1592,11 +1592,23 @@ user_pref("browser.newtabpage.directory.source", "data:application/json,{}");
 
 Default: "https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], "data:text/plain," ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-source)]
 
+
 ```js
 user_pref("browser.newtabpage.directory.ping", "");
 ```
 
-Default: "https://tiles.services.mozilla.com/v3/links/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], "data:text/plain," ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]. [[Mozilla Source Tree Docs](http://gecko.readthedocs.io/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping)]
+Default:
+"https://tiles.services.mozilla.com/v3/links/"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo],
+"data:text/plain,"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1241390)).
+[Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
+
 
 ```js
 user_pref("browser.newtab.preload", false);

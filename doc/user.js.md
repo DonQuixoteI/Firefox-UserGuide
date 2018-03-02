@@ -103,6 +103,7 @@
 - [Screen Resolution](#screen-resolution)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
+  - [Digital Certificates](#digital-certificates)
   - [First-Party Isolation](#first-party-isolation)
   - [Punycode Phishing](#punycode-phishing)
   - [SSL](#ssl)
@@ -2679,6 +2680,24 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
 
 ## Security
+
+### Digital Certificates
+
+[Online Certificate Status Protocol - Wikipedia](https://en.wikipedia.org/wiki/Ocsp)
+```js
+user_pref("security.OCSP.enabled", 1);
+```
+
+Default:
+`1`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`2`
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`0` - disabled, `1` - enabled, `2` - enabled for [EV certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) only.
+It's a trade-off between security (checking) and privacy (leaking info to the [Certificate Autorities](https://en.wikipedia.org/wiki/Certificate_authority))
+[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+
 
 ### First-Party Isolation
 

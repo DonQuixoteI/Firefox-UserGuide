@@ -1254,7 +1254,16 @@ Default: `true` ![Windows][Windows Logo] ![Basilisk][Basilisk Logo], `false` ![D
 user_pref("media.gmp-eme-adobe.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Debian][Debian Logo]
+  ![Android][Android Logo]
+(-FF51?)
+
 
 ## Extensions
 

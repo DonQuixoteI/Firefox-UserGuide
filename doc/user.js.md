@@ -30,6 +30,7 @@
 - [WebRTC](#webrtc)
   - [Gecko Media Plugins](#gecko-media-plugins)
   - [Get User Media](#get-user-media)
+- [Digital Rights Management](#digital-rights-management)
 - [Encrypted Media Extension](#encrypted-media-extension)
 - [Extensions](#extensions)
   - [Extension Blocklist](#extension-blocklist)
@@ -1166,6 +1167,22 @@ Default:
 [Media/getUserMedia - mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)
 
 [MediaDevices.getUserMedia() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+
+
+## Digital Rights Management
+
+[Watch DRM content on Firefox - Mozilla Support](https://support.mozilla.org/en-US/kb/enable-drm)
+
+```js
+user_pref("media.gmp-widevinecdm.visible", false);
+user_pref("media.gmp-widevinecdm.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ## Encrypted Media Extension

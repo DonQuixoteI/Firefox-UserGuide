@@ -1339,7 +1339,15 @@ n/a
 user_pref("loop.enabled", false);
 ```
 
-Default: `false` ![Debian][Debian Logo], n/a ![Windows][Windows Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`false`
+  ![Debian][Debian Logo],
+n/a
+  ![Windows][Windows Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+([-FF48](https://bugzilla.mozilla.org/show_bug.cgi?id=1287827))
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
 [[mozilla wiki](https://wiki.mozilla.org/Loop)]

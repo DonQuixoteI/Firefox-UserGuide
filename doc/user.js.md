@@ -1112,6 +1112,19 @@ user_pref("media.gmp-manager.cert.requireBuiltIn", false);
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
 
+```js
+user_pref("media.gmp.trial-create.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+Whether we should run a test-pattern through EME GMPs before assuming they'll decode H.264 [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
+
 ### Get User Media
 
 ```js

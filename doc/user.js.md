@@ -1432,11 +1432,19 @@ user_pref("social.share.activationPanelEnabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
 
+
 ```js
 user_pref("social.toast-notifications.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+`false`
+  ![Android][Android Logo]
+([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
 ```js

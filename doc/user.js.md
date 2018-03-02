@@ -2366,6 +2366,20 @@ Default: `1` ![Basilisk][Basilisk Logo]. [Fullscreen API - MDN](https://develope
 
 ## Location Bar
 
+```js
+user_pref("browser.urlbar.searchSuggestionsChoice", false);
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.searches", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
 ### Domain Guessing
 
 Domain Guessing intercepts the DNS "hostname not found" error, and resends the

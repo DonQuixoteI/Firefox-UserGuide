@@ -2594,6 +2594,19 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][
 ## Plugins
 
 ```js
+user_pref("plugin.scan.plid.all", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+![NightlyAndroid][Nightly Firefox Android Logo]
+
+`false`: Disable all Mozilla plugins specified in the Windows registry `HKLM\Software\MozillaPlugins\` [[mozillaZine](http://kb.mozillazine.org/Plugin_scanning)].
+
+
+```js
 user_pref("plugin.default.state", 0);
 ```
 

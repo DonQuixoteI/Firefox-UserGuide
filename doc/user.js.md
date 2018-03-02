@@ -1227,11 +1227,22 @@ user_pref("media.eme.enabled", false);
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
 
+
 ```js
 user_pref("media.eme.apiVisible", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF53](https://bugzilla.mozilla.org/show_bug.cgi?id=1242321))
+
 
 ```js
 user_pref("browser.eme.ui.enabled", false);

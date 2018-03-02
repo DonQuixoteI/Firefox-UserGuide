@@ -334,7 +334,14 @@ Default: 2 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Br
 user_pref("network.http.sendSecureXSiteReferrer", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]. [[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+([-FF51](https://bugzilla.mozilla.org/show_bug.cgi?id=1308725))
+[[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
 
 
 ### [SPDY](https://en.wikipedia.org/wiki/SPDY)

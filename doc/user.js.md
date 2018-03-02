@@ -1092,6 +1092,20 @@ Default: n/a (hidden pref) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor
 
 The installed codec is stored in `<Profile>/gmp-gmpopenh264/` and can be deleted.
 
+
+```js
+user_pref("media.gmp-manager.updateEnabled", false);
+```
+
+Default:
+n/a (hidden)
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`false`: disable GMP downloads via local fallback [[Tor Browser](https://www.torproject.org/projects/torbrowser/design/)].
+
+
 ```js
 user_pref("media.gmp-manager.url", "http://127.0.0.1/");
 ```

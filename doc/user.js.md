@@ -1709,28 +1709,67 @@ n/a
 [[mozilla support](https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox)] [[ghacks.net](http://www.ghacks.net/2015/05/14/how-to-disable-pocket-in-firefox/)]
 
 ```js
-user_pref("browser.pocket.enabled", false);
+user_pref("extensions.pocket.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo], replaced by `extensions.pocket.enabled` and set to `true` ![Basilisk][Basilisk Logo]. [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+(-FF45)
+
+`browser.pocket.enabled` was replaced by `extensions.pocket.enabled` in FF46 [[Bug 1215694](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694)].
+
+[How do I delete Pocket? - Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)
+
 
 ```js
 user_pref("browser.pocket.api", "");
 ```
 
-Default: "api.getpocket.com" ![Windows][Windows Logo] ![Debian][Debian Logo], "" ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+Default:
+"api.getpocket.com"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
 user_pref("browser.pocket.site", "");
 ```
 
-Default: "getpocket.com" ![Windows][Windows Logo] ![Debian][Debian Logo], "" ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)]
+Default:
+"getpocket.com"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
 user_pref("browser.pocket.oAuthConsumerKey", "");
 ```
 
-Default: "_your-consumer-key_" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+"_your-consumer-key_"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
+
 
 ## Statistics
 

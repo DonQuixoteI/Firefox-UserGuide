@@ -20,8 +20,8 @@
     - [Shield Studies](#shield-studies)
     - [Experiments](#experiments)
   - [User Rating Feedback](#user-rating-feedback)
-- [Screen Casting](#screen-casting)
 - [Safe Browsing](#safe-browsing)
+- [Tracking Protection](#tracking-protection)
 - [Updating](#updating)
   - [Extensions](#extensions-update)
   - [Search Engines](#search-engines-update)
@@ -99,6 +99,7 @@
 - [Plugins](#plugins)
 - [Popup Windows](#popup-windows)
 - [Reader Mode](#reader-mode)
+- [Screen Casting](#screen-casting)
 - [Screen Resolution](#screen-resolution)
 - [Search Suggestions](#search-suggestions)
 - [Security](#security)
@@ -805,18 +806,12 @@ Default:
 (various Google URLs)
 
 
+## Tracking Protection
+
+[[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
+
 ```js
 user_pref("privacy.trackingprotection.enabled", false);
-```
-
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo] [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
-
-## Screen Casting
-
-Firefox contains a "Send Video To Device" feature to send HTML5 video content to a Roku, Chromecast or similar device in the same network. In order to discover and pair with such a device, Firefox will send SSDP packages to the local network (multicast address 239.255.255.250:1900) [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_send-video-to-device)].
-
-```js
-user_pref("browser.casting.enabled", false);
 ```
 
 Default:
@@ -826,7 +821,17 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
-([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+```js
+user_pref("privacy.trackingprotection.pbmode.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ## Updating
@@ -2597,6 +2602,28 @@ user_pref("reader.parse-on-load.enabled", false);
 ```
 
 Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[ghacks.net](http://www.ghacks.net/2015/02/07/mozilla-starts-to-push-reader-mode-to-desktop-firefox/)]
+
+
+## Screen Casting
+
+Firefox contains a "Send Video To Device" feature to send HTML5 video content to a Roku, Chromecast or similar device in the same network. In order to discover and pair with such a device, Firefox will send SSDP packages to the local network (multicast address 239.255.255.250:1900) [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_send-video-to-device)].
+
+```js
+user_pref("browser.casting.enabled", false);
+```
+
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`true`
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+n/a
+  ![NightlyWin][Nightly Firefox Windows Logo]
+([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
 
 
 ## Screen Resolution

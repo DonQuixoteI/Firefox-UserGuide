@@ -111,6 +111,7 @@
   - [Check Default Browser](#check-default-browser)
   - [Rights](#rights)
   - [Slow Startup](#slow-startup)
+  - [Startup Page](#startup-page)
 - [Thumbnails](#thumbnails)
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
@@ -2757,6 +2758,22 @@ Default:
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
+
+
+### Startup Page
+
+```js
+user_pref("browser.startup.page", 0);
+```
+
+Default:
+`1`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`0` - blank page, `1` - home page, `2` - last visited page, `3` - resume previous session.
+It can be changed in Options/Startup/When Firefox starts.
 
 
 ## Thumbnails

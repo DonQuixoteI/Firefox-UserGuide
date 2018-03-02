@@ -1412,7 +1412,16 @@ Firefox Hello (code name Loop) is video and voice chat feature built into the br
 user_pref("social.directories", "");
 ```
 
-Default: "https://activations.cdn.mozilla.net" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], " " ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+"https://activations.cdn.mozilla.net"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+"(_empty string_)"
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
 ```js

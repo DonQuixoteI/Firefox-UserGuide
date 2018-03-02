@@ -43,6 +43,7 @@
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
 - [New Tab](#new-tab)
+- [Onboarding](#onboarding)
 - [Pocket](#pocket)
 - [Statistics](#statistics)
   - [Timing](#timing)
@@ -1454,6 +1455,22 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo]
+
+
+## Onboarding
+
+[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
+
+```js
+user_pref("browser.onboarding.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(FF55+)
 
 
 ## Pocket

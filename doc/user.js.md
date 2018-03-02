@@ -473,7 +473,14 @@ n/a
 user_pref("datareporting.healthreport.documentServerURI", "");
 ```
 
-Default: "https://fhr.data.mozilla.com/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+"https://fhr.data.mozilla.com/"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
 ```js
 user_pref("datareporting.healthreport.about.reportUrl", "");
@@ -485,7 +492,16 @@ Default: "https://fhr.cdn.mozilla.net/%LOCALE%/v4/" ![Windows][Windows Logo] ![D
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
 ```
 
-Default: "https://fhr.cdn.mozilla.net/%LOCALE%/v4/" ![Windows][Windows Logo] ![Debian][Debian Logo], "data:text/plain," ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+"https://fhr.cdn.mozilla.net/%LOCALE%/v4/"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+"data:text/plain,"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([-FF46](https://bugzilla.mozilla.org/show_bug.cgi?id=1236580))
+
 
 ```js
 user_pref("datareporting.healthreport.logging.consoleEnabled", false);

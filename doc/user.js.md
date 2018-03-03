@@ -19,7 +19,7 @@
     - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
     - [Experiments](#experiments)
-  - [User Rating Feedback](#user-rating-feedback)
+    - [User Rating Feedback](#user-rating-feedback)
 - [Safe Browsing](#safe-browsing)
 - [Tracking Protection](#tracking-protection)
 - [Updating](#updating)
@@ -764,19 +764,41 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 
 `true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
 
-### User Rating Feedback
+#### User Rating Feedback
+
+`SelfSupport` was replaced by [Shield Studies](#shield-studies) [[Bug #1361578](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)].
 
 ```js
 user_pref("browser.selfsupport.enabled", false);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]. [[Tor Bug #18738](https://trac.torproject.org/projects/tor/ticket/18738)]
+Default:
+n/a (hidden)
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+(-FF54).
+[[Tor Bug #18738](https://trac.torproject.org/projects/tor/ticket/18738)]
+
 
 ```js
 user_pref("browser.selfsupport.url", "");
 ```
 
-Default: `https://self-repair.mozilla.org/%LOCALE%/repair` ![Windows][Windows Logo] ![Debian][Debian Logo], "(_empty string_)" ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
+Default:
+"https://self-repair.mozilla.org/%LOCALE%/repair"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)).
+[[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
+
 
 ## Safe Browsing
 

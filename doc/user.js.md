@@ -640,13 +640,32 @@ n/a (hidden)
 user_pref("security.ssl.errorReporting.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("security.ssl.errorReporting.url", "");
 ```
 
-Default: "https://data.mozilla.com/submit/sslreports" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], "https://incoming.telemetry.mozilla.org/submit/sslreports/" ![Basilisk][Basilisk Logo]
+Default:
+"https://data.mozilla.com/submit/sslreports"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+"https://incoming.telemetry.mozilla.org/submit/sslreports/"
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### Telemetry
 

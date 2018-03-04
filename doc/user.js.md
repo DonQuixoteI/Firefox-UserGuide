@@ -256,7 +256,9 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Android][Android Logo]
 
@@ -271,7 +273,9 @@ Default:
 `false`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
@@ -292,6 +296,8 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
 
@@ -300,7 +306,16 @@ By default, prefetching of embedded link hostnames is not performed on documents
 user_pref("network.predictor.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 The network predictor (formerly called '[seer](https://wiki.mozilla.org/Privacy/Reviews/Necko)') makes preemptive connections to resources in a page based on cached information. It can also do the same when the user hovers over a link. [[Tor](https://trac.torproject.org/projects/tor/ticket/16625)]
 
@@ -308,7 +323,18 @@ The network predictor (formerly called '[seer](https://wiki.mozilla.org/Privacy/
 user_pref("network.http.speculative-parallel-limit", 0);
 ```
 
-Default: `6` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `0` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
+Default:
+`6`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`0`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+[[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
+
 
 ### Proxy
 

@@ -425,7 +425,9 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
@@ -451,33 +453,72 @@ and change the **1** to **0**.
 user_pref("breakpad.reportURL", "");
 ```
 
-Default: "https://crash-stats.mozilla.com/report/index/" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+"https://crash-stats.mozilla.com/report/index/"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 Set of libraries called `Breakpad` handles client-side crash reporting [[mozillaZine](http://kb.mozillazine.org/Breakpad.reportURL)].
+
 
 ```js
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `false` ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+   ![Android][Android Logo]
 
 `false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
 [[MDN](https://developer.mozilla.org/en-US/Firefox/Releases/43#Plugins)]: In preparation for future releases to switch over to multi-process content, NPAPI plugins can no longer be run in the same process as the page content. The preferences starting with `dom.ipc.plugins` are no longer used.
 
+
 ```js
 user_pref("dom.ipc.plugins.reportCrashURL", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`: Do not send the URL of the website where a plugin crashed [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
+
 
 ```js
 user_pref("browser.tabs.crashReporting.sendReport", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[about:tabcrashed spec](https://people-mozilla.org/~mconley2/bugnotes/bug-1110511.html)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[about:tabcrashed spec](https://people-mozilla.org/~mconley2/bugnotes/bug-1110511.html)]
+
 
 ```js
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);

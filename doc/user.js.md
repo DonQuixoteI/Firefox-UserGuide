@@ -342,7 +342,18 @@ Default:
 user_pref("network.proxy.type", 0);
 ```
 
-Default: `5` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `1` ![Tor Browser][Tor Browser Logo]. [[mozillaZine](http://kb.mozillazine.org/Network.proxy.type)]
+Default:
+`5`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`1`
+  ![Tor Browser][Tor Browser Logo].
+[[mozillaZine](http://kb.mozillazine.org/Network.proxy.type)]
+
 
 ### Send Referer
 

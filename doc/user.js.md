@@ -358,14 +358,24 @@ Default:
 ### Send Referer
 
 ```js
-user_pref("network.http.sendRefererHeader", 0);
+user_pref("network.http.sendRefererHeader", 2);
 ```
 
-Default: 2 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`2`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 0 - never send the referring URL,
 1 - send only on clicked links,
-2 - send for links and images [[mozillaZine](http://kb.mozillazine.org/Network.http.sendRefererHeader)].
+2 - send for links and images
+[[mozillaZine](http://kb.mozillazine.org/Network.http.sendRefererHeader)].
+
 
 ```js
 user_pref("network.http.sendSecureXSiteReferrer", false);

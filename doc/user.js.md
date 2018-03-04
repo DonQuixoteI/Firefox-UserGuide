@@ -540,7 +540,18 @@ n/a
 ```js
 user_pref("datareporting.healthreport.uploadEnabled", false);
 ```
-Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("datareporting.healthreport.service.enabled", false);
@@ -570,11 +581,25 @@ n/a
   ![Android][Android Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
+
 ```js
 user_pref("datareporting.healthreport.about.reportUrl", "");
 ```
 
-Default: "https://fhr.cdn.mozilla.net/%LOCALE%/v4/" ![Windows][Windows Logo] ![Debian][Debian Logo], "data:text/plain," ![Tor Browser][Tor Browser Logo], "127.0.0.1" ![Android][Android Logo], n/a ![Basilisk][Basilisk Logo]
+Default:
+"https://fhr.cdn.mozilla.net/%LOCALE%/v4/"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+"data:text/plain,"
+  ![Tor Browser][Tor Browser Logo],
+"127.0.0.1"
+  ![Android][Android Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+(-FFxx?)
+
 
 ```js
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
@@ -595,7 +620,17 @@ n/a
 user_pref("datareporting.healthreport.logging.consoleEnabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a (hidden)
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### SSL Error Report
 

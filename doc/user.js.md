@@ -4006,7 +4006,11 @@ Default:
 user_pref("network.IDN_show_punycode", true);
 ```
 
-Default: `false` ![Basilisk][Basilisk Logo]
+Default:
+`false`
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 [Internationalized Domain Name (IDN) homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
 

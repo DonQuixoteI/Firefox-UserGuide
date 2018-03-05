@@ -4119,9 +4119,20 @@ n/a
 user_pref("browser.shell.checkDefaultBrowser", false);
 ```
 
-Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
+
 
 ### Rights
 
@@ -4131,7 +4142,18 @@ Default: `true` ![Windows][Windows Logo], `false` ![Debian][Debian Logo] ![Tor B
 user_pref("browser.rights.3.shown", true);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo], `true` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### Slow Startup
 

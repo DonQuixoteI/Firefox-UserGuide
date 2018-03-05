@@ -3443,6 +3443,8 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 

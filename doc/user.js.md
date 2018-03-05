@@ -3071,11 +3071,13 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ```js
@@ -3085,12 +3087,14 @@ user_pref("devtools.webide.autoinstallADBHelper", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ```js

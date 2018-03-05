@@ -3577,12 +3577,30 @@ n/a
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
 
+
 ```js
 user_pref("full-screen-api.warning.delay", 0);
+```
+
+Default:
+`500`
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+[Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
+
+
+```js
 user_pref("full-screen-api.warning.timeout", 0);
 ```
 
-Default: `1` ![Basilisk][Basilisk Logo]. [Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
+Default:
+`3000`
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ## Location Bar
 

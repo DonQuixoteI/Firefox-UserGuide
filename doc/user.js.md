@@ -1001,16 +1001,51 @@ The Safe Browsing feature in Firefox has been renamed to Phishing Protection, bu
 user_pref("browser.safebrowsing.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], replaced by `browser.safebrowsing.phishing.enabled` and set to `false` ![Basilisk][Basilisk Logo].
-[[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+([-FF49](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)).
+[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)
+
+`browser.safebrowsing.enabled` was renamed to `browser.safebrowsing.phishing.enabled` [[Bug 1025965](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)].
+
+
+```js
+user_pref("browser.safebrowsing.phishing.enabled", false);
+```
+
+Default:
+`true`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Basilisk][Basilisk Logo]
+([FF50+](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965))
+
 
 ```js
 user_pref("browser.safebrowsing.malware.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo].
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 
-`false`: do not download malware blacklists and do not check user downloads [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work "How does built-in Phishing and Malware Protection")]
+`false`: do not download malware blacklists and do not check user downloads
+[[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)].
+[[mozilla support](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work "How does built-in Phishing and Malware Protection")]
+
 
 ```js
 user_pref("browser.safebrowsing.downloads.enabled", false);

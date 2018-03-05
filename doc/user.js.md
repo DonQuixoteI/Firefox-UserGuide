@@ -1472,21 +1472,50 @@ Gecko Media Plugins (GMPs) is a special purpose extension point for authorised 3
 user_pref("media.gmp-provider.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 `false` removes OpenH264 codec from the Plugins list.
 
 The OpenH264 codec is not distributed with Firefox but gets downloaded at the first start of Firefox. In case you want to prohibit that, you will have to set the `media.gmp-gmpopenh264.enabled` and `media.gmp-gmpopenh264.autoupdate` to `false`  [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_openh264-codec)].
 
+
 ```js
 user_pref("media.gmp-gmpopenh264.enabled", false);
 ```
-Default: n/a (hidden pref) ![Windows][Windows Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo]
+Default:
+n/a (hidden pref)
+  ![Windows][Windows Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+n/a
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Debian][Debian Logo]
 
 ```js
 user_pref("media.gmp-gmpopenh264.autoupdate", false);
 ```
-Default: n/a (hidden pref) ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+n/a (hidden pref)
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo],
+n/a
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The installed codec is stored in `<Profile>/gmp-gmpopenh264/` and can be deleted.
 
@@ -1508,20 +1537,32 @@ n/a
 user_pref("media.gmp-manager.url", "http://127.0.0.1/");
 ```
 
-Default: "https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], "http://127.0.0.1/" ![Android][Android Logo]
+Default:
+"https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+"http://127.0.0.1/"
+  ![Android][Android Logo]
+
 
 ```js
 user_pref("media.gmp-manager.url.override", "data:text/plain,");
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Basilisk][Basilisk Logo], "data:text/plain," ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]
-
-```js
-user_pref("media.gmp-manager.cert.checkAttributes", false);
-user_pref("media.gmp-manager.cert.requireBuiltIn", false);
-```
-
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+n/a (hidden)
+  ![Windows][Windows Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+"data:text/plain,"
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ```js

@@ -3017,7 +3017,18 @@ Default:
 user_pref("browser.bookmarks.max_backups", 2);
 ```
 
-Default: `15` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `5` ![Android][Android Logo]. [[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
+Default:
+`15`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`5`
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
+
 
 ## Cache
 

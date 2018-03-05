@@ -2363,12 +2363,15 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo],
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF23+](https://bugzilla.mozilla.org/show_bug.cgi?id=870667))
 
 `false`: Do not send start and end time of web page loading. [[forum.mozilla-russia.org](http://forum.mozilla-russia.org/viewtopic.php?pid=653380#p653380) (in Russian)]
+
 
 [Resource Timing API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API)
 
@@ -2381,7 +2384,9 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo],
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF35+](https://bugzilla.mozilla.org/show_bug.cgi?id=1002855))
@@ -2416,6 +2421,7 @@ Default:
   ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 ([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
+
 
 ### Video Stats
 

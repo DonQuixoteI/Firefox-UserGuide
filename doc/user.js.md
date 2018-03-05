@@ -3729,25 +3729,54 @@ n/a
 user_pref("signon.rememberSignons", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: Disable the Password Manager [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Signon.)].
+
 
 ```js
 user_pref("signon.autofillForms", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: Do not automatically fill sign-in forms with known usernames and passwords [[mozillaZine](http://kb.mozillazine.org/Signon.autofillForms)].
+
 
 ```js
 user_pref("signon.storeWhenAutocompleteOff", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
+
 
 ```js
 user_pref("signon.formlessCapture.enabled", false);

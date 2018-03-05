@@ -1292,7 +1292,18 @@ Default:
 user_pref("lightweightThemes.update.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `false` ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
+
 
 ### Web Apps Update
 

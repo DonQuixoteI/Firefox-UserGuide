@@ -3875,7 +3875,9 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Basilisk][Basilisk Logo]
-  ![Android][Android Logo].
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
 [mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)
 
 

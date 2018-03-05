@@ -4064,19 +4064,39 @@ Default:
 user_pref("browser.sessionstore.interval", 1800000);
 ```
 
-Default: 15000 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], 10000 ![Android][Android Logo]
+Default:
+`15000`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`10000`
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The preference controls how often information about the current session is saved to the profile.
+
 
 ```js
 user_pref("browser.sessionstore.privacy_level", 2);
 ```
 
-Default: 0 ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `2` ![Tor Browser][Tor Browser Logo]
+Default:
+`0`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`2`
+  ![Tor Browser][Tor Browser Logo]
 
 `0`: store extra session data for any site,
 `1`: store extra session data for unencrypted (non-HTTPS) sites only,
 `2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
+
 
 ## Startup
 

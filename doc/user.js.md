@@ -4025,7 +4025,18 @@ Default:
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `true` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`true`
+  ![Android][Android Logo].
+[[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
+
 
 ### XPConnect
 

@@ -144,7 +144,7 @@ user_pref("general.smoothScroll", false);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.logging.enabled", false);
-user_pref("geo.wifi.uri", "https://127.0.0.1");
+user_pref("geo.wifi.uri", "http://127.0.0.1");
 user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);

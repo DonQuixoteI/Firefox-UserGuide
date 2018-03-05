@@ -2457,8 +2457,18 @@ WebAPI allows Web apps and content to access device hardware (such as battery st
 user_pref("dom.battery.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo].
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 [[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
+
 
 ### Beacon API
 
@@ -2470,7 +2480,16 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 user_pref("beacon.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### Camera API
 
@@ -2480,13 +2499,34 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 user_pref("device.camera.enabled", false);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `true` ![Android][Android Logo]
+Default:
+n/a
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`true`
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("camera.control.face_detection.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `false` ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+`false`
+  ![Android][Android Logo],
+n/a
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### CSS Font Loading API
 
@@ -2496,7 +2536,16 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 user_pref("layout.css.font-loading-api.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ### Device Storage API
 
@@ -2504,9 +2553,20 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][T
 user_pref("device.storage.enabled", false);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `true` ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`true`
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
 
 [Device Storage API - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Device_Storage_API)
+
 
 ### Gamepad API
 
@@ -2516,7 +2576,17 @@ Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][
 user_pref("dom.gamepad.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], `false` ![Tor Browser][Tor Browser Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+
 
 ### Geolocation API
 
@@ -2526,29 +2596,70 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 user_pref("geo.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]. [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+[[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
+
 
 ```js
 user_pref("geo.wifi.logging.enabled", false);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+n/a
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("geo.wifi.xhr.timeout", 1);
 ```
 
-Default: `60000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`60000`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
-user_pref("geo.wifi.uri", "https://127.0.0.1");
+user_pref("geo.wifi.uri", "http://127.0.0.1");
 ```
 
-Default: "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo], "http://ip-api.com/json/?fields=lat,lon,status,message" ![Basilisk][Basilisk Logo], "(empty string)" ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]
+Default:
+"https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+"http://ip-api.com/json/?fields=lat,lon,status,message"
+  ![Basilisk][Basilisk Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
 
 [Geolocation Test](http://html5demos.com/geo)
+
 
 #### Geolocation-Based Search
 
@@ -2559,37 +2670,98 @@ user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.region", "US");
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], "US" ![Tor Browser][Tor Browser Logo]. [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
+Default:
+n/a (hidden)
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+"US"
+  ![Tor Browser][Tor Browser Logo].
+[[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
+
 
 ```js
 user_pref("browser.search.isUS", true);
 ```
 
-Default: n/a ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo]
+Default:
+n/a (hidden)
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("browser.search.geoSpecificDefaults", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Android][Android Logo], `false` ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo]. [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo].
+[[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
+
 
 ```js
 user_pref("browser.search.geoSpecificDefaults.url", "");
 ```
 
-Default: "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Android][Android Logo], "(_empty string_)" ![Basilisk][Basilisk Logo]
+Default:
+"https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+"(_empty string_)" ![Basilisk][Basilisk Logo]
+
 
 ```js
 user_pref("browser.search.geoip.timeout", 1);
 ```
 
-Default: `2000` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
+Default:
+`2000`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
+
 
 ```js
 user_pref("browser.search.geoip.url", "");
 ```
 
-Default: "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo], "(_empty string_)" ![Tor Browser][Tor Browser Logo]. [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
+Default:
+"https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo].
+[[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
+
 
 ### Keyboard API
 
@@ -2610,6 +2782,7 @@ Default:
 
 [Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)
 
+
 ### Network Information API
 
 [[Network Information API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)]
@@ -2618,7 +2791,18 @@ Default:
 user_pref("dom.netinfo.enabled", false);
 ```
 
-Default: `false` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `true` ![Android][Android Logo]. [[wicg.io](https://wicg.github.io/netinfo/)]
+Default:
+`false`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`true`
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[wicg.io](https://wicg.github.io/netinfo/)]
+
 
 ### Notification API
 
@@ -2674,8 +2858,18 @@ Default:
 user_pref("device.sensors.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basilisk Logo], `false` ![Tor Browser][Tor Browser Logo] ![Android][Android Logo].
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 [[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
+
 
 ### Vibration API
 
@@ -2685,7 +2879,15 @@ Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Basilisk][Basi
 user_pref("dom.vibrator.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ## WebGL API

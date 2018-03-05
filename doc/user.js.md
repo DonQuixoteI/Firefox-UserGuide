@@ -1882,13 +1882,30 @@ n/a
 user_pref("social.shareDirectory", "");
 ```
 
-Default: "https://activations.cdn.mozilla.net/sharePanel.html" ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+"https://activations.cdn.mozilla.net/sharePanel.html"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+(-FFxx?)
+
 
 ```js
 user_pref("social.share.activationPanelEnabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Basilisk][Basilisk Logo] ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+(-FFxx?)
 
 
 ```js

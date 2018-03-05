@@ -1631,7 +1631,17 @@ n/a
 user_pref("media.eme.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo], `false` ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]
+Default:
+ `true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a ![Android][Android Logo].
+[DXR](https://dxr.mozilla.org/mozilla-central/search?q=media.eme.enabled)
 
 
 ```js
@@ -1654,7 +1664,18 @@ n/a
 user_pref("browser.eme.ui.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Basilisk][Basilisk Logo], `false` ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], n/a ![Android][Android Logo]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
 
 ```js
 user_pref("media.gmp-eme-adobe.enabled", false);

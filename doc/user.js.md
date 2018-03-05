@@ -1151,19 +1151,51 @@ Default:
 user_pref("app.update.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], `false` ![Debian][Debian Logo] ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
+
 
 ```js
 user_pref("app.update.auto", false);
 ```
 
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo], n/a ![Android][Android Logo]. [[mozillaZine](http://kb.mozillazine.org/App.update.auto)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo],
+n/a
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[mozillaZine](http://kb.mozillazine.org/App.update.auto)]
+
 
 ```js
 user_pref("app.update.service.enabled", false);
 ```
 
-Default: `true` ![Windows][Windows Logo], n/a ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo] ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
+
 
 ### Extensions Update
 

@@ -1738,7 +1738,18 @@ Default:
 ```js
 user_pref("xpinstall.signatures.required", false);
 ```
-Default: `true` ![Windows][Windows Logo] ![Debian][Debian Logo] ![Tor Browser][Tor Browser Logo], `false` ![Basilisk][Basilisk Logo] ![Android][Android Logo]. [[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)]
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo],
+`false`
+  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo].
+[mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)
+
 
 ### Get Add-ons Discovery Pane
 

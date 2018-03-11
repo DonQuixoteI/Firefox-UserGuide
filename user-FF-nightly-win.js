@@ -232,3 +232,4 @@ user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("xpinstall.signatures.required", false);
+

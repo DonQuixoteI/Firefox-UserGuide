@@ -181,6 +181,7 @@ user_pref("network.IDN_show_punycode", true);
 user_pref("network.allow-experiments", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
+user_pref("network.dns.disableIPv6", true);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.http.altsvc.enabled", false);

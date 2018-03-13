@@ -6,6 +6,7 @@
   - [Captive Portal Detection](#captive-portal-detection)
   - [Cookie](#cookie)
   - [HTTP Alternative Services](#http-alternative-services)
+  - [IPv6 Name Lookups](#ipv6-name-lookups)
   - [Offline Status](#offline-status)
   - [Prefetching](#prefetching)
   - [Proxy](#proxy)
@@ -222,6 +223,22 @@ Default:
   ![Tor Browser][Tor Browser Logo]
 
 [#16673: Isolate/Disable HTTP Alternative-Services - Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
+
+
+### IPv6 Name Lookups
+
+[network.dns.disableIPv6 - mozillaZine](http://kb.mozillazine.org/Network.dns.disableIPv6)
+
+```js
+user_pref("network.dns.disableIPv6", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo].
+[wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
+
 
 ### Offline Status
 

@@ -127,8 +127,7 @@
 ![Debian][Debian Logo] - Firefox 45.x (Debian Stable),
 ![Android][Android Logo] - IceCat 45.x (Android),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
-![Basilisk][Basilisk Logo] - Basilisk (Firefox 55.x)
-![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows)
+![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows),
 ![NightlyAndroid][Nightly Firefox Android Logo] - Firefox Nightly (Firefox 60.x, Android)
 
 [Android Logo]: img/Android.svg
@@ -136,8 +135,6 @@
 [Debian Logo]: img/Debian.svg
 
 [Tor Browser Logo]: img/TorBrowser.png
-
-[Basilisk Logo]: img/Basilisk.svg
 
 [Windows Logo]: img/Windows.svg
 
@@ -188,7 +185,6 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `1`
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 
 `0` - allow all cookies,
@@ -216,7 +212,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -253,7 +248,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
 ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -274,7 +268,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -291,7 +284,6 @@ Default:
 `false`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `true`
@@ -312,7 +304,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -328,7 +319,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -345,7 +335,6 @@ Default:
 `6`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `0`
@@ -364,7 +353,6 @@ Default:
 `5`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -384,7 +372,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -449,8 +436,6 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
-n/a
-  ![Basilisk][Basilisk Logo]
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -476,7 +461,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -493,7 +477,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -513,7 +496,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -530,7 +512,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -566,7 +547,6 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -613,7 +593,6 @@ Default:
 "127.0.0.1"
   ![Android][Android Logo],
 n/a
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 (-FFxx?)
@@ -644,7 +623,6 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a (hidden)
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -663,7 +641,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -680,7 +657,6 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
 "https://incoming.telemetry.mozilla.org/submit/sslreports/"
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -701,7 +677,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
@@ -721,7 +696,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 `true`
 	![NightlyAndroid][Nightly Firefox Android Logo],
@@ -739,7 +713,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -902,8 +875,6 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
-`false`
-  ![Basilisk][Basilisk Logo],
 n/a
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -919,8 +890,7 @@ Default:
   ![Debian][Debian Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -935,7 +905,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -952,7 +921,6 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
@@ -967,7 +935,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -987,7 +954,6 @@ Default:
 n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
@@ -1005,7 +971,6 @@ Default:
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)).
 [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
@@ -1055,9 +1020,7 @@ user_pref("browser.safebrowsing.phishing.enabled", false);
 Default:
 `true`
   ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-  ![Basilisk][Basilisk Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 ([FF50+](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965))
 
 
@@ -1073,7 +1036,6 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 
 `false`: do not download malware blacklists and do not check user downloads
@@ -1091,7 +1053,6 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -1111,7 +1072,6 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 
 `false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
@@ -1162,7 +1122,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -1189,7 +1148,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
@@ -1206,8 +1164,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -1225,7 +1182,6 @@ Default:
 n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
@@ -1248,7 +1204,6 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
 
 
 ```js
@@ -1260,7 +1215,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -1292,7 +1246,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -1310,7 +1263,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
@@ -1331,7 +1283,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -1351,7 +1302,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "wifi"
   ![Android][Android Logo]
@@ -1368,7 +1318,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml")
   ![Android][Android Logo]
@@ -1387,7 +1336,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -1415,7 +1363,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -1510,7 +1457,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -1529,7 +1475,6 @@ Default:
 n/a (hidden pref)
   ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
@@ -1545,7 +1490,6 @@ n/a (hidden pref)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
@@ -1576,7 +1520,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 "http://127.0.0.1/"
@@ -1590,7 +1533,6 @@ user_pref("media.gmp-manager.url.override", "data:text/plain,");
 Default:
 n/a (hidden)
   ![Windows][Windows Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 "data:text/plain,"
@@ -1672,8 +1614,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a ![Android][Android Logo].
 [DXR](https://dxr.mozilla.org/mozilla-central/search?q=media.eme.enabled)
 
@@ -1685,8 +1626,7 @@ user_pref("media.eme.apiVisible", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -1701,7 +1641,6 @@ user_pref("browser.eme.ui.enabled", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
@@ -1741,7 +1680,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -1760,9 +1698,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-"https://blocklist.basilisk-browser.org/v1/blocklist/%APP_ID%/%APP_VERSION%/%PRODUCT%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/"
-  ![Basilisk][Basilisk Logo].
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 [Tor Bug #16931: Sanitize the add-on blocklist update URL](https://trac.torproject.org/projects/tor/ticket/16931)
 
@@ -1780,7 +1716,6 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo].
 [mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)
 
@@ -1810,7 +1745,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -1869,7 +1803,6 @@ Default:
 n/a
   ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 ([-FF48](https://bugzilla.mozilla.org/show_bug.cgi?id=1287827))
 
@@ -1890,9 +1823,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 "(_empty string_)"
-  ![Android][Android Logo],
-n/a
-  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1906,9 +1837,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo],
-n/a
-  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1922,7 +1851,6 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 (-FFxx?)
 
@@ -1937,7 +1865,6 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 (-FFxx?)
 
@@ -1952,9 +1879,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo],
-n/a
-  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1967,9 +1892,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![Basilisk][Basilisk Logo]
+  ![Android][Android Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1984,7 +1907,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -2003,7 +1925,6 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
 
@@ -2018,7 +1939,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -2064,7 +1984,6 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Android][Android Logo],
@@ -2081,7 +2000,6 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -2097,7 +2015,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "http://127.0.0.1"
   ![Android][Android Logo],
@@ -2113,7 +2030,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "http://127.0.0.1"
   ![Android][Android Logo],
@@ -2128,8 +2044,7 @@ Default:
 n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 "http://127.0.0.1"
   ![Android][Android Logo],
 "https://location.services.mozilla.com/v1/country?key=fff72d56-b040-4205-9a11-82feda9d83a3"
@@ -2146,7 +2061,6 @@ Default:
 `false`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo],
@@ -2165,7 +2079,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -2182,7 +2095,6 @@ Default:
 "https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%"
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
@@ -2199,8 +2111,7 @@ user_pref("browser.newtabpage.directory.ping", "");
 Default:
 "https://tiles.services.mozilla.com/v3/links/"
   ![Windows][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Debian][Debian Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -2218,7 +2129,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -2233,8 +2143,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo].
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
@@ -2253,7 +2162,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -2323,7 +2231,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
@@ -2396,7 +2303,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2417,7 +2323,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2436,7 +2341,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
@@ -2452,7 +2356,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 ([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
@@ -2467,7 +2370,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2495,7 +2397,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2519,7 +2420,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2538,7 +2438,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -2553,8 +2452,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 `false`
   ![Android][Android Logo],
 n/a
@@ -2575,7 +2473,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2592,7 +2489,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -2614,7 +2510,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2634,7 +2529,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2652,7 +2546,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2667,7 +2560,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2682,8 +2574,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
-"http://ip-api.com/json/?fields=lat,lon,status,message"
-  ![Basilisk][Basilisk Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -2708,7 +2598,6 @@ Default:
 n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2725,7 +2614,6 @@ Default:
 n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
@@ -2744,8 +2632,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo].
+  ![Tor Browser][Tor Browser Logo].
 [[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
 
 
@@ -2760,8 +2647,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-"(_empty string_)" ![Basilisk][Basilisk Logo]
+  ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
 ```js
@@ -2773,7 +2659,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -2788,7 +2673,6 @@ Default:
 "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -2810,7 +2694,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
 
@@ -2830,7 +2713,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -2849,7 +2731,6 @@ user_pref("dom.webnotifications.serviceworker.enabled", false);
 
 Default:
 `true`
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
@@ -2896,7 +2777,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2918,7 +2798,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2937,7 +2816,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3017,7 +2895,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3036,7 +2913,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -3056,7 +2932,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `5`
   ![Android][Android Logo]
@@ -3105,7 +2980,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
@@ -3121,7 +2995,6 @@ user_pref("devtools.webide.autoinstallADBHelper", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
@@ -3137,8 +3010,7 @@ user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Windows][Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
@@ -3160,7 +3032,6 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -3177,7 +3048,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false` ![Android][Android Logo]
@@ -3200,7 +3070,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3219,7 +3088,6 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3238,7 +3106,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3261,7 +3128,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Android][Android Logo]
@@ -3279,7 +3145,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3296,7 +3161,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Android][Android Logo]
@@ -3314,7 +3178,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3331,7 +3194,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3348,7 +3210,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3365,7 +3226,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3384,7 +3244,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Android][Android Logo]
@@ -3401,7 +3260,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3417,7 +3275,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3475,7 +3332,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3501,7 +3357,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3532,7 +3387,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3551,7 +3405,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3563,7 +3416,6 @@ user_pref("browser.formfill.saveHttpsForms", false);
 
 Default:
 `true`
-  ![Basilisk][Basilisk Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361220))
 
 
@@ -3603,8 +3455,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
@@ -3618,7 +3469,6 @@ user_pref("full-screen-api.warning.delay", 0);
 
 Default:
 `500`
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3631,7 +3481,6 @@ user_pref("full-screen-api.warning.timeout", 0);
 
 Default:
 `3000`
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3665,7 +3514,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3688,7 +3536,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3767,7 +3614,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3785,7 +3631,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3804,7 +3649,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -3836,7 +3680,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Android][Android Logo]
@@ -3908,7 +3751,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -3925,7 +3767,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3947,7 +3788,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 `true`
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -3983,7 +3823,6 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
@@ -4042,7 +3881,6 @@ user_pref("network.IDN_show_punycode", true);
 
 Default:
 `false`
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -4064,7 +3902,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `true`
@@ -4085,7 +3922,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
 (-FFxx?)
 
@@ -4103,7 +3939,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `10000`
   ![Android][Android Logo]
@@ -4120,7 +3955,6 @@ Default:
 `0`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -4159,8 +3993,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -4182,8 +4015,7 @@ Default:
   ![Debian][Debian Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -4211,7 +4043,6 @@ Default:
 `5`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Basilisk][Basilisk Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `0`
   ![Tor Browser][Tor Browser Logo],
@@ -4231,7 +4062,6 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo],
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo].
@@ -4265,7 +4095,6 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -4311,7 +4140,6 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Basilisk][Basilisk Logo]
   ![Android][Android Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]

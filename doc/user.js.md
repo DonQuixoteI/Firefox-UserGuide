@@ -21,6 +21,7 @@
     - [Shield Studies](#shield-studies)
     - [Experiments](#experiments)
     - [User Rating Feedback](#user-rating-feedback)
+    - [Devtools Telemetry](#devtools-telemetry)
 - [Safe Browsing](#safe-browsing)
 - [Tracking Protection](#tracking-protection)
 - [Updating](#updating)
@@ -1008,6 +1009,22 @@ Default:
   ![Android][Android Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)).
 [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
+
+
+#### Devtools Telemetry
+
+```js
+lockPref("devtools.onboarding.telemetry.logged", false);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+Firefox auto-resets to `true` on start
+[[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
 
 
 ## Safe Browsing

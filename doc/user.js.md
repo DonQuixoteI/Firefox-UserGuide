@@ -135,7 +135,7 @@
 
 [Debian Logo]: img/Debian.svg
 
-[IceCat Logo]: img/IceCat.svg
+[IceCat Logo]: img/Icecat.svg
 
 [Tor Browser Logo]: img/TorBrowser.png
 

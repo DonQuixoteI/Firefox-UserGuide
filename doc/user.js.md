@@ -125,14 +125,17 @@
 
 ![Windows][Windows Logo] - Firefox 45.x (MS Windows),
 ![Debian][Debian Logo] - Firefox 45.x (Debian Stable),
-![Android][Android Logo] - IceCat 45.x (Android),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
 ![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows),
+![IceCat][IceCat Logo] - IceCat 45.x (Android),
+![Android][Android Logo] - Firefox 59.x (Android),
 ![NightlyAndroid][Nightly Firefox Android Logo] - Firefox Nightly (Firefox 60.x, Android)
 
 [Android Logo]: img/Android.svg
 
 [Debian Logo]: img/Debian.svg
+
+[IceCat Logo]: img/IceCat.svg
 
 [Tor Browser Logo]: img/TorBrowser.png
 
@@ -185,7 +188,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `1`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 `0` - allow all cookies,
 `1` - allow only from the originating server,
@@ -212,7 +215,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -248,7 +251,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
 ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -271,7 +274,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
 
@@ -288,7 +291,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 [X-DNS-Prefetch-Control | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)
 
@@ -304,7 +307,7 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -319,7 +322,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -339,7 +342,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `0`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 
 
@@ -353,7 +356,7 @@ Default:
 `5`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `1`
@@ -372,7 +375,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -391,7 +394,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF51](https://bugzilla.mozilla.org/show_bug.cgi?id=1308725))
 [[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
 
@@ -435,7 +438,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -461,7 +464,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -480,7 +483,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-   ![Android][Android Logo]
+   ![IceCat][IceCat Logo]
 
 `false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
@@ -496,7 +499,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -514,7 +517,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[about:tabcrashed spec](https://people-mozilla.org/~mconley2/bugnotes/bug-1110511.html)]
 
@@ -547,7 +550,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -562,7 +565,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
 
@@ -576,7 +579,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
 
@@ -591,7 +594,7 @@ Default:
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 "127.0.0.1"
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -609,7 +612,7 @@ Default:
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF46](https://bugzilla.mozilla.org/show_bug.cgi?id=1236580))
 
 
@@ -623,7 +626,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a (hidden)
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -641,7 +644,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -655,7 +658,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 "https://incoming.telemetry.mozilla.org/submit/sslreports/"
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -680,7 +683,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 If `true`: Telemetry is always enabled and recording base data; Telemetry will send additional `main` pings [[Telemetry Preferences][telemetry-preferences]].
@@ -696,7 +699,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 `true`
 	![NightlyAndroid][Nightly Firefox Android Logo],
 locked `true`
@@ -713,7 +716,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -876,7 +879,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -892,7 +895,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -907,7 +910,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 
 ```js
@@ -921,7 +924,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
 
@@ -935,7 +938,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 
@@ -954,7 +957,7 @@ Default:
 n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 (-FF54).
@@ -971,7 +974,7 @@ Default:
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)).
 [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
 
@@ -1006,7 +1009,7 @@ Default:
   ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF49](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)).
 [mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)
 
@@ -1036,7 +1039,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 `false`: do not download malware blacklists and do not check user downloads
 [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)].
@@ -1053,7 +1056,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
@@ -1072,7 +1075,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 `false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
 
@@ -1122,7 +1125,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -1151,7 +1154,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
 
@@ -1166,7 +1169,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.auto)]
 
@@ -1182,7 +1185,7 @@ Default:
 n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
 
@@ -1199,7 +1202,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -1215,7 +1218,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
@@ -1232,7 +1235,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla support](https://support.mozilla.org/en-US/questions/952162 "Difference between extensions.update.autoUpdateDefault and extensions.update.enabled")]
 
@@ -1248,7 +1251,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Blog](http://starkravingfinkle.org/blog/2010/05/updating-add-ons-in-firefox-mobile-1-1/ "Updating Add-ons in Firefox Mobile 1.1")]
 
@@ -1266,7 +1269,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`: do not automatically check for updates to search plugins [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
@@ -1285,7 +1288,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
 
@@ -1304,7 +1307,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "wifi"
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Bug 805431](https://bugzilla.mozilla.org/show_bug.cgi?id=805431)
 
@@ -1320,7 +1323,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml")
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -1336,7 +1339,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -1367,7 +1370,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
 
@@ -1461,7 +1464,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 `false` removes OpenH264 codec from the Plugins list.
 
@@ -1475,7 +1478,7 @@ Default:
 n/a (hidden pref)
   ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
@@ -1490,7 +1493,7 @@ n/a (hidden pref)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -1523,7 +1526,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 "http://127.0.0.1/"
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 
 ```js
@@ -1538,7 +1541,7 @@ n/a (hidden)
 "data:text/plain,"
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 
 ```js
@@ -1630,7 +1633,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF53](https://bugzilla.mozilla.org/show_bug.cgi?id=1242321))
 
 
@@ -1646,7 +1649,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -1661,7 +1664,7 @@ Default:
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 (-FF51?)
 
 
@@ -1683,7 +1686,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 
 Firefox periodically retrieves a list of blocked addons and certificates from the Mozilla server.
 `true`: Retrieve a blocklist, restrict extension installation and disable them if blocklisted extensions or plugins are already installed [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
@@ -1696,7 +1699,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -1716,7 +1719,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)
 
 
@@ -1747,7 +1750,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)
 
@@ -1803,7 +1806,7 @@ Default:
 n/a
   ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF48](https://bugzilla.mozilla.org/show_bug.cgi?id=1287827))
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
@@ -1823,7 +1826,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 "(_empty string_)"
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1837,7 +1840,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1851,7 +1854,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -1865,7 +1868,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -1879,7 +1882,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1892,7 +1895,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1909,7 +1912,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]:
@@ -1925,7 +1928,7 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
 
 This preference is examined during browser start up. If its value differs from the browser's current milestone, then Firefox connects and fetches content from Mozilla snippets server. `ignore`: the browser's homepage will not be overridden after updates [[mozillaZine](http://kb.mozillazine.org/Browser.startup.homepage_override.mstone)]. _Note_: Firefox for Android overrides this user preference and set it to actual Firefox version?!
@@ -1941,7 +1944,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
 
@@ -1986,7 +1989,7 @@ n/a (hidden)
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 `true`
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2002,7 +2005,7 @@ n/a (hidden)
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -2017,7 +2020,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "http://127.0.0.1"
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 "https://snippets.cdn.mozilla.net/json/%SNIPPETS_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2032,7 +2035,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 "http://127.0.0.1"
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 "https://snippets-stats.mozilla.org/mobile"
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2046,7 +2049,7 @@ n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 "http://127.0.0.1"
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 "https://location.services.mozilla.com/v1/country?key=fff72d56-b040-4205-9a11-82feda9d83a3"
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2065,7 +2068,7 @@ Default:
 `true`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -2081,7 +2084,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 Setting `enabled` and `enhanced` to `false` disables top and suggested sites (equivalent to blank page).
@@ -2099,7 +2102,7 @@ Default:
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
 
@@ -2115,7 +2118,7 @@ Default:
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1241390)).
 [Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
 
@@ -2131,7 +2134,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -2145,7 +2148,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
@@ -2164,7 +2167,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`:  Open link in a new tab and automatically switch into that tab. [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
@@ -2235,7 +2238,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 (-FF45)
 
 `browser.pocket.enabled` was replaced by `extensions.pocket.enabled` in FF46 [[Bug 1215694](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694)].
@@ -2254,7 +2257,7 @@ Default:
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
@@ -2268,7 +2271,7 @@ Default:
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
@@ -2281,7 +2284,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 
@@ -2303,7 +2306,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2323,7 +2326,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2341,7 +2344,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF38](https://bugzilla.mozilla.org/show_bug.cgi?id=782751)-[FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1344669))
@@ -2356,7 +2359,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 
@@ -2370,7 +2373,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2401,7 +2404,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
 
 
@@ -2420,7 +2423,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2440,7 +2443,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -2454,7 +2457,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 n/a
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
@@ -2473,7 +2476,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2491,7 +2494,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
 
@@ -2510,7 +2513,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2533,7 +2536,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 
 
@@ -2546,7 +2549,7 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2560,7 +2563,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2577,7 +2580,7 @@ Default:
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
@@ -2598,7 +2601,7 @@ Default:
 n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 "US"
@@ -2615,7 +2618,7 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2627,7 +2630,7 @@ user_pref("browser.search.geoSpecificDefaults", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -2645,7 +2648,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2659,7 +2662,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
@@ -2673,7 +2676,7 @@ Default:
 "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 "(_empty string_)"
@@ -2694,7 +2697,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
 
 [Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)
@@ -2715,7 +2718,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[wicg.io](https://wicg.github.io/netinfo/)]
 
@@ -2781,7 +2784,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
 
 
@@ -2798,7 +2801,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2816,7 +2819,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2895,7 +2898,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -2913,7 +2916,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
@@ -2934,7 +2937,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `5`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
 
@@ -2984,7 +2987,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -3000,7 +3003,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -3015,7 +3018,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
 
 
@@ -3032,7 +3035,7 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[reddit](https://www.reddit.com/r/firefox/comments/5upj7a/disable_js_access_to_clipboard/)]
@@ -3070,7 +3073,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3088,7 +3091,7 @@ n/a
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3106,7 +3109,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3130,7 +3133,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `true`: Windows may not be moved or resized [[DOM Entries - mozillaZine]].
@@ -3145,7 +3148,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3163,7 +3166,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `true`: Prevent popups from hiding the Location Bar [[mozillaZine](http://kb.mozillazine.org/Dom.disable_window_open_feature.location)].
@@ -3178,7 +3181,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3194,7 +3197,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3210,7 +3213,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3226,7 +3229,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3246,7 +3249,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
 
@@ -3260,7 +3263,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3275,7 +3278,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3332,7 +3335,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3357,7 +3360,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3387,7 +3390,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3405,7 +3408,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3457,7 +3460,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
@@ -3514,7 +3517,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3536,7 +3539,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3614,7 +3617,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3631,7 +3634,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3649,7 +3652,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -3682,7 +3685,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]. [[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)] [[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
 
 
@@ -3751,7 +3754,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)
@@ -3767,7 +3770,7 @@ Default:
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `false`
@@ -3788,7 +3791,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 `true`
   ![NightlyAndroid][Nightly Firefox Android Logo],
 n/a
@@ -3826,7 +3829,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
@@ -3905,7 +3908,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `true`
-  ![Android][Android Logo].
+  ![IceCat][IceCat Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
 
 
@@ -3922,7 +3925,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -3941,7 +3944,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![NightlyWin][Nightly Firefox Windows Logo],
 `10000`
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 The preference controls how often information about the current session is saved to the profile.
@@ -3955,7 +3958,7 @@ Default:
 `0`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo],
 `2`
@@ -3995,7 +3998,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
@@ -4017,7 +4020,7 @@ Default:
 `true`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 
@@ -4047,7 +4050,7 @@ Default:
 `0`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
 
@@ -4062,7 +4065,7 @@ Default:
   ![NightlyWin][Nightly Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
+  ![IceCat][IceCat Logo],
 n/a
   ![NightlyAndroid][Nightly Firefox Android Logo].
 [Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
@@ -4095,7 +4098,7 @@ n/a (hidden)
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
@@ -4140,7 +4143,7 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![IceCat][IceCat Logo]
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 

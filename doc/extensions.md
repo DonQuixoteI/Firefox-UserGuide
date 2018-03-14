@@ -6,7 +6,7 @@
 
 Firefox installs several extensions without your permission and these "system" Extensions are not listed in the Preferences.
 They are listed in the section titled Firefox (or Nightly) Features in the Troubleshooting Information (`about:support`).
-The extensions are located in Firefox directory`/browser/features/*.xpi` and can be deleted.
+The extensions are located in [(_Firefox Installation Directory_)](http://kb.mozillazine.org/Installation_directory)`/browser/features/*.xpi` and can be deleted.
 
 
 

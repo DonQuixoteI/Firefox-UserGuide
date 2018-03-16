@@ -3802,16 +3802,18 @@ n/a
 ## Screen Resolution
 
 ```js
-user_pref("layout.css.devPixelsPerPx", 1.5);
+user_pref("layout.css.devPixelsPerPx", "1.5");
 ```
 
-Default:
+Default (string):
 `-1`
   ![NightlyWin][Nightly Firefox Windows Logo]
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 Firefox uses 96 dpi by default. The fonts are too small to read in the case of high-resolution displays.
 `1.5` sets dpi to 144.
+
+>_Warning_: The pref breaks YouTube. The video will be shown only after the change of window size.
 
 [Configure the DPI value - ArchWiki](https://wiki.archlinux.org/index.php/Firefox/Tweaks#Configure_the_DPI_value)
 

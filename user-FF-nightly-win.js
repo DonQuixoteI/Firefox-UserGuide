@@ -124,7 +124,6 @@ user_pref("extensions.formautofill.creditCards.enabled", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.getAddons.showPane", false);
-user_pref("extensions.pocket.api", "");
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.oAuthConsumerKey", "");
 user_pref("extensions.pocket.site", "");

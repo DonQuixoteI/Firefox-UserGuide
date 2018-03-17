@@ -78,7 +78,6 @@ user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.tabs.loadInBackground", false);
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.uitour.url", "");
-user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:Infinity");
 user_pref("browser.urlbar.oneOffSearches", false);
 user_pref("browser.urlbar.searchSuggestionsChoice", false);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);

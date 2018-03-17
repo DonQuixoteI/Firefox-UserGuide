@@ -3562,19 +3562,6 @@ n/a
 
 
 ```js
-user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
-```
-
-Default:
-`true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
-(FF54+)
-
-[Bug 1211726: Pre-seed awesomebar (location bar) with a list of top web sites for better autocompletion on empty profiles - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1211726)
-
-
-```js
 user_pref("browser.urlbar.trimURLs", false);
 ```
 

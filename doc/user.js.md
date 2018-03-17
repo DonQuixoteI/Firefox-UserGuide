@@ -2569,7 +2569,7 @@ Default:
 
 
 ```js
-user_pref("geo.wifi.uri", "http://127.0.0.1");
+user_pref("geo.wifi.uri", "");
 ```
 
 Default:

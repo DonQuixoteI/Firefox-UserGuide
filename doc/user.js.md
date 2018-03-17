@@ -4029,10 +4029,10 @@ n/a
 ### Slow Startup
 
 ```js
-user_pref("browser.slowStartup.samples", 0);
+user_pref("browser.slowStartup.samples", "0");
 ```
 
-Default:
+Default (string):
 n/a (hidden)
   ![NightlyWin][Nightly Firefox Windows Logo],
 n/a

@@ -2955,6 +2955,19 @@ To use RAM disk for caching is good for systems with big enough RAM.
 ## Clear History
 
 ```js
+user_pref("privacy.cpd.offlineApps", true);
+```
+
+Default:
+`false`
+  ![NightlyWin][Nightly Firefox Windows Logo],
+n/a
+  ![NightlyAndroid][Nightly Firefox Android Logo]
+
+`true`: Automatically select "Offline Website Data" in the list of history items to clear.
+
+
+```js
 user_pref("privacy.sanitize.timeSpan", 0);
 ```
 

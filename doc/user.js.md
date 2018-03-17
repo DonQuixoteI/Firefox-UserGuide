@@ -3853,7 +3853,7 @@ Default:
   ![NightlyAndroid][Nightly Firefox Android Logo]
 
 `0` - disabled, `1` - enabled, `2` - enabled for [EV certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) only.
-It's a trade-off between security (checking) and privacy (leaking info to the [Certificate Autorities](https://en.wikipedia.org/wiki/Certificate_authority))
+`1` is a trade-off between security (checking) and privacy (leaking info to the [Certificate Autorities](https://en.wikipedia.org/wiki/Certificate_authority))
 [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
 
 

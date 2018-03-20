@@ -126,12 +126,9 @@
 ![Windows][Windows Logo] - Firefox 45.x (MS Windows),
 ![Debian][Debian Logo] - Firefox 45.x (Debian Stable),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
-![NightlyWin][Nightly Firefox Windows Logo] - Firefox Nightly (Firefox 60.x, Windows),
 ![IceCat][IceCat Logo] - IceCat 45.x (Android),
-![Android][Android Logo] - Firefox 59.x (Android),
-![NightlyAndroid][Nightly Firefox Android Logo] - Firefox Nightly (Firefox 60.x, Android)
-
-[Android Logo]: img/Android.svg
+![NightlyWin][Nightly Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
+![NightlyAndroid][Nightly Firefox Android Logo] - Mozilla Firefox 59.x (Android)
 
 [Debian Logo]: img/Debian.svg
 
@@ -143,7 +140,7 @@
 
 [Nightly Firefox Windows Logo]: img/FF-Nightly.svg
 
-[Nightly Firefox Android Logo]: img/FF-Nightly-Android.svg
+[Nightly Firefox Android Logo]: img/Android.svg
 
 ## Network
 

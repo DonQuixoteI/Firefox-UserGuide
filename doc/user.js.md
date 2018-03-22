@@ -3237,6 +3237,18 @@ n/a
   ![Android][Firefox Android Logo]
 
 
+```js
+user_pref("browser.urlbar.clickSelectsAll", true);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo]
+
+
 ### Domain Guessing
 
 Domain Guessing intercepts the DNS "hostname not found" error, and resends the

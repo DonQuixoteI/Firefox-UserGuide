@@ -43,6 +43,7 @@ user_pref("browser.snippets.statsUrl", "http://127.0.0.1");
 user_pref("browser.snippets.syncPromo.enabled", false);
 user_pref("browser.snippets.updateUrl", "http://127.0.0.1");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
+user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);

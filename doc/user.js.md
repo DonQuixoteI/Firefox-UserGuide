@@ -1024,6 +1024,31 @@ Default:
 (various Google URLs)
 
 
+```js
+user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+```
+
+Default:
+"https://shavar.services.mozilla.com/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo]
+
+"(_empty string_)" prevents background connections to Mozilla.
+
+```js
+user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
+```
+
+Default:
+"https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo]
+
+"(_empty string_)" prevents background connections to Mozilla.
+
+
 ## Tracking Protection
 
 [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]

@@ -27,6 +27,8 @@ user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 user_pref("browser.safebrowsing.provider.google4.reportMalwareMistakeURL", "");
 user_pref("browser.safebrowsing.provider.google4.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.provider.google4.reportURL", "");
+user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
+user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");

@@ -123,24 +123,18 @@
 - [View Source](#view-source)
 
 
-![Windows][Windows Logo] - Firefox 45.x (MS Windows),
+![Win][Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
 ![Debian][Debian Logo] - Firefox 45.x (Debian Stable),
+![Android][Firefox Android Logo] - Mozilla Firefox 59.x (Android)
 ![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
-![IceCat][IceCat Logo] - IceCat 45.x (Android),
-![NightlyWin][Nightly Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
-![NightlyAndroid][Nightly Firefox Android Logo] - Mozilla Firefox 59.x (Android)
 
 [Debian Logo]: img/Debian.svg
 
-[IceCat Logo]: img/Icecat.svg
-
 [Tor Browser Logo]: img/TorBrowser.png
 
-[Windows Logo]: img/Windows.svg
+[Firefox Windows Logo]: img/FF-Nightly.svg
 
-[Nightly Firefox Windows Logo]: img/FF-Nightly.svg
-
-[Nightly Firefox Android Logo]: img/Android.svg
+[Firefox Android Logo]: img/Android.svg
 
 ## Network
 
@@ -156,9 +150,9 @@ user_pref("network.captive-portal-service.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 (FF52+). [[Tor Bug #21790](https://trac.torproject.org/projects/tor/ticket/21790)]
 
 ```js
@@ -167,8 +161,8 @@ user_pref("captivedetect.canonicalURL", "");
 
 Default:
 "http://detectportal.firefox.com/success.txt"
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Cookie
@@ -179,13 +173,11 @@ user_pref("network.cookie.cookieBehavior", 1);
 
 Default:
 `0`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `1`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 
 `0` - allow all cookies,
 `1` - allow only from the originating server,
@@ -210,11 +202,9 @@ user_pref("network.http.altsvc.oe", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -231,8 +221,8 @@ user_pref("network.dns.disableIPv6", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
 
 
@@ -246,11 +236,9 @@ user_pref("network.manage-offline-status", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -265,13 +253,10 @@ user_pref("network.prefetch-next", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-  ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 
 Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
 
@@ -282,13 +267,11 @@ user_pref("network.dns.disablePrefetch", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 
 [X-DNS-Prefetch-Control | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)
 
@@ -301,12 +284,10 @@ user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
 
@@ -317,11 +298,9 @@ user_pref("network.predictor.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -333,13 +312,11 @@ user_pref("network.http.speculative-parallel-limit", 0);
 
 Default:
 `6`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `0`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo].
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 
 
@@ -351,11 +328,9 @@ user_pref("network.proxy.type", 0);
 
 Default:
 `5`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `1`
   ![Tor Browser][Tor Browser Logo].
 [[mozillaZine](http://kb.mozillazine.org/Network.proxy.type)]
@@ -369,12 +344,10 @@ user_pref("network.http.sendRefererHeader", 2);
 
 Default:
 `2`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 0 - never send the referring URL,
 1 - send only on clicked links,
@@ -388,10 +361,8 @@ user_pref("network.http.sendSecureXSiteReferrer", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF51](https://bugzilla.mozilla.org/show_bug.cgi?id=1308725))
 [[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
 
@@ -406,8 +377,8 @@ user_pref("network.http.spdy.enabled.http2", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/107)]
 
 
@@ -429,13 +400,11 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -458,12 +427,10 @@ user_pref("breakpad.reportURL", "");
 
 Default:
 "https://crash-stats.mozilla.com/report/index/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 Set of libraries called `Breakpad` handles client-side crash reporting [[mozillaZine](http://kb.mozillazine.org/Breakpad.reportURL)].
 
@@ -474,13 +441,10 @@ user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-   ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
@@ -493,12 +457,10 @@ user_pref("dom.ipc.plugins.reportCrashURL", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not send the URL of the website where a plugin crashed [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
@@ -509,13 +471,11 @@ user_pref("browser.tabs.crashReporting.sendReport", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[about:tabcrashed spec](https://people-mozilla.org/~mconley2/bugnotes/bug-1110511.html)]
 
 
@@ -525,9 +485,9 @@ user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Health Report
@@ -541,14 +501,12 @@ user_pref("datareporting.healthreport.uploadEnabled", false);
 ```
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -557,12 +515,9 @@ user_pref("datareporting.healthreport.service.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
 
@@ -572,11 +527,8 @@ user_pref("datareporting.healthreport.documentServerURI", "");
 
 Default:
 "https://fhr.data.mozilla.com/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
 
 
@@ -586,15 +538,12 @@ user_pref("datareporting.healthreport.about.reportUrl", "");
 
 Default:
 "https://fhr.cdn.mozilla.net/%LOCALE%/v4/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
-"127.0.0.1"
-  ![IceCat][IceCat Logo],
 n/a
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 (-FFxx?)
 
 
@@ -604,12 +553,9 @@ user_pref("datareporting.healthreport.about.reportUrlUnified", "");
 
 Default:
 "https://fhr.cdn.mozilla.net/%LOCALE%/v4/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 ([-FF46](https://bugzilla.mozilla.org/show_bug.cgi?id=1236580))
 
 
@@ -619,13 +565,11 @@ user_pref("datareporting.healthreport.logging.consoleEnabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a (hidden)
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### SSL Error Report
@@ -638,12 +582,10 @@ user_pref("security.ssl.errorReporting.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -652,13 +594,11 @@ user_pref("security.ssl.errorReporting.url", "");
 
 Default:
 "https://data.mozilla.com/submit/sslreports"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 "https://incoming.telemetry.mozilla.org/submit/sslreports/"
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Telemetry
@@ -675,13 +615,11 @@ user_pref("toolkit.telemetry.unified", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 If `true`: Telemetry is always enabled and recording base data; Telemetry will send additional `main` pings [[Telemetry Preferences][telemetry-preferences]].
 
@@ -693,14 +631,12 @@ user_pref("toolkit.telemetry.enabled", false);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 `true`
-	![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Android][Firefox Android Logo],
 locked `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![Win][Firefox Windows Logo]
 
 If `unified` is off, this controls whether the Telemetry module is enabled; if `unified` is on, this controls whether to record extended data [[Telemetry Preferences][telemetry-preferences]].
 
@@ -710,12 +646,10 @@ user_pref("toolkit.telemetry.server", "");
 
 Default:
 "https://incoming.telemetry.mozilla.org"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 The server Telemetry pings are sent to [[Telemetry Preferences][telemetry-preferences]].
 
@@ -726,9 +660,9 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Telemetry Archiving - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/concepts/archiving.html)
 
@@ -744,9 +678,9 @@ user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -755,9 +689,9 @@ user_pref("toolkit.telemetry.hybridContent.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 ([FF59+](https://bugzilla.mozilla.org/show_bug.cgi?id=1417473))
 
 [Hybrid Content Telemetry - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/collection/hybrid-content.html)
@@ -769,9 +703,9 @@ user_pref("toolkit.telemetry.infoURL", "");
 
 Default:
 `https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 #### Ping Centre
@@ -789,9 +723,9 @@ user_pref("browser.ping-centre.telemetry", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 ([FF57+](https://bugzilla.mozilla.org/show_bug.cgi?id=1390249))
 
 ```js
@@ -800,9 +734,9 @@ user_pref("browser.ping-centre.production.endpoint", "");
 
 Default:
 `https://tiles.services.mozilla.com/v3/links/ping-centre`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("browser.ping-centre.staging.endpoint", "");
@@ -810,9 +744,9 @@ user_pref("browser.ping-centre.staging.endpoint", "");
 
 Default:
 `https://onyx_tiles.stage.mozaws.net/v3/links/ping-centre`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Firefox Tuning zur Absicherung und Anonymisierung - Quantum Edition - kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)
 
@@ -833,9 +767,9 @@ user_pref("app.shield.optoutstudies.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 [Issue #319: Block Firefox Shield Recipe Client - pyllyukko/user.js](https://github.com/pyllyukko/user.js/issues/319)
@@ -846,9 +780,9 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("extensions.shield-recipe-client.api_url", "");
@@ -856,9 +790,9 @@ user_pref("extensions.shield-recipe-client.api_url", "");
 
 Default:
 `"https://normandy.cdn.mozilla.net/api/v1"`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 #### Experiments
@@ -871,13 +805,11 @@ user_pref("experiments.supported", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -886,14 +818,12 @@ user_pref("experiments.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -902,12 +832,9 @@ user_pref("experiments.manifest.uri", "");
 
 Default:
 "https://telemetry-experiment.cdn.mozilla.net/manifest/v1/firefox/%VERSION%/%CHANNEL%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo],
 
 
 ```js
@@ -916,13 +843,11 @@ user_pref("experiments.activeExperiment", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
 
 
@@ -932,12 +857,10 @@ user_pref("network.allow-experiments", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 
 `true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
 
@@ -952,9 +875,7 @@ user_pref("browser.selfsupport.enabled", false);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
-  ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 (-FF54).
@@ -967,11 +888,9 @@ user_pref("browser.selfsupport.url", "");
 
 Default:
 "https://self-repair.mozilla.org/%LOCALE%/repair"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1361578)).
 [[mozilla wiki](https://wiki.mozilla.org/Advocacy/heartbeat)]
 
@@ -984,9 +903,9 @@ lockPref("devtools.onboarding.telemetry.logged", false);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 Firefox auto-resets to `true` on start
 [[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
@@ -1002,11 +921,9 @@ user_pref("browser.safebrowsing.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF49](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)).
 [mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)
 
@@ -1019,8 +936,8 @@ user_pref("browser.safebrowsing.phishing.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 ([FF50+](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965))
 
 
@@ -1030,13 +947,11 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 
 `false`: do not download malware blacklists and do not check user downloads
 [[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled)].
@@ -1048,13 +963,11 @@ user_pref("browser.safebrowsing.downloads.enabled", false);
 ```
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
 `true` does only the local checks against a blacklist and a whitelist, as long as `browser.safebrowsing.downloads.remote.enabled` is disabled [[pyllyukko](https://github.com/pyllyukko/user.js/pull/65)].
@@ -1066,13 +979,10 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-  ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 
 `false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
 
@@ -1089,8 +999,8 @@ user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -1119,12 +1029,10 @@ user_pref("privacy.trackingprotection.enabled", false);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
@@ -1132,8 +1040,8 @@ user_pref("privacy.trackingprotection.pbmode.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Updating
@@ -1146,13 +1054,11 @@ user_pref("app.update.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
 
 
@@ -1162,12 +1068,10 @@ user_pref("app.update.auto", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.auto)]
 
 
@@ -1177,13 +1081,11 @@ user_pref("app.update.service.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
 
 
@@ -1197,11 +1099,9 @@ user_pref("extensions.getAddons.cache.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -1212,12 +1112,10 @@ user_pref("extensions.update.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
 
 
@@ -1227,13 +1125,11 @@ user_pref("extensions.update.autoUpdateDefault", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozilla support](https://support.mozilla.org/en-US/questions/952162 "Difference between extensions.update.autoUpdateDefault and extensions.update.enabled")]
 
 
@@ -1243,13 +1139,11 @@ user_pref("extensions.autoupdate.enabled", false);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[Blog](http://starkravingfinkle.org/blog/2010/05/updating-add-ons-in-firefox-mobile-1-1/ "Updating Add-ons in Firefox Mobile 1.1")]
 
 
@@ -1261,13 +1155,11 @@ user_pref("browser.search.update", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: do not automatically check for updates to search plugins [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
@@ -1280,13 +1172,11 @@ user_pref("lightweightThemes.update.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
 
 
@@ -1299,13 +1189,11 @@ user_pref("app.update.autodownload", "never");
 ```
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 "wifi"
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [Bug 805431](https://bugzilla.mozilla.org/show_bug.cgi?id=805431)
 
 
@@ -1315,13 +1203,11 @@ user_pref("app.update.url.android", "");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 "https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml")
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## WebRTC
@@ -1334,11 +1220,9 @@ user_pref("media.navigator.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
@@ -1350,8 +1234,8 @@ user_pref("media.navigator.video.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 ([FF28+](https://bugzilla.mozilla.org/show_bug.cgi?id=947429))
 
 
@@ -1361,13 +1245,11 @@ user_pref("media.peerconnection.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo].
+  ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
 
@@ -1378,8 +1260,8 @@ user_pref("media.peerconnection.ice.no_host", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 
@@ -1389,8 +1271,8 @@ user_pref("media.peerconnection.use_document_iceservers", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 
@@ -1400,8 +1282,8 @@ user_pref("media.peerconnection.turn.disable", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1411,8 +1293,8 @@ user_pref("media.peerconnection.video.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1422,8 +1304,8 @@ user_pref("media.peerconnection.identity.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)]
 
 
@@ -1433,8 +1315,8 @@ user_pref("media.peerconnection.identity.timeout", 1);
 
 Default:
 `10000`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1455,13 +1337,11 @@ user_pref("media.gmp-provider.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 
 `false` removes OpenH264 codec from the Plugins list.
 
@@ -1473,12 +1353,10 @@ user_pref("media.gmp-gmpopenh264.enabled", false);
 ```
 Default:
 n/a (hidden pref)
-  ![Windows][Windows Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Debian][Debian Logo]
 
@@ -1487,13 +1365,11 @@ user_pref("media.gmp-gmpopenh264.autoupdate", false);
 ```
 Default:
 n/a (hidden pref)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 The installed codec is stored in `<Profile>/gmp-gmpopenh264/` and can be deleted.
 
@@ -1504,9 +1380,9 @@ user_pref("media.gmp-manager.updateEnabled", false);
 
 Default:
 n/a (hidden)
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: disable GMP downloads via local fallback [[Tor Browser](https://www.torproject.org/projects/torbrowser/design/)].
 
@@ -1517,13 +1393,10 @@ user_pref("media.gmp-manager.url", "http://127.0.0.1/");
 
 Default:
 "https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-"http://127.0.0.1/"
-  ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 
 
 ```js
@@ -1532,13 +1405,11 @@ user_pref("media.gmp-manager.url.override", "data:text/plain,");
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 "data:text/plain,"
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 
 
 ```js
@@ -1547,9 +1418,9 @@ user_pref("media.gmp.trial-create.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 Whether we should run a test-pattern through EME GMPs before assuming they'll decode H.264 [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
@@ -1562,9 +1433,9 @@ user_pref("media.getusermedia.screensharing.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -1573,8 +1444,8 @@ user_pref("media.getusermedia.audiocapture.enabled", false);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Capture local camera and microphone streams with getUserMedia - now enabled in Firefox - Mozilla Blog](https://blog.mozilla.org/futurereleases/2013/01/12/capture-local-camera-and-microphone-streams-with-getusermedia-now-enabled-in-firefox/)
 
@@ -1594,9 +1465,9 @@ user_pref("media.gmp-widevinecdm.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![Win][Firefox Windows Logo]
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Encrypted Media Extension
@@ -1609,10 +1480,9 @@ user_pref("media.eme.enabled", false);
 
 Default:
  `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a ![Android][Android Logo].
@@ -1625,12 +1495,9 @@ user_pref("media.eme.apiVisible", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF53](https://bugzilla.mozilla.org/show_bug.cgi?id=1242321))
 
 
@@ -1640,14 +1507,12 @@ user_pref("browser.eme.ui.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -1655,13 +1520,10 @@ user_pref("media.gmp-eme-adobe.enabled", false);
 ```
 
 Default:
-`true`
-  ![Windows][Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
 (-FF51?)
 
 
@@ -1677,13 +1539,10 @@ user_pref("extensions.blocklist.enabled", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-  ![IceCat][IceCat Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 
 Firefox periodically retrieves a list of blocked addons and certificates from the Mozilla server.
 `true`: Retrieve a blocklist, restrict extension installation and disable them if blocklisted extensions or plugins are already installed [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
@@ -1693,12 +1552,10 @@ user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/v1/b
 ```
 Default:
 "https://blocklist.addons.mozilla.org/v1/blocklist/3/%APP_ID%/%APP_VERSION%/%PRODUCT%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%PING_COUNT%/%TOTAL_PING_COUNT%/%DAYS_SINCE_LAST_PING%/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Tor Bug #16931: Sanitize the add-on blocklist update URL](https://trac.torproject.org/projects/tor/ticket/16931)
 
@@ -1710,13 +1567,10 @@ user_pref("xpinstall.signatures.required", false);
 ```
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`false`
-  ![IceCat][IceCat Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [mozilla wiki](https://wiki.mozilla.org/Addons/Extension_Signing)
 
 
@@ -1728,9 +1582,9 @@ user_pref("extensions.getAddons.showPane", false);
 
 Default:
 n/a (hidden)
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
 [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
@@ -1742,13 +1596,11 @@ user_pref("extensions.webservice.discoverURL", "http://127.0.0.1");
 
 Default:
 "https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)
 
 
@@ -1769,8 +1621,8 @@ user_pref("extensions.webcompat-reporter.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 Browser extension that allows users to click on a button in the browser to report a site compatibility issue [[webcompat](https://github.com/webcompat/webcompat-reporter-extensions)].
 
@@ -1785,9 +1637,9 @@ user_pref("identity.fxaccounts.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 (FF60+). [ghacks.net](https://www.ghacks.net/2018/02/28/firefox-60-disable-firefox-sync-integration/)
 
 
@@ -1801,9 +1653,7 @@ Default:
 `false`
   ![Debian][Debian Logo],
 n/a
-  ![Windows][Windows Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF48](https://bugzilla.mozilla.org/show_bug.cgi?id=1287827))
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
@@ -1819,11 +1669,8 @@ user_pref("social.directories", "");
 
 Default:
 "https://activations.cdn.mozilla.net"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-"(_empty string_)"
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1833,11 +1680,8 @@ user_pref("social.remote-install.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-`false`
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1847,11 +1691,8 @@ user_pref("social.shareDirectory", "");
 
 Default:
 "https://activations.cdn.mozilla.net/sharePanel.html"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -1861,11 +1702,8 @@ user_pref("social.share.activationPanelEnabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -1875,11 +1713,8 @@ user_pref("social.toast-notifications.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-`false`
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1889,10 +1724,8 @@ user_pref("social.whitelist", "");
 
 Default:
 "https://mozsocial.cliqz.com"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
 
@@ -1904,13 +1737,11 @@ user_pref("browser.startup.homepage", "about:blank");
 
 Default:
 "about:home"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]:
 `about:home` fetches content from the production snippets service once every 24 hours. If content is available, it gets is stashed in local storage for the page and displayed from there until the next fetch. If no content is available, the browser has a built-in default set of snippets for display.
@@ -1922,11 +1753,9 @@ user_pref("browser.startup.homepage_override.mstone", "ignore");
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![Win][Firefox Windows Logo]
 
 This preference is examined during browser start up. If its value differs from the browser's current milestone, then Firefox connects and fetches content from Mozilla snippets server. `ignore`: the browser's homepage will not be overridden after updates [[mozillaZine](http://kb.mozillazine.org/Browser.startup.homepage_override.mstone)]. _Note_: Firefox for Android overrides this user preference and set it to actual Firefox version?!
 
@@ -1936,13 +1765,11 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 
 Default:
 "https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
 
 
@@ -1952,9 +1779,9 @@ user_pref("startup.homepage_override_url", "");
 
 Default:
 "https://www.mozilla.org/projects/firefox/%VERSION%/whatsnew/?oldversion=%OLD_VERSION%"
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 "(_empty string_)" disables What is New Page after updates.
 
@@ -1965,9 +1792,9 @@ user_pref("startup.homepage_welcome_url", "about:blank");
 
 Default:
 `https://www.mozilla.org/projects/firefox/%VERSION%/firstrun/`
-  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![Win][Firefox Windows Logo]
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Messages on Home Page
@@ -1981,14 +1808,11 @@ user_pref("browser.snippets.syncPromo.enabled", false);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
-`false`
-  ![IceCat][IceCat Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -1997,13 +1821,11 @@ user_pref("browser.snippets.firstrunHomepage.enabled", false);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2012,14 +1834,12 @@ user_pref("browser.snippets.updateUrl", "http://127.0.0.1");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
-"http://127.0.0.1"
-  ![IceCat][IceCat Logo],
+  ![Win][Firefox Windows Logo],
 "https://snippets.cdn.mozilla.net/json/%SNIPPETS_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
+
 
 ```js
 user_pref("browser.snippets.statsUrl", "http://127.0.0.1");
@@ -2027,14 +1847,11 @@ user_pref("browser.snippets.statsUrl", "http://127.0.0.1");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
-"http://127.0.0.1"
-  ![IceCat][IceCat Logo],
+  ![Win][Firefox Windows Logo],
 "https://snippets-stats.mozilla.org/mobile"
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("browser.snippets.geoUrl", "http://127.0.0.1");
@@ -2042,13 +1859,10 @@ user_pref("browser.snippets.geoUrl", "http://127.0.0.1");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-"http://127.0.0.1"
-  ![IceCat][IceCat Logo],
 "https://location.services.mozilla.com/v1/country?key=fff72d56-b040-4205-9a11-82feda9d83a3"
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## New Tab
@@ -2059,14 +1873,12 @@ user_pref("browser.newtabpage.introShown", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2076,13 +1888,11 @@ user_pref("browser.newtabpage.enhanced", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 Setting `enabled` and `enhanced` to `false` disables top and suggested sites (equivalent to blank page).
 
@@ -2093,14 +1903,12 @@ user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 
 Default:
 "https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
 
 
@@ -2110,12 +1918,9 @@ user_pref("browser.newtabpage.directory.ping", "");
 
 Default:
 "https://tiles.services.mozilla.com/v3/links/"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "data:text/plain,"
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1241390)).
 [Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
 
@@ -2126,13 +1931,11 @@ user_pref("browser.newtab.preload", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2141,11 +1944,8 @@ user_pref("browser.tabs.animate", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo].
+  ![Tor Browser][Tor Browser Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
@@ -2159,13 +1959,11 @@ user_pref("browser.tabs.loadInBackground", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`:  Open link in a new tab and automatically switch into that tab. [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
 
@@ -2183,9 +1981,9 @@ user_pref("browser.newtabpage.activity-stream.showTopSites", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
 
@@ -2198,9 +1996,9 @@ user_pref("browser.newtabpage.activity-stream.section.topstories.collapsed", tru
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Onboarding
@@ -2213,9 +2011,9 @@ user_pref("browser.onboarding.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 (FF55+)
 
 
@@ -2229,13 +2027,10 @@ user_pref("extensions.pocket.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 (-FF45)
 
 `browser.pocket.enabled` was replaced by `extensions.pocket.enabled` in FF46 [[Bug 1215694](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694)].
@@ -2249,12 +2044,9 @@ user_pref("browser.pocket.api", "");
 
 Default:
 "api.getpocket.com"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
@@ -2263,12 +2055,9 @@ user_pref("browser.pocket.site", "");
 
 Default:
 "getpocket.com"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 ```js
@@ -2277,11 +2066,8 @@ user_pref("browser.pocket.oAuthConsumerKey", "");
 
 Default:
 "_your-consumer-key_"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 
@@ -2301,11 +2087,9 @@ user_pref("dom.enable_performance", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF23+](https://bugzilla.mozilla.org/show_bug.cgi?id=870667))
@@ -2321,11 +2105,9 @@ user_pref("dom.enable_resource_timing", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF35+](https://bugzilla.mozilla.org/show_bug.cgi?id=1002855))
@@ -2339,9 +2121,7 @@ user_pref("dom.enable_user_timing", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF38](https://bugzilla.mozilla.org/show_bug.cgi?id=782751)-[FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1344669))
@@ -2353,10 +2133,8 @@ user_pref("dom.idle-observers-api.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 
@@ -2368,11 +2146,9 @@ user_pref("media.video_stats.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 ([FF25+](https://bugzilla.mozilla.org/show_bug.cgi?id=654550))
@@ -2395,13 +2171,11 @@ user_pref("dom.battery.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo].
+  ![Tor Browser][Tor Browser Logo].
 [[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
 
 
@@ -2417,12 +2191,10 @@ user_pref("beacon.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Camera API
@@ -2435,13 +2207,11 @@ user_pref("device.camera.enabled", false);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2450,14 +2220,11 @@ user_pref("camera.control.face_detection.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-`false`
-  ![IceCat][IceCat Logo],
 n/a
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### CSS Font Loading API
@@ -2470,12 +2237,10 @@ user_pref("layout.css.font-loading-api.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Device Storage API
@@ -2486,13 +2251,11 @@ user_pref("device.storage.enabled", false);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
 
 [Device Storage API - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Device_Storage_API)
@@ -2508,11 +2271,9 @@ user_pref("dom.gamepad.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -2527,13 +2288,11 @@ user_pref("geo.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo].
+  ![Tor Browser][Tor Browser Logo].
 [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 
 
@@ -2543,12 +2302,10 @@ user_pref("geo.wifi.logging.enabled", false);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2557,12 +2314,10 @@ user_pref("geo.wifi.xhr.timeout", 1);
 
 Default:
 `60000`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2571,14 +2326,12 @@ user_pref("geo.wifi.uri", "");
 
 Default:
 "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
 
@@ -2596,11 +2349,9 @@ user_pref("browser.search.region", "US");
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 "US"
   ![Tor Browser][Tor Browser Logo].
 [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
@@ -2612,12 +2363,10 @@ user_pref("browser.search.isUS", true);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2626,10 +2375,8 @@ user_pref("browser.search.geoSpecificDefaults", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo].
@@ -2642,12 +2389,10 @@ user_pref("browser.search.geoSpecificDefaults.url", "");
 
 Default:
 "https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -2656,12 +2401,10 @@ user_pref("browser.search.geoip.timeout", 1);
 
 Default:
 `2000`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
 
 
@@ -2671,11 +2414,9 @@ user_pref("browser.search.geoip.url", "");
 
 Default:
 "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo].
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
@@ -2691,10 +2432,8 @@ user_pref("dom.keyboardevent.code.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352949))
 
 [Privacy-Handbuch.de](https://www.privacy-handbuch.de/handbuch_21v.htm) (in German)
@@ -2710,13 +2449,11 @@ user_pref("dom.netinfo.enabled", false);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[wicg.io](https://wicg.github.io/netinfo/)]
 
 
@@ -2731,8 +2468,8 @@ user_pref("dom.webnotifications.serviceworker.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
 
 
@@ -2751,8 +2488,8 @@ user_pref("dom.push.connection.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("dom.push.serverURL", "");
@@ -2760,9 +2497,9 @@ user_pref("dom.push.serverURL", "");
 
 Default:
 "wss://push.services.mozilla.com/"
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 "https://updates.push.services.mozilla.com/v1/gcm/..."
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Sensor API
@@ -2775,13 +2512,11 @@ user_pref("device.sensors.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo].
+  ![Tor Browser][Tor Browser Logo].
 [[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
 
 
@@ -2795,12 +2530,10 @@ user_pref("dom.vibrator.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## WebGL API
@@ -2813,12 +2546,10 @@ user_pref("webgl.disabled", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Is WebGL a security concern? - Security Stack Exchange](https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern)
 
@@ -2832,8 +2563,8 @@ user_pref("webgl.enable-debug-renderer-info", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Bug 1171228: Expose WEBGL_debug_renderer_info extension to Web content - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1171228)
 
@@ -2846,9 +2577,9 @@ user_pref("media.webspeech.synth.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 ([FF45+](https://bugzilla.mozilla.org/show_bug.cgi?id=1003439))
 
 ## Web Channel
@@ -2861,8 +2592,8 @@ user_pref("webchannel.allowObject.urlWhitelist", "");
 
 Default:
 "https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org"
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 Space separated list of URLS that are allowed to send objects (instead of only strings) through webchannels [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
@@ -2877,8 +2608,8 @@ user_pref("accessibility.force_disabled", 1);
 
 Default:
 `0`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 (FF57+)
 
 
@@ -2892,12 +2623,10 @@ user_pref("image.animation_mode", "none");
 
 Default:
 "normal"
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `none`: animated images will never play [[mozillaZine](http://kb.mozillazine.org/Firefox_:_Tips_:_Animated_Images)].
 
@@ -2910,12 +2639,10 @@ user_pref("media.autoplay.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
 
 `false` may break video playback on various sites.
@@ -2929,13 +2656,11 @@ user_pref("browser.bookmarks.max_backups", 2);
 
 Default:
 `15`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `5`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
 
 
@@ -2957,9 +2682,9 @@ user_pref("privacy.cpd.offlineApps", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Automatically select "Offline Website Data" in the list of history items to clear.
 
@@ -2970,9 +2695,9 @@ user_pref("privacy.sanitize.timeSpan", 0);
 
 Default:
 `1`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
@@ -2991,14 +2716,12 @@ user_pref("devtools.webide.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -3007,14 +2730,12 @@ user_pref("devtools.webide.autoinstallADBHelper", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -3022,13 +2743,9 @@ user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 ```
 
 Default:
-`true`
-  ![Windows][Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
 
 
@@ -3042,12 +2759,10 @@ user_pref("dom.allow_cut_copy", false);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[reddit](https://www.reddit.com/r/firefox/comments/5upj7a/disable_js_access_to_clipboard/)]
 [[Bug 1170911](https://bugzilla.mozilla.org/show_bug.cgi?id=1170911)]
 
@@ -3058,11 +2773,10 @@ user_pref("dom.event.clipboardevents.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false` ![Android][Android Logo]
 
 `false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled)].
@@ -3080,12 +2794,10 @@ user_pref("dom.event.contextmenu.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Webpages will not be able to affect the context menu event [[DOM Entries - mozillaZine]].
 
@@ -3098,12 +2810,10 @@ user_pref("dom.presentation.device.name", "dummy-device");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 _Note_: Firefox for Android sets name of your device. [[Bug 1265275]](https://bugzilla.mozilla.org/show_bug.cgi?id=1265275)
 
@@ -3116,12 +2826,10 @@ user_pref("dom.storage.enabled", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false` may break some sites.
 
@@ -3138,13 +2846,11 @@ user_pref("dom.disable_window_move_resize", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Windows may not be moved or resized [[DOM Entries - mozillaZine]].
 
@@ -3155,12 +2861,10 @@ user_pref("dom.disable_window_open_feature.close", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent close button from being disabled [[DOM Entries - mozillaZine]].
 
@@ -3171,13 +2875,11 @@ user_pref("dom.disable_window_open_feature.location", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent popups from hiding the Location Bar [[mozillaZine](http://kb.mozillazine.org/Dom.disable_window_open_feature.location)].
 
@@ -3188,12 +2890,10 @@ user_pref("dom.disable_window_open_feature.menubar", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent menubar from being hidden [[DOM Entries - mozillaZine]].
 
@@ -3204,12 +2904,10 @@ user_pref("dom.disable_window_open_feature.minimizable", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent popup window minimization from being disabled [[DOM Entries - mozillaZine]].
 
@@ -3220,12 +2918,10 @@ user_pref("dom.disable_window_open_feature.personalbar", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent bookmarks toolbar from being hidden [[DOM Entries - mozillaZine]].
 
@@ -3236,12 +2932,10 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Prevent navigation toolbar from being hidden [[DOM Entries - mozillaZine]].
 
@@ -3254,13 +2948,11 @@ user_pref("browser.helperApps.deleteTempFileOnExit", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)]
 
 
@@ -3270,12 +2962,10 @@ user_pref("browser.download.folderList", 2);
 
 Default:
 `1`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `1`: system default folder,
 `2`: custom (user defined) folder. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
@@ -3286,11 +2976,9 @@ user_pref("browser.download.useDownloadDir", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3305,8 +2993,8 @@ user_pref("privacy.resistFingerprinting", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Security/Fingerprinting | mozilla wiki](https://wiki.mozilla.org/Security/Fingerprinting)
 
@@ -3326,8 +3014,8 @@ user_pref("javascript.use_us_english_locale", true);
 
 Default:
 n/a (hidden)
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 An anti-fingerprinting patch from Tor Browser was added to Firefox 46 to force using en-US date format regardless of the OS locale [[Bug 867501](https://bugzilla.mozilla.org/show_bug.cgi?id=867501)].
 
@@ -3342,12 +3030,10 @@ user_pref("browser.display.use_document_fonts", 0);
 
 Default:
 `1`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
@@ -3367,12 +3053,10 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Fonts with Incorrect Underline Offsets
@@ -3383,8 +3067,8 @@ user_pref("font.blacklist.underline_offset", "");
 
 Default:
 "(_list of fonts_)"
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Font.blacklist.underline_offset)]
 
 Any of these fonts on your system can be enumerated for fingerprinting [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
@@ -3398,11 +3082,9 @@ user_pref("browser.formfill.enable", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3415,12 +3097,10 @@ user_pref("browser.formfill.expire_days", 0);
 
 Default:
 `180`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -3438,9 +3118,9 @@ user_pref("extensions.formautofill.available", "off");
 
 Default:
 `on`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 ```js
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -3451,9 +3131,9 @@ user_pref("extensions.formautofill.heuristics.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Form Autofill - mozilla wiki](https://wiki.mozilla.org/Firefox/Features/Form_Autofill)
 
@@ -3466,11 +3146,8 @@ user_pref("browser.fullscreen.animate", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![IceCat][IceCat Logo]
+  ![Tor Browser][Tor Browser Logo]
 ([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
 
 It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
@@ -3482,8 +3159,8 @@ user_pref("full-screen-api.warning.delay", 0);
 
 Default:
 `500`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
 
@@ -3494,8 +3171,8 @@ user_pref("full-screen-api.warning.timeout", 0);
 
 Default:
 `3000`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Location Bar
@@ -3509,9 +3186,9 @@ user_pref("browser.urlbar.suggest.searches", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Domain Guessing
@@ -3525,11 +3202,9 @@ user_pref("browser.fixup.alternate.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3546,12 +3221,10 @@ user_pref("keyword.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not use Internet Keywords and display an error message indicating the entered information is not a valid URL.
 
@@ -3563,9 +3236,9 @@ user_pref("browser.urlbar.speculativeConnect.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 (FF57+)
 
 [Bug 1348275: speculatively connect to web server(s) on autocomplete when typing in awesomebar - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1348275)
@@ -3577,8 +3250,8 @@ user_pref("browser.urlbar.trimURLs", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 (FF7+)
 
 `false` - all parts of the url are shown
@@ -3593,9 +3266,9 @@ user_pref("offline-apps.allow_by_default", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Firefox not honoring "Offline Web Content And User Data" settings - Mozilla Support Forum](https://support.mozilla.org/questions/1098540)
 
@@ -3612,11 +3285,9 @@ user_pref("signon.rememberSignons", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3629,11 +3300,9 @@ user_pref("signon.autofillForms", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3646,12 +3315,10 @@ user_pref("signon.storeWhenAutocompleteOff", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
 
@@ -3662,8 +3329,8 @@ user_pref("signon.formlessCapture.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 (FF51+)
 
 `false`: disable formless login capture for Password Manager.
@@ -3677,13 +3344,11 @@ user_pref("pdfjs.disabled", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]. [[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)] [[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
+  ![Android][Firefox Android Logo]. [[mozilla pdf.js FAQ](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)] [[mozilla support](https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-without-downloading-them)]
 
 
 ## Plugins
@@ -3694,9 +3359,9 @@ user_pref("plugin.scan.plid.all", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-![NightlyAndroid][Nightly Firefox Android Logo]
+![Android][Firefox Android Logo]
 
 `false`: Disable all Mozilla plugins specified in the Windows registry `HKLM\Software\MozillaPlugins\` [[mozillaZine](http://kb.mozillazine.org/Plugin_scanning)].
 
@@ -3707,9 +3372,9 @@ user_pref("plugin.default.state", 0);
 
 Default:
 `1`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `2`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `0` - never activate, `1` - ask to activate, `2` - active.
 
@@ -3719,9 +3384,9 @@ user_pref("plugin.defaultXpi.state", 0);
 
 Default:
 `2`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `2` - Plugins bundled in XPIs are enabled by default
 [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
@@ -3735,9 +3400,9 @@ user_pref("browser.link.open_newwindow.restriction", 0);
 
 Default:
 `2`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `0`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `0`: Force all new windows opened by JavaScript into tabs [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.), [Tor Bug #9881](https://trac.torproject.org/projects/tor/ticket/9881)]. [Test](https://people.torproject.org/~gk/misc/entire_desktop.html)
 
@@ -3748,12 +3413,10 @@ user_pref("dom.popup_maximum", 3);
 
 Default:
 `20`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)
 
 
@@ -3765,11 +3428,9 @@ user_pref("reader.parse-on-load.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo].
 [[ghacks.net](http://www.ghacks.net/2015/02/07/mozilla-starts-to-push-reader-mode-to-desktop-firefox/)]
@@ -3785,14 +3446,12 @@ user_pref("browser.casting.enabled", false);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 `true`
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Android][Firefox Android Logo],
 n/a
-  ![NightlyWin][Nightly Firefox Windows Logo]
+  ![Win][Firefox Windows Logo]
 ([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
 
 
@@ -3804,8 +3463,8 @@ user_pref("layout.css.devPixelsPerPx", "1.5");
 
 Default (string):
 `-1`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 Firefox uses 96 dpi by default. The fonts are too small to read in the case of high-resolution displays.
 `1.5` sets dpi to 144.
@@ -3823,13 +3482,11 @@ user_pref("browser.search.suggest.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
 
@@ -3845,9 +3502,9 @@ user_pref("security.OCSP.enabled", 1);
 
 Default:
 `1`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `2`
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `0` - disabled, `1` - enabled, `2` - enabled for [EV certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) only.
 `1` is a trade-off between security (checking) and privacy (leaking info to the [Certificate Autorities](https://en.wikipedia.org/wiki/Certificate_authority))
@@ -3862,8 +3519,8 @@ user_pref("privacy.firstparty.isolate", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 ([FF51+](https://bugzilla.mozilla.org/show_bug.cgi?id=1260931))
 
 `true` may  break cross-domain logins and site functionality.
@@ -3883,8 +3540,8 @@ user_pref("network.IDN_show_punycode", true);
 
 Default:
 `false`
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 [Internationalized Domain Name (IDN) homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
 
@@ -3901,13 +3558,10 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
-`true`
-  ![IceCat][IceCat Logo].
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
 
 
@@ -3921,10 +3575,8 @@ user_pref("security.xpconnect.plugin.unrestricted", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
 (-FFxx?)
 
 
@@ -3938,13 +3590,11 @@ user_pref("browser.sessionstore.interval", 1800000);
 
 Default:
 `15000`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `10000`
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 The preference controls how often information about the current session is saved to the profile.
 
@@ -3955,11 +3605,9 @@ user_pref("browser.sessionstore.privacy_level", 2);
 
 Default:
 `0`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo],
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo],
 `2`
   ![Tor Browser][Tor Browser Logo]
 
@@ -3978,14 +3626,12 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
@@ -4000,14 +3646,12 @@ user_pref("browser.rights.3.shown", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ### Slow Startup
@@ -4018,9 +3662,9 @@ user_pref("browser.slowStartup.samples", "0");
 
 Default (string):
 n/a (hidden)
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 Firefox determines whether or not the browser is slow to start up by storing information about browser startup times to disk. `0` prevents this information from being stored [[Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)].
 
@@ -4030,14 +3674,12 @@ user_pref("browser.slowStartup.maxSamples", 0);
 
 Default:
 `5`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `0`
   ![Tor Browser][Tor Browser Logo],
 n/a
-  ![IceCat][IceCat Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
 
 ```js
@@ -4046,14 +3688,12 @@ user_pref("browser.slowStartup.notificationDisabled", true);
 
 Default:
 `false`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 `true`
-  ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo],
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo].
+  ![Android][Firefox Android Logo].
 [Tor Bug #13346](https://trac.torproject.org/projects/tor/ticket/13346)
 
 
@@ -4065,9 +3705,9 @@ user_pref("browser.startup.page", 0);
 
 Default:
 `1`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `0` - blank page, `1` - home page, `2` - last visited page, `3` - resume previous session.
 It can be changed in Options/Startup/When Firefox starts.
@@ -4081,12 +3721,10 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
 
@@ -4101,9 +3739,9 @@ user_pref("browser.uitour.enabled", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 [Mozilla.UITour - Mozilla Documentation](https://bedrock.readthedocs.io/en/latest/uitour.html)
 
@@ -4113,9 +3751,9 @@ user_pref("browser.uitour.url", "");
 
 Default:
 "https://www.mozilla.org/%LOCALE%/firefox/%VERSION%/tour/"
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Video Buffering
@@ -4126,12 +3764,10 @@ user_pref("media.mediasource.enabled", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![IceCat][IceCat Logo]
-  ![NightlyWin][Nightly Firefox Windows Logo]
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Win][Firefox Windows Logo]
+  ![Android][Firefox Android Logo]
 
 WARNING: Setting to `false` results in lost support of "Media Source Extensions" and "MSE & H.264" in [YouTube HTML5 Video Player](https://www.youtube.com/html5) and some YouTube videos can not be played anymore.
 
@@ -4146,9 +3782,9 @@ user_pref("view_source.tab", false);
 
 Default:
 `true`
-  ![NightlyWin][Nightly Firefox Windows Logo],
+  ![Win][Firefox Windows Logo],
 n/a
-  ![NightlyAndroid][Nightly Firefox Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: open page source in a new window.
 

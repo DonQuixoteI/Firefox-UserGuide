@@ -2301,7 +2301,7 @@ user_pref("camera.control.face_detection.enabled", false);
 Default:
 `true`
   ![Tor Browser][Tor Browser Logo]
-(-FFxx?)
+([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 
 ### CSS Font Loading API
@@ -3766,7 +3766,7 @@ user_pref("security.xpconnect.plugin.unrestricted", false);
 Default:
 `true`
   ![Tor Browser][Tor Browser Logo]
-(-FFxx?)
+([-FF58](https://bugzilla.mozilla.org/show_bug.cgi?id=1416703))
 
 
 ## Session Store

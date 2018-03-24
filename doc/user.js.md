@@ -125,7 +125,7 @@
 
 ![Win][Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
 ![Debian][Debian Logo] - Firefox 59.x (Debian),
-![Tor Browser][Tor Browser Logo] - Tor Browser 6.5.x (Firefox 45.x),
+![Tor Browser][Tor Browser Logo] - Tor Browser 8.0.x (Firefox 52.x),
 ![Android][Firefox Android Logo] - Mozilla Firefox 59.x (Android)
 
 [Debian Logo]: img/Debian.svg
@@ -153,6 +153,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 `false`
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF52+). [[Tor Bug #21790](https://trac.torproject.org/projects/tor/ticket/21790)]
 
@@ -165,6 +166,7 @@ Default:
 "http://detectportal.firefox.com/success.txt"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -226,6 +228,7 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo].
 [wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
 
@@ -318,9 +321,8 @@ Default:
 `6`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo],
-`0`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Firefox Android Logo]
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 
 
@@ -359,22 +361,10 @@ Default:
 [[mozillaZine](http://kb.mozillazine.org/Network.http.sendRefererHeader)].
 
 
-```js
-user_pref("network.http.sendSecureXSiteReferrer", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo]
-([-FF51](https://bugzilla.mozilla.org/show_bug.cgi?id=1308725))
-[[mozillaZine](http://kb.mozillazine.org/Network.http.sendSecureXSiteReferrer)]
-
-
 ### [SPDY](https://en.wikipedia.org/wiki/SPDY)
 
 ```js
 user_pref("network.http.spdy.enabled", false);
-user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);
 ```
 
@@ -382,6 +372,21 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo].
+[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/107)]
+
+
+```js
+user_pref("network.http.spdy.enabled.deps", false);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo].
 [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/107)]
 
@@ -492,7 +497,8 @@ Default:
 `true`
   ![Win][Firefox Windows Logo],
 `false`
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -527,16 +533,6 @@ Default:
 
 
 ```js
-user_pref("datareporting.healthreport.documentServerURI", "");
-```
-
-Default:
-"https://fhr.data.mozilla.com/"
-  ![Tor Browser][Tor Browser Logo],
-([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1234526))
-
-
-```js
 user_pref("datareporting.healthreport.about.reportUrl", "");
 ```
 
@@ -556,16 +552,6 @@ Default:
 ([-FF46](https://bugzilla.mozilla.org/show_bug.cgi?id=1236580))
 
 
-```js
-user_pref("datareporting.healthreport.logging.consoleEnabled", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo],
-(-FFxx?)
-
-
 ### SSL Error Report
 
 [SSL Error Reporting - Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/browser/base/sslerrorreport/preferences.html)
@@ -578,8 +564,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo],
+`false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -587,11 +574,10 @@ user_pref("security.ssl.errorReporting.url", "");
 ```
 
 Default:
-"https://data.mozilla.com/submit/sslreports"
-  ![Tor Browser][Tor Browser Logo],
 "https://incoming.telemetry.mozilla.org/submit/sslreports/"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -609,8 +595,8 @@ user_pref("toolkit.telemetry.unified", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo],
-  ![Debian][Debian Logo]
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
@@ -657,7 +643,8 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -678,6 +665,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -690,6 +678,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 ([FF59+](https://bugzilla.mozilla.org/show_bug.cgi?id=1417473))
 
@@ -703,7 +692,8 @@ user_pref("toolkit.telemetry.infoURL", "");
 Default:
 `https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -726,8 +716,10 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 ([FF57+](https://bugzilla.mozilla.org/show_bug.cgi?id=1390249))
+
 
 ```js
 user_pref("browser.ping-centre.production.endpoint", "");
@@ -738,7 +730,9 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
+
 
 ```js
 user_pref("browser.ping-centre.staging.endpoint", "");
@@ -749,6 +743,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Firefox Tuning zur Absicherung und Anonymisierung - Quantum Edition - kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)
@@ -773,6 +768,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -787,6 +783,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 ```js
@@ -798,6 +795,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -811,9 +809,9 @@ user_pref("experiments.supported", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo],
+  ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -840,7 +838,7 @@ Default:
 "https://telemetry-experiment.cdn.mozilla.net/manifest/v1/firefox/%VERSION%/%CHANNEL%"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -850,10 +848,9 @@ user_pref("experiments.activeExperiment", false);
 ```
 
 Default:
-`true`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
 n/a
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
@@ -868,7 +865,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo]
 
 `true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
 
@@ -910,6 +907,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 Firefox auto-resets to `true` on start
@@ -941,7 +939,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 ([FF50+](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965))
 
 
@@ -968,9 +968,9 @@ user_pref("browser.safebrowsing.downloads.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![Debian][Debian Logo],
 `false`
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
@@ -985,8 +985,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
 
@@ -1005,6 +1006,7 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -1032,9 +1034,12 @@ Default:
 "https://shavar.services.mozilla.com/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![Android][Firefox Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
 
 "(_empty string_)" prevents background connections to Mozilla.
+
 
 ```js
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
@@ -1044,7 +1049,9 @@ Default:
 "https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![Android][Firefox Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
 
 "(_empty string_)" prevents background connections to Mozilla.
 
@@ -1064,6 +1071,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
+
 ```js
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 ```
@@ -1072,7 +1080,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 
 ## Updating
@@ -1269,7 +1279,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
 ([FF28+](https://bugzilla.mozilla.org/show_bug.cgi?id=947429))
 
 
@@ -1296,7 +1308,9 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 
@@ -1308,7 +1322,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 
@@ -1320,7 +1336,9 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1332,7 +1350,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1344,7 +1364,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)]
 
 
@@ -1356,7 +1378,9 @@ Default:
 `10000`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
@@ -1424,7 +1448,9 @@ n/a (hidden)
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: disable GMP downloads via local fallback [[Tor Browser](https://www.torproject.org/projects/torbrowser/design/)].
 
@@ -1438,7 +1464,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo],
+  ![Android][Firefox Android Logo]
 
 
 ```js
@@ -1461,7 +1487,8 @@ user_pref("media.gmp.trial-create.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -1477,7 +1504,8 @@ user_pref("media.getusermedia.screensharing.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -1490,6 +1518,7 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Capture local camera and microphone streams with getUserMedia - now enabled in Firefox - Mozilla Blog](https://blog.mozilla.org/futurereleases/2013/01/12/capture-local-camera-and-microphone-streams-with-getusermedia-now-enabled-in-firefox/)
@@ -1512,6 +1541,8 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -1526,12 +1557,12 @@ user_pref("media.eme.enabled", false);
 
 Default:
  `true`
-  ![Win][Firefox Windows Logo]
-  ![Android][Firefox Android Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a ![Android][Android Logo].
+n/a
+  ![Android][Firefox Android Logo].
 [DXR](https://dxr.mozilla.org/mozilla-central/search?q=media.eme.enabled)
 
 
@@ -1584,7 +1615,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo],
+  ![Android][Firefox Android Logo]
 
 Firefox periodically retrieves a list of blocked addons and certificates from the Mozilla server.
 `true`: Retrieve a blocklist, restrict extension installation and disable them if blocklisted extensions or plugins are already installed [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
@@ -1627,7 +1658,9 @@ n/a (hidden)
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
 [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
@@ -1641,7 +1674,7 @@ Default:
 "https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%"
   ![Win][Firefox Windows Logo],
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo].
 [Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)
@@ -1667,7 +1700,9 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Android][Firefox Android Logo],
 `false`
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
 
 Browser extension that allows users to click on a button in the browser to report a site compatibility issue [[webcompat](https://github.com/webcompat/webcompat-reporter-extensions)].
 
@@ -1684,7 +1719,8 @@ Default:
 `true`
   ![Win][Firefox Windows Logo],
 n/a
-	![Debian][Debian Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF60+). [ghacks.net](https://www.ghacks.net/2018/02/28/firefox-60-disable-firefox-sync-integration/)
 
@@ -1697,7 +1733,6 @@ user_pref("loop.enabled", false);
 
 Default:
 n/a
-  ![Tor Browser][Tor Browser Logo]
 ([-FF48](https://bugzilla.mozilla.org/show_bug.cgi?id=1287827))
 
 Firefox Hello (code name Loop) is video and voice chat feature built into the browser.
@@ -1713,7 +1748,7 @@ user_pref("social.directories", "");
 ```
 
 Default:
-"https://activations.cdn.mozilla.net"
+"(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
@@ -1723,7 +1758,7 @@ user_pref("social.remote-install.enabled", false);
 ```
 
 Default:
-`true`
+`false`
   ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
@@ -1733,7 +1768,7 @@ user_pref("social.shareDirectory", "");
 ```
 
 Default:
-"https://activations.cdn.mozilla.net/sharePanel.html"
+"(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
 (-FFxx?)
 
@@ -1743,7 +1778,7 @@ user_pref("social.share.activationPanelEnabled", false);
 ```
 
 Default:
-`true`
+`false`
   ![Tor Browser][Tor Browser Logo],
 (-FFxx?)
 
@@ -1753,7 +1788,7 @@ user_pref("social.toast-notifications.enabled", false);
 ```
 
 Default:
-`true`
+`false`
   ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
@@ -1763,7 +1798,7 @@ user_pref("social.whitelist", "");
 ```
 
 Default:
-"https://mozsocial.cliqz.com"
+"(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
 ([-FF57](https://bugzilla.mozilla.org/show_bug.cgi?id=1406193))
 
@@ -1777,7 +1812,8 @@ user_pref("browser.startup.homepage", "about:blank");
 Default:
 "about:home"
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+"about:tor"
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
@@ -1795,8 +1831,10 @@ n/a (hidden)
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Firefox Android Logo]
 
 This preference is examined during browser start up. If its value differs from the browser's current milestone, then Firefox connects and fetches content from Mozilla snippets server. `ignore`: the browser's homepage will not be overridden after updates [[mozillaZine](http://kb.mozillazine.org/Browser.startup.homepage_override.mstone)]. _Note_: Firefox for Android overrides this user preference and set it to actual Firefox version?!
+
 
 ```js
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
@@ -1820,7 +1858,9 @@ Default:
 "https://www.mozilla.org/projects/firefox/%VERSION%/whatsnew/?oldversion=%OLD_VERSION%"
   ![Win][Firefox Windows Logo],
 "(_empty string_)"
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+"https://blog.torproject.org/category/tags/tor-browser"
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -1834,7 +1874,9 @@ user_pref("startup.homepage_welcome_url", "about:blank");
 Default:
 `https://www.mozilla.org/projects/firefox/%VERSION%/firstrun/`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+"(_empty string_)"
+ ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -2024,6 +2066,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
@@ -2040,6 +2083,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -2056,6 +2100,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF55+)
 
@@ -2071,9 +2116,10 @@ user_pref("extensions.pocket.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Firefox Android Logo]
 
 `browser.pocket.enabled` was replaced by `extensions.pocket.enabled` in FF46 [[Bug 1215694](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694)].
 
@@ -2089,22 +2135,23 @@ Default:
   ![Tor Browser][Tor Browser Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
+
 ```js
 user_pref("browser.pocket.site", "");
 ```
 
 Default:
 "(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
+  ![Tor Browser][Tor Browser Logo]
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
+
 
 ```js
 user_pref("browser.pocket.oAuthConsumerKey", "");
 ```
 
 Default:
-"_your-consumer-key_"
-  ![Tor Browser][Tor Browser Logo],
+n/a
 ([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
 
 
@@ -2207,9 +2254,8 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo].
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Firefox Android Logo].
 [[TechCrunch](https://techcrunch.com/2015/08/04/battery-attributes-can-be-used-to-track-web-users/)]
 
 
@@ -2254,7 +2300,7 @@ user_pref("camera.control.face_detection.enabled", false);
 
 Default:
 `true`
-  ![Tor Browser][Tor Browser Logo],
+  ![Tor Browser][Tor Browser Logo]
 (-FFxx?)
 
 
@@ -2431,7 +2477,7 @@ user_pref("browser.search.geoip.timeout", 1);
 ```
 
 Default:
-`2000`
+`3000`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
@@ -2481,7 +2527,7 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
 `true`
   ![Android][Firefox Android Logo].
 [[wicg.io](https://wicg.github.io/netinfo/)]
@@ -2500,6 +2546,7 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo].
 [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
 
@@ -2514,6 +2561,18 @@ The Push API gives web applications the ability to receive messages pushed to th
 
 ```js
 user_pref("dom.push.enabled", false);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
 user_pref("dom.push.connection.enabled", false);
 ```
 
@@ -2521,7 +2580,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
+
 
 ```js
 user_pref("dom.push.serverURL", "");
@@ -2531,6 +2592,8 @@ Default:
 "wss://push.services.mozilla.com/"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
 "https://updates.push.services.mozilla.com/v1/gcm/..."
   ![Android][Firefox Android Logo]
 
@@ -2598,7 +2661,9 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
 
 [Bug 1171228: Expose WEBGL_debug_renderer_info extension to Web content - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1171228)
 
@@ -2614,8 +2679,10 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 `false`
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 ([FF45+](https://bugzilla.mozilla.org/show_bug.cgi?id=1003439))
+
 
 ## Web Channel
 
@@ -2629,6 +2696,7 @@ Default:
 "https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 Space separated list of URLS that are allowed to send objects (instead of only strings) through webchannels [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
@@ -2646,6 +2714,7 @@ Default:
 `0`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF57+)
 
@@ -2706,7 +2775,9 @@ Default:
 ```js
 user_pref("browser.cache.disk.parent_directory", "R:\TEMP\FirefoxCache");
 ```
-Default: n/a. [[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
+Default:
+  n/a.
+[[mozillaZine](http://kb.mozillazine.org/Browser.cache.disk.parent_directory)]
 
 To use RAM disk for caching is good for systems with big enough RAM.
 
@@ -2720,7 +2791,8 @@ user_pref("privacy.cpd.offlineApps", true);
 Default:
 `false`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -2734,7 +2806,8 @@ user_pref("privacy.sanitize.timeSpan", 0);
 Default:
 `1`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -2814,8 +2887,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo],
-`false` ![Android][Android Logo]
+  ![Android][Firefox Android Logo]
 
 `false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled)].
 
@@ -2886,7 +2958,7 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
 `true`
   ![Android][Firefox Android Logo]
 
@@ -3033,7 +3105,9 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 
 [Security/Fingerprinting | mozilla wiki](https://wiki.mozilla.org/Security/Fingerprinting)
 
@@ -3055,7 +3129,9 @@ Default:
 n/a (hidden)
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 
 An anti-fingerprinting patch from Tor Browser was added to Firefox 46 to force using en-US date format regardless of the OS locale [[Bug 867501](https://bugzilla.mozilla.org/show_bug.cgi?id=867501)].
 
@@ -3109,6 +3185,7 @@ Default:
 "(_list of fonts_)"
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Font.blacklist.underline_offset)]
 
@@ -3163,6 +3240,7 @@ Default:
 `detect`
   ![Debian][Debian Logo]
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 ```js
@@ -3177,6 +3255,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Form Autofill - mozilla wiki](https://wiki.mozilla.org/Firefox/Features/Form_Autofill)
@@ -3204,6 +3283,7 @@ Default:
 `500`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
@@ -3217,6 +3297,7 @@ Default:
 `3000`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -3224,8 +3305,32 @@ Default:
 
 ```js
 user_pref("browser.urlbar.searchSuggestionsChoice", false);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Firefox Android Logo]
+
+
+```js
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Firefox Android Logo]
+
+
+```js
 user_pref("browser.urlbar.suggest.searches", false);
 ```
 
@@ -3233,6 +3338,8 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3243,7 +3350,8 @@ user_pref("browser.urlbar.clickSelectsAll", true);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo],
+  ![Win][Firefox Windows Logo]
+  ![Tor Browser][Tor Browser Logo],
 `false`
   ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
@@ -3297,6 +3405,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF57+)
 
@@ -3311,6 +3420,7 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF7+)
 
@@ -3327,7 +3437,8 @@ user_pref("offline-apps.allow_by_default", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3392,6 +3503,7 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 (FF51+)
 
@@ -3421,7 +3533,8 @@ user_pref("plugin.scan.plid.all", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo],
+  ![Win][Firefox Windows Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
@@ -3436,7 +3549,8 @@ user_pref("plugin.default.state", 0);
 Default:
 `1`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 `2`
   ![Android][Firefox Android Logo]
 
@@ -3449,7 +3563,8 @@ user_pref("plugin.defaultXpi.state", 0);
 Default:
 `2`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3468,6 +3583,7 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
 `0`
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 `0`: Force all new windows opened by JavaScript into tabs [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.), [Tor Bug #9881](https://trac.torproject.org/projects/tor/ticket/9881)]. [Test](https://people.torproject.org/~gk/misc/entire_desktop.html)
@@ -3527,9 +3643,10 @@ user_pref("layout.css.devPixelsPerPx", "1.5");
 ```
 
 Default (string):
-`-1`
+`-1.0`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 Firefox uses 96 dpi by default. The fonts are too small to read in the case of high-resolution displays.
@@ -3569,7 +3686,8 @@ user_pref("security.OCSP.enabled", 1);
 Default:
 `1`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 `2`
   ![Android][Firefox Android Logo]
 
@@ -3588,7 +3706,9 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo]
+  ![Android][Firefox Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 ([FF51+](https://bugzilla.mozilla.org/show_bug.cgi?id=1260931))
 
 `true` may  break cross-domain logins and site functionality.
@@ -3610,6 +3730,7 @@ Default:
 `false`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
 [Internationalized Domain Name (IDN) homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
@@ -3732,6 +3853,8 @@ Default (string):
 n/a (hidden)
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
+`0`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3775,7 +3898,8 @@ user_pref("browser.startup.page", 0);
 Default:
 `1`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3811,10 +3935,13 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
 [Mozilla.UITour - Mozilla Documentation](https://bedrock.readthedocs.io/en/latest/uitour.html)
+
 
 ```js
 user_pref("browser.uitour.url", "");
@@ -3823,7 +3950,8 @@ user_pref("browser.uitour.url", "");
 Default:
 "https://www.mozilla.org/%LOCALE%/firefox/%VERSION%/tour/"
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 
@@ -3855,7 +3983,8 @@ user_pref("view_source.tab", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]
 

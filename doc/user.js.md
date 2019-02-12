@@ -188,7 +188,8 @@ Default:
 `1` - allow only from the originating server,
 `2` - disallow all,
 `3` - allow 3rd party if it already set a cookie,
-`4` - reject trackers (FF64+).
+`4` - reject trackers ([FF64+](https://github.com/mozilla/price-wise/issues/183)).
+
 [mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)
 
 This also controls access to 3rd party Web Storage, IndexedDB, Cache API and Service Worker Cache

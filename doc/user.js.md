@@ -76,6 +76,7 @@
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
 - [Clear History](#clear-history)
+- [Closing Last Tab](#closing-last-tab)
 - [Developer Tools](#developer-tools)
   - [WebIDE](#webide)
 - [DOM](#dom)
@@ -2803,6 +2804,19 @@ n/a
   ![Android][Firefox Android Logo]
 
 What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
+
+
+## Closing Last Tab
+
+```js
+user_pref("browser.tabs.closeWindowWithLastTab", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo]
+
+`false` prevents Firefox from exiting when you close the last Tab.
 
 
 ## Developer Tools

@@ -1,0 +1,12 @@
+{
+ "policies": {
+    "DisableAppUpdate": true,
+    "DisableBuiltinPDFViewer": true,
+    "DisableFirefoxAccounts": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DisableTelemetry": true,
+    "DontCheckDefaultBrowser": true,
+    "ExtensionUpdate": false
+  }
+}

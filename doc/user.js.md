@@ -412,10 +412,12 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
+`false` (locked via policies)
+  ![Debian][Debian Logo]
+
 
 This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
 
@@ -615,10 +617,10 @@ user_pref("toolkit.telemetry.enabled", false);
 Default:
 locked `true`
   ![Win][Firefox Windows Logo],
+  ![Debian][Debian Logo]
 `true`
   ![Android][Firefox Android Logo],
 `false`
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
 
 If `unified` is off, this controls whether the Telemetry module is enabled; if `unified` is on, this controls whether to record extended data [[Telemetry Preferences][telemetry-preferences]].
@@ -694,9 +696,9 @@ user_pref("toolkit.telemetry.infoURL", "");
 Default:
 `https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -782,9 +784,9 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
@@ -794,9 +796,9 @@ user_pref("extensions.shield-recipe-client.api_url", "");
 
 Default:
 `"https://normandy.cdn.mozilla.net/api/v1"`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
@@ -812,9 +814,9 @@ user_pref("experiments.supported", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -824,11 +826,11 @@ user_pref("experiments.enabled", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -839,9 +841,9 @@ user_pref("experiments.manifest.uri", "");
 Default:
 "https://telemetry-experiment.cdn.mozilla.net/manifest/v1/firefox/%VERSION%/%CHANNEL%"
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
 
 
@@ -865,9 +867,11 @@ user_pref("network.allow-experiments", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
+n/a
+  ![Debian][Debian Logo]
+
 
 `true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
 
@@ -1043,21 +1047,6 @@ Default:
 "(_empty string_)" prevents background connections to Mozilla.
 
 
-```js
-user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
-```
-
-Default:
-"https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Firefox Android Logo],
-"(_empty string_)"
-  ![Tor Browser][Tor Browser Logo]
-
-"(_empty string_)" prevents background connections to Mozilla.
-
-
 ## Tracking Protection
 
 [[mozilla wiki](https://wiki.mozilla.org/Security/Tracking_protection)] [[mozilla support](https://support.mozilla.org/en-US/kb/tracking-protection-firefox)]
@@ -1099,10 +1088,10 @@ Default:
 `true`
   ![Win][Firefox Windows Logo]
   ![Tor Browser][Tor Browser Logo],
-locked `false`
-  ![Debian][Debian Logo],
 `false`
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+n/a
+    ![Debian][Debian Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
 
 
@@ -1158,9 +1147,11 @@ user_pref("extensions.update.enabled", false);
 Default:
 `true`
   ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo],
+`false` (locked via policies)
+  ![Debian][Debian Logo].
+
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
 
 

@@ -1151,7 +1151,6 @@ Default:
   ![Android][Firefox Android Logo],
 `false` (locked via policies)
   ![Debian][Debian Logo].
-
 [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
 
 
@@ -1413,13 +1412,13 @@ n/a
   ![Win][Firefox Windows Logo]
   ![Android][Firefox Android Logo],
 n/a (hidden pref)
-  ![Tor Browser][Tor Browser Logo],
-`false`
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 
 
 ```js
-user_pref("media.gmp-gmpopenh264.autoupdate", false);
+user_pref("mesma03DE
+dia.gmp-gmpopenh264.autoupdate", false);
 ```
 Default:
 n/a

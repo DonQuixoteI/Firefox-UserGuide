@@ -3255,15 +3255,12 @@ n/a
 ## Fullscreen Animation
 
 ```js
-user_pref("browser.fullscreen.animate", false);
+user_pref("toolkit.cosmeticAnimations.enabled", false);
 ```
 
 Default:
 `true`
-  ![Tor Browser][Tor Browser Logo]
-([-FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1352069))
-
-It was substituted by `toolkit.cosmeticAnimations.enabled` in FF55+.
+  ![Debian][Debian Logo]
 
 
 ```js

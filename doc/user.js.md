@@ -1417,8 +1417,7 @@ n/a (hidden pref)
 
 
 ```js
-user_pref("mesma03DE
-dia.gmp-gmpopenh264.autoupdate", false);
+user_pref("media.gmp-gmpopenh264.autoupdate", false);
 ```
 Default:
 n/a

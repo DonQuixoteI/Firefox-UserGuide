@@ -2044,13 +2044,10 @@ n/a
 
 ```js
 user_pref("browser.library.activity-stream.enabled", false);
-user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
-user_pref("browser.newtabpage.activity-stream.section.topstories.showDisclaimer", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
-user_pref("browser.newtabpage.activity-stream.showTopSites", false);
 ```
 
 Default:
@@ -2066,8 +2063,19 @@ n/a
 [Activity Stream 1.0 - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream_1.0)
 
 ```js
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo]
+
+
+```js
 user_pref("browser.newtabpage.activity-stream.migrationExpired", true);
-user_pref("browser.newtabpage.activity-stream.section.topstories.collapsed", true);
 ```
 
 Default:
@@ -2078,6 +2086,41 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
 
+
+```js
+user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
+```
+
+Default:
+`false`
+  ![Debian][Debian Logo]
+
+```js
+user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
+```
+
+Default:
+`https://tiles.services.mozilla.com/v4/links/activity-stream`
+  ![Debian][Debian Logo]
+
+```js
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
+```
+
+Default:
+`{"id":"snippets","enabled":true,"type":"remote","url":"https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/","updateCycleInMs":14400000}`
+  ![Debian][Debian Logo]
+
+
+__Old/Obsolete__
+
+[[-FF59](https://bugzilla.mozilla.org/show_bug.cgi?id=1433324)] `browser.newtabpage.activity-stream.enabled`
+
+[[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.collapsed`
+
+[[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.showTopSites`
+
+[[-FF62](https://github.com/earthlng/FFprefs-diffs/blob/fd1c9edb566ea06e66760236f4040cd576463571/diffs/6x/diff-v62.0-vs-v63.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.showDisclaimer`
 
 ## Onboarding
 

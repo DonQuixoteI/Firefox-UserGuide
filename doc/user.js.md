@@ -2783,10 +2783,28 @@ Default:
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo] ([-FF62](https://github.com/earthlng/FFprefs-diffs/blob/fd1c9edb566ea06e66760236f4040cd576463571/diffs/6x/diff-v62.0-vs-v63.0.log.js)).
 [[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
 
 `false` may break video playback on various sites.
+
+
+```js
+user_pref("media.autoplay.default", 1);
+```
+
+Default:
+`0`
+  ![Debian][Debian Logo] (FF65+).
+[Disable autoplay for videos in Firefox 65](https://major.io/2018/12/18/disable-autoplay-for-videos-in-firefox-65/)
+
+```js
+user_pref("media.autoplay.allow-muted", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo] (FF65+).
 
 
 ## Bookmarks

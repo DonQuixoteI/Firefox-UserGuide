@@ -125,7 +125,7 @@
 
 
 ![Win][Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
-![Debian][Debian Logo] - Firefox 59.x (Debian),
+![Debian][Debian Logo] - Firefox 65.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 8.0.x (Firefox 52.x),
 ![Android][Firefox Android Logo] - Mozilla Firefox 59.x (Android)
 

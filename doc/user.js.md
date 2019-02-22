@@ -2133,12 +2133,12 @@ user_pref("browser.onboarding.enabled", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
-(FF55+)
+(FF55-[FF63](https://github.com/earthlng/FFprefs-diffs/blob/fa12137da87451c1037116c24bcf4892c413e9f3/diffs/6x/diff-v63.0-vs-v64.0.log.js))
 
 
 ## Pocket

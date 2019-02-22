@@ -819,6 +819,7 @@ Default:
 n/a
   ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
+([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1450801))
 
 
 ```js
@@ -833,6 +834,7 @@ Default:
 n/a
   ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
+([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1420908))
 
 
 ```js
@@ -846,6 +848,7 @@ Default:
 n/a
   ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
+([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1420908))
 
 
 ```js
@@ -857,7 +860,8 @@ n/a
   ![Win][Firefox Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Firefox Android Logo].
+  ![Android][Firefox Android Logo]
+([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1420908)).
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
 
 

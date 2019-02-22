@@ -3400,9 +3400,9 @@ user_pref("browser.urlbar.suggest.searches", false);
 
 Default:
 `true`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 `false`
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Firefox Android Logo]

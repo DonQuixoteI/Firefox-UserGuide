@@ -3316,7 +3316,6 @@ n/a
 
 ```js
 user_pref("extensions.formautofill.addresses.enabled", false);
-user_pref("extensions.formautofill.creditCards.available", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
 ```
@@ -3330,6 +3329,19 @@ n/a
   ![Android][Firefox Android Logo]
 
 [Form Autofill - mozilla wiki](https://wiki.mozilla.org/Firefox/Features/Form_Autofill)
+
+```js
+user_pref("extensions.formautofill.creditCards.available", false);
+```
+
+Default:
+`true`
+  ![Win][Firefox Windows Logo],
+`false`
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Firefox Android Logo]
 
 
 ## Fullscreen Animation

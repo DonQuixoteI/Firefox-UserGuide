@@ -790,6 +790,8 @@ n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
+([-FF59](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v59.0-vs-v60.0.log.js))
+
 
 ```js
 user_pref("extensions.shield-recipe-client.api_url", "");
@@ -802,6 +804,7 @@ n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Firefox Android Logo]
+([-FF59](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v59.0-vs-v60.0.log.js))
 
 
 #### Experiments

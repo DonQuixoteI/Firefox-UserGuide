@@ -1413,12 +1413,13 @@ The OpenH264 codec is not distributed with Firefox but gets downloaded at the fi
 user_pref("media.gmp-gmpopenh264.enabled", false);
 ```
 Default:
+`false`
+  ![Debian][Debian Logo],
 n/a
   ![Win][Firefox Windows Logo]
   ![Android][Firefox Android Logo],
 n/a (hidden pref)
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![Tor Browser][Tor Browser Logo]
 
 
 ```js

@@ -3899,13 +3899,13 @@ user_pref("browser.rights.3.shown", true);
 
 Default:
 `false`
-  ![Win][Firefox Windows Logo]
-  ![Debian][Debian Logo],
+  ![Win][Firefox Windows Logo],
 `true`
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Android][Firefox Android Logo]
-
+([-FF61](https://github.com/earthlng/FFprefs-diffs/blob/65df04dd48f975073bfbb9fc48ceeb344e51ae33/diffs/6x/diff-v61.0-vs-v62.0.log.js))
 
 ### Slow Startup
 

@@ -778,7 +778,27 @@ n/a
   ![Android][Firefox Android Logo]
 
 
-[Issue #319: Block Firefox Shield Recipe Client - pyllyukko/user.js](https://github.com/pyllyukko/user.js/issues/319)
+```js
+user_pref("app.normandy.enabled", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo],
+n/a
+  ![Android][Firefox Android Logo]
+
+
+```js
+user_pref("app.normandy.api_url", "");
+```
+
+Default:
+`https://normandy.cdn.mozilla.net/api/v1`
+  ![Debian][Debian Logo],
+n/a
+  ![Android][Firefox Android Logo]
+
 
 ```js
 user_pref("extensions.shield-recipe-client.enabled", false);

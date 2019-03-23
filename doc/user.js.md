@@ -40,6 +40,7 @@
   - [Get Add-ons Discovery Pane](#get-add-ons-discovery-pane)
   - [Legacy Extensions](#legacy-extensions)
   - [Web Compatibility Reporter](#web-compatibility-reporter)
+  - [Personalized Extension Recommendations](#personalized-extension-recommendations)
 - [Firefox Account](#firefox-account)
 - [Firefox Chat](#firefox-chat)
 - [Mozilla Social](#mozilla-social)
@@ -1726,6 +1727,24 @@ n/a
   ![Tor Browser][Tor Browser Logo]
 
 Browser extension that allows users to click on a button in the browser to report a site compatibility issue [[webcompat](https://github.com/webcompat/webcompat-reporter-extensions)].
+
+
+### Personalized Extension Recommendations
+
+Firefox might occasionally recommend extensions based on other extensions you’ve installed, profile preferences, hardware, and usage statistics [[Mozilla Support](https://support.mozilla.org/en-US/kb/personalized-extension-recommendations)].
+
+```js
+user_pref("browser.discovery.enabled", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo],
+n/a
+  ![Android][Firefox Android Logo] (FF65+)
+
+This preference has no effect when [Health Report](#health-report) is disabled and can be changed via Preferences -> Privacy & Security -> Firefox Data Collection and Use -> Allow Firefox to make personalized extension recommendations.
+
 
 
 ## Firefox Account

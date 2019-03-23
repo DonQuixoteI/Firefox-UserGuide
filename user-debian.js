@@ -7,6 +7,7 @@ user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.bookmarks.max_backups", 2);
+user_pref("browser.discovery.enabled", false);
 user_pref("browser.display.use_document_fonts", 0);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);

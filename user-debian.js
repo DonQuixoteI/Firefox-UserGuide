@@ -1,3 +1,4 @@
+user_pref("accessibility.force_disabled", 1);
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);

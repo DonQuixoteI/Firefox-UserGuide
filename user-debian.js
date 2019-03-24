@@ -53,6 +53,7 @@ user_pref("browser.safebrowsing.provider.google4.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.provider.google4.reportURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 user_pref("browser.search.countryCode", "US");
+user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("browser.search.geoip.timeout", 1);
 user_pref("browser.search.geoip.url", "");

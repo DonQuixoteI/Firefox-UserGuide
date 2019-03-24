@@ -1406,6 +1406,20 @@ n/a
 [[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
+```js
+user_pref("media.ondevicechange.enabled", true);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo] (FF52+)
+
+Change is not needed if `privacy.resistFingerprinting` is `true` [[ghacks](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+[MDN#1](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/ondevicechange),
+[MDN#2](https://developer.mozilla.org/en-US/docs/Web/Events/devicechange)
+
+
 WebRTC Leak Tests:
 
 - [privacytools.io](https://www.privacytools.io/webrtc.html)

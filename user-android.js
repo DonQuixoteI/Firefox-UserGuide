@@ -89,7 +89,6 @@ user_pref("media.autoplay.allow-muted", false);
 user_pref("media.gmp-provider.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.navigator.video.enabled", false);
-user_pref("media.ondevicechange.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.ice.no_host", true);

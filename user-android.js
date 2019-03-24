@@ -10,7 +10,7 @@ user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.formfill.enable", false);
-user_pref("browser.formfill.expire_days", 1);
+user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);

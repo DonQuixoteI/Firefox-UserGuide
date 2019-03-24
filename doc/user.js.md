@@ -126,15 +126,15 @@
 
 
 ![Win][Firefox Windows Logo] - Mozilla Firefox 60.x (Windows),
-![Debian][Debian Logo] - Firefox 65.x (Debian),
+![Debian][Debian Logo] - Firefox 66.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 8.0.x (Firefox 52.x),
-![Android][Firefox Android Logo] - Mozilla Firefox 59.x (Android)
+![Android][Firefox Android Logo] - Mozilla Firefox 66.x (Android)
 
 [Debian Logo]: img/Debian.svg
 
 [Tor Browser Logo]: img/TorBrowser.png
 
-[Firefox Windows Logo]: img/FF-Nightly.svg
+[Firefox Windows Logo]: img/Windows.svg
 
 [Firefox Android Logo]: img/Android.svg
 

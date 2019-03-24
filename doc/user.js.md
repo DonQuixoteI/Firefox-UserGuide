@@ -3757,6 +3757,7 @@ Default:
 `true`
   ![Android][Firefox Android Logo],
 n/a
+  ![Debian][Debian Logo]
   ![Win][Firefox Windows Logo]
 ([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
 

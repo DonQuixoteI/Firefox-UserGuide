@@ -84,7 +84,6 @@ user_pref("image.animation_mode", "none");
 user_pref("keyword.enabled", false);
 user_pref("layout.css.devPixelsPerPx", "2.8");
 user_pref("layout.css.font-loading-api.enabled", false);
-user_pref("media.autoplay.enabled", false);
 user_pref("media.gmp-manager.url", "data:text/plain,");
 user_pref("media.gmp-provider.enabled", false);
 user_pref("media.navigator.enabled", false);

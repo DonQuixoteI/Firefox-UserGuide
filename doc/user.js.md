@@ -2845,7 +2845,9 @@ user_pref("media.autoplay.default", 1);
 
 Default:
 `0`
-  ![Debian][Debian Logo] (FF65+).
+  ![Debian][Debian Logo],
+`1`
+  ![Android][Firefox Android Logo] (FF65+).
 [Disable autoplay for videos in Firefox 65](https://major.io/2018/12/18/disable-autoplay-for-videos-in-firefox-65/)
 
 ```js
@@ -2854,7 +2856,9 @@ user_pref("media.autoplay.allow-muted", false);
 
 Default:
 `true`
-  ![Debian][Debian Logo] (FF65+).
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo]
+  (FF65+).
 
 
 ## Bookmarks

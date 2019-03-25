@@ -69,6 +69,7 @@ user_pref("browser.slowStartup.samples", "0");
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.startup.page", 0);
+user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.tabs.loadInBackground", false);
 user_pref("browser.uitour.enabled", false);

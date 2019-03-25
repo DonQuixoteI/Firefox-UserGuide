@@ -3,6 +3,7 @@
 ## Index
 
 - [Network](#network)
+  - [Network Connectivity Service](#network-connectivity-service)
   - [Captive Portal Detection](#captive-portal-detection)
   - [Cookie](#cookie)
   - [HTTP Alternative Services](#http-alternative-services)
@@ -141,6 +142,19 @@
 ## Network
 
 [Mozilla networking preferences - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Mozilla_networking_preferences)
+
+### Network Connectivity Service
+
+```js
+user_pref("network.connectivity-service.enabled", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo]
+  ([FF65+](https://bugzilla.mozilla.org/1460537))
+
 
 ### Captive Portal Detection
 

@@ -100,6 +100,7 @@ user_pref("media.peerconnection.video.enabled", false);
 user_pref("media.video_stats.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.allow-experiments", false);
+user_pref("network.connectivity-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.dns.disableIPv6", true);
 user_pref("network.dns.disablePrefetch", true);

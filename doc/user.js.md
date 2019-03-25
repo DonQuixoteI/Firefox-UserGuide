@@ -1212,6 +1212,30 @@ n/a
 [[Blog](http://starkravingfinkle.org/blog/2010/05/updating-add-ons-in-firefox-mobile-1-1/ "Updating Add-ons in Firefox Mobile 1.1")]
 
 
+```js
+user_pref("extensions.systemAddon.update.enabled", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo],
+`false`
+  ![Android][Firefox Android Logo]
+  (FF62+)
+
+
+```js
+user_pref("extensions.systemAddon.update.url", "");
+```
+
+Default:
+"https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
+  ![Debian][Debian Logo],
+`n/a`
+  ![Android][Firefox Android Logo]
+  (FF44+)
+
+
 ### Search Engines Update
 
 ```js

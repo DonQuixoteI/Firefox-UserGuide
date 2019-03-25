@@ -115,6 +115,8 @@ user_pref("extensions.formautofill.heuristics.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.pocket.enabled", false);
+user_pref("extensions.systemAddon.update.enabled", false);
+user_pref("extensions.systemAddon.update.url", "");
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("extensions.webservice.discoverURL", "");

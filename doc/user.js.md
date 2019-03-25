@@ -62,6 +62,7 @@
   - [Gamepad API](#gamepad-api)
   - [Geolocation API](#geolocation-api)
     - [Geolocation-Based Search](#geolocation-based-search)
+  - [HTMLCanvasElement](#htmlcanvaselement)
   - [Keyboard API](#keyboard-api)
   - [Network Information API](#network-information-api)
   - [Notification API](#notification-api)
@@ -2634,6 +2635,23 @@ Default:
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo].
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
+
+
+### HTMLCanvasElement
+
+[HTMLCanvasElement.captureStream() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream)
+
+[Canvas PeerConnection Demo](https://mozilla.github.io/webrtc-landing/canvas_demo.html)
+
+```js
+user_pref("canvas.capturestream.enabled", false);
+```
+
+Default:
+`true`
+  ![Debian][Debian Logo]
+  ![Android][Firefox Android Logo]
+(FF41+)
 
 
 ### Keyboard API

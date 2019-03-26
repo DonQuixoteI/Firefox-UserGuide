@@ -788,6 +788,8 @@ n/a
   ![Android][Android Logo]
 
 
+Normandy is a collection of servers, workflows, and Firefox components that enables Mozilla to remote control Firefox clients ... [[readthedocs.io](https://normandy.readthedocs.io/)]
+
 ```js
 user_pref("app.normandy.enabled", false);
 ```

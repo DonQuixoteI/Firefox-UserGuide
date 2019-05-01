@@ -98,6 +98,7 @@
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
+- [Mozilla Websites](#mozilla-websites)
 - [Offline Data](#offline-data)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
@@ -3506,6 +3507,29 @@ Default:
 
 `false` - all parts of the url are shown
 [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.urlbar.trimURLs)].
+
+
+## Mozilla Websites
+
+The WebExtensions do not work on Mozilla websites by default [[ghacks.net](https://www.ghacks.net/2017/10/27/how-to-enable-firefox-webextensions-on-mozilla-websites/)].
+
+
+```js
+user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
+```
+
+Default:
+n/a (hidden)
+  ![Debian][Debian Logo]
+
+
+```js
+user_pref("extensions.webextensions.restrictedDomains", "");
+```
+
+Default:
+"accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,addons.mozilla.org,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,input.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com"
+  ![Debian][Debian Logo]
 
 
 ## Offline Data

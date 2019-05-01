@@ -2057,28 +2057,15 @@ n/a
 
 ```js
 user_pref("browser.library.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
-user_pref("browser.newtabpage.activity-stream.showSearch", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-[Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
-
-[Activity Stream 1.0 - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream_1.0)
-
-```js
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 ```
 
@@ -2088,6 +2075,10 @@ Default:
 n/a
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
+
+[Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
+
+[Activity Stream 1.0 - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream_1.0)
 
 
 ```js

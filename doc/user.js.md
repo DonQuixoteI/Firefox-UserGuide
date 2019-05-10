@@ -3520,7 +3520,11 @@ user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 
 Default:
 n/a (hidden)
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
+  ![Android][Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 
 
 ```js
@@ -3529,7 +3533,11 @@ user_pref("extensions.webextensions.restrictedDomains", "");
 
 Default:
 "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,addons.mozilla.org,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,input.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com"
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(empty string)"
+  ![Tor Browser][Tor Browser Logo]
 
 
 ## Offline Data

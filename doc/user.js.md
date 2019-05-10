@@ -150,8 +150,11 @@ user_pref("network.connectivity-service.enabled", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
   ([FF65+](https://bugzilla.mozilla.org/1460537))
 
 

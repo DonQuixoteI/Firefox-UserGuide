@@ -709,12 +709,12 @@ user_pref("toolkit.telemetry.infoURL", "");
 ```
 
 Default:
-`https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
-  ![Win][Windows Logo]
-  ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+`https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
+  ![Tor Browser][Tor Browser Logo].
 ([-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js))
 
 

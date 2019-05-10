@@ -2057,7 +2057,6 @@ n/a
 
 
 ```js
-user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
@@ -2072,6 +2071,7 @@ user_pref("browser.newtabpage.activity-stream.telemetry", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]

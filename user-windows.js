@@ -162,6 +162,7 @@ user_pref("keyword.enabled", false);
 user_pref("layout.css.devPixelsPerPx", "1.4");
 user_pref("layout.css.font-loading-api.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
+user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.enabled", false);
 user_pref("media.eme.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);

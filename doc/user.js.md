@@ -2818,8 +2818,14 @@ Default:
 `0`
   ![Debian][Debian Logo],
 `1`
-  ![Android][Android Logo] (FF65+).
+  ![Windows][Windows Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
+(FF65+)
+
 [Disable autoplay for videos in Firefox 65](https://major.io/2018/12/18/disable-autoplay-for-videos-in-firefox-65/)
+
 
 ```js
 user_pref("media.autoplay.allow-muted", false);

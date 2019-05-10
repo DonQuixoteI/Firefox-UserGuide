@@ -2152,6 +2152,7 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a

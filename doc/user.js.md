@@ -2557,6 +2557,7 @@ user_pref("canvas.capturestream.enabled", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]

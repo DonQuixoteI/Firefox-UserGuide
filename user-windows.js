@@ -138,6 +138,8 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.oAuthConsumerKey", "");
 user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("extensions.shield-recipe-client.enabled", false);
+user_pref("extensions.systemAddon.update.enabled", false);
+user_pref("extensions.systemAddon.update.url", "");
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("extensions.webcompat-reporter.enabled", false);

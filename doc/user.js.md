@@ -1225,9 +1225,12 @@ user_pref("extensions.systemAddon.update.enabled", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
   (FF62+)
 
 
@@ -1237,6 +1240,7 @@ user_pref("extensions.systemAddon.update.url", "");
 
 Default:
 "https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],

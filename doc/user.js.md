@@ -797,6 +797,7 @@ user_pref("app.normandy.enabled", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -809,6 +810,7 @@ user_pref("app.normandy.api_url", "");
 
 Default:
 `https://normandy.cdn.mozilla.net/api/v1`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a

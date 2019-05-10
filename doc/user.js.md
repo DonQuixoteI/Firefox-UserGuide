@@ -1449,6 +1449,7 @@ user_pref("media.ondevicechange.enabled", true);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo] (FF52+)

@@ -1791,9 +1791,12 @@ user_pref("browser.discovery.enabled", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo],
 n/a
-  ![Android][Android Logo] (FF65+)
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+(FF65+)
 
 This preference has no effect when [Health Report](#health-report) is disabled and can be changed via Preferences -> Privacy & Security -> Firefox Data Collection and Use -> Allow Firefox to make personalized extension recommendations.
 
@@ -2833,8 +2836,11 @@ user_pref("media.autoplay.allow-muted", false);
 
 Default:
 `true`
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
   (FF65+).
 
 

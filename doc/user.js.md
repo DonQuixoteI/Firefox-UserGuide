@@ -2818,16 +2818,17 @@ user_pref("media.autoplay.default", 1);
 ```
 
 Default:
-`0`
-  ![Debian][Debian Logo],
 `1`
   ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
   ![Tor Browser][Tor Browser Logo].
 (FF65+)
 
-[Disable autoplay for videos in Firefox 65](https://major.io/2018/12/18/disable-autoplay-for-videos-in-firefox-65/)
+`0`: autoplay is allowed;
+`1`: autoplay is blocked
+[[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
 
 
 ```js

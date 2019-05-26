@@ -73,7 +73,7 @@
 - [Accessibility Service](#accessibility-service)
 - [Auto Play](#auto-play)
   - [Animated Image](#animated-image)
-  - [Videos](#videos)
+  - [Media](#media)
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
 - [Clear History](#clear-history)
@@ -2796,7 +2796,7 @@ Default:
 `none`: animated images will never play [[mozillaZine](http://kb.mozillazine.org/Firefox_:_Tips_:_Animated_Images)].
 
 
-### Videos
+### Media
 
 ```js
 user_pref("media.autoplay.enabled", false);
@@ -2829,6 +2829,24 @@ n/a
 `0`: autoplay is allowed;
 `1`: autoplay is blocked
 [[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
+
+
+```js
+user_pref("media.autoplay.enabled.user-gestures-needed", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo].
+(FF66+)
+
+`false`: detection of user gestures is not allowed to override the setting of `media.autoplay.default`
+[[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
+
 
 
 ```js

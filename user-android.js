@@ -88,6 +88,7 @@ user_pref("layout.css.font-loading-api.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.gmp-manager.url", "data:text/plain,");
 user_pref("media.autoplay.allow-muted", false);
+user_pref("media.autoplay.enabled.user-gestures-needed", false);
 user_pref("media.gmp-provider.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.navigator.video.enabled", false);

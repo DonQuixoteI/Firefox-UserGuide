@@ -2799,21 +2799,6 @@ Default:
 ### Media
 
 ```js
-user_pref("media.autoplay.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo] ([-FF62](https://github.com/earthlng/FFprefs-diffs/blob/fd1c9edb566ea06e66760236f4040cd576463571/diffs/6x/diff-v62.0-vs-v63.0.log.js)).
-[[ghacks.net](http://www.ghacks.net/2016/05/06/how-to-stop-auto-playing-videos/)]
-
-`false` may break video playback on various sites.
-
-
-```js
 user_pref("media.autoplay.default", 1);
 ```
 
@@ -2846,7 +2831,6 @@ n/a
 
 `false`: detection of user gestures is not allowed to override the setting of `media.autoplay.default`
 [[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
-
 
 
 ```js

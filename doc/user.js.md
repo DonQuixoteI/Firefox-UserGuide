@@ -1491,7 +1491,7 @@ The OpenH264 codec is not distributed with Firefox but gets downloaded at the fi
 user_pref("media.gmp-gmpopenh264.enabled", false);
 ```
 Default:
-`false`
+`true`
   ![Debian][Debian Logo],
 n/a
   ![Win][Windows Logo]

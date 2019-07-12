@@ -1801,6 +1801,46 @@ n/a
 This preference has no effect when [Health Report](#health-report) is disabled and can be changed via Preferences -> Privacy & Security -> Firefox Data Collection and Use -> Allow Firefox to make personalized extension recommendations.
 
 
+```js
+user_pref("extensions.getAddons.discovery.api_url", "");
+```
+
+Default:
+"https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+(FF68+)
+
+```js
+user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+(FF68+)
+
+
+```js
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+(FF68+)
+
 
 ## Firefox Account
 

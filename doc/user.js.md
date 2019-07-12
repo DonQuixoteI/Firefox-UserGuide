@@ -4145,12 +4145,12 @@ user_pref("view_source.tab", false);
 
 Default:
 `true`
-  ![Win][Windows Logo],
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo],
 n/a
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
-([-FF59?](https://github.com/earthlng/FFprefs-diffs/blob/38cf35c43c8479111dd3bc5e534386d8d746ee12/diffs/ESR/diff-v52.9.0esr-vs-v60.0esr.log.js))
+([-FF59?](https://github.com/earthlng/FFprefs-diffs/blob/38cf35c43c8479111dd3bc5e534386d8d746ee12/diffs/ESR/diff-v52.9.0esr-vs-v60.0esr.log.js), [FF68+](https://github.com/earthlng/FFprefs-diffs/blob/master/diffs/6x/diff-v67.0-vs-v68.0.log.js))
 
 `false`: open page source in a new window.
 

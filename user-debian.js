@@ -223,6 +223,7 @@ user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("view_source.tab", false);
 user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-debug-renderer-info", false);

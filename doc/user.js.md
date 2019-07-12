@@ -125,10 +125,10 @@
 - [View Source](#view-source)
 
 
-![Win][Windows Logo] - Mozilla Firefox 67.x (Windows),
-![Debian][Debian Logo] - Firefox 67.x (Debian),
+![Win][Windows Logo] - Mozilla Firefox 68.x (Windows),
+![Debian][Debian Logo] - Firefox 68.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 8.5.x (Firefox 60.x-esr),
-![Android][Android Logo] - Mozilla Firefox 67.x (Android)
+![Android][Android Logo] - Mozilla Firefox 68.x (Android)
 
 [Debian Logo]: img/Debian.svg
 

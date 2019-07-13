@@ -1291,11 +1291,12 @@ user_pref("lightweightThemes.update.enabled", false);
 
 Default:
 `true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo].
+([-FF67](https://github.com/ghacksuserjs/ghacks-user.js/issues/743))
 [[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
 
 

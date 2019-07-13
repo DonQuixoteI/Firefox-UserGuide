@@ -167,7 +167,6 @@ user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);
 user_pref("layout.css.devPixelsPerPx", "1.4");
 user_pref("layout.css.font-loading-api.enabled", false);
-user_pref("lightweightThemes.update.enabled", false);
 user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.enabled.user-gestures-needed", false);
 user_pref("media.eme.enabled", false);

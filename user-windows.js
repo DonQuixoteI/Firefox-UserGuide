@@ -128,6 +128,7 @@ user_pref("experiments.activeExperiment", false);
 user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
+user_pref("extensions.abuseReport.enabled", false);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", "off");

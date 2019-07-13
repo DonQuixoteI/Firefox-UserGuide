@@ -41,6 +41,7 @@
   - [Legacy Extensions](#legacy-extensions)
   - [Web Compatibility Reporter](#web-compatibility-reporter)
   - [Personalized Extension Recommendations](#personalized-extension-recommendations)
+  - [Extension Abuse Reporting](#extension-abuse-reporting)
 - [Firefox Account](#firefox-account)
 - [Home Page](#home-page)
   - [Messages on Home Page](#messages-on-home-page)
@@ -1855,6 +1856,23 @@ Default:
 n/a
   ![Tor Browser][Tor Browser Logo]
 (FF68+)
+
+
+### Extension Abuse Reporting
+
+
+```js
+user_pref("extensions.abuseReport.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+([FF68+](https://bugzilla.mozilla.org/show_bug.cgi?id=1544928))
 
 
 ## Firefox Account

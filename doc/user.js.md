@@ -1160,6 +1160,21 @@ n/a
 [[Windows Service Silent Update - mozilla wiki](https://wiki.mozilla.org/Windows_Service_Silent_Update)]
 
 
+```js
+user_pref("app.update.BITS.enabled", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo],
+n/a
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+([FF68+](https://github.com/earthlng/FFprefs-diffs/blob/master/diffs/6x/diff-v67.0-vs-v68.0.log.js))
+[[Background Intelligent Transfer Service - ghacks.net](https://www.ghacks.net/2019/06/24/firefox-will-use-bits-on-windows-for-updates-going-forward/)]
+
+
 ### Extensions Update
 
 [[Mozilla Add-ons Blog](https://blog.mozilla.org/addons/how-to-opt-out-of-add-on-metadata-updates/)]: Firefox asks the [Mozilla Add-ons gallery](https://addons.mozilla.org/) for information about the add-ons you have installed once a day. This involves sending the identifiers of each add-on you have installed to Mozilla, as well as information on how long it last took Firefox to start up. Opting out of this daily ping will stop Firefox from sending the add-ons you have installed and most recent start-up time to Mozilla, and will also stop displaying updated metadata for your add-ons and discontinue personalized recommendations if they were displayed in the Get Add-ons pane of the Add-ons Manager. To opt out, set `extensions.getAddons.cache.enabled` to `false`.

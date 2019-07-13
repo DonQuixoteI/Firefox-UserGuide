@@ -1934,11 +1934,12 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 
 Default:
 "https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo].
+([-FF67](https://bugzilla.mozilla.org/show_bug.cgi?id=1540939))
 [[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
 
 
@@ -2187,11 +2188,12 @@ user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
 ```
 
 Default:
-`false`
-  ![Debian][Debian Logo],
 n/a
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
+([-FF67](https://bugzilla.mozilla.org/show_bug.cgi?id=1540939))
 
 
 ```js

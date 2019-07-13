@@ -8,7 +8,6 @@ user_pref("app.update.enabled", false);
 user_pref("app.update.service.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
-user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
 user_pref("browser.bookmarks.max_backups", 2);
 user_pref("browser.cache.frecency_experiment", -1);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);

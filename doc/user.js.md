@@ -70,6 +70,7 @@
   - [Vibration API](#vibration-api)
   - [WebGL API](#webgl-api)
   - [Web Speech API](#web-speech-api)
+  - [WebVR API](#webvr-api)
 - [Web Channel](#web-channel)
 - [Accessibility Service](#accessibility-service)
 - [Auto Play](#auto-play)
@@ -2814,6 +2815,23 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 ([FF45+](https://bugzilla.mozilla.org/show_bug.cgi?id=1003439))
+
+
+## [WebVR API](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API)
+
+```js
+user_pref("dom.vr.process.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo],
+`false`
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+([FF68+](https://github.com/earthlng/FFprefs-diffs/blob/master/diffs/6x/diff-v67.0-vs-v68.0.log.js))
 
 
 ## Web Channel

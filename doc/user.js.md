@@ -127,8 +127,8 @@
 - [View Source](#view-source)
 
 
-![Win][Windows Logo] - Mozilla Firefox 68.x (Windows),
-![Debian][Debian Logo] - Firefox 68.x (Debian),
+![Win][Windows Logo] - Mozilla Firefox 69.x (Windows),
+![Debian][Debian Logo] - Firefox 69.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 8.5.x (Firefox 60.x-esr),
 ![Android][Android Logo] - Mozilla Firefox 68.x (Android)
 

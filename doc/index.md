@@ -3,3 +3,4 @@
 - [user.js](user.js.md)
 - [Locked Preferences](locked-prefs.md)
 - [Extensions](extensions.md)
+- [Profiles](profiles.md)

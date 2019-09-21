@@ -132,6 +132,7 @@ user_pref("font.blacklist.underline_offset", "");
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("general.smoothScroll", false);
+user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.wifi.uri", "");

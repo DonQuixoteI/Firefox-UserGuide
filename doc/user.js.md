@@ -126,6 +126,7 @@
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
+- [Warning on about config](#warning-on-about-config)
 
 
 ![Win][Windows Logo] - Mozilla Firefox 69.x (Windows),
@@ -4224,3 +4225,18 @@ n/a
 
 `false`: open page source in a new window.
 
+
+## Warning on about config
+
+```js
+user_pref("general.warnOnAboutConfig", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+`false`: display configuration screen (`about:config`) without a warning [[mozillaZine](http://kb.mozillazine.org/General.warnOnAboutConfig)].

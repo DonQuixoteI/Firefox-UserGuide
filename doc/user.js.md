@@ -116,6 +116,7 @@
   - [Punycode Phishing](#punycode-phishing)
   - [SSL](#ssl)
 - [Session Store](#session-store)
+- [Smooth Scrolling](#smooth-scrolling)
 - [Startup](#startup)
   - [Check Default Browser](#check-default-browser)
   - [Rights](#rights)
@@ -4021,6 +4022,21 @@ Default:
 `0`: store extra session data for any site,
 `1`: store extra session data for unencrypted (non-HTTPS) sites only,
 `2`: never store extra session data. [[mozillaZine](http://kb.mozillazine.org/Browser.sessionstore.privacy_level)]
+
+
+## Smooth Scrolling
+
+```js
+user_pref("general.smoothScroll", false);
+```
+
+Default: 
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
 
 
 ## Startup

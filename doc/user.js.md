@@ -154,7 +154,7 @@ user_pref("network.connectivity-service.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -686,7 +686,7 @@ user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor][Tor Browser Logo]
   ![Android][Android Logo]
@@ -714,7 +714,7 @@ user_pref("toolkit.telemetry.infoURL", "");
 
 Default:
 n/a
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
@@ -804,7 +804,7 @@ user_pref("app.normandy.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -817,7 +817,7 @@ user_pref("app.normandy.api_url", "");
 
 Default:
 `https://normandy.cdn.mozilla.net/api/v1`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -1244,7 +1244,7 @@ user_pref("extensions.systemAddon.update.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 `false`
   ![Android][Android Logo],
@@ -1259,7 +1259,7 @@ user_pref("extensions.systemAddon.update.url", "");
 
 Default:
 "https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
   ![Tor Browser][Tor Browser Logo],
@@ -1469,7 +1469,7 @@ user_pref("media.ondevicechange.enabled", true);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo] (FF52+)
@@ -1811,7 +1811,7 @@ user_pref("browser.discovery.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
@@ -1827,7 +1827,7 @@ user_pref("extensions.getAddons.discovery.api_url", "");
 
 Default:
 "https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%"
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
@@ -1840,7 +1840,7 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
@@ -1854,7 +1854,7 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -1871,7 +1871,7 @@ user_pref("extensions.abuseReport.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -2162,7 +2162,7 @@ user_pref("browser.newtabpage.activity-stream.telemetry", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
@@ -2192,7 +2192,7 @@ user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
 
 Default:
 n/a
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
@@ -2242,7 +2242,7 @@ user_pref("browser.tabs.closeWindowWithLastTab", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -2647,7 +2647,7 @@ user_pref("canvas.capturestream.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
@@ -2830,7 +2830,7 @@ user_pref("dom.vr.process.enabled", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo],
+  ![Win][Windows Logo],
 `false`
   ![Debian][Debian Logo]
   ![Android][Android Logo],
@@ -2900,7 +2900,7 @@ user_pref("media.autoplay.default", 1);
 
 Default:
 `1`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -2918,7 +2918,7 @@ user_pref("media.autoplay.enabled.user-gestures-needed", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -2935,7 +2935,7 @@ user_pref("media.autoplay.allow-muted", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 n/a
@@ -3646,7 +3646,7 @@ user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 
 Default:
 n/a (hidden)
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `true`
@@ -3659,7 +3659,7 @@ user_pref("extensions.webextensions.restrictedDomains", "");
 
 Default:
 "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,addons.mozilla.org,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,input.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com"
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 "(empty string)"
@@ -4036,7 +4036,7 @@ user_pref("general.smoothScroll", false);
 
 Default: 
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
@@ -4237,7 +4237,7 @@ user_pref("general.warnOnAboutConfig", false);
 
 Default:
 `true`
-  ![Windows][Windows Logo]
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]

@@ -3068,17 +3068,20 @@ Default:
 ### Clipboard
 
 ```js
-user_pref("dom.allow_cut_copy", false);
+user_pref("dom.allow_cut_copy", true);
 ```
 
 Default:
-n/a (hidden)
+`true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
+  ![Android][Android Logo],
+n/a (hidden)
+  ![Tor Browser][Tor Browser Logo].
 [[reddit](https://www.reddit.com/r/firefox/comments/5upj7a/disable_js_access_to_clipboard/)]
 [[Bug 1170911](https://bugzilla.mozilla.org/show_bug.cgi?id=1170911)]
+
+WARNING: `false` makes impossible to get a link to issue comment in github repositories.
 
 
 ```js

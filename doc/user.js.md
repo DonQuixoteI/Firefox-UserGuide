@@ -965,6 +965,19 @@ Default:
 
 
 ```js
+user_pref("browser.safebrowsing.blockedURIs.enabled", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
 user_pref("browser.safebrowsing.phishing.enabled", false);
 ```
 
@@ -1055,7 +1068,8 @@ user_pref("browser.safebrowsing.reportPhishURL", "");
 ```
 
 Default:
-(various Google URLs)
+(various URLs)
+  ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
@@ -1067,6 +1081,73 @@ user_pref("browser.safebrowsing.downloads.remote.url", "");
 
 Default:
 "https://sb-ssl.google.com/safebrowsing/clientreport/download?key=%GOOGLE_SAFEBROWSING_API_KEY%"
+""
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
+user_pref("browser.safebrowsing.provider.google.gethashURL", "");
+```
+
+Default:
+"https://safebrowsing.google.com/safebrowsing/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
+user_pref("browser.safebrowsing.provider.google.updateURL", "");
+```
+
+Default:
+"https://safebrowsing.google.com/safebrowsing/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2&key=%GOOGLE_SAFEBROWSING_API_KEY%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
+user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
+```
+
+Default:
+"https://safebrowsing.googleapis.com/v4/fullHashes:find?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
+user_pref("browser.safebrowsing.provider.google4.updateURL", "");
+```
+
+Default:
+"https://safebrowsing.googleapis.com/v4/threatListUpdates:fetch?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo]
+
+
+```js
+user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
+```
+
+Default:
+"https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 "(_empty string_)"

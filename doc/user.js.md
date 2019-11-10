@@ -314,9 +314,11 @@ user_pref("network.dns.disablePrefetchFromHTTPS", true);
 ```
 
 Default:
-n/a
+`true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+(FF70+),
+n/a
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 

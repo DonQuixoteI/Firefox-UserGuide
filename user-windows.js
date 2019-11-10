@@ -21,6 +21,7 @@ user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 1);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.link.open_newwindow.restriction", 0);
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);

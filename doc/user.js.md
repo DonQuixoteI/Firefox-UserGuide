@@ -29,6 +29,7 @@
   - [Search Engines](#search-engines-update)
   - [Themes](#themes-update)
   - [Web Apps](#web-apps-update)
+  - [What is New](#what-is-new)
 - [WebRTC](#webrtc)
   - [Gecko Media Plugins](#gecko-media-plugins)
   - [Get User Media](#get-user-media)
@@ -1411,6 +1412,23 @@ n/a
   ![Tor Browser][Tor Browser Logo],
 "https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml")
   ![Android][Android Logo]
+
+
+### What is New
+
+```js
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+(FF70+)
+
 
 
 ## WebRTC

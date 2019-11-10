@@ -129,9 +129,9 @@
 - [Warning on about config](#warning-on-about-config)
 
 
-![Win][Windows Logo] - Mozilla Firefox 69.x (Windows),
-![Debian][Debian Logo] - Firefox 69.x (Debian),
-![Tor Browser][Tor Browser Logo] - Tor Browser 8.5.x (Firefox 60.x-esr),
+![Win][Windows Logo] - Mozilla Firefox 70.x (Windows),
+![Debian][Debian Logo] - Firefox 70.x (Debian),
+![Tor Browser][Tor Browser Logo] - Tor Browser 9.0.x (Firefox 68.x-esr),
 ![Android][Android Logo] - Mozilla Firefox 68.x (Android)
 
 [Debian Logo]: img/Debian.svg

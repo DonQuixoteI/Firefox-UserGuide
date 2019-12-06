@@ -194,7 +194,6 @@ user_pref("network.manage-offline-status", false);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
-user_pref("offline-apps.allow_by_default", false);
 user_pref("pdfjs.disabled", true);
 user_pref("plugin.default.state", 0);
 user_pref("plugin.defaultXpi.state", 0);

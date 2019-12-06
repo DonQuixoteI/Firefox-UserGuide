@@ -3775,11 +3775,12 @@ user_pref("offline-apps.allow_by_default", false);
 
 Default:
 `true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo]
+(-FF70)
 
 [Firefox not honoring "Offline Web Content And User Data" settings - Mozilla Support Forum](https://support.mozilla.org/questions/1098540)
 

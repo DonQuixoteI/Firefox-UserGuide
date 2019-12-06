@@ -4339,9 +4339,21 @@ user_pref("general.warnOnAboutConfig", false);
 
 Default:
 `true`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+(-FF70)
+
+```js
+user_pref("browser.aboutConfig.showWarning", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+(FF71+)
 
 `false`: display configuration screen (`about:config`) without a warning [[mozillaZine](http://kb.mozillazine.org/General.warnOnAboutConfig)].

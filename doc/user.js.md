@@ -3132,11 +3132,12 @@ user_pref("devtools.webide.enabled", false);
 
 Default:
 `false`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo]
+(-FF70)
 
 
 ```js

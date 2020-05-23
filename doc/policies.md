@@ -4,6 +4,7 @@
 - [Favorite Policies](#favorite-policies)
   - [DisableAppUpdate](#disableappupdate)
   - [DisableBuiltinPDFViewer](#disablebuiltinpdfviewer)
+  - [DisableDefaultBrowserAgent](#disabledefaultbrowseragent)
   - [DisableFeedbackCommands](#disablefeedbackcommands)
   - [DisableFirefoxAccounts](#disablefirefoxaccounts)
   - [DisableFirefoxStudies](#disablefirefoxstudies)
@@ -37,6 +38,16 @@ Disable built in PDF viewer. PDF files are downloaded and sent externally.
 
 Preferences Affected:
 `pdfjs.disabled`
+
+### DisableDefaultBrowserAgent
+
+`true`:
+Prevent the default browser agent from taking any actions (Windows only, FF75+, FF68.7esr+).
+
+Preferences Affected:
+n/a
+
+[How to Disable Firefox Default Browser Agent in Firefox 75 - winaero.com](https://winaero.com/blog/how-to-disable-firefox-default-browser-agent-in-firefox-75/)
 
 ### DisableFeedbackCommands
 

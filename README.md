@@ -1,4 +1,8 @@
 # Firefox User Guide
 
-Firefox is a very configurable and extendable web browser.
-The "guide" consists from series of [notes](./doc/index.md) compiled from different sources with aim to help in understanding Firefox features/settings.  
+The notes below are my collection of information on Firefox settings.
+
+- [user.js](doc/user.js.md)
+- [Locked Preferences](doc/locked-prefs.md)
+- [Extensions](doc/extensions.md)
+- [Profiles](doc/profiles.md)

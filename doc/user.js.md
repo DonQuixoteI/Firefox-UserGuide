@@ -97,7 +97,9 @@
   - [SVG Fonts](#svg-fonts)
   - [Fonts with Incorrect Underline Offsets](#fonts-with-incorrect-underline-offsets)
 - [Forms](#forms)
-- [Fullscreen Animation](#fullscreen-animation)
+- [Animation](#animation)
+  - [Fullscreen Animation](#fullscreen-animation)
+  - [Reduced Motion](#reduced-motion)
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
@@ -3570,7 +3572,10 @@ n/a
   ![Android][Android Logo]
 
 
-## Fullscreen Animation
+### Animation
+
+
+### Fullscreen Animation
 
 ```js
 user_pref("toolkit.cosmeticAnimations.enabled", false);
@@ -3607,6 +3612,23 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
+
+
+### Reduced Motion
+
+```js
+user_pref("ui.prefersReducedMotion", 1);
+```
+
+Default:
+n/a (hidden)
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+`1`: minimize the amount of non-essential motion
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)].
 
 
 ## Location Bar

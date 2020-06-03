@@ -139,6 +139,7 @@ user_pref("signon.rememberSignons", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.server", "");
+user_pref("ui.prefersReducedMotion", 1);
 user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-debug-renderer-info", false);

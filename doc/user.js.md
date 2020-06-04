@@ -4039,9 +4039,8 @@ Default:
 
 ### Digital Certificates
 
-[Online Certificate Status Protocol - Wikipedia](https://en.wikipedia.org/wiki/Ocsp)
 ```js
-user_pref("security.OCSP.enabled", 1);
+user_pref("security.OCSP.enabled", 0);
 ```
 
 Default:
@@ -4053,8 +4052,10 @@ Default:
   ![Android][Android Logo]
 
 `0` - disabled, `1` - enabled, `2` - enabled for [EV certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) only.
-`1` is a trade-off between security (checking) and privacy (leaking info to the [Certificate Autorities](https://en.wikipedia.org/wiki/Certificate_authority))
-[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+
+[OCSP - privacy-handbuch.de](https://www.privacy-handbuch.de/handbuch_21r.htm) in German
+
+[Online Certificate Status Protocol - Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)
 
 
 ### First-Party Isolation

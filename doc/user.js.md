@@ -2084,8 +2084,6 @@ n/a
 
 __Old/Obsolete__
 
-[[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.collapsed`
-
 [[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.showTopSites`
 
 [[-FF62](https://github.com/earthlng/FFprefs-diffs/blob/fd1c9edb566ea06e66760236f4040cd576463571/diffs/6x/diff-v62.0-vs-v63.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.showDisclaimer`

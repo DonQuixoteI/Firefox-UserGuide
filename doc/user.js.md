@@ -784,34 +784,6 @@ n/a
   ![Android][Android Logo]
 
 
-```js
-user_pref("extensions.shield-recipe-client.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-([-FF59](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v59.0-vs-v60.0.log.js))
-
-
-```js
-user_pref("extensions.shield-recipe-client.api_url", "");
-```
-
-Default:
-`"https://normandy.cdn.mozilla.net/api/v1"`
-  ![Win][Windows Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-([-FF59](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v59.0-vs-v60.0.log.js))
-
-
 #### Devtools Telemetry
 
 ```js

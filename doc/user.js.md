@@ -807,19 +807,6 @@ Firefox auto-resets to `true` on start
 The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Phishing_Protection)].
 
 ```js
-user_pref("browser.safebrowsing.enabled", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo]
-([-FF49](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)).
-[mozillaZine](http://kb.mozillazine.org/Browser.safebrowsing.enabled)
-
-`browser.safebrowsing.enabled` was renamed to `browser.safebrowsing.phishing.enabled` [[Bug 1025965](https://bugzilla.mozilla.org/show_bug.cgi?id=1025965)].
-
-
-```js
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 ```
 

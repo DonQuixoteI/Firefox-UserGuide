@@ -1834,21 +1834,6 @@ This preference is examined during browser start up. If its value differs from t
 
 
 ```js
-user_pref("browser.aboutHomeSnippets.updateUrl", "https://127.0.0.1");
-```
-
-Default:
-"https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/"
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo].
-([-FF67](https://bugzilla.mozilla.org/show_bug.cgi?id=1540939))
-[[mozilla wiki](https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service)]
-
-
-```js
 user_pref("startup.homepage_override_url", "");
 ```
 

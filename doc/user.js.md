@@ -682,20 +682,6 @@ n/a
 [Hybrid Content Telemetry - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/collection/hybrid-content.html)
 
 
-```js
-user_pref("toolkit.telemetry.infoURL", "");
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`https://www.mozilla.org/legal/privacy/firefox.html#telemetry`
-  ![Tor Browser][Tor Browser Logo].
-([-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js))
-
-
 #### Ping Centre
 
 Ping Centre collects and sends your events and metrics to a staging server (metrics aggregator).

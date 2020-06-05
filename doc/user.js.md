@@ -539,16 +539,6 @@ n/a
 
 
 ```js
-user_pref("datareporting.healthreport.about.reportUrl", "");
-```
-
-Default:
-"data:text/plain,"
-  ![Tor Browser][Tor Browser Logo]
-(-FFxx?)
-
-
-```js
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
 ```
 

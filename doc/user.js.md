@@ -2082,11 +2082,6 @@ n/a
   ![Android][Android Logo]
 
 
-__Old/Obsolete__
-
-[[-FF62](https://github.com/earthlng/FFprefs-diffs/blob/fd1c9edb566ea06e66760236f4040cd576463571/diffs/6x/diff-v62.0-vs-v63.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.showDisclaimer`
-
-
 ### Last Tab
 
 ```js

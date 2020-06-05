@@ -2059,19 +2059,6 @@ n/a
 
 
 ```js
-user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-([-FF67](https://bugzilla.mozilla.org/show_bug.cgi?id=1540939))
-
-
-```js
 user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 ```
 

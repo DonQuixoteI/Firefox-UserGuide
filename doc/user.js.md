@@ -2176,18 +2176,6 @@ Default:
 ([FF35+](https://bugzilla.mozilla.org/show_bug.cgi?id=1002855))
 
 
-[User Timing - W3C](https://www.w3.org/TR/2013/REC-user-timing-20131212/)
-
-```js
-user_pref("dom.enable_user_timing", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo]
-([FF38](https://bugzilla.mozilla.org/show_bug.cgi?id=782751)-[FF54](https://bugzilla.mozilla.org/show_bug.cgi?id=1344669))
-
-
 ### Video Stats
 
 ```js

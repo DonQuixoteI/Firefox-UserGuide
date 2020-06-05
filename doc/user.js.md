@@ -862,20 +862,6 @@ n/a
 Experiments are available to anyone who has Telemetry enabled [[mozilla wiki](https://wiki.mozilla.org/Telemetry/Experiments)].
 
 ```js
-user_pref("experiments.manifest.uri", "");
-```
-
-Default:
-"https://telemetry-experiment.cdn.mozilla.net/manifest/v1/firefox/%VERSION%/%CHANNEL%"
-  ![Win][Windows Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![Android][Android Logo]
-([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1420908))
-
-
-```js
 user_pref("experiments.activeExperiment", false);
 ```
 

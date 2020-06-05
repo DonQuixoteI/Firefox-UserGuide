@@ -862,20 +862,6 @@ n/a
 Experiments are available to anyone who has Telemetry enabled [[mozilla wiki](https://wiki.mozilla.org/Telemetry/Experiments)].
 
 ```js
-user_pref("experiments.supported", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![Android][Android Logo]
-([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1450801))
-
-
-```js
 user_pref("experiments.enabled", false);
 ```
 

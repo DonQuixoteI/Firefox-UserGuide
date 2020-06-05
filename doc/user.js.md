@@ -1979,21 +1979,6 @@ n/a
 
 
 ```js
-user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
-```
-
-Default:
-"https://tiles.services.mozilla.com/v3/links/fetch/%LOCALE%/%CHANNEL%"
-  ![Win][Windows Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-([-FF59?](https://github.com/earthlng/FFprefs-diffs/blob/38cf35c43c8479111dd3bc5e534386d8d746ee12/diffs/ESR/diff-v52.9.0esr-vs-v60.0esr.log.js)).
-[Mozilla Source Tree Docs](https://media.readthedocs.org/pdf/gecko/latest/gecko.pdf)
-
-
-```js
 user_pref("browser.newtab.preload", false);
 ```
 

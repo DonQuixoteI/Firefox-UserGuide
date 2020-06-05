@@ -2133,30 +2133,6 @@ Default:
 n/a
   ![Android][Android Logo]
 
-`browser.pocket.enabled` was replaced by `extensions.pocket.enabled` in FF46 [[Bug 1215694](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694)].
-
-[How do I delete Pocket? - Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1087570)
-
-
-```js
-user_pref("browser.pocket.api", "");
-```
-
-Default:
-"(_empty string_)"
-  ![Tor Browser][Tor Browser Logo]
-([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
-
-
-```js
-user_pref("browser.pocket.site", "");
-```
-
-Default:
-"(_empty string_)"
-  ![Tor Browser][Tor Browser Logo]
-([-FF45](https://bugzilla.mozilla.org/show_bug.cgi?id=1215694))
-
 
 ## Statistics
 

@@ -1597,16 +1597,6 @@ n/a
   ![Android][Android Logo]
 
 
-```js
-user_pref("media.gmp-eme-adobe.enabled", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo],
-(-FF51?)
-
-
 ## Extensions
 
 ### Extension Blocklist

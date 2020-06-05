@@ -918,22 +918,6 @@ n/a
 [[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
 
 
-```js
-user_pref("network.allow-experiments", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![Debian][Debian Logo]
-
-
-`true` grants permission for mozilla to silently "opt a user's browser" into participating in A/B tests, user behavior profiling tests, etc. [[Tor](https://trac.torproject.org/projects/tor/ticket/13170)].
-
-
 #### Devtools Telemetry
 
 ```js

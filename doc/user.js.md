@@ -2901,16 +2901,6 @@ n/a
   ![Android][Android Logo]
 
 
-```js
-user_pref("devtools.webide.autoinstallFxdtAdapters", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo]
-([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393497))
-
-
 ## DOM
 
 ### Clipboard

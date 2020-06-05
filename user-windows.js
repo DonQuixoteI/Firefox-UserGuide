@@ -24,7 +24,6 @@ user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.link.open_newwindow.restriction", 0);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtab.preload", false);
-user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);

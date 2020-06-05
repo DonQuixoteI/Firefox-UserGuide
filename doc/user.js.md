@@ -2084,8 +2084,6 @@ n/a
 
 __Old/Obsolete__
 
-[[-FF59](https://bugzilla.mozilla.org/show_bug.cgi?id=1433324)] `browser.newtabpage.activity-stream.enabled`
-
 [[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.section.topstories.collapsed`
 
 [[-FF60](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v60.0-vs-v61.0.log.js)] `browser.newtabpage.activity-stream.showTopSites`

@@ -3729,7 +3729,7 @@ n/a
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Win][Windows Logo]
-([-FF56](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
+([-FF56desktop](https://bugzilla.mozilla.org/show_bug.cgi?id=1393582))
 
 
 ## Screen Resolution

@@ -26,7 +26,6 @@
 - [Updating](#updating)
   - [Extensions](#extensions-update)
   - [Search Engines](#search-engines-update)
-  - [Themes](#themes-update)
   - [Web Apps](#web-apps-update)
   - [What is New](#what-is-new)
 - [WebRTC](#webrtc)
@@ -1206,23 +1205,6 @@ Default:
   ![Android][Android Logo]
 
 `false`: do not automatically check for updates to search plugins [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
-
-
-### Themes Update
-
-```js
-user_pref("lightweightThemes.update.enabled", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo].
-([-FF67](https://github.com/ghacksuserjs/ghacks-user.js/issues/743))
-[[mozillaZine](http://kb.mozillazine.org/Themes#Lightweight_theme)]
 
 
 ### Web Apps Update

@@ -1584,16 +1584,6 @@ n/a
 
 
 ```js
-user_pref("media.eme.apiVisible", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo]
-([-FF53](https://bugzilla.mozilla.org/show_bug.cgi?id=1242321))
-
-
-```js
 user_pref("browser.eme.ui.enabled", false);
 ```
 

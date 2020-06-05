@@ -1212,19 +1212,6 @@ Default:
 [[Web Application - Wikipedia](https://en.wikipedia.org/wiki/Web_application)] [[MDN](https://developer.mozilla.org/en-US/Apps)]
 
 ```js
-user_pref("app.update.autodownload", "never");
-```
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-"wifi"
-  ![Android][Android Logo].
-[Bug 805431](https://bugzilla.mozilla.org/show_bug.cgi?id=805431)
-
-
-```js
 user_pref("app.update.url.android", "");
 ```
 

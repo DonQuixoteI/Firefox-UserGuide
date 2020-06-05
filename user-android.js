@@ -1,5 +1,4 @@
 user_pref("accessibility.force_disabled", 1);
-user_pref("app.update.autodownload", "never");
 user_pref("app.update.url.android", "");
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");

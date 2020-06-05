@@ -20,7 +20,6 @@
   - [Telemetry](#telemetry)
     - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
-    - [Experiments](#experiments)
     - [Devtools Telemetry](#devtools-telemetry)
 - [Safe Browsing](#safe-browsing)
 - [Tracking Protection](#tracking-protection)
@@ -855,24 +854,6 @@ n/a
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 ([-FF59](https://github.com/earthlng/FFprefs-diffs/blob/5562958cb9eed5818e382313c0594565a2bd0def/diffs/6x/diff-v59.0-vs-v60.0.log.js))
-
-
-#### Experiments
-
-Experiments are available to anyone who has Telemetry enabled [[mozilla wiki](https://wiki.mozilla.org/Telemetry/Experiments)].
-
-```js
-user_pref("experiments.activeExperiment", false);
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-([-FF60](https://bugzilla.mozilla.org/show_bug.cgi?id=1420908)).
-[[mozilla wiki](https://wiki.mozilla.org/QA/Telemetry/AboutPreferences "QA/Telemetry/AboutPreferences")]
 
 
 #### Devtools Telemetry

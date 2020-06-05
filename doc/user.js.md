@@ -538,16 +538,6 @@ n/a
   ![Android][Android Logo]
 
 
-```js
-user_pref("datareporting.healthreport.about.reportUrlUnified", "");
-```
-
-Default:
-"data:text/plain,"
-  ![Tor Browser][Tor Browser Logo],
-([-FF46](https://bugzilla.mozilla.org/show_bug.cgi?id=1236580))
-
-
 ### SSL Error Report
 
 [SSL Error Reporting - Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/browser/base/sslerrorreport/preferences.html)

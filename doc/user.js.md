@@ -12,7 +12,6 @@
   - [Prefetching](#prefetching)
   - [Proxy](#proxy)
   - [Send Referer](#send-referer)
-  - [SPDY](#spdy)
 - [Reports to Mozilla and Data Collection](#reports-to-mozilla-and-data-collection)
   - [Crash Report](#crash-report)
   - [Health Report](#health-report)
@@ -384,23 +383,6 @@ Default:
 1 - send only on clicked links,
 2 - send for links and images
 [[mozillaZine](http://kb.mozillazine.org/Network.http.sendRefererHeader)].
-
-
-### [SPDY](https://en.wikipedia.org/wiki/SPDY)
-
-```js
-user_pref("network.http.spdy.enabled", false);
-user_pref("network.http.spdy.enabled.deps", false);
-user_pref("network.http.spdy.enabled.http2", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/107)]
 
 
 ## Reports to Mozilla and Data Collection

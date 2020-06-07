@@ -11,6 +11,7 @@
   - [DisablePocket](#disablepocket)
   - [DisableSystemAddonUpdate](#disablesystemaddonupdate)
   - [DisableTelemetry](#disabletelemetry)
+  - [DNSOverHTTPS](#dnsoverhttps)
   - [DontCheckDefaultBrowser](#dontcheckdefaultbrowser)
   - [ExtensionUpdate](#extensionupdate)
 - [View Policies](#view-policies)
@@ -97,6 +98,16 @@ Prevent upload of telemetry data.
 Preferences Affected:
 `datareporting.healthreport.uploadEnabled`,
 `datareporting.policy.dataSubmissionEnabled`
+
+### DNSOverHTTPS
+
+`Enabled`: `false`,
+`Locked`: `true`
+-- do not use DNS over HTTPS and prevent changing DNS over HTTPS preferences.
+
+Preferences Affected: `network.trr.mode`, `network.trr.uri`
+
+[Mozilla is becoming evil - be careful with Firefox - unixsheikh.com](https://unixsheikh.com/articles/mozilla-is-becoming-evil-be-careful-with-firefox.html)
 
 ### DontCheckDefaultBrowser
 

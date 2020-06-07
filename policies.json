@@ -1,5 +1,5 @@
 {
- "policies": {
+  "policies": {
     "DisableAppUpdate": true,
     "DisableBuiltinPDFViewer": true,
     "DisableFeedbackCommands": true,
@@ -8,6 +8,10 @@
     "DisablePocket": true,
     "DisableSystemAddonUpdate": true,
     "DisableTelemetry": true,
+    "DNSOverHTTPS": {
+      "Enabled": false,
+      "Locked": true
+    },
     "DontCheckDefaultBrowser": true,
     "ExtensionUpdate": false
   }

@@ -652,12 +652,13 @@ user_pref("toolkit.telemetry.hybridContent.enabled", false);
 
 Default:
 `true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo]-ESR
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo]
-([FF59+](https://bugzilla.mozilla.org/show_bug.cgi?id=1417473))
+([FF59+](https://bugzilla.mozilla.org/show_bug.cgi?id=1417473), [-FF71](https://bugzilla.mozilla.org/1520491))
 
 [Hybrid Content Telemetry - Mozilla Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/collection/hybrid-content.html)
 

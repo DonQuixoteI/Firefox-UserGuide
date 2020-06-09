@@ -1963,10 +1963,13 @@ user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 
 Default:
 `https://tiles.services.mozilla.com/v4/links/activity-stream`
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo] ESR,
 n/a
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
+(-FF72)
 
 
 ```js

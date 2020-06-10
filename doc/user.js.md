@@ -711,7 +711,7 @@ Default:
 n/a
   ![Android][Android Logo]
 
-[Firefox Tuning zur Absicherung und Anonymisierung - Quantum Edition - kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)
+[Firefox Tuning zur Absicherung und Anonymisierung - Raven Wiki](https://wiki.kairaven.de/open/app/firefox2)
 
 
 #### Shield Studies
@@ -1337,7 +1337,7 @@ Default:
   ![Android][Android Logo],
 n/a
   ![Tor Browser][Tor Browser Logo].
-[[kairaven.de](https://wiki.kairaven.de/open/app/firefoxquantum)]
+[[kairaven.de](https://wiki.kairaven.de/open/app/firefox2)]
 
 
 ```js

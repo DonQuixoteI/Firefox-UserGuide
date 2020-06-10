@@ -692,12 +692,13 @@ user_pref("browser.ping-centre.production.endpoint", "");
 
 Default:
 `https://tiles.services.mozilla.com/v3/links/ping-centre`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo]-ESR
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo]
-
+(-FF71)
 
 ```js
 user_pref("browser.ping-centre.staging.endpoint", "");
@@ -705,13 +706,17 @@ user_pref("browser.ping-centre.staging.endpoint", "");
 
 Default:
 `https://onyx_tiles.stage.mozaws.net/v3/links/ping-centre`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo]-ESR
   ![Tor Browser][Tor Browser Logo],
 n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo]
+(-FF71)
 
 [Firefox Tuning zur Absicherung und Anonymisierung - Raven Wiki](https://wiki.kairaven.de/open/app/firefox2)
+
+[How to test telemetry pings - Firefox Source Docs](https://firefox-source-docs.mozilla.org/browser/components/newtab/content-src/asrouter/docs/debugging-docs.html#how-to-test-telemetry-pings)
 
 
 #### Shield Studies

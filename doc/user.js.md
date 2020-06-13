@@ -751,10 +751,14 @@ user_pref("app.shield.optoutstudies.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+`false`
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
+
+`app.shield.optoutstudies.enabled` can be also changed via `about:preferences` at the Privacy & Security tab, labeled "Allow Firefox to install and run studies"
+[[Normandy Documentation](https://mozilla.github.io/normandy/user/end_user_interaction.html)].
 
 
 Normandy is a collection of servers, workflows, and Firefox components that enables Mozilla to remote control Firefox clients ... [[readthedocs.io](https://normandy.readthedocs.io/)]

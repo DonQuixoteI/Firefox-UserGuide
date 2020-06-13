@@ -621,7 +621,6 @@ user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
-user_pref("toolkit.telemetry.updatePing.enabled", false);
 ```
 
 Default:
@@ -631,6 +630,23 @@ Default:
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
+
+
+```js
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+
+`true`: enable the "update" ping on browser updates
+[[Source Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html)].
 
 
 ```js

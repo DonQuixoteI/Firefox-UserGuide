@@ -1055,12 +1055,12 @@ user_pref("app.update.enabled", false);
 
 Default:
 `true`
-  ![Win][Windows Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![Win][Windows Logo],
 `false`
   ![Android][Android Logo],
 n/a
-    ![Debian][Debian Logo].
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
 
 

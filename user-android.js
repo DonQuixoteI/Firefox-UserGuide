@@ -74,6 +74,7 @@ user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", false);
 user_pref("font.blacklist.underline_offset", "");
 user_pref("full-screen-api.warning.delay", 0);

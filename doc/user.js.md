@@ -1878,7 +1878,8 @@ user_pref("browser.newtabpage.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
+  ![Debian][Debian Logo],
+`false`
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]

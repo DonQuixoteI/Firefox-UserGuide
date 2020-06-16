@@ -1425,12 +1425,12 @@ user_pref("media.gmp-gmpopenh264.enabled", false);
 ```
 Default:
 `true`
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`false`
   ![Debian][Debian Logo],
 n/a
   ![Win][Windows Logo]
-  ![Android][Android Logo],
-n/a (hidden pref)
-  ![Tor Browser][Tor Browser Logo]
 
 
 ```js

@@ -2303,7 +2303,6 @@ The information around you (mac addresses, signal strengths, SSIDs and etc.) is 
 [[mozilla-central](https://dxr.mozilla.org/mozilla-central/source/layout/tools/reftest/reftest-preferences.js#58)]: Tell the search service we are running in the US:
 
 ```js
-user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.region", "US");
 ```
 

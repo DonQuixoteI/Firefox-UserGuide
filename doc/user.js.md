@@ -1766,9 +1766,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 ([FF68+](https://bugzilla.mozilla.org/show_bug.cgi?id=1544928))
 
 

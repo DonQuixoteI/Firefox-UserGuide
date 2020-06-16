@@ -1175,9 +1175,8 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Android][Android Logo],
-n/a
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
   (FF62+)
 
 

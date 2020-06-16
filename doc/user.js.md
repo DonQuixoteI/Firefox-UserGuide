@@ -1750,7 +1750,7 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Android][Android Logo],
-n/a
+`false`
   ![Tor Browser][Tor Browser Logo]
 (FF68+)
 

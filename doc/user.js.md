@@ -1177,7 +1177,7 @@ Default:
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  (FF62+)
+(FF62+)
 
 
 ```js
@@ -1187,12 +1187,11 @@ user_pref("extensions.systemAddon.update.url", "");
 Default:
 "https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml"
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
 "(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-`n/a`
-  ![Android][Android Logo]
-  (FF44+)
+  ![Tor Browser][Tor Browser Logo]
+(FF44+)
 
 
 ### Search Engines Update

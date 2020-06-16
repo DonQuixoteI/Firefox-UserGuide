@@ -1734,9 +1734,9 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 (FF68+)
 

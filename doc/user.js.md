@@ -1721,9 +1721,9 @@ user_pref("extensions.getAddons.discovery.api_url", "");
 Default:
 "https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%"
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 (FF68+)
 

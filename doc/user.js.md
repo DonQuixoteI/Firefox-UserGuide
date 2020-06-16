@@ -2090,9 +2090,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 ([FF23+](https://bugzilla.mozilla.org/show_bug.cgi?id=870667))
 
 `false`: Do not send start and end time of web page loading. [[forum.mozilla-russia.org](http://forum.mozilla-russia.org/viewtopic.php?pid=653380#p653380) (in Russian)]

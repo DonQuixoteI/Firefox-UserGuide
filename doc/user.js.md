@@ -2123,9 +2123,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 ([FF25+](https://bugzilla.mozilla.org/show_bug.cgi?id=654550))
 
 `true` provides web applications with information about video playback statistics such as the framerate [[ghacks.net](http://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)].

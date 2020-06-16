@@ -2233,9 +2233,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ### Geolocation API

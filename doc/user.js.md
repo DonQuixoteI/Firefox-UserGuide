@@ -2495,10 +2495,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo].
-[[Tor Bug #15758](https://trac.torproject.org/projects/tor/ticket/15758)]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ### Vibration API
@@ -2561,8 +2559,7 @@ user_pref("media.webspeech.synth.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-`false`
+  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 ([FF45+](https://bugzilla.mozilla.org/show_bug.cgi?id=1003439))

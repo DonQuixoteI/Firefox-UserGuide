@@ -2790,9 +2790,9 @@ Default:
 `true`
   ![Win][Windows Logo],
 `false`
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![Debian][Debian Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 

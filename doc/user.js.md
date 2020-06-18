@@ -2576,9 +2576,8 @@ Default:
   ![Win][Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 ([FF68+](https://github.com/earthlng/FFprefs-diffs/blob/master/diffs/6x/diff-v67.0-vs-v68.0.log.js))
 
 

@@ -2644,14 +2644,17 @@ Default:
 `1`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo].
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 (FF65+)
 
-`0`: autoplay is allowed;
-`1`: autoplay is blocked
-[[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
+`0`: allow audio and video;
+`1`: block audio;
+`5`: block audio and video (FF69+).
+
+[Autoplay guide for media and Web Audio APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)
+
+[Block autoplaying video and audio in Firefox 69+ natively - gHacks Tech News](https://www.ghacks.net/2019/06/18/block-autoplaying-video-and-audio-in-firefox-69-natively/)
 
 
 ```js

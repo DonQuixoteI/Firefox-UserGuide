@@ -2665,9 +2665,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo].
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 (FF66+)
 
 `false`: detection of user gestures is not allowed to override the setting of `media.autoplay.default`

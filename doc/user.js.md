@@ -2681,10 +2681,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo].
-  (FF65+).
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+(FF65-FF68)
 
 
 ## Bookmarks

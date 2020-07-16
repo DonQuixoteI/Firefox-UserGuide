@@ -214,7 +214,6 @@ user_pref("signon.rememberSignons", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("startup.homepage_override_url", "");
 user_pref("startup.homepage_welcome_url", "about:blank");
-user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);

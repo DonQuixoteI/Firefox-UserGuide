@@ -206,7 +206,6 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.rememberSignons", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
-user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);

@@ -3227,9 +3227,9 @@ user_pref("toolkit.cosmeticAnimations.enabled", false);
 
 Default:
 `true`
-  ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
+(FF55-[F77](https://bugzilla.mozilla.org/show_bug.cgi?id=1640501))
 
 
 ```js

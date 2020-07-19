@@ -2019,6 +2019,19 @@ n/a
   ![Android][Android Logo]
 
 
+```js
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+```
+
+Default:
+`https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+
 ### Last Tab
 
 ```js

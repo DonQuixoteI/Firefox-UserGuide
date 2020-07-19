@@ -123,7 +123,6 @@ user_pref("dom.vr.process.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 user_pref("extensions.abuseReport.enabled", false);
-user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", "off");
 user_pref("extensions.formautofill.creditCards.available", false);

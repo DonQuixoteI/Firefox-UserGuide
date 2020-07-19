@@ -114,7 +114,6 @@ user_pref("dom.vibrator.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webnotifications.serviceworker.enabled", false);
 user_pref("extensions.abuseReport.enabled", false);
-user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/blocklist/4/%APP_ID%/%APP_VERSION%/");
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.available", "off");
 user_pref("extensions.formautofill.creditCards.available", false);

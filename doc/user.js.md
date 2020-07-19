@@ -1734,13 +1734,13 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 ```
 
 Default:
-`true`
+n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Android][Android Logo]
-(FF68+)
+  ![Android][Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
+(FF68-[FF72](https://cat-in-136.github.io/2020/01/diff-between-firefox-730-beta-3-default.html))
 
 
 ```js

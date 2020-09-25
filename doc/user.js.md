@@ -131,7 +131,7 @@
 ![Win][Windows Logo] - Mozilla Firefox 78.x (Windows),
 ![Debian][Debian Logo] - Firefox 78.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 9.0.x (Firefox 68.x-esr),
-![Android][Android Logo] - Mozilla Firefox 68.x (Android)
+![Android][Android Logo] - Iceraven 1.x (Android)
 
 [Debian Logo]: img/Debian.svg
 
@@ -314,10 +314,10 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![Android][Android Logo]
 (FF70+),
 n/a
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
 
@@ -512,8 +512,7 @@ Default:
   ![Win][Windows Logo],
 `false`
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 
@@ -528,10 +527,10 @@ user_pref("security.ssl.errorReporting.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ```js
@@ -1039,10 +1038,10 @@ user_pref("privacy.trackingprotection.pbmode.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ## Updating
@@ -1056,11 +1055,10 @@ user_pref("app.update.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo],
-`false`
-  ![Android][Android Logo],
 n/a
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo].
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/App.update.enabled)]
 
 
@@ -1439,10 +1437,11 @@ user_pref("media.gmp-gmpopenh264.autoupdate", false);
 Default:
 n/a
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![Debian][Debian Logo],
 n/a (hidden pref)
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
+`false`
+  ![Android][Android Logo]
 
 The installed codec is stored in `<Profile>/gmp-gmpopenh264/` and can be deleted.
 
@@ -1565,12 +1564,11 @@ user_pref("media.eme.enabled", false);
 
 Default:
  `true`
-  ![Win][Windows Logo],
+  ![Win][Windows Logo]
+  ![Android][Android Logo],
 `false`
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Android][Android Logo].
 [DXR](https://dxr.mozilla.org/mozilla-central/search?q=media.eme.enabled)
 
 
@@ -1880,11 +1878,10 @@ user_pref("browser.newtabpage.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Android][Android Logo]
 
 Setting `enabled` and `enhanced` to `false` disables top and suggested sites (equivalent to blank page).
 
@@ -2608,7 +2605,8 @@ Default:
 "https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
   ![Android][Android Logo]
 
 Space separated list of URLS that are allowed to send objects (instead of only strings) through webchannels [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
@@ -2679,7 +2677,6 @@ user_pref("media.autoplay.enabled.user-gestures-needed", false);
 Default:
 `true`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
 (FF66-FF77)
 
 `false`: detection of user gestures is not allowed to override the setting of `media.autoplay.default`
@@ -3494,10 +3491,10 @@ user_pref("signon.autofillForms", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
+  ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 `false`: Do not automatically fill sign-in forms with known usernames and passwords [[mozillaZine](http://kb.mozillazine.org/Signon.autofillForms)].
 

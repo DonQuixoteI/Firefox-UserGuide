@@ -1385,7 +1385,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo] (FF52+)
 
-Change is not needed if `privacy.resistFingerprinting` is `true` [[ghacks](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+Change is not needed if `privacy.resistFingerprinting` is `true` [[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
 [MDN#1](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/ondevicechange),
 [MDN#2](https://developer.mozilla.org/en-US/docs/Web/Events/devicechange)
 
@@ -1651,7 +1651,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
 
 `false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
-[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
 
 
 ```js
@@ -2050,7 +2050,7 @@ n/a
 
 ## Onboarding
 
-[[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
+[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
 
 ```js
 user_pref("browser.onboarding.enabled", false);
@@ -3081,7 +3081,7 @@ Default:
 
 [Bug 1333933: Disable/spoof fingerprintable features when privacy.resistFingerprinting = true | Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1333933)
 
-[meta: tor uplift: privacy.resistFingerprinting #7 | ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/7)
+[meta: tor uplift: privacy.resistFingerprinting #7 | arkenfox](https://github.com/arkenfox/user.js/issues/7)
 
 
 ### OS Locale
@@ -3117,7 +3117,7 @@ Default:
 
 `0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
-[[ghacks](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)]: Disallowing document fonts drastically reduces font enumeration which is a high entropy fingerprinting vector. WARNING: Disabling fonts can uglify the web a fair bit.
+[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: Disallowing document fonts drastically reduces font enumeration which is a high entropy fingerprinting vector. WARNING: Disabling fonts can uglify the web a fair bit.
 
 [Font Fingerprinting - Fonts Detection - BrowserLeaks.com](https://browserleaks.com/fonts)
 
@@ -3153,7 +3153,7 @@ Default:
   ![Android][Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Font.blacklist.underline_offset)]
 
-Any of these fonts on your system can be enumerated for fingerprinting [[ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js)].
+Any of these fonts on your system can be enumerated for fingerprinting [[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
 
 
 ## Forms
@@ -3735,7 +3735,7 @@ Default:
 
 [Security/FirstPartyIsolation - mozilla wiki](https://wiki.mozilla.org/Security/FirstPartyIsolation#First_Party_Isolation_-_FIXED)
 
-[meta: tor uplift: privacy.firstparty.isolate #8 - ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js/issues/8)
+[meta: tor uplift: privacy.firstparty.isolate #8 - arkenfox](https://github.com/arkenfox/user.js/issues/8)
 
 
 ### Punycode Phishing

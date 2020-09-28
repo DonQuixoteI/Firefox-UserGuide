@@ -78,6 +78,7 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.systemAddon.update.url", "");
 user_pref("extensions.update.enabled", false);
+user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref("font.blacklist.underline_offset", "");
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);

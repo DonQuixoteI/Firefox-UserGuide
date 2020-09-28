@@ -4010,6 +4010,19 @@ n/a
 `false`: open page source in a new window.
 
 
+```js
+user_pref("view_source.wrap_long_lines", true);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+`true`
+  ![Android][Android Logo]
+
+
 ## Warning on about config
 
 ```js

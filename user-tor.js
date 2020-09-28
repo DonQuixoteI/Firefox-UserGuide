@@ -6,5 +6,6 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.tabs.loadInBackground", false);
 user_pref("network.prefetch-next", false);
 user_pref("pdfjs.disabled", true);
+user_pref("view_source.wrap_long_lines", true);
 user_pref("webgl.disabled", true);
 user_pref("xpinstall.signatures.required", false);

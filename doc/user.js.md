@@ -810,6 +810,10 @@ Firefox auto-resets to `true` on start
 
 The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Phishing_Protection)].
 
+[Iceraven - Bug #208: Google Safebrowsing can no longer be disabled](https://github.com/fork-maintainers/iceraven-browser/issues/208)
+
+[Firefox for Android - Bug #14163: Option to disable Phishing and Malware Protection](https://github.com/mozilla-mobile/fenix/issues/14163)
+
 ```js
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 ```

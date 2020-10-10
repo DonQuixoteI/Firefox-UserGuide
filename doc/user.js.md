@@ -1610,20 +1610,6 @@ Default:
 Firefox periodically retrieves a list of blocked addons and certificates from the Mozilla server.
 `true`: Retrieve a blocklist, restrict extension installation and disable them if blocklisted extensions or plugins are already installed [[mozillaZine](http://kb.mozillazine.org/Extensions.blocklist.enabled)].
 
-```js
-user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/v1/blocklist/3/%APP_ID%/%APP_VERSION%/");
-```
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-"https://blocklist.addons.mozilla.org/v1/blocklist/3/%APP_ID%/%APP_VERSION%/%PRODUCT%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%PING_COUNT%/%TOTAL_PING_COUNT%/%DAYS_SINCE_LAST_PING%/"
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-(-[FF75](https://bugzilla.mozilla.org/1618188))
-
-[Tor Bug #16931: Sanitize the add-on blocklist update URL](https://trac.torproject.org/projects/tor/ticket/16931)
-
 
 ### Extension Signing
 

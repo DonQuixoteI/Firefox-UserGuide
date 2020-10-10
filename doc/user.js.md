@@ -93,9 +93,6 @@
   - [SVG Fonts](#svg-fonts)
   - [Fonts with Incorrect Underline Offsets](#fonts-with-incorrect-underline-offsets)
 - [Forms](#forms)
-- [Animation](#animation)
-  - [Fullscreen Animation](#fullscreen-animation)
-  - [Reduced Motion](#reduced-motion)
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
@@ -105,6 +102,7 @@
 - [PDF Viewer](#pdf-viewer)
 - [Plugins](#plugins)
 - [Popup Windows](#popup-windows)
+- [Reduced Motion](#reduced-motion)
 - [Reader Mode](#reader-mode)
 - [Screen Casting](#screen-casting)
 - [Screen Resolution](#screen-resolution)
@@ -125,7 +123,9 @@
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
-- [Warning on about config](#warning-on-about-config)
+- [Warnings](#warnings)
+  - [Warning on about config](#warning-on-about-config)
+  - [Warning Delay](#warning-delay)
 
 
 ![Win][Windows Logo] - Mozilla Firefox 81.x (Windows),
@@ -3204,65 +3204,6 @@ n/a
   ![Android][Android Logo]
 
 
-### Animation
-
-
-### Fullscreen Animation
-
-```js
-user_pref("toolkit.cosmeticAnimations.enabled", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-(FF55-[F77](https://bugzilla.mozilla.org/show_bug.cgi?id=1640501))
-
-
-```js
-user_pref("full-screen-api.warning.delay", 0);
-```
-
-Default:
-`500`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-[Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
-
-
-```js
-user_pref("full-screen-api.warning.timeout", 0);
-```
-
-Default:
-`3000`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
-### Reduced Motion
-
-```js
-user_pref("ui.prefersReducedMotion", 1);
-```
-
-Default:
-n/a (hidden)
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-`1`: minimize the amount of non-essential motion
-[[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)].
-
-
 ## Location Bar
 
 ```js
@@ -3594,6 +3535,23 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo].
 [mozillaZine](http://kb.mozillazine.org/Dom.popup_maximum)
+
+
+## Reduced Motion
+
+```js
+user_pref("ui.prefersReducedMotion", 1);
+```
+
+Default:
+n/a (hidden)
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+`1`: minimize the amount of non-essential motion
+[[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)].
 
 
 ## Reader Mode
@@ -3999,7 +3957,9 @@ Default:
   ![Android][Android Logo]
 
 
-## Warning on about config
+## Warnings
+
+### Warning on about config
 
 ```js
 user_pref("general.warnOnAboutConfig", false);
@@ -4025,3 +3985,31 @@ Default:
 (FF71+)
 
 `false`: display configuration screen (`about:config`) without a warning [[mozillaZine](http://kb.mozillazine.org/General.warnOnAboutConfig)].
+
+
+### Warning Delay
+
+```js
+user_pref("full-screen-api.warning.delay", 0);
+```
+
+Default:
+`500`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+[Fullscreen API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
+
+
+```js
+user_pref("full-screen-api.warning.timeout", 0);
+```
+
+Default:
+`3000`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]

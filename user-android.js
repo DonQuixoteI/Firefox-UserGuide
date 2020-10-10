@@ -127,7 +127,6 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.rememberSignons", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
-user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.server", "");
 user_pref("ui.prefersReducedMotion", 1);

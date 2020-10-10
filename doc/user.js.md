@@ -2667,13 +2667,12 @@ Default:
 `0`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 ([FF78+](https://bugzilla.mozilla.org/show_bug.cgi?id=1509933))
 
 `2`: block autoplay (the play is triggered by user input)
 [[FF Source](https://hg.mozilla.org/mozilla-central/file/tip/modules/libpref/init/StaticPrefList.yaml)].
-
-`media.autoplay.blocking_policy` has replaced `media.autoplay.enabled.user-gestures-needed`
-[[Bug 1509933](https://bugzilla.mozilla.org/show_bug.cgi?id=1509933)]
 
 
 ```js

@@ -90,6 +90,7 @@ user_pref("layout.css.devPixelsPerPx", "2.8");
 user_pref("layout.css.font-loading-api.enabled", false);
 user_pref("media.gmp-manager.url", "data:text/plain,");
 user_pref("media.autoplay.allow-muted", false);
+user_pref("media.autoplay.blocking_policy", 2);
 user_pref("media.eme.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-provider.enabled", false);

@@ -682,21 +682,6 @@ n/a
   ![Android][Android Logo]
 ([FF57+](https://bugzilla.mozilla.org/show_bug.cgi?id=1390249))
 
-
-```js
-user_pref("browser.ping-centre.staging.endpoint", "");
-```
-
-Default:
-`https://onyx_tiles.stage.mozaws.net/v3/links/ping-centre`
-  ![Debian][Debian Logo]-ESR
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo]
-(-FF71)
-
 [Firefox Tuning zur Absicherung und Anonymisierung - Raven Wiki](https://wiki.kairaven.de/open/app/firefox2)
 
 [How to test telemetry pings - Firefox Source Docs](https://firefox-source-docs.mozilla.org/browser/components/newtab/content-src/asrouter/docs/debugging-docs.html#how-to-test-telemetry-pings)

@@ -2308,6 +2308,23 @@ Default:
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
 
 
+Firefox monitors the users region in order to show relevant local search engines and content
+[[Firefox Source Docs](https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html)]
+
+```js
+user_pref("browser.region.update.enabled", false);
+```
+
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+
+([FF80+](https://cat-in-136.github.io/2020/08/diff-between-firefox-800-beta-7-default.html))
+
+
 ### HTMLCanvasElement
 
 [HTMLCanvasElement.captureStream() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream)

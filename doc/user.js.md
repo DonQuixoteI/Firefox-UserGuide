@@ -684,20 +684,6 @@ n/a
 
 
 ```js
-user_pref("browser.ping-centre.production.endpoint", "");
-```
-
-Default:
-`https://tiles.services.mozilla.com/v3/links/ping-centre`
-  ![Debian][Debian Logo]-ESR
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo]
-(-FF71)
-
-```js
 user_pref("browser.ping-centre.staging.endpoint", "");
 ```
 

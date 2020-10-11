@@ -33,6 +33,7 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.region.network.url", "");
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);

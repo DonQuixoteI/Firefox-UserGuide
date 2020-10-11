@@ -2321,7 +2321,6 @@ user_pref("browser.region.update.enabled", false);
   ![Android][Android Logo],
 n/a
   ![Tor Browser][Tor Browser Logo]
-
 ([FF80+](https://cat-in-136.github.io/2020/08/diff-between-firefox-800-beta-7-default.html))
 
 

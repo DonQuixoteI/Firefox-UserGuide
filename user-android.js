@@ -12,6 +12,7 @@ user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.region.network.url", "");
 user_pref("browser.region.update.enabled", false);
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);

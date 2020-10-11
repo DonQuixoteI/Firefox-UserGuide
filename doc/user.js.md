@@ -2325,6 +2325,23 @@ n/a
 ([FF80+](https://cat-in-136.github.io/2020/08/diff-between-firefox-800-beta-7-default.html))
 
 
+Don't obtain WiFi location information from a Mozilla server
+[[Disable various ESR78 features via prefs](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40048)]:
+
+```js
+user_pref("browser.region.network.url", "");
+```
+
+Default:
+"https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+([FF78+](https://github.com/arkenfox/user.js/issues/978))
+
+
 ### HTMLCanvasElement
 
 [HTMLCanvasElement.captureStream() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream)

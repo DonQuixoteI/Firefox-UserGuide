@@ -2309,7 +2309,7 @@ Default:
 
 
 Firefox monitors the users region in order to show relevant local search engines and content
-[[Firefox Source Docs](https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html)]
+[[Firefox Source Docs](https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html)].
 
 ```js
 user_pref("browser.region.update.enabled", false);
@@ -2325,7 +2325,7 @@ n/a
 
 
 Don't obtain WiFi location information from a Mozilla server
-[[Disable various ESR78 features via prefs](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40048)]:
+[[Tor Browser Issue #40048](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40048)]:
 
 ```js
 user_pref("browser.region.network.url", "");

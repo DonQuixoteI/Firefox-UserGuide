@@ -99,6 +99,7 @@
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
   - [DNS Resolve Single Words](#dns-resolve-single-words)
+  - [Location Bar Dropdown](#location-bar-dropdown)
 - [Mozilla Websites](#mozilla-websites)
 - [Offline Data](#offline-data)
 - [Passwords](#passwords)
@@ -3366,6 +3367,24 @@ n/a
 `0` - never resolve single words,
 `1` - heuristic DNS resolve,
 `2` - always resolve.
+
+
+### Location Bar Dropdown
+
+```js
+user_pref("browser.urlbar.maxRichResults", 0);
+```
+
+Default:
+`10`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+
+`0` disables the Location Bar dropdown entirely
+[[mozillaZine](http://kb.mozillazine.org/Browser.urlbar.maxRichResults)].
 
 
 ## Mozilla Websites

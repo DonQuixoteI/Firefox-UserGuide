@@ -762,6 +762,25 @@ Firefox auto-resets to `true` on start
 [[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
 
 
+#### New Feature Experiments
+
+[How to stop Firefox from making automatic connections: Experiments or studies](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_experiments-or-studies)
+
+```js
+user_pref("messaging-system.rsexperimentloader.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([FF76+](https://github.com/arkenfox/user.js/issues/932))
+
+
 ### Check for Corruption
 
 [[Check bundled JAR and XPI files for corruption](https://bugzilla.mozilla.org/show_bug.cgi?id=1515712)]:

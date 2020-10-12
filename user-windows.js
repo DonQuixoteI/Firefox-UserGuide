@@ -183,6 +183,7 @@ user_pref("media.peerconnection.use_document_iceservers", false);
 user_pref("media.peerconnection.video.enabled", false);
 user_pref("media.video_stats.enabled", false);
 user_pref("media.webspeech.synth.enabled", false);
+user_pref("messaging-system.rsexperimentloader.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);

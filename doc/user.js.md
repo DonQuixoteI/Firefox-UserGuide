@@ -20,6 +20,7 @@
     - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
     - [Devtools Telemetry](#devtools-telemetry)
+  - [Check for Corruption](#check-for-corruption)
 - [Safe Browsing](#safe-browsing)
 - [Tracking Protection](#tracking-protection)
 - [Updating](#updating)
@@ -759,6 +760,26 @@ n/a
 
 Firefox auto-resets to `true` on start
 [[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
+
+
+### Check for Corruption
+
+[[Check bundled JAR and XPI files for corruption](https://bugzilla.mozilla.org/show_bug.cgi?id=1515712)]:
+The functionality of the underlying feature can be controlled by the preference `corroborator.enabled`. Setting that to `false` disables the feature including the data collection.
+
+```js
+user_pref("corroborator.enabled", false);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([FF68+](https://github.com/arkenfox/user.js/issues/743))
 
 
 ## Safe Browsing

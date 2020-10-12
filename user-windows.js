@@ -99,6 +99,7 @@ user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("canvas.capturestream.enabled", false);
 user_pref("captivedetect.canonicalURL", "");
+user_pref("corroborator.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);

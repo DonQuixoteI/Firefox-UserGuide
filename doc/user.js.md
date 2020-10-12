@@ -96,6 +96,7 @@
 - [Location Bar](#location-bar)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
+  - [DNS Resolve Single Words](#dns-resolve-single-words)
 - [Mozilla Websites](#mozilla-websites)
 - [Offline Data](#offline-data)
 - [Passwords](#passwords)
@@ -3300,6 +3301,30 @@ Default:
 
 `false` - all parts of the url are shown
 [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.urlbar.trimURLs)].
+
+
+### DNS Resolve Single Words
+
+Firefox and Chrome browsers have a privacy flaw where the user typed search terms are sent to DNS servers of ISPs
+[[Techdows](https://techdows.com/2020/06/chrome-firefox-leak-search-terms-isps.html)].
+
+```js
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
+```
+
+Default:
+`1`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo],
+`0`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+([FF78+](https://github.com/arkenfox/user.js/issues/959))
+
+`0` - never resolve single words,
+`1` - heuristic DNS resolve,
+`2` - always resolve.
 
 
 ## Mozilla Websites

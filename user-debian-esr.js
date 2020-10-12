@@ -80,6 +80,7 @@ user_pref("browser.tabs.loadInBackground", false);
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.uitour.url", "");
 user_pref("browser.urlbar.clickSelectsAll", true);
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
 user_pref("browser.urlbar.searchSuggestionsChoice", false);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.urlbar.suggest.history", false);

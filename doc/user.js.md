@@ -20,6 +20,7 @@
     - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
     - [Devtools Telemetry](#devtools-telemetry)
+  - [New Feature Experiments](#new-feature-experiments)
   - [Check for Corruption](#check-for-corruption)
 - [Safe Browsing](#safe-browsing)
 - [Tracking Protection](#tracking-protection)
@@ -762,7 +763,7 @@ Firefox auto-resets to `true` on start
 [[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
 
 
-#### New Feature Experiments
+### New Feature Experiments
 
 [How to stop Firefox from making automatic connections: Experiments or studies](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_experiments-or-studies)
 

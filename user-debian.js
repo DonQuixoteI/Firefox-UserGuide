@@ -225,6 +225,7 @@ user_pref("ui.prefersReducedMotion", 1);
 user_pref("view_source.tab", false);
 user_pref("view_source.wrap_long_lines", true);
 user_pref("webchannel.allowObject.urlWhitelist", "");
+user_pref("webextensions.storage.sync.serverURL", "");
 user_pref("webgl.disabled", true);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("xpinstall.signatures.required", false);

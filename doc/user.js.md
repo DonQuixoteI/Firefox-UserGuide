@@ -42,6 +42,7 @@
   - [Web Compatibility Reporter](#web-compatibility-reporter)
   - [Personalized Extension Recommendations](#personalized-extension-recommendations)
   - [Extension Abuse Reporting](#extension-abuse-reporting)
+  - [Extension Storage Sync](#extension-storage-sync)
 - [Firefox Account](#firefox-account)
 - [Home Page](#home-page)
 - [Tabs](#tabs)
@@ -1742,6 +1743,42 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 ([FF68+](https://bugzilla.mozilla.org/show_bug.cgi?id=1544928))
+
+
+### Extension Storage Sync
+
+[[WebExtension Storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage)]:
+`storage.sync` represents the [`sync`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/sync)
+storage area. Items in `sync` storage are synced by the browser, and are available across all instances of that browser that the user is logged into, across different devices.
+
+[[Data Store Docs](https://github.com/mozilla/firefox-data-store-docs)]:
+`storage-sync.sqlite` is
+another Kinto-based SQLite store, this one supports our implementation of the `browser.storage.sync API`. This is just the local store; the synchronization happens with a server "in the cloud", of course. See [mozilla wiki](https://wiki.mozilla.org/CloudServices/Sync/ExtensionStorage_Design_Doc) for more information on how extension-storage information is stored in Kinto.
+
+```js
+user_pref("webextensions.storage.sync.enabled", true);
+```
+
+Default:
+`true`
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+_Warning_: `false` breaks some extensions like [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links-webext/), [Markdown Viewer](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext/) and etc.
+
+
+```js
+user_pref("webextensions.storage.sync.serverURL", "");
+```
+
+Default:
+"https://webextensions.settings.services.mozilla.com/v1"
+  ![Windows][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ## Firefox Account

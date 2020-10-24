@@ -2699,19 +2699,6 @@ Default:
 
 
 ```js
-user_pref("media.autoplay.enabled.user-gestures-needed", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo]
-(FF66-FF77)
-
-`false`: detection of user gestures is not allowed to override the setting of `media.autoplay.default`
-[[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide#Browser_configuration_options)].
-
-
-```js
 user_pref("media.autoplay.blocking_policy", 2);
 ```
 

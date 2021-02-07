@@ -136,7 +136,7 @@
 ![Win][Windows Logo] - Mozilla Firefox 85.x (Windows),
 ![Debian][Debian Logo] - Firefox 85.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 10.0.x (Firefox 78.x-esr),
-![Android][Android Logo] - Iceraven 1.x (Android)
+![Android][Android Logo] - Iceraven 1.6.x (Firefox 85.x for Android)
 
 [Debian Logo]: img/Debian.svg
 

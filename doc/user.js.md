@@ -133,8 +133,8 @@
   - [Warning Delay](#warning-delay)
 
 
-![Win][Windows Logo] - Mozilla Firefox 81.x (Windows),
-![Debian][Debian Logo] - Firefox 81.x (Debian),
+![Win][Windows Logo] - Mozilla Firefox 85.x (Windows),
+![Debian][Debian Logo] - Firefox 85.x (Debian),
 ![Tor Browser][Tor Browser Logo] - Tor Browser 10.0.x (Firefox 78.x-esr),
 ![Android][Android Logo] - Iceraven 1.x (Android)
 

@@ -3119,7 +3119,7 @@ An anti-fingerprinting patch from Tor Browser was added to Firefox 46 to force u
 ### Document Fonts
 
 ```js
-user_pref("browser.display.use_document_fonts", 0);
+user_pref("browser.display.use_document_fonts", 1);
 ```
 
 Default:

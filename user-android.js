@@ -4,7 +4,6 @@ user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.bookmarks.max_backups", 2);
 user_pref("browser.casting.enabled", false);
-user_pref("browser.display.use_document_fonts", 0);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.fixup.alternate.enabled", false);

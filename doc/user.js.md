@@ -125,6 +125,8 @@
   - [Slow Startup](#slow-startup)
   - [Startup Page](#startup-page)
 - [Thumbnails](#thumbnails)
+- [Toolbar](#toolbar)
+  - [Auto-Hide Downloas Button](#auto-hide-download-button)
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
@@ -4316,6 +4318,17 @@ n/a
 `0` - blank page, `1` - home page, `2` - last visited page, `3` - resume previous session.
 It can be changed in Options/Startup/When Firefox starts.
 
+## Toolbar
+
+### Auto-Hide Download Button
+
+```js
+user_pref("browser.download.autohideButton", true);
+```
+
+Default:
+`false`
+  ![LibreWolf][LibreWolf Logo]
 
 ## Thumbnails
 

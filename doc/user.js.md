@@ -133,11 +133,11 @@
   - [Warning Delay](#warning-delay)
 
 
-![Win][Windows Logo] - Mozilla Firefox 85.x (Windows),
-![Debian][Debian Logo] - Firefox 85.x (Debian),
-![LibreWolf][LibreWolf Logo] - LibreWolf 91.x (AppImage),
+![Win][Windows Logo] - Mozilla Firefox 115.x (Windows),
+![Debian][Debian Logo] - Firefox 115.x (Debian),
+![LibreWolf][LibreWolf Logo] - LibreWolf 115.x,
 ![Tor Browser][Tor Browser Logo] - Tor Browser 10.0.x (Firefox 78.x-esr),
-![Android][Android Logo] - Iceraven 1.6.x (Firefox 85.x for Android)
+![Android][Android Logo] - Iceraven 2.7.x (Fenix 115.x)
 
 [Debian Logo]: img/Debian.svg
 

@@ -126,7 +126,7 @@
   - [Startup Page](#startup-page)
 - [Thumbnails](#thumbnails)
 - [Toolbar](#toolbar)
-  - [Auto-Hide Downloas Button](#auto-hide-download-button)
+  - [Auto-Hide Download Button](#auto-hide-download-button)
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)

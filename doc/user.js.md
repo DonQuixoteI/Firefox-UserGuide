@@ -4328,6 +4328,7 @@ user_pref("browser.download.autohideButton", true);
 
 Default:
 `false`
+  ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
 
 ## Thumbnails

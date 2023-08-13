@@ -388,10 +388,10 @@ Default:
 `6`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `0` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
 

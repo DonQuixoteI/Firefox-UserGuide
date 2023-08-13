@@ -112,8 +112,6 @@ user_pref("network.connectivity-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.dns.disableIPv6", true);
 user_pref("network.dns.disablePrefetch", true);
-user_pref("network.http.altsvc.enabled", false);
-user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.manage-offline-status", false);
 user_pref("network.predictor.enabled", false);

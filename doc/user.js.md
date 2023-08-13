@@ -242,21 +242,33 @@ WARNING: Blocking 3rd-party cookies breaks a number of payment gateways.
 
 [RFC 7838 - HTTP Alternative Services](https://tools.ietf.org/html/rfc7838)
 
+[Alt-Svc - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Alt-Svc)
+
 ```js
-user_pref("network.http.altsvc.enabled", false);
-user_pref("network.http.altsvc.oe", false);
+user_pref("network.http.altsvc.enabled", true);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
-[#16673: Isolate/Disable HTTP Alternative-Services - Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/16673)
+```js
+user_pref("network.http.altsvc.oe", false);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+alt-svc allows separation of transport routing from the origin host without using a proxy [[hg.mozilla.org](https://hg.mozilla.org/integration/autoland/rev/acc9a2f97b7e93cfcdfc36306d22f68d3f0f4964)]. It was changed to `false` in FF95 [[1730935 - (CVE-2021-38507) Opportunistic Security for HTTP/2 opt-in checking partial bypass](https://bugzilla.mozilla.org/show_bug.cgi?id=1730935)]
 
 
 ### IPv6 Name Lookups

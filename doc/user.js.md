@@ -283,10 +283,12 @@ Default:
 `false`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`true`
-  ![LibreWolf][LibreWolf Logo].
+  ![Android][Android Logo]
+
+[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: IPv6 can be abused, especially with MAC addresses, and can leak with VPNs: assuming your ISP and/or router and/or website is IPv6 capable. Most sites will fall back to IPv4.
+
 [wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
 
 

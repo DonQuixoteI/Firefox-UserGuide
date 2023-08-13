@@ -1,0 +1,1 @@
+user_pref("network.dns.disableIPv6", true);

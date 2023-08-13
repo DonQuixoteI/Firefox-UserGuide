@@ -322,10 +322,10 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false` (locked)
-  ![LibreWolf][LibreWolf Logo]  
+  ![Tor Browser][Tor Browser Logo]
 
 Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
 

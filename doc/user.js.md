@@ -138,7 +138,7 @@
 ![Win][Windows Logo] - Mozilla Firefox 115.x (Windows),
 ![Debian][Debian Logo] - Firefox 115.x (Debian),
 ![LibreWolf][LibreWolf Logo] - LibreWolf 115.x,
-![Tor Browser][Tor Browser Logo] - Tor Browser 10.0.x (Firefox 78.x-esr),
+![Tor Browser][Tor Browser Logo] - Tor Browser 12.5.x (Firefox 102.x-esr),
 ![Android][Android Logo] - Iceraven 2.7.x (Fenix 115.x)
 
 [Debian Logo]: img/Debian.svg
@@ -304,10 +304,10 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![LibreWolf][LibreWolf Logo]
 
 [#18945: Disable monitoring the connected state of Tor Browser users | Tor Bug Tracker](https://trac.torproject.org/projects/tor/ticket/18945)
 

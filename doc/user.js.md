@@ -340,9 +340,8 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `true`
-  ![Tor Browser][Tor Browser Logo],
-`true` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 [X-DNS-Prefetch-Control | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)
 

@@ -3506,6 +3506,21 @@ Any of these fonts on your system can be enumerated for fingerprinting [[arkenfo
 ## Forms
 
 ```js
+user_pref("dom.forms.autocomplete.formautofill", false);
+```
+
+Default:
+`true`
+  ![LibreWolf][LibreWolf Logo]
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+Note: I have to delete the extension `# rm /opt/librewolf/browser/features/formautofill@mozilla.org.xpi` to be able to change the formautofill setting to `false`. Without removing extension the setting was restored to default `true` after new start of Librewolf (v. 116).
+
+```js
 user_pref("browser.formfill.enable", false);
 ```
 
@@ -3531,22 +3546,6 @@ Default:
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
-```js
-user_pref("extensions.formautofill.available", "off");
-```
-
-Default:
-`on`
-  ![Win][Windows Logo],
-`off`
-  ![LibreWolf][LibreWolf Logo],
-`detect`
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
   ![Android][Android Logo]
 
 

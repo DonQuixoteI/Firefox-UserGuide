@@ -7,6 +7,7 @@
   - [Captive Portal Detection](#captive-portal-detection)
   - [Cookie](#cookie)
   - [HTTP Alternative Services](#http-alternative-services)
+  - [HTTPS Only Mode](#https-only-mode)
   - [IPv6 Name Lookups](#ipv6-name-lookups)
   - [Offline Status](#offline-status)
   - [Prefetching](#prefetching)
@@ -268,6 +269,22 @@ Default:
   ![Android][Android Logo]
 
 alt-svc allows separation of transport routing from the origin host without using a proxy [[hg.mozilla.org](https://hg.mozilla.org/integration/autoland/rev/acc9a2f97b7e93cfcdfc36306d22f68d3f0f4964)]. It was changed to `false` in FF95 [[1730935 - (CVE-2021-38507) Opportunistic Security for HTTP/2 opt-in checking partial bypass](https://bugzilla.mozilla.org/show_bug.cgi?id=1730935)]
+
+
+### HTTPS Only Mode
+
+```js
+user_pref("dom.security.https_only_mode", false);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Android][Android Logo]
+`true`
+  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 
 ### IPv6 Name Lookups
@@ -4078,11 +4095,10 @@ Default:
 `1`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
 `2`
   ![Android][Android Logo],
-`0`
-  ![LibreWolf][LibreWolf Logo]
 
 
 `0` - disabled, `1` - enabled, `2` - enabled for [EV certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate) only.

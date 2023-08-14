@@ -79,7 +79,6 @@
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
 - [Clear History](#clear-history)
-- [Closing Last Tab](#closing-last-tab)
 - [Developer Tools](#developer-tools)
   - [WebIDE](#webide)
 - [DOM](#dom)
@@ -555,9 +554,8 @@ Default:
   ![Win][Windows Logo],
 `false`
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 
@@ -736,11 +734,10 @@ user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 ```
 
 Default:
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor][Tor Browser Logo]
   ![Android][Android Logo]
 
@@ -975,11 +972,10 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 `false` disables application reputation remote lookups, but leaves other Safebrowsing malware protection intact [[mozilla wiki](https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc#How_to_turn_off_this_feature "Application Reputation Design Doc")].
 
@@ -990,8 +986,20 @@ Firefox uses Google's Safe Browsing service that aims to protect against phishin
 ```js
 user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
 user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+
+```js
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous", true);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", true);
 ```
 
 Default:
@@ -999,9 +1007,7 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo]
 
 
 ```js
@@ -1033,11 +1039,10 @@ Default:
 ""
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 "(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-"(_empty string_)" (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 
 ```js
@@ -1104,9 +1109,9 @@ Default:
 "https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 "(_empty string_)"
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
 
 
@@ -1118,9 +1123,9 @@ Default:
 "https://shavar.services.mozilla.com/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 "(_empty string_)"
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
 
 "(_empty string_)" prevents background connections to Mozilla.
@@ -1138,10 +1143,9 @@ Default:
 `false`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ```js
@@ -1151,12 +1155,11 @@ user_pref("privacy.trackingprotection.pbmode.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Debian][Debian Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo]
 
 
 ## Updating
@@ -1251,13 +1254,11 @@ user_pref("extensions.update.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo],
-`false` (locked via policies)
-  ![Debian][Debian Logo].
-[[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
+[mozillaZine](http://kb.mozillazine.org/About:config_entries#Extensions.)]
 
 
 ```js
@@ -1268,9 +1269,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo].
 [[mozilla support](https://support.mozilla.org/en-US/questions/952162 "Difference between extensions.update.autoUpdateDefault and extensions.update.enabled")]
@@ -1301,9 +1301,8 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 (FF62+)
 
 
@@ -1317,9 +1316,8 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 "(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-"(_empty string_)" (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 (FF44+)
 
 
@@ -1420,16 +1418,15 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false`
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Media/getUserMedia)]
 
 
 ```js
 user_pref("media.peerconnection.ice.default_address_only", true);
-user_pref("media.peerconnection.ice.no_host", true);
 ```
 
 Default:
@@ -1440,8 +1437,23 @@ Default:
 `true`
   ![LibreWolf][LibreWolf Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
+
+[Media/WebRTC/Privacy - MozillaWiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)
+
+
+```js
+user_pref("media.peerconnection.ice.no_host", true);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+n/a
   ![Tor Browser][Tor Browser Logo].
-[[mozilla wiki](https://wiki.mozilla.org/Media/WebRTC/Privacy)]
 
 
 ```js
@@ -1475,21 +1487,6 @@ n/a
 
 
 ```js
-user_pref("media.peerconnection.video.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo].
-[[privacytools.io](https://www.privacytools.io/#webrtc)]
-
-
-```js
 user_pref("media.peerconnection.identity.enabled", false);
 ```
 
@@ -1498,9 +1495,8 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo].
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 [[kairaven.de](https://wiki.kairaven.de/open/app/firefox2)]
 
 
@@ -1586,8 +1582,7 @@ Default:
 n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo],
-n/a (hidden pref)
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
 `false`
   ![Android][Android Logo]
@@ -1645,13 +1640,13 @@ user_pref("media.gmp.trial-create.enabled", false);
 ```
 
 Default:
-`true`
+n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 
 Whether we should run a test-pattern through EME GMPs before assuming they'll decode H.264 [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
@@ -1666,9 +1661,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 
@@ -1704,9 +1698,9 @@ user_pref("media.gmp-widevinecdm.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo],
 `false`
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
@@ -1771,7 +1765,7 @@ Firefox periodically retrieves a list of blocked addons and certificates from th
 ### Extension Signing
 
 ```js
-user_pref("xpinstall.signatures.required", false);
+user_pref("xpinstall.signatures.required", true);
 ```
 Default:
 `true`
@@ -1801,22 +1795,6 @@ n/a
 
 `false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
 [[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
-
-
-```js
-user_pref("extensions.webservice.discoverURL", "");
-```
-
-Default:
-"https://services.addons.mozilla.org/%LOCALE%/firefox/discovery/pane/%VERSION%/%OS%/%COMPATIBILITY_MODE%"
-  ![Win][Windows Logo],
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-"(_empty string_)" (locked)
-  ![LibreWolf][LibreWolf Logo],
-n/a
-  ![Android][Android Logo].
-[Techdows](http://techdows.com/2016/08/firefox-48-disable-add-on-discovery-pane.html)
 
 
 ### Legacy Extensions
@@ -1863,9 +1841,10 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
 `false` (locked)
   ![LibreWolf][LibreWolf Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
 (FF65+)
@@ -1878,12 +1857,11 @@ user_pref("extensions.getAddons.discovery.api_url", "");
 ```
 
 Default:
-"https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%"
+"https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%&edition=%DISTRIBUTION%"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-"(_empty string_)" (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 (FF68+)
@@ -1899,9 +1877,8 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 (FF68+)
 
 
@@ -1917,8 +1894,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+`false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
 ([FF68+](https://bugzilla.mozilla.org/show_bug.cgi?id=1544928))
 
 
@@ -1941,8 +1919,9 @@ Default:
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+`false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
 
 _Warning_: `false` breaks some extensions like [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links-webext/), [Markdown Viewer](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext/) and etc.
 
@@ -1955,10 +1934,9 @@ Default:
 "https://webextensions.settings.services.mozilla.com/v1"
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-"(_empty string_)" (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ## Firefox Account
@@ -1972,12 +1950,12 @@ user_pref("identity.fxaccounts.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo],
 `false` (locked)
-  ![LibreWolf][LibreWolf Logo],
+  ![Debian][Debian Logo],
+`false`
+  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Debian][Debian Logo]
   ![Android][Android Logo]
 (FF60+). [ghacks.net](https://www.ghacks.net/2018/02/28/firefox-60-disable-firefox-sync-integration/)
 
@@ -2042,7 +2020,7 @@ user_pref("startup.homepage_welcome_url", "about:blank");
 ```
 
 Default:
-`https://www.mozilla.org/projects/firefox/%VERSION%/firstrun/`
+`about:welcome`
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 "(_empty string_)"
@@ -2056,20 +2034,6 @@ n/a
 ## Tabs
 
 ### New Tab
-
-```js
-user_pref("browser.newtabpage.introShown", true);
-```
-
-Default:
-`false`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
 
 ```js
 user_pref("browser.newtabpage.enabled", false);
@@ -2092,7 +2056,7 @@ user_pref("browser.newtabpage.enhanced", false);
 ```
 
 Default:
-`true`
+`false`
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 n/a
@@ -2109,9 +2073,8 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 
@@ -2133,24 +2096,21 @@ n/a
 
 
 ```js
-user_pref("browser.library.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![LibreWolf][LibreWolf Logo],
 n/a
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 
 ```js
-user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.showSponsored", false);
-user_pref("browser.newtabpage.activity-stream.telemetry", false);
 ```
 
 Default:
@@ -2161,6 +2121,24 @@ Default:
   ![LibreWolf][LibreWolf Logo]
 n/a
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+
+```js
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo],
+`false` (locked)
+  ![LibreWolf][LibreWolf Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
   ![Android][Android Logo]
 
 
@@ -2182,19 +2160,59 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 ```
 
 Default:
-`true`
+`false`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 ```js
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
-user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+`false` (locked)
+  ![LibreWolf][LibreWolf Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
+n/a
+  ![Android][Android Logo]
+
+
+```js
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+`false`
+  ![LibreWolf][LibreWolf Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+
+```js
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+```js
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 ```
 
@@ -2202,10 +2220,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
 n/a
+  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 [Activity Stream - Mozilla Wiki](https://wiki.mozilla.org/Firefox/Activity_Stream)
@@ -2214,27 +2231,15 @@ n/a
 
 
 ```js
-user_pref("browser.newtabpage.activity-stream.migrationExpired", true);
-```
-
-Default:
-`false`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
-```js
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 ```
 
 Default:
 `{"id":"snippets","enabled":true,"type":"remote","url":"https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/","updateCycleInMs":14400000}`
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
+`null`
   ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
@@ -2250,8 +2255,9 @@ Default:
   ![Debian][Debian Logo],
 "(_empty string_)" (locked)
   ![LibreWolf][LibreWolf Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 
@@ -2301,13 +2307,12 @@ user_pref("extensions.pocket.enabled", false);
 ```
 
 Default:
-`true`
+`false` (locked)
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
+  ![LibreWolf][LibreWolf Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 
@@ -3078,21 +3083,6 @@ n/a
   ![Android][Android Logo]
 
 What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
-
-
-## Closing Last Tab
-
-```js
-user_pref("browser.tabs.closeWindowWithLastTab", false);
-```
-
-Default:
-`true`
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-
-`false` prevents Firefox from exiting when you close the last Tab.
 
 
 ## Developer Tools

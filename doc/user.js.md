@@ -3749,7 +3749,7 @@ n/a
 ### Location Bar Dropdown
 
 ```js
-user_pref("browser.urlbar.maxRichResults", 0);
+user_pref("browser.urlbar.maxRichResults", 10);
 ```
 
 Default:

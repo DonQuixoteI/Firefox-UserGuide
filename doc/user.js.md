@@ -124,6 +124,7 @@
   - [Rights](#rights)
   - [Slow Startup](#slow-startup)
   - [Startup Page](#startup-page)
+  - [Window Size](#window-size) 
 - [Thumbnails](#thumbnails)
 - [Toolbar](#toolbar)
   - [Auto-Hide Download Button](#auto-hide-download-button)
@@ -4335,18 +4336,36 @@ n/a
 `0` - blank page, `1` - home page, `2` - last visited page, `3` - resume previous session.
 It can be changed in Options/Startup/When Firefox starts.
 
-## Toolbar
-
-### Auto-Hide Download Button
+### Window Size
 
 ```js
-user_pref("browser.download.autohideButton", true);
+user_pref("privacy.window.maxInnerWidth", 1600);
 ```
 
 Default:
-`false`
+`1000`
+  ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`1600`
   ![LibreWolf][LibreWolf Logo]
+
+```js
+user_pref("privacy.window.maxHeight", 900);
+```
+
+Default:
+`1000`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`900`
+  ![LibreWolf][LibreWolf Logo]
+
+[Bug 1330882: When `privacy.resistFingerprinting = true`, set new windows to rounded dimensions](https://bugzilla.mozilla.org/show_bug.cgi?id=1330882)
+
 
 ## Thumbnails
 
@@ -4364,6 +4383,20 @@ n/a (hidden)
   ![LibreWolf][LibreWolf Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+
+
+## Toolbar
+
+### Auto-Hide Download Button
+
+```js
+user_pref("browser.download.autohideButton", true);
+```
+
+Default:
+`false`
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
 
 
 ## UI Tour

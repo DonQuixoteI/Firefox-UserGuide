@@ -196,6 +196,8 @@ user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
+user_pref("privacy.window.maxHeight", 900);
+user_pref("privacy.window.maxInnerWidth", 1600);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.OCSP.enabled", 0);
 user_pref("security.ssl.errorReporting.enabled", false);

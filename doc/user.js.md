@@ -135,11 +135,11 @@
   - [Warning Delay](#warning-delay)
 
 
-![Win][Windows Logo] - Mozilla Firefox 115.x (Windows),
-![Debian][Debian Logo] - Firefox 115.x (Debian),
-![LibreWolf][LibreWolf Logo] - LibreWolf 115.x,
-![Tor Browser][Tor Browser Logo] - Tor Browser 12.5.x (Firefox 102.x-esr),
-![Android][Android Logo] - Iceraven 2.7.x (Fenix 115.x)
+![Win][Windows Logo] [Mozilla Firefox (Windows)](https://www.mozilla.org/en-US/firefox/windows/)\
+![Debian][Debian Logo] [Firefox (Debian)](https://tracker.debian.org/pkg/firefox)\
+![LibreWolf][LibreWolf Logo] [LibreWolf](https://librewolf.net/)\
+![Tor Browser][Tor Browser Logo] [Tor Browser](https://www.torproject.org/)\
+![Android][Android Logo] [Iceraven Browser (Android)](https://github.com/fork-maintainers/iceraven-browser)
 
 [Debian Logo]: img/Debian.svg
 

@@ -54,3 +54,5 @@ Name: Oldest Modified
 URL: `place:sort=13&maxResults=500&queryType=1`
 
 [Places query URIs - Mozilla | MDN](https://developer.mozilla.org.cach3.com/en/Places_query_URIs)
+
+The URLs of that bookmarks are not shown by Firefox Bookmark Manager. The extension [Bookmark Commander](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-commander/) is able to show/edit them.

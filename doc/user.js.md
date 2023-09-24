@@ -390,7 +390,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo],
 
-The network predictor (formerly called '[seer](https://wiki.mozilla.org/Privacy/Reviews/Necko)') makes preemptive connections to resources in a page based on cached information. It can also do the same when the user hovers over a link. [[Tor](https://trac.torproject.org/projects/tor/ticket/16625)]
+The network predictor makes preemptive connections to resources in a page based on cached information. It can also do the same when the user hovers over a link. [[Tor](https://trac.torproject.org/projects/tor/ticket/16625)]
 
 ```js
 user_pref("network.http.speculative-parallel-limit", 0);
@@ -478,7 +478,7 @@ Default:
 `false` (locked)
   ![LibreWolf][LibreWolf Logo]
 
-This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/toolkit/components/telemetry/telemetry/preferences.html#data-choices-notification)].
+This is the data submission master kill switch. If disabled, no policy is shown or upload takes place, ever [[Firefox Source Docs](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html#data-choices-notification)].
 
 
 ### Crash Report
@@ -524,8 +524,6 @@ Default:
 
 `false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
-[[MDN](https://developer.mozilla.org/en-US/Firefox/Releases/43#Plugins)]: In preparation for future releases to switch over to multi-process content, NPAPI plugins can no longer be run in the same process as the page content. The preferences starting with `dom.ipc.plugins` are no longer used.
-
 
 ```js
 user_pref("dom.ipc.plugins.reportCrashURL", false);
@@ -554,8 +552,7 @@ Default:
 `false` (locked)
   ![LibreWolf][LibreWolf Logo],
 n/a
-  ![Android][Android Logo].
-[[about:tabcrashed spec](https://people-mozilla.org/~mconley2/bugnotes/bug-1110511.html)]
+  ![Android][Android Logo]
 
 
 ```js
@@ -594,8 +591,6 @@ Default:
 
 
 ### SSL Error Report
-
-[SSL Error Reporting - Mozilla Source Tree Docs](https://gecko.readthedocs.io/en/latest/browser/base/sslerrorreport/preferences.html)
 
 ```js
 user_pref("security.ssl.errorReporting.enabled", false);
@@ -813,7 +808,7 @@ n/a
 [[Normandy Documentation](https://mozilla.github.io/normandy/user/end_user_interaction.html)].
 
 
-Normandy is a collection of servers, workflows, and Firefox components that enables Mozilla to remote control Firefox clients ... [[readthedocs.io](https://normandy.readthedocs.io/)]
+Normandy is a collection of servers, workflows, and Firefox components that enables Mozilla to remote control Firefox clients ... [[readthedocs.io](https://mozilla.github.io/normandy/)]
 
 ```js
 user_pref("app.normandy.enabled", false);
@@ -907,7 +902,7 @@ n/a
 
 ## Safe Browsing
 
-The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Phishing_Protection)].
+The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally [[mozilla wiki](https://wiki.mozilla.org/Security/Safe_Browsing)].
 
 [Iceraven - Bug #208: Google Safebrowsing can no longer be disabled](https://github.com/fork-maintainers/iceraven-browser/issues/208)
 
@@ -1176,8 +1171,6 @@ Default:
 
 
 ## Updating
-
-[[Disable Updater - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Enterprise_deployment#Example_configuration_file)]
 
 ```js
 user_pref("app.update.enabled", false);
@@ -1495,8 +1488,7 @@ Default:
   ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo].
-[[privacytools.io](https://www.privacytools.io/#webrtc)]
+  ![Tor Browser][Tor Browser Logo]
 
 
 ```js
@@ -1546,7 +1538,6 @@ Change is not needed if `privacy.resistFingerprinting` is `true` [[arkenfox][ark
 
 WebRTC Leak Tests:
 
-- [privacytools.io](https://www.privacytools.io/webrtc.html)
 - [diafygi.github.io](https://diafygi.github.io/webrtc-ips/)
 - [browserleaks.com](https://www.browserleaks.com/webrtc)
 
@@ -1952,8 +1943,6 @@ Default:
 
 
 ## Firefox Account
-
-[Firefox Accounts - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Firefox_Accounts)
 
 ```js
 user_pref("identity.fxaccounts.enabled", false);
@@ -2436,8 +2425,6 @@ Default:
 
 ### Camera API
 
-[Camera API - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Camera_API)
-
 ```js
 user_pref("device.camera.enabled", false);
 ```
@@ -2484,8 +2471,6 @@ Default:
 `true`
   ![Android][Android Logo].
 [[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
-
-[Device Storage API - Mozilla | MDN](https://developer.mozilla.org/en-US/docs/Mozilla/B2G_OS/API/Device_Storage_API)
 
 
 ### Gamepad API
@@ -2917,8 +2902,6 @@ Default:
 
 ## Web Channel
 
-[WebChannel.jsm - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/WebChannel.jsm)
-
 ```js
 user_pref("webchannel.allowObject.urlWhitelist", "");
 ```
@@ -3101,8 +3084,6 @@ What default should we use for the time span in the sanitizer: `0` - clear every
 
 ### WebIDE
 
-[WebIDE - MDN](https://developer.mozilla.org/en-US/docs/Tools/WebIDE)
-
 [16222: Review networking code for Firefox 38 | Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)
 
 ```js
@@ -3168,7 +3149,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
-`false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled)].
+`false`: Do not let websites to get notifications if the user copies, pastes, or cuts something from a web page, and do not let them know which part of the page has been selected.
 
 
 ### Context Menu
@@ -3376,7 +3357,7 @@ Default:
   ![Android][Android Logo]
 
 `1`: system default folder,
-`2`: custom (user defined) folder. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
+`2`: custom (user defined) folder.
 
 
 ```js
@@ -3392,7 +3373,7 @@ Default:
 `false`
   ![Tor Browser][Tor Browser Logo]
 
-`false`: Always ask where to download. [[MDN](https://developer.mozilla.org/en-US/docs/Download_Manager_preferences)]
+`false`: Always ask where to download.
 
 
 ## Fingerprinting
@@ -3712,8 +3693,7 @@ Default:
   ![LibreWolf][LibreWolf Logo]
 (FF7+)
 
-`false` - all parts of the url are shown
-[[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.urlbar.trimURLs)].
+`false` - all parts of the url are shown.
 
 
 ### DNS Resolve Single Words
@@ -4376,7 +4356,7 @@ n/a (hidden)
 `true` (locked)
   ![LibreWolf][LibreWolf Logo]
 
-`true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page" [[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.pagethumbnails.capturing_disabled)]. The preference is available in the desktop versions of Firefox only.
+`true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page". The preference is available in the desktop versions of Firefox only.
 
 
 ## Toolbar
@@ -4395,7 +4375,7 @@ Default:
 
 ## UI Tour
 
-The UITour API provides ways for pages on trusted domains to safely interact with the browser UI and request it to perform actions such as opening menus and showing highlights over the browser chrome - for the purposes of interactive tours [[Mozilla Source Tree Docs](https://firefox-source-docs.mozilla.org/browser/browser/UITelemetry.html)].
+The UITour API provides ways for pages on trusted domains to safely interact with the browser UI and request it to perform actions such as opening menus and showing highlights over the browser chrome - for the purposes of interactive tours.
 
 ```js
 user_pref("browser.uitour.enabled", false);

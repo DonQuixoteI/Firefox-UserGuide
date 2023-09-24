@@ -154,8 +154,6 @@
 
 ## Network
 
-[Mozilla networking preferences - MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Mozilla_networking_preferences)
-
 ### Network Connectivity Service
 
 ```js
@@ -233,9 +231,6 @@ Default:
 
 [mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)
 
-This also controls access to 3rd party Web Storage, IndexedDB, Cache API and Service Worker Cache
-[[fxsitecompat.com](https://www.fxsitecompat.com/en-CA/docs/2015/web-storage-indexeddb-cache-api-now-obey-third-party-cookies-preference/)].
-
 WARNING: Blocking 3rd-party cookies breaks a number of payment gateways.
 
 
@@ -304,7 +299,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
-[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: IPv6 can be abused, especially with MAC addresses, and can leak with VPNs: assuming your ISP and/or router and/or website is IPv6 capable. Most sites will fall back to IPv4.
+[[arkenfox][arkenfox]]: IPv6 can be abused, especially with MAC addresses, and can leak with VPNs: assuming your ISP and/or router and/or website is IPv6 capable. Most sites will fall back to IPv4.
 
 [wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
 
@@ -1530,7 +1525,6 @@ Default:
   ![Android][Android Logo],
 n/a
   ![Tor Browser][Tor Browser Logo].
-[[privacytools.io](https://www.privacytools.io/#webrtc)]
 
 
 ```js
@@ -1545,7 +1539,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo] (FF52+)
 
-Change is not needed if `privacy.resistFingerprinting` is `true` [[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
+Change is not needed if `privacy.resistFingerprinting` is `true` [[arkenfox][arkenfox]].
 [MDN#1](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/ondevicechange),
 [MDN#2](https://developer.mozilla.org/en-US/docs/Web/Events/devicechange)
 
@@ -1812,7 +1806,7 @@ n/a
   ![Tor Browser][Tor Browser Logo]
 
 `false`: disable about:addons' Get Add-ons panel (uses Google-Analytics)
-[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
+[[arkenfox][arkenfox]].
 
 
 ### Legacy Extensions
@@ -2299,7 +2293,7 @@ n/a
 
 ## Onboarding
 
-[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
+[[arkenfox][arkenfox]]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
 
 ```js
 user_pref("browser.onboarding.enabled", false);
@@ -3462,7 +3456,7 @@ Default:
 
 `0` - never use document's fonts, `1` - allow documents to specify fonts to use [[mozillazine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
-[[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)]: Disallowing document fonts drastically reduces font enumeration which is a high entropy fingerprinting vector. WARNING: Disabling fonts can uglify the web a fair bit.
+[[arkenfox][arkenfox]]: Disallowing document fonts drastically reduces font enumeration which is a high entropy fingerprinting vector. WARNING: Disabling fonts can uglify the web a fair bit.
 
 [Font Fingerprinting - Fonts Detection - BrowserLeaks.com](https://browserleaks.com/fonts)
 
@@ -3501,7 +3495,7 @@ Default:
   ![Android][Android Logo].
 [[mozillaZine](http://kb.mozillazine.org/Font.blacklist.underline_offset)]
 
-Any of these fonts on your system can be enumerated for fingerprinting [[arkenfox](https://github.com/arkenfox/user.js/blob/master/user.js)].
+Any of these fonts on your system can be enumerated for fingerprinting [[arkenfox][arkenfox]].
 
 
 ## Forms
@@ -4550,3 +4544,4 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
+[arkenfox]: https://github.com/arkenfox/user.js/blob/master/user.js

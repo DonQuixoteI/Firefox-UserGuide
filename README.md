@@ -6,4 +6,5 @@ The notes below are my collection of information on Firefox settings.
 - [Locked Preferences](doc/locked-prefs.md)
 - [Policies](doc/policies.md)
 - [Profiles](doc/profiles.md)
+- [Bookmark Manager](doc/bookmark-manager.md)
 - [Extensions](doc/extensions.md)

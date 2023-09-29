@@ -156,6 +156,9 @@
 
 ### Network Connectivity Service
 
+[[Network Detection - Firefox Help](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_network-detection)]:
+Captive portal feature tests whether your network connection requires logging in, for example, on a public Wi-Fi hotspot, by regularly connecting to http://detectportal.firefox.com/success.txt. Firefox will also make connections to this URL to check if your current network supports IPv6.
+
 ```js
 user_pref("network.connectivity-service.enabled", false);
 ```
@@ -164,16 +167,15 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 ([FF65+](https://bugzilla.mozilla.org/1460537))
 
 
 ### Captive Portal Detection
 
-[Handling Captive Portals in Firefox](https://github.com/vtsatskin/FX-Captive-Portals-Design)
+[Captive portal detection - Firefox Help](https://support.mozilla.org/en-US/kb/captive-portal)
 
 ```js
 user_pref("network.captive-portal-service.enabled", false);
@@ -182,13 +184,13 @@ user_pref("network.captive-portal-service.enabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+ ![LibreWolf][LibreWolf Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo]
-(FF52+). [[Tor Bug #21790](https://trac.torproject.org/projects/tor/ticket/21790)]
+  ![Android][Android Logo].
+ (FF52+).
+ [[Tor Bug #21790](https://trac.torproject.org/projects/tor/ticket/21790)]
 
 
 ```js
@@ -196,13 +198,12 @@ user_pref("captivedetect.canonicalURL", "");
 ```
 
 Default:
-"http://detectportal.firefox.com/success.txt"
+"http://detectportal.firefox.com/canonical.html"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-"(_empty string_)" (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 
 ### Cookie

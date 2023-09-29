@@ -168,8 +168,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+`false`
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo].
 ([FF65+](https://bugzilla.mozilla.org/1460537))
 
 
@@ -185,7 +186,7 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
- ![LibreWolf][LibreWolf Logo],
+  ![LibreWolf][LibreWolf Logo],
 `false`
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo].
@@ -202,8 +203,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+"(_empty string_)"
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
 
 
 ### Cookie

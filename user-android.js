@@ -106,7 +106,6 @@ user_pref("media.video_stats.enabled", false);
 user_pref("media.webspeech.synth.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.connectivity-service.enabled", false);
-user_pref("network.dns.disableIPv6", true);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.manage-offline-status", false);

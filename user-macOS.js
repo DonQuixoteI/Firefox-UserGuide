@@ -157,8 +157,6 @@ user_pref("messaging-system.rsexperimentloader.enabled", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
-user_pref("network.cookie.cookieBehavior", 1);
-user_pref("network.dns.disableIPv6", true);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.manage-offline-status", false);

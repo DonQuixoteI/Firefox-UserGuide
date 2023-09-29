@@ -239,7 +239,7 @@ WARNING: Blocking 3rd-party cookies breaks a number of payment gateways.
 
 ### HTTP Alternative Services
 
-[RFC 7838 - HTTP Alternative Services](https://tools.ietf.org/html/rfc7838)
+[RFC 7838 - HTTP Alternative Services](https://datatracker.ietf.org/doc/html/rfc7838)
 
 [Alt-Svc - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Alt-Svc)
 
@@ -267,7 +267,10 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
-alt-svc allows separation of transport routing from the origin host without using a proxy [[hg.mozilla.org](https://hg.mozilla.org/integration/autoland/rev/acc9a2f97b7e93cfcdfc36306d22f68d3f0f4964)]. It was changed to `false` in FF95 [[1730935 - (CVE-2021-38507) Opportunistic Security for HTTP/2 opt-in checking partial bypass](https://bugzilla.mozilla.org/show_bug.cgi?id=1730935)]
+alt-svc allows separation of transport routing from the origin host without using a proxy
+[[hg.mozilla.org](https://hg.mozilla.org/integration/autoland/rev/acc9a2f97b7e93cfcdfc36306d22f68d3f0f4964)].
+It was changed to `false` in FF95
+[[1730935 - (CVE-2021-38507) Opportunistic Security for HTTP/2 opt-in checking partial bypass](https://bugzilla.mozilla.org/show_bug.cgi?id=1730935)]
 
 
 ### HTTPS Only Mode
@@ -288,10 +291,8 @@ Default:
 
 ### IPv6 Name Lookups
 
-[network.dns.disableIPv6 - mozillaZine](http://kb.mozillazine.org/Network.dns.disableIPv6)
-
 ```js
-user_pref("network.dns.disableIPv6", true);
+user_pref("network.dns.disableIPv6", false);
 ```
 
 Default:
@@ -302,7 +303,7 @@ Default:
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
-[[arkenfox][arkenfox]]: IPv6 can be abused, especially with MAC addresses, and can leak with VPNs: assuming your ISP and/or router and/or website is IPv6 capable. Most sites will fall back to IPv4.
+[IPv6 security - Internet Society](https://www.internetsociety.org/tag/ipv6-security/)
 
 [wiki.archlinux.de](https://wiki.archlinux.de/title/Firefox)
 

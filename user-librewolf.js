@@ -11,7 +11,6 @@ user_pref("dom.security.https_only_mode", false);
 user_pref("general.smoothScroll", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
-user_pref("network.dns.disableIPv6", true);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.manage-offline-status", false);
 user_pref("network.predictor.enabled", false);

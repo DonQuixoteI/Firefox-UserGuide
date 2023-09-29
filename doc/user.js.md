@@ -211,28 +211,28 @@ Default:
 ### Cookie
 
 ```js
-user_pref("network.cookie.cookieBehavior", 1);
+user_pref("network.cookie.cookieBehavior", 5);
 ```
 
 Default:
-`0`
+`5`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `1`
-  ![Tor Browser][Tor Browser Logo],
-`5`
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 `0` - allow all cookies,
 `1` - allow only from the originating server,
 `2` - disallow all,
 `3` - allow 3rd party if it already set a cookie,
 `4` - reject trackers,
-`5` - isolate all cross-site cookies [[FF86+: Total Cookie Protection](https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/)].
+`5` - isolate all cross-site cookies.
 ([FF64+](https://github.com/mozilla/price-wise/issues/183))
+[[FF86+: Total Cookie Protection](https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/)].
 
-[mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)
+[Network.cookie.cookieBehavior - mozillaZine](http://kb.mozillazine.org/Network.cookie.cookieBehavior)
 
 WARNING: Blocking 3rd-party cookies breaks a number of payment gateways.
 

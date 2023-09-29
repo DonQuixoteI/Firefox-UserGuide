@@ -340,7 +340,7 @@ Default:
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
-`false` (locked)
+`false`
   ![Tor Browser][Tor Browser Logo]
 
 Link prefetching is a browser mechanism, which utilizes browser idle time to download or prefetch documents that the user might visit in the near future [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)]. `false` disables link prefetching [[mozillaZine](http://kb.mozillazine.org/Network.prefetch-next)].
@@ -406,7 +406,7 @@ Default:
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
-`0` (locked)
+`0`
   ![Tor Browser][Tor Browser Logo]
 
 [[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections)]
@@ -474,11 +474,10 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 Default:
 `true`
   ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![Android][Android Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
-`false` (locked via policies)
-  ![Debian][Debian Logo],
 `false` (locked)
   ![LibreWolf][LibreWolf Logo]
 
@@ -659,14 +658,13 @@ user_pref("toolkit.telemetry.enabled", false);
 ```
 
 Default:
-locked `true`
-  ![Win][Windows Logo],
-  ![Debian][Debian Logo]
-`true`
-  ![Android][Android Logo],
 `false` (locked)
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
+`false`
+  ![Android][Android Logo]
 
 If `unified` is off, this controls whether the Telemetry module is enabled; if `unified` is on, this controls whether to record extended data [[Telemetry Preferences][telemetry-preferences]].
 
@@ -693,11 +691,12 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 
 Default:
 `true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
+  ![Win][Windows Logo],
 `false` (locked)
+  ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
 
@@ -967,10 +966,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 It enables/disables application reputation checks for downloaded files [[mozilla wiki](https://wiki.mozilla.org/Security/Application_Reputation "Application Reputation")].
 `true` does only the local checks against a blacklist and a whitelist, as long as `browser.safebrowsing.downloads.remote.enabled` is disabled [[pyllyukko](https://github.com/pyllyukko/user.js/pull/65)].
@@ -1376,11 +1374,11 @@ user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 Default:
 `true`
   ![Windows][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 `false` (locked)
   ![LibreWolf][LibreWolf Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 (FF70+)
 
@@ -2123,9 +2121,10 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 `false` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo],
 n/a
-  ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 
 
@@ -2312,9 +2311,10 @@ user_pref("extensions.pocket.enabled", false);
 ```
 
 Default:
+`true`
+  ![Win][Windows Logo],
 `false` (locked)
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo],
 `false`
   ![Tor Browser][Tor Browser Logo],
@@ -2414,17 +2414,19 @@ Default:
 [[MDN](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)]: Example use cases of the Beacon API are logging activity and sending analytics data to the server.
 
 ```js
-user_pref("beacon.enabled", false);
+user_pref("beacon.enabled", true);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo]
+
+[Beacon API - don't bother? #1586 - arkenfox](https://github.com/arkenfox/user.js/issues/1586)
 
 
 ### Camera API
@@ -2663,10 +2665,10 @@ user_pref("browser.region.update.enabled", false);
 `true`
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
-  ![Android][Android Logo],
-n/a
   ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo].
 ([FF80+](https://cat-in-136.github.io/2020/08/diff-between-firefox-800-beta-7-default.html))
 
 
@@ -2681,12 +2683,13 @@ Default:
 "https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
   ![Windows][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
-"(_empty string_)" (locked)
-  ![LibreWolf][LibreWolf Logo],
-n/a
-  ![Tor Browser][Tor Browser Logo]
+"_(empty string)_"
+  ![Tor Browser][Tor Browser Logo].
 ([FF78+](https://github.com/arkenfox/user.js/issues/978))
+
+[revisit: search engine region. #1590 - arkenfox](https://github.com/arkenfox/user.js/issues/1590)
 
 
 ### HTMLCanvasElement
@@ -2911,12 +2914,12 @@ user_pref("webchannel.allowObject.urlWhitelist", "");
 ```
 
 Default:
-"https://content.cdn.mozilla.net https://input.mozilla.org https://support.mozilla.org https://install.mozilla.org"
+"https://content.cdn.mozilla.net https://install.mozilla.org"
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-"(_empty string_)" (locked)
   ![LibreWolf][LibreWolf Logo],
+"(_empty string_)"
+  ![Tor Browser][Tor Browser Logo],
 n/a
   ![Android][Android Logo]
 
@@ -3452,17 +3455,18 @@ Default:
 [SVG OpenType Fonts](https://wiki.mozilla.org/SVGOpenTypeFonts)
 
 ```js
-user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+user_pref("gfx.font_rendering.opentype_svg.enabled", true);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
+
+[svg opentype fonts. #1529 - arkenfox](https://github.com/arkenfox/user.js/issues/1529)
 
 
 ### Fonts with Incorrect Underline Offsets
@@ -3638,10 +3642,9 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
-
+  ![Tor Browser][Tor Browser Logo]
+ 
 `false`: Disable location bar domain guessing.
 
 
@@ -3673,9 +3676,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+`false`
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
-`false` (locked)
-  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 (FF57+)
@@ -3812,9 +3815,8 @@ Default:
   ![Debian][Debian Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 `false`: Disable the Password Manager [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Signon.)].
 
@@ -3828,10 +3830,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 `false`: Do not automatically fill sign-in forms with known usernames and passwords [[mozillaZine](http://kb.mozillazine.org/Signon.autofillForms)].
 
@@ -3844,10 +3845,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo]
 
 `false`: Do not ignore [`autocomplete=off` form feature](http://www.w3schools.com/tags/att_input_autocomplete.asp) that some websites use to prevent password storing or automatic fill out into sign-on forms, in other words, Firefox Password Manager (if it is enabled) will be not used on that websites. [[Mozilla Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=956906)]
 
@@ -3860,10 +3860,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false` (locked)
   ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
 (FF51+)
 
 `false`: disable formless login capture for Password Manager.
@@ -4123,7 +4122,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
-`true` (locked)
+`true`
   ![LibreWolf][LibreWolf Logo]
   
 [Internationalized Domain Name (IDN) homograph attack - wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
@@ -4145,7 +4144,7 @@ Default:
   ![Debian][Debian Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
-`true` (locked)
+`true`
   ![LibreWolf][LibreWolf Logo].
 [[mozilla wiki](https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken)]
 
@@ -4217,10 +4216,10 @@ Default:
 `true`
   ![Win][Windows Logo],
 `false`
-  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
 `false` (locked)
-  ![LibreWolf][LibreWolf Logo],
+  ![Debian][Debian Logo],
 n/a
   ![Android][Android Logo]
 
@@ -4355,10 +4354,10 @@ Default:
 n/a (hidden)
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `true` (locked)
-  ![LibreWolf][LibreWolf Logo]
+  ![Tor Browser][Tor Browser Logo]
 
 `true`: Do not create screenshots of visited pages which will be shown if the web page is shown in the grid of the "New Tab Page". The preference is available in the desktop versions of Firefox only.
 

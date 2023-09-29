@@ -1,6 +1,5 @@
 user_pref("app.update.auto", false);
 user_pref("app.update.enabled", false);
-user_pref("beacon.enabled", false);
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.tabs.loadInBackground", false);
 user_pref("network.prefetch-next", false);

@@ -2985,13 +2985,13 @@ user_pref("javascript.use_us_english_locale", true);
 ```
 
 Default:
-`true`
-  ![LibreWolf][LibreWolf Logo],
 n/a (hidden)
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo].
+([-FF119](https://bugzilla.mozilla.org/show_bug.cgi?id=1846224))
 
 An anti-fingerprinting patch from Tor Browser was added to Firefox 46 to force using en-US date format regardless of the OS locale [[Bug 867501](https://bugzilla.mozilla.org/show_bug.cgi?id=867501)].
 

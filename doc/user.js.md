@@ -16,11 +16,9 @@
 - [Reports to Mozilla and Data Collection](#reports-to-mozilla-and-data-collection)
   - [Crash Report](#crash-report)
   - [Health Report](#health-report)
-  - [SSL Error Report](#ssl-error-report)
   - [Telemetry](#telemetry)
     - [Ping Centre](#ping-centre)
     - [Shield Studies](#shield-studies)
-    - [Devtools Telemetry](#devtools-telemetry)
   - [New Feature Experiments](#new-feature-experiments)
   - [Check for Corruption](#check-for-corruption)
 - [Safe Browsing](#safe-browsing)
@@ -794,25 +792,6 @@ Default:
   ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
-
-
-#### Devtools Telemetry
-
-```js
-lockPref("devtools.onboarding.telemetry.logged", false);
-```
-
-Default:
-`false`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-
-Firefox auto-resets to `true` on start
-[[ghacks.net comment](https://www.ghacks.net/2018/03/10/firefox-60-ships-with-windows-group-policy-support/#comment-4365175)].
 
 
 ### New Feature Experiments

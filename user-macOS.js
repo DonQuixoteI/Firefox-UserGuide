@@ -90,7 +90,6 @@ user_pref("dom.enable_performance", false);
 user_pref("dom.enable_resource_timing", false);
 user_pref("dom.event.clipboardevents.enabled", false);
 user_pref("dom.gamepad.enabled", false);
-user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("dom.popup_maximum", 3);
 user_pref("dom.presentation.device.name", "dummy-device");
 user_pref("dom.push.connection.enabled", false);

@@ -517,12 +517,14 @@ user_pref("dom.ipc.plugins.reportCrashURL", false);
 ```
 
 Default:
-`true`
+n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
+  ![Android][Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo].
+(-[FF116](https://github.com/arkenfox/user.js/issues/1709))
 
 `false`: Do not send the URL of the website where a plugin crashed [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 

@@ -2447,7 +2447,6 @@ Default:
 
 ```js
 user_pref("dom.webnotifications.enabled", false);
-user_pref("dom.webnotifications.serviceworker.enabled", false);
 ```
 
 Default:
@@ -2459,6 +2458,19 @@ Default:
   ![Android][Android Logo].
 [[Mozilla Support Forum](https://support.mozilla.org/en-US/questions/1140700)]
 
+```js
+user_pref("dom.webnotifications.serviceworker.enabled", false);
+```
+
+Default:
+n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
+  ![Android][Android Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo].
+(-[FF116](https://bugzilla.mozilla.org/show_bug.cgi?id=1842457))
 
 ## Push API
 

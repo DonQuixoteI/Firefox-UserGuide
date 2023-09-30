@@ -109,7 +109,6 @@ user_pref("dom.push.serverURL", "");
 user_pref("dom.vibrator.enabled", false);
 user_pref("dom.vr.process.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
-user_pref("dom.webnotifications.serviceworker.enabled", false);
 user_pref("extensions.abuseReport.enabled", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.available", false);

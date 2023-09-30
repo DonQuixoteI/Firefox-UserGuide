@@ -58,7 +58,6 @@ user_pref("dom.push.enabled", false);
 user_pref("dom.push.serverURL", "");
 user_pref("dom.vibrator.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
-user_pref("dom.webnotifications.serviceworker.enabled", false);
 user_pref("extensions.abuseReport.enabled", false);
 user_pref("extensions.autoupdate.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);

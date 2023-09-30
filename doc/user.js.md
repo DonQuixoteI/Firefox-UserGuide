@@ -57,7 +57,6 @@
   - [Gamepad API](#gamepad-api)
   - [Geolocation API](#geolocation-api)
     - [Geolocation-Based Search](#geolocation-based-search)
-  - [HTMLCanvasElement](#htmlcanvaselement)
   - [Network Information API](#network-information-api)
   - [Notification API](#notification-api)
   - [Push API](#push-api)
@@ -2421,26 +2420,6 @@ Default:
 ([FF78+](https://github.com/arkenfox/user.js/issues/978))
 
 [revisit: search engine region. #1590 - arkenfox](https://github.com/arkenfox/user.js/issues/1590)
-
-
-### HTMLCanvasElement
-
-[HTMLCanvasElement.captureStream() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream)
-
-[Canvas PeerConnection Demo](https://mozilla.github.io/webrtc-landing/canvas_demo.html)
-
-```js
-user_pref("canvas.capturestream.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-(FF41+)
 
 
 ### Network Information API

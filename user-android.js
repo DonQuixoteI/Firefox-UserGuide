@@ -38,7 +38,6 @@ user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.trimURLs", false);
-user_pref("canvas.capturestream.enabled", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);

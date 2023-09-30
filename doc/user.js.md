@@ -373,10 +373,9 @@ Default:
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-(FF70+),
-n/a
   ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+(FF70+)
 
 By default, prefetching of embedded link hostnames is not performed on documents loaded over HTTPS [[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control)].
 
@@ -392,7 +391,7 @@ Default:
   ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false`
-  ![Tor Browser][Tor Browser Logo],
+  ![Tor Browser][Tor Browser Logo]
 
 The network predictor makes preemptive connections to resources in a page based on cached information. It can also do the same when the user hovers over a link. [[Tor](https://trac.torproject.org/projects/tor/ticket/16625)]
 
@@ -511,21 +510,6 @@ Default:
   ![LibreWolf][LibreWolf Logo]
 
 Set of libraries called `Breakpad` handles client-side crash reporting [[mozillaZine](http://kb.mozillazine.org/Breakpad.reportURL)].
-
-
-```js
-user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-`false`: Do not send Flash crash reports [[ghacks.net](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)].
 
 
 ```js

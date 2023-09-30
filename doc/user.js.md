@@ -112,7 +112,6 @@
 - [Smooth Scrolling](#smooth-scrolling)
 - [Startup](#startup)
   - [Check Default Browser](#check-default-browser)
-  - [Rights](#rights)
   - [Slow Startup](#slow-startup)
   - [Startup Page](#startup-page)
   - [Window Size](#window-size) 
@@ -3694,25 +3693,6 @@ n/a
 
 `false`:  Do not check on startup if Firefox is set as default browser [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
 
-
-### Rights
-
-[Bug 462254 - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=462254)
-
-```js
-user_pref("browser.rights.3.shown", true);
-```
-
-Default:
-`false`
-  ![Win][Windows Logo],
-`true`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-([-FF61](https://github.com/earthlng/FFprefs-diffs/blob/65df04dd48f975073bfbb9fc48ceeb344e51ae33/diffs/6x/diff-v61.0-vs-v62.0.log.js))
 
 ### Slow Startup
 

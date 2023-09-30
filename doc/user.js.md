@@ -3168,21 +3168,6 @@ n/a
   ![Android][Android Logo]
 
 
-```js
-user_pref("browser.urlbar.clickSelectsAll", true);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo],
-`false`
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-
-
 ### Domain Guessing
 
 Domain Guessing intercepts the DNS "hostname not found" error, and resends the

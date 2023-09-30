@@ -3920,28 +3920,14 @@ Default:
 ### Warning on about config
 
 ```js
-user_pref("general.warnOnAboutConfig", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-(-FF70)
-
-```js
 user_pref("browser.aboutConfig.showWarning", false);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
-  ![Debian][Debian Logo],
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
 `false`
   ![LibreWolf][LibreWolf Logo]
 (FF71+)

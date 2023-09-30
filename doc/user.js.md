@@ -3822,7 +3822,9 @@ user_pref("browser.download.autohideButton", true);
 Default:
 `false`
   ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
+`true`
+  ![Tor Browser][Tor Browser Logo]
 
 
 ## UI Tour

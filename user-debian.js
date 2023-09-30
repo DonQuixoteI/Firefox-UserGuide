@@ -156,7 +156,6 @@ user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
 user_pref("pdfjs.disabled", true);
 user_pref("plugin.default.state", 0);
-user_pref("plugin.defaultXpi.state", 0);
 user_pref("privacy.cpd.offlineApps", true);
 user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.resistFingerprinting", true);

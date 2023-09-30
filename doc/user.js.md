@@ -2379,54 +2379,11 @@ Default:
 n/a (hidden)
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 "US"
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo].
 [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
-
-
-```js
-user_pref("browser.search.isUS", true);
-```
-
-Default:
-n/a (hidden)
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
-```js
-user_pref("browser.search.geoSpecificDefaults", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo].
-[[ghacks](http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/)]
-
-
-```js
-user_pref("browser.search.geoSpecificDefaults.url", "");
-```
-
-Default:
-"https://search.services.mozilla.com/1/%APP%/%VERSION%/%CHANNEL%/%LOCALE%/%REGION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%"
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
 
 
 ```js

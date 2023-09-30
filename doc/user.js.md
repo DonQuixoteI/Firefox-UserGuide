@@ -95,7 +95,6 @@
   - [DNS Resolve Single Words](#dns-resolve-single-words)
   - [Location Bar Dropdown](#location-bar-dropdown)
 - [Mozilla Websites](#mozilla-websites)
-- [Offline Data](#offline-data)
 - [Passwords](#passwords)
 - [PDF Viewer](#pdf-viewer)
 - [Plugins](#plugins)
@@ -3319,25 +3318,6 @@ Default:
 "(empty string)"
   ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
-
-
-## Offline Data
-
-```js
-user_pref("offline-apps.allow_by_default", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-(-FF70)
-
-[Firefox not honoring "Offline Web Content And User Data" settings - Mozilla Support Forum](https://support.mozilla.org/questions/1098540)
 
 
 ## Passwords

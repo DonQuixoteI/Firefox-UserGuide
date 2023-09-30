@@ -2905,22 +2905,6 @@ Default:
 
 
 ```js
-user_pref("dom.disable_window_open_feature.close", true);
-```
-
-Default:
-`false`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo] 
-
-`true`: Prevent close button from being disabled [[DOM Entries - mozillaZine]].
-
-
-```js
 user_pref("dom.disable_window_open_feature.location", true);
 ```
 

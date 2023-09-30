@@ -169,7 +169,6 @@ user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.OCSP.enabled", 0);
-user_pref("security.ssl.errorReporting.url", "");
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("services.sync.engine.addons", false);
 user_pref("services.sync.engine.bookmarks", false);

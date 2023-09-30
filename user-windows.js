@@ -194,8 +194,6 @@ user_pref("privacy.window.maxHeight", 900);
 user_pref("privacy.window.maxInnerWidth", 1600);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.OCSP.enabled", 0);
-user_pref("security.ssl.errorReporting.enabled", false);
-user_pref("security.ssl.errorReporting.url", "");
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);

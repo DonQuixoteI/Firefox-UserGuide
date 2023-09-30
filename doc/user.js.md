@@ -579,39 +579,6 @@ Default:
   ![LibreWolf][LibreWolf Logo]
 
 
-### SSL Error Report
-
-```js
-user_pref("security.ssl.errorReporting.enabled", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-`false`
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo].
-([-FF85](https://bugzilla.mozilla.org/show_bug.cgi?id=1681839))
-
-
-```js
-user_pref("security.ssl.errorReporting.url", "");
-```
-
-Default:
-"https://incoming.telemetry.mozilla.org/submit/sslreports/"
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo].
-([-FF85](https://bugzilla.mozilla.org/show_bug.cgi?id=1681839))
-
-
 ### Telemetry
 
 > [[mozilla](https://www.mozilla.org/en-US/privacy/firefox/#telemetry)]:

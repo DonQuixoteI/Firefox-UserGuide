@@ -2,7 +2,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("app.update.url.android", "");
 user_pref("breakpad.reportURL", "");
 user_pref("browser.bookmarks.max_backups", 2);
-user_pref("browser.casting.enabled", false);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.fixup.alternate.enabled", false);

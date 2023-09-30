@@ -26,7 +26,6 @@
 - [Updating](#updating)
   - [Extensions](#extensions-update)
   - [Search Engines](#search-engines-update)
-  - [Web Apps](#web-apps-update)
   - [What is New](#what-is-new)
 - [WebRTC](#webrtc)
   - [Gecko Media Plugins](#gecko-media-plugins)
@@ -1262,24 +1261,6 @@ Default:
   ![Android][Android Logo]
 
 `false`: do not automatically check for updates to search plugins [[mozillaZine](http://kb.mozillazine.org/About:config_entries#Browser.)].
-
-
-### Web Apps Update
-
-[[Web Application - Wikipedia](https://en.wikipedia.org/wiki/Web_application)] [[MDN](https://developer.mozilla.org/en-US/Apps)]
-
-```js
-user_pref("app.update.url.android", "");
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo],
-"https://aus5.mozilla.org/update/4/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/%MOZ_VERSION%/update.xml")
-  ![Android][Android Logo]
 
 
 ### What is New

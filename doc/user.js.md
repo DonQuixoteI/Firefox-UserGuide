@@ -2552,10 +2552,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo]
 
 
 ## WebGL API

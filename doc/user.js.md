@@ -45,7 +45,6 @@
 - [Tabs](#tabs)
   - [New Tab](#new-tab)
   - [Last Tab](#last-tab)
-- [Onboarding](#onboarding)
 - [Pocket](#pocket)
 - [Statistics](#statistics)
   - [Timing](#timing)
@@ -2165,25 +2164,6 @@ n/a
   ![Android][Android Logo]
 
 `false`: do not close browser with closing last tab.
-
-
-## Onboarding
-
-[[arkenfox][arkenfox]]: [Onboarding](https://wiki.mozilla.org/Firefox/Onboarding) is an interactive tour/setup for new installs/profiles and features. Every time `about:home` or `about:newtab` is opened, the onboarding overlay is injected into that page. Onboarding uses Google Analytics [[1](https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf)], and leaks `resource://URIs` [[2](https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154)].
-
-```js
-user_pref("browser.onboarding.enabled", false);
-```
-
-Default:
-`true`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-(FF55-[FF63](https://github.com/earthlng/FFprefs-diffs/blob/fa12137da87451c1037116c24bcf4892c413e9f3/diffs/6x/diff-v63.0-vs-v64.0.log.js))
 
 
 ## Pocket

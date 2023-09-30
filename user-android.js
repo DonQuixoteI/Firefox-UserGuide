@@ -33,7 +33,6 @@ user_pref("browser.safebrowsing.provider.google4.updateURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
-user_pref("browser.search.geoip.url", "");
 user_pref("browser.sessionstore.interval", 1800000);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.startup.homepage_override.mstone", "ignore");

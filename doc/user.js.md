@@ -2791,42 +2791,6 @@ n/a
 What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
 
-## Developer Tools
-
-### WebIDE
-
-[16222: Review networking code for Firefox 38 | Tor Trac](https://trac.torproject.org/projects/tor/ticket/16222)
-
-```js
-user_pref("devtools.webide.enabled", false);
-```
-
-Default:
-`false`
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-(-FF70)
-
-
-```js
-user_pref("devtools.webide.autoinstallADBHelper", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo],
-`false`
-  ![Debian][Debian Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
 ## DOM
 
 ### Clipboard

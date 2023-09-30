@@ -2905,24 +2905,6 @@ Default:
 
 
 ```js
-user_pref("dom.disable_window_open_feature.location", true);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo],
-`false`
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo] 
-
-
-`true`: Prevent popups from hiding the Location Bar [[mozillaZine](http://kb.mozillazine.org/Dom.disable_window_open_feature.location)].
-
-
-```js
 user_pref("dom.disable_window_open_feature.menubar", true);
 ```
 

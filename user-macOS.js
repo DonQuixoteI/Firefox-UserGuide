@@ -119,7 +119,6 @@ user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("general.smoothScroll", false);
 user_pref("geo.enabled", false);
-user_pref("geo.wifi.logging.enabled", false);
 user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("identity.fxaccounts.enabled", false);
 user_pref("image.animation_mode", "none");

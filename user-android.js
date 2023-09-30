@@ -76,7 +76,6 @@ user_pref("font.blacklist.underline_offset", "");
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("geo.enabled", false);
-user_pref("geo.wifi.xhr.timeout", 1);
 user_pref("image.animation_mode", "none");
 user_pref("keyword.enabled", false);
 user_pref("layout.css.devPixelsPerPx", "2.8");

@@ -2362,49 +2362,6 @@ Default:
   ![Tor Browser][Tor Browser Logo].
 [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 
-
-```js
-user_pref("geo.wifi.logging.enabled", false);
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-(hidden)
-
-
-```js
-user_pref("geo.wifi.xhr.timeout", 1);
-```
-
-Default:
-`60000`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-
-
-```js
-user_pref("geo.wifi.uri", "");
-```
-
-Default:
-"https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%"
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-"(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Android][Android Logo]
-
 The information around you (mac addresses, signal strengths, SSIDs and etc.) is transmitted to Google Location Services in order to locate you [[stackoverflow](http://stackoverflow.com/a/5134619)].
 
 [Geolocation Test](http://html5demos.com/geo)

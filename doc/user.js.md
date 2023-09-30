@@ -2386,22 +2386,6 @@ n/a (hidden)
 [[Tor Bug #16254](https://trac.torproject.org/projects/tor/ticket/16254)]
 
 
-```js
-user_pref("browser.search.geoip.url", "");
-```
-
-Default:
-"https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%"
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Android][Android Logo],
-"(_empty string_)"
-  ![Tor Browser][Tor Browser Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo].
-[[mozilla support](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine)]
-
-
 Firefox monitors the users region in order to show relevant local search engines and content
 [[Firefox Source Docs](https://firefox-source-docs.mozilla.org/toolkit/modules/toolkit_modules/Region.html)].
 

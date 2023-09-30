@@ -3492,7 +3492,7 @@ Default:
 ## Screen Resolution
 
 ```js
-user_pref("layout.css.devPixelsPerPx", "1.5");
+user_pref("layout.css.devPixelsPerPx", "-1.0");
 ```
 
 Default (string):

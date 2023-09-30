@@ -118,7 +118,6 @@ user_pref("identity.fxaccounts.auth.uri", "");
 user_pref("image.animation_mode", "none");
 user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);
-user_pref("layout.css.devPixelsPerPx", "1.2");
 user_pref("layout.css.font-loading-api.enabled", false);
 user_pref("media.autoplay.blocking_policy", 2);
 user_pref("media.getusermedia.screensharing.enabled", false);

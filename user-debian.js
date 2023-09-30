@@ -84,7 +84,6 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("dom.disable_window_move_resize", true);
-user_pref("dom.disable_window_open_feature.close", true);
 user_pref("dom.disable_window_open_feature.menubar", true);
 user_pref("dom.disable_window_open_feature.minimizable", true);
 user_pref("dom.disable_window_open_feature.personalbar", true);

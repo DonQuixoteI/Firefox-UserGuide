@@ -2387,21 +2387,6 @@ n/a (hidden)
 
 
 ```js
-user_pref("browser.search.geoip.timeout", 1);
-```
-
-Default:
-`3000`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo].
-[[Raven Wiki](https://wiki.kairaven.de/open/app/firefox)]
-
-
-```js
 user_pref("browser.search.geoip.url", "");
 ```
 

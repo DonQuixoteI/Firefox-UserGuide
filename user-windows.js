@@ -61,7 +61,6 @@ user_pref("browser.safebrowsing.provider.google4.updateURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
-user_pref("browser.search.geoip.timeout", 1);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);

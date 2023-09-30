@@ -46,7 +46,6 @@ user_pref("canvas.capturestream.enabled", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
-user_pref("device.storage.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("dom.disable_window_open_feature.close", true);
 user_pref("dom.disable_window_open_feature.menubar", true);

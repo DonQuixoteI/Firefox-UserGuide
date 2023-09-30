@@ -2316,14 +2316,15 @@ user_pref("device.storage.enabled", false);
 ```
 
 Default:
-`false`
+n/a
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo],
-`true`
-  ![Android][Android Logo].
-[[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)]
+  ![Android][Android Logo],
+`false`
+  ![Tor Browser][Tor Browser Logo].
+[[mozilla wiki](https://wiki.mozilla.org/WebAPI/DeviceStorageAPI#Security.2FPrivacy_considerations)].
+(-[FF116](https://bugzilla.mozilla.org/show_bug.cgi?id=1838689))
 
 
 ### Gamepad API

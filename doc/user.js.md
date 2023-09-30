@@ -3139,20 +3139,6 @@ n/a
 ## Location Bar
 
 ```js
-user_pref("browser.urlbar.searchSuggestionsChoice", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo],
-n/a
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-
-```js
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 ```

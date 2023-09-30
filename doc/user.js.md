@@ -3408,22 +3408,6 @@ n/a
 ## Plugins
 
 ```js
-user_pref("plugin.scan.plid.all", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo],
-n/a
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo]
-
-`false`: Disable all Mozilla plugins specified in the Windows registry `HKLM\Software\MozillaPlugins\` [[mozillaZine](http://kb.mozillazine.org/Plugin_scanning)].
-
-
-```js
 user_pref("plugin.default.state", 0);
 ```
 

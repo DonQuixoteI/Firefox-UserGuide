@@ -2737,11 +2737,10 @@ Default:
 `15`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo],
 `5`
   ![Android][Android Logo],
-`2`
-  ![LibreWolf][LibreWolf Logo]
 [[mozillazine](http://kb.mozillazine.org/Browser.bookmarks.max_backups)]
 
 

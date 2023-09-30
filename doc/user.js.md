@@ -1217,21 +1217,6 @@ n/a
 
 
 ```js
-user_pref("extensions.autoupdate.enabled", false);
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo],
-  ![Tor Browser][Tor Browser Logo],
-`true`
-  ![Android][Android Logo].
-[[Blog](http://starkravingfinkle.org/blog/2010/05/updating-add-ons-in-firefox-mobile-1-1/ "Updating Add-ons in Firefox Mobile 1.1")]
-
-
-```js
 user_pref("extensions.systemAddon.update.enabled", false);
 ```
 

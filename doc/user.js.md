@@ -52,7 +52,6 @@
 - [WebAPI](#web-api)
   - [Battery API](#battery-api)
   - [Beacon API](#beacon-api)
-  - [Camera API](#camera-api)
   - [CSS Font Loading API](#css-font-loading-api)
   - [Device Storage API](#device-storage-api)
   - [Gamepad API](#gamepad-api)
@@ -2291,22 +2290,6 @@ Default:
   ![Tor Browser][Tor Browser Logo]
 
 [Beacon API - don't bother? #1586 - arkenfox](https://github.com/arkenfox/user.js/issues/1586)
-
-
-### Camera API
-
-```js
-user_pref("device.camera.enabled", false);
-```
-
-Default:
-n/a
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![LibreWolf][LibreWolf Logo]
-  ![Tor Browser][Tor Browser Logo],
-`true`
-  ![Android][Android Logo]
 
 
 ### CSS Font Loading API

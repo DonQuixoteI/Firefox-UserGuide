@@ -2357,9 +2357,9 @@ Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Android][Android Logo],
 `false`
-  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo].
 [[mozilla](https://www.mozilla.org/en-US/firefox/geolocation/)]
 

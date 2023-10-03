@@ -121,6 +121,7 @@
 - [Thumbnails](#thumbnails)
 - [Toolbar](#toolbar)
   - [Auto-Hide Download Button](#auto-hide-download-button)
+- [Translations](#translations)
 - [UI Tour](#ui-tour)
 - [Video Buffering](#video-buffering)
 - [View Source](#view-source)
@@ -3849,6 +3850,25 @@ Default:
   ![LibreWolf][LibreWolf Logo],
 `true`
   ![Tor Browser][Tor Browser Logo]
+
+
+## Translations
+
+[Firefox Fullpage Translation | Firefox Help](https://support.mozilla.org/en-US/kb/website-translation)
+
+```js
+user_pref("browser.translations.enable", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+(FF118+)
 
 
 ## UI Tour

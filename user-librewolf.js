@@ -8,6 +8,7 @@ user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.url", "");
 user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("browser.translations.enable", false);
 user_pref("browser.urlbar.trimHttps", true);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("corroborator.enabled", false);

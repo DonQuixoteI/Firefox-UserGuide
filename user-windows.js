@@ -74,6 +74,7 @@ user_pref("browser.startup.page", 0);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.tabs.loadInBackground", false);
+user_pref("browser.translations.enable", false);
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.uitour.url", "");
 user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);

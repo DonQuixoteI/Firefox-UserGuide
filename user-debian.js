@@ -75,6 +75,7 @@ user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("corroborator.enabled", false);

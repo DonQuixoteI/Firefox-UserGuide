@@ -90,6 +90,9 @@
   - [Fonts with Incorrect Underline Offsets](#fonts-with-incorrect-underline-offsets)
 - [Forms](#forms)
 - [Location Bar](#location-bar)
+  - [Suggest](#suggest)
+  - [Trim https](#trim-https)
+  - [Trim URLs](#trim-urls)
   - [Domain Guessing](#domain-guessing)
   - [Keyword Service](#keyword-service)
   - [DNS Resolve Single Words](#dns-resolve-single-words)
@@ -3135,6 +3138,8 @@ n/a
 
 ## Location Bar
 
+### Suggest
+
 ```js
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
@@ -3163,6 +3168,42 @@ Default:
   ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
+
+
+### Trim https
+
+```js
+user_pref("browser.urlbar.trimHttps", true);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo],
+n/a
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo].
+([FF118+](https://bugzilla.mozilla.org/show_bug.cgi?id=1067293))
+
+
+### Trim URLs
+
+```js
+user_pref("browser.urlbar.trimURLs", false);
+```
+
+Default:
+`true`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`false`
+  ![LibreWolf][LibreWolf Logo]
+(FF7+)
+
+`false` - all parts of the url are shown.
 
 
 ### Domain Guessing
@@ -3222,23 +3263,6 @@ n/a
 (FF57+)
 
 [Bug 1348275: speculatively connect to web server(s) on autocomplete when typing in awesomebar - Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1348275)
-
-
-```js
-user_pref("browser.urlbar.trimURLs", false);
-```
-
-Default:
-`true`
-  ![Win][Windows Logo]
-  ![Debian][Debian Logo]
-  ![Tor Browser][Tor Browser Logo]
-  ![Android][Android Logo],
-`false`
-  ![LibreWolf][LibreWolf Logo]
-(FF7+)
-
-`false` - all parts of the url are shown.
 
 
 ### DNS Resolve Single Words

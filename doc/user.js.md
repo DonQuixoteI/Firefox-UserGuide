@@ -936,14 +936,15 @@ Default:
 
 
 ```js
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous", true);
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", true);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
 ```
 
 Default:
 `true`
   ![Win][Windows Logo]
   ![Debian][Debian Logo]
+  ![LibreWolf][LibreWolf Logo]
   ![Tor Browser][Tor Browser Logo]
   ![Android][Android Logo]
 

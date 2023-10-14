@@ -3579,6 +3579,20 @@ Default:
 [Online Certificate Status Protocol - Wikipedia](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)
 
 
+```js
+user_pref("security.OCSP.require", false);
+```
+
+Default:
+`false`
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo]
+  ![Android][Android Logo],
+`true`
+  ![LibreWolf][LibreWolf Logo]
+
+
 ### First-Party Isolation
 
 ```js

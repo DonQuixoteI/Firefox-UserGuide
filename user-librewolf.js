@@ -27,6 +27,7 @@ user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.OCSP.enabled", 0);
+user_pref("security.OCSP.require", false);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("webchannel.allowObject.urlWhitelist", "");

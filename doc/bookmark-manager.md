@@ -5,8 +5,7 @@
 
 ## Default Folder
 
-To set `Bookmark Toolbar` as a default folder in Librewolf (Linux),
-add following into `$HOME/.librewolf/librewolf.overrides.cfg`
+To make `Bookmark Toolbar` the default folder, you need to add the following code to `librewolf.cfg` (for Windows: `C:\Program Files\LibreWolf\librewolf.cfg`).
 
 ```js
 try {

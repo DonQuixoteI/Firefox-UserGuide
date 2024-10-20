@@ -106,6 +106,7 @@
 - [Reader Mode](#reader-mode)
 - [Screen Resolution](#screen-resolution)
 - [Search Suggestions](#search-suggestions)
+- [Add Custom Search Engine](#add-custom-search-engine)
 - [Security](#security)
   - [Digital Certificates](#digital-certificates)
   - [First-Party Isolation](#first-party-isolation)
@@ -3552,6 +3553,20 @@ Default:
   ![Android][Android Logo]
 
 `false`: Do not offer "search suggestions" of similar search queries as a user enters a query in the Search Bar. [[mozillaZine](http://kb.mozillazine.org/Browser.search.suggest.enabled)]
+
+
+## Add Custom Search Engine
+
+To enable adding custom search engines:
+
+```js
+user_pref("browser.urlbar.update2.engineAliasRefresh", true);
+```
+
+Default:
+n/a
+  ![Win][Windows Logo]
+  ![Android][Android Logo]
 
 
 ## Security

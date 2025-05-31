@@ -1,11 +1,15 @@
 {
   "policies": {
+    "AutofillAddressEnabled": false,
+    "AutofillCreditCardEnabled": false,
+    "CaptivePortal": false,
     "DisableAppUpdate": true,
     "DisableBuiltinPDFViewer": true,
     "DisableFeedbackCommands": true,
     "DisableFirefoxAccounts": true,
     "DisableFirefoxStudies": true,
     "DisablePocket": true,
+    "DisableSafeMode": true,
     "DisableSystemAddonUpdate": true,
     "DisableTelemetry": true,
     "DNSOverHTTPS": {
@@ -13,6 +17,34 @@
       "Locked": true
     },
     "DontCheckDefaultBrowser": true,
-    "ExtensionUpdate": false
+    "ExtensionUpdate": false,
+    "FirefoxHome": {
+      "Search": false,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Locked": true
+    },
+    "FirefoxSuggest": {
+      "WebSuggestions": false,
+      "SponsoredSuggestions": false,
+      "ImproveSuggest": false,
+      "Locked": true
+    },
+    "NetworkPrediction": false,
+    "OfferToSaveLogins": false,
+    "PromptForDownloadLocation": true,
+    "TranslateEnabled": false,
+    "UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false,
+      "FirefoxLabs": false,
+      "Locked": true
+    }
   }
 }

@@ -124,6 +124,10 @@ Preferences Affected:
 Preferences Affected:
 `extensions.update.enabled`
 
+## GPO and policies.json
+
+GPO always overrides settings in `policies.json`. GPO applies settings to all Firefox installations. `policies.json` applies settings to a specific Firefox installation.
+
 ## View Policies
 
 If policies were applied you will see at the top of Firefox Preferencies the information link "_Your browser is being managed by your organization_", just click on the link. Or, type `about:policies` in the address bar.

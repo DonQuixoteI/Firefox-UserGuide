@@ -3611,7 +3611,7 @@ Default:
 ### First-Party Isolation
 
 ```js
-user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.firstparty.isolate", false);
 ```
 
 Default:

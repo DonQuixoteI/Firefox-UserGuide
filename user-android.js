@@ -93,7 +93,6 @@ user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.proxy.type", 0);
 user_pref("plugin.default.state", 0);
-user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.resistFingerprinting", true);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.OCSP.enabled", 0);

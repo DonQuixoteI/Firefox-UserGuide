@@ -158,7 +158,6 @@ user_pref("network.proxy.type", 0);
 user_pref("pdfjs.disabled", true);
 user_pref("plugin.default.state", 0);
 user_pref("privacy.cpd.offlineApps", true);
-user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);

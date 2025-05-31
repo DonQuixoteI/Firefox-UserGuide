@@ -1593,7 +1593,8 @@ Default:
 Default:
 `true`
   ![Win][Windows Logo]
-  ![LibreWolf][LibreWolf Logo],
+`false`
+  ![LibreWolf][LibreWolf Logo]
 n/a
   ![Android][Android Logo]
 

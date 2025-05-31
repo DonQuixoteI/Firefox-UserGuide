@@ -1592,7 +1592,7 @@ Default:
 
 Default:
 `true`
-  ![Win][Windows Logo]
+  ![Win][Windows Logo],
 `false`
   ![LibreWolf][LibreWolf Logo]
 n/a

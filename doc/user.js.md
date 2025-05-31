@@ -132,12 +132,12 @@
 
 
 ![Win][Windows Logo] [Mozilla Firefox (Windows)](https://www.mozilla.org/en-US/firefox/windows/)\
-![Debian][Debian Logo] [Firefox (Debian)](https://tracker.debian.org/pkg/firefox)\
+![Debian][Debian Logo] [Firefox (Debian/AlmaLinux)](https://tracker.debian.org/pkg/firefox)\
 ![LibreWolf][LibreWolf Logo] [LibreWolf](https://librewolf.net/)\
 ![Tor Browser][Tor Browser Logo] [Tor Browser](https://www.torproject.org/)\
 ![Android][Android Logo] [Iceraven Browser (Android)](https://github.com/fork-maintainers/iceraven-browser)
 
-[Debian Logo]: img/Debian.svg
+[Debian Logo]: img/Linux.svg
 
 [LibreWolf Logo]: img/LibreWolf.svg
 
@@ -1598,6 +1598,7 @@ Default:
 `true`
   ![Win][Windows Logo],
 `false`
+  ![Debian][Debian Logo]
   ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]

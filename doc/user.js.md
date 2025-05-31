@@ -1588,6 +1588,22 @@ Default:
 [MediaDevices.getUserMedia() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
 
 
+## AI Chartbots
+
+Default:
+`true`
+  ![Win][Windows Logo]
+n/a
+  ![Android][Android Logo]
+
+```js
+user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.chat.sidebar", false);
+```
+
+[Access AI chatbots in Firefox · Mozilla Support](https://support.mozilla.org/en-US/kb/ai-chatbot)
+
+
 ## Digital Rights Management
 
 [Watch DRM content on Firefox - Mozilla Support](https://support.mozilla.org/en-US/kb/enable-drm)

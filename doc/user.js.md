@@ -1593,12 +1593,12 @@ Default:
 Default:
 `true`
   ![Win][Windows Logo]
+  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 
 ```js
 user_pref("browser.ml.chat.enabled", false);
-user_pref("browser.ml.chat.sidebar", false);
 ```
 
 [Access AI chatbots in Firefox · Mozilla Support](https://support.mozilla.org/en-US/kb/ai-chatbot)

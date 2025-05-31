@@ -1594,7 +1594,7 @@ Default:
 `true`
   ![Win][Windows Logo],
 `false`
-  ![LibreWolf][LibreWolf Logo]
+  ![LibreWolf][LibreWolf Logo],
 n/a
   ![Android][Android Logo]
 

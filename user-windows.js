@@ -129,6 +129,8 @@ user_pref("general.smoothScroll", false);
 user_pref("geo.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 user_pref("image.animation_mode", "none");
+user_pref("intl.date_time.pattern_override.date_short", "yyyy-MM-dd");
+user_pref("intl.date_time.pattern_override.time_short", "HH:mm:ss");
 user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);
 user_pref("layout.css.font-loading-api.enabled", false);

@@ -73,8 +73,7 @@
 - [Bookmarks](#bookmarks)
 - [Cache](#cache)
 - [Clear History](#clear-history)
-- [Developer Tools](#developer-tools)
-  - [WebIDE](#webide)
+- [Date and Time Format](#date-and-time-format)
 - [DOM](#dom)
   - [Clipboard](#clipboard)
   - [Context Menu](#context-menu)
@@ -2811,6 +2810,20 @@ n/a
 
 What default should we use for the time span in the sanitizer: `0` - clear everything, `1` - last hour [[DXR](https://dxr.mozilla.org/mozilla-central/source/browser/app/profile/firefox.js)].
 
+## Date and Time Format
+
+```js
+user_pref("intl.date_time.pattern_override.date_short", "yyyy-MM-dd");
+user_pref("intl.date_time.pattern_override.time_short", "HH:mm:ss");
+```
+
+Default:
+n/a
+  ![Win][Windows Logo]
+  ![Debian][Debian Logo]
+  ![Tor Browser][Tor Browser Logo],
+  ![LibreWolf][LibreWolf Logo],
+  ![Android][Android Logo]
 
 ## DOM
 
